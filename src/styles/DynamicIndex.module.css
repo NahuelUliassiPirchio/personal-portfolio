@@ -1,0 +1,38 @@
+.index {
+    display: flex;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    width: 50%;
+    height: 10%;
+    align-self: center;
+}
+
+.index li {
+    list-style-type: none;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    height: auto;
+}
+
+.index button {
+    background: none;
+    font-size: 1.25rem;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.activeSection {
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.inactiveSection {
+    text-decoration: none;
+    color: grey;
+}
