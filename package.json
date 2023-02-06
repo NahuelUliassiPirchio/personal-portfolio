@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "next": "^13.1.6",
+    "next-translate": "^1.6.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

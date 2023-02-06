@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styles from '../styles/DynamicIndex.module.css'
 
 export default function DynamicIndex ({ sections }) {
-  const [activeSection, setActiveSection] = React.useState(sections[0])
+  const [activeSection, setActiveSection] = React.useState(sections[0].url)
 
   React.useEffect(() => {
     const sectionsDiv = document.querySelectorAll('section')
@@ -11,7 +11,7 @@ export default function DynamicIndex ({ sections }) {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const section = sections.find(section => section.title === entry.target.firstChild.textContent)
+          const section = sections.find(section => section.url === entry.target.id)
           setActiveSection(section)
         }
       })
@@ -24,7 +24,8 @@ export default function DynamicIndex ({ sections }) {
   }, [])
 
   const handleIndexClick = (e) => {
-    const section = document.getElementById(e.target.textContent.toLowerCase())
+    const sectionId = sections.find(section => section.title === e.target.textContent).url
+    const section = document.getElementById(sectionId)
     section.scrollIntoView({ behavior: 'smooth' })
   }
 
@@ -34,7 +35,7 @@ export default function DynamicIndex ({ sections }) {
         sections.map((section, index) => (
             <li key={index}>
                 <button
-                className={section.title === activeSection.title ? styles.activeSection : styles.inactiveSection}
+                className={section.url === activeSection.url ? styles.activeSection : styles.inactiveSection}
                 onClick={handleIndexClick}
                 >
                     {section.title}
