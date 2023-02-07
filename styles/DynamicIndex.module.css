@@ -1,6 +1,6 @@
 .index {
     display: flex;
-    background-color: white;
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
     justify-content: space-around;
@@ -24,15 +24,14 @@
     padding: 0;
     cursor: pointer;
     outline: inherit;
+    color: var(--text-color);
 }
 
 .activeSection {
-    color: black;
     font-weight: bolder;
     text-decoration: underline;
 }
 
 .inactiveSection {
     text-decoration: none;
-    color: grey;
 }

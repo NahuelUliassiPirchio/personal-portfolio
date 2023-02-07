@@ -1,7 +1,7 @@
 import React from 'react'
+import useTranslation from 'next-translate/useTranslation'
 import Layout from '../components/Layout'
 import styles from '../styles/Home.module.css'
-import useTranslation from 'next-translate/useTranslation'
 
 export default function Home () {
   const { t } = useTranslation('home')
@@ -17,7 +17,7 @@ export default function Home () {
         <Layout>
             {
                 sections.map((section, index) => (
-                  <section id={section.url} key={index} className={styles.section}>
+                  <section id={section.url} key={index} className={`${styles.section} ${styles[section.url]}`}>
                     <h2>{section.title}</h2>
                   </section>
                 ))

@@ -33,10 +33,9 @@ export default function DynamicIndex ({ sections }) {
     <ul className={styles.index}>
         {
         sections.map((section, index) => (
-            <li key={index}>
+            <li key={index} onClick={handleIndexClick}>
                 <button
                 className={section.url === activeSection.url ? styles.activeSection : styles.inactiveSection}
-                onClick={handleIndexClick}
                 >
                     {section.title}
                 </button>
