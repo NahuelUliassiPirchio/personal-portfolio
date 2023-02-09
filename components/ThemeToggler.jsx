@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from '../styles/ThemeToggler.module.css'
-import ThemeContext from '../context/ThemeContext'
 import Image from 'next/image'
+import ThemeContext from '../context/ThemeContext'
+import styles from '../styles/ThemeToggler.module.css'
 
 import darkThemeToggle from '../public/icons/sun-svgrepo-com.svg'
 import lightThemeToggle from '../public/icons/moon-svgrepo-com.svg'

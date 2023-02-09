@@ -1,15 +1,19 @@
 import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import useTranslation from 'next-translate/useTranslation'
+import styles from '../styles/LanguageManager.module.css'
 
 export default function LanguageManager () {
   const { locale } = useRouter()
-  const { t } = useTranslation('common')
 
   return (
-        <Link href="/" locale={locale === 'en' ? 'es' : 'en'}>
-            {t('changeLanguage')}
-        </Link>
+        <div className={styles.managerContainer}>
+            <Link href="/" locale="en" className={locale === 'en' ? styles.active : ''}>
+              en
+            </Link>
+            <Link href="/" locale="es" className={locale === 'es' ? styles.active : ''}>
+              es
+            </Link>
+        </div>
   )
 }

@@ -1,0 +1,9 @@
+.active {
+    font-weight: bold;
+}
+
+.managerContainer a {
+    padding: 5px;
+    text-decoration: none;
+    color: var(--text-color);
+}

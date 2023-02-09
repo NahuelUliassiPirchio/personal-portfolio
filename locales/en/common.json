@@ -1,3 +1,10 @@
 {
-    "changeLanguage": "Change language"
+    "changeLanguage": "Change language",
+    "sections": [
+        { "title": "home", "url": "home" },
+        { "title": "about", "url": "about" },
+        { "title": "contact", "url": "contact" },
+        { "title": "blog", "url": "blog" },
+        { "title": "projects", "url": "projects"}
+    ]
 }

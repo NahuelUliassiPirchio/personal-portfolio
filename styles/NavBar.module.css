@@ -3,6 +3,29 @@
     position: fixed;
     justify-content: space-between;
     width: 100%;
+    height: 5rem;
     top: 0;
     background-color: var(--background-color);
+}
+
+.desktopLogo {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.mobileLogo {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktopLogo {
+        display: none;
+    }
+
+    .mobileLogo {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+    }
 }

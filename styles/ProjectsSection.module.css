@@ -1,0 +1,41 @@
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.projectContainer {
+  background-color: var(--background-color);
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--text-color);
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.projectContainer a {
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  padding: 10px;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;    
+}
+
+.projectContainer a:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);  
+}
+
+
+
+
+
