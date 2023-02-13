@@ -21,18 +21,20 @@ export default function NavBar () {
   const sections = [
     { title: t('home'), url: 'home' },
     { title: t('about'), url: 'about' },
-    { title: t('contact'), url: 'contact' },
     { title: t('blog'), url: 'blog' },
-    { title: t('projects'), url: 'projects' }
+    { title: t('projects'), url: 'projects' },
+    { title: t('contact'), url: 'contact' }
   ]
 
   return (
         <header className={styles.navBar}>
           <Image className={styles.desktopLogo} src={isDark ? darkLogo : logo} alt='Logo' width={100} height={100} />
-          <Image className={styles.mobileLogo} src={isDark ? darkMobileLogo : mobileLogo} alt='Logo' width={100} height={100} />
           <DynamicIndex sections={sections} />
-          <LanguageManager />
-          <ThemeToggler />
+          <div className={styles.styleContainer}>
+            <LanguageManager />
+            <ThemeToggler />
+          </div>
+          <Image className={styles.mobileLogo} src={isDark ? darkMobileLogo : mobileLogo} alt='Logo' width={100} height={100} />
           <Menu sections={sections} />
         </header>
   )

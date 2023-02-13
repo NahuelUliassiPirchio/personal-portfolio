@@ -18,14 +18,28 @@
     display: none;
 }
 
+.styleContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
 @media (max-width: 768px) {
     .desktopLogo {
         display: none;
     }
 
     .mobileLogo {
-        display: flex;
-        align-items: center;
-        margin-left: 1rem;
+        display: inline-block;
+        margin-top: -0.7rem;
+    }
+
+    .styleContainer {
+        flex-direction: column-reverse;
+        justify-content:center ;
+        margin-right: 0;
+        margin-left: .5rem;
+        gap: 0;
     }
 }

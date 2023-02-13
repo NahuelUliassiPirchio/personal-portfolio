@@ -2,6 +2,8 @@ import React from 'react'
 import useTranslation from 'next-translate/useTranslation'
 import Layout from '../components/Layout'
 import ProjectsSection from '../components/ProjectsSection'
+import ContactSection from '../components/ContactSection'
+
 import styles from '../styles/Home.module.css'
 
 export default function Home () {
@@ -10,9 +12,9 @@ export default function Home () {
   const sections = [
     { title: t('home'), url: 'home' },
     { title: t('about'), url: 'about' },
-    { title: t('contact'), url: 'contact' },
     { title: t('blog'), url: 'blog' },
-    { title: t('projects'), url: 'projects', component: <ProjectsSection /> }
+    { title: t('projects'), url: 'projects', component: <ProjectsSection /> },
+    { title: t('contact'), url: 'contact', component: <ContactSection /> }
   ]
 
   return (
