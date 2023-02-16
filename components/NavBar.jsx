@@ -11,6 +11,7 @@ import LanguageManager from './LanguageManager'
 import ThemeToggler from './ThemeToggler'
 import ThemeContext from '../context/ThemeContext'
 import Menu from './Menu'
+
 import styles from '../styles/NavBar.module.css'
 
 export default function NavBar () {
@@ -19,9 +20,7 @@ export default function NavBar () {
   const isDark = theme === 'dark'
 
   const sections = [
-    { title: t('home'), url: 'home' },
     { title: t('about'), url: 'about' },
-    { title: t('blog'), url: 'blog' },
     { title: t('projects'), url: 'projects' },
     { title: t('contact'), url: 'contact' }
   ]

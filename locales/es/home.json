@@ -1,7 +1,5 @@
 {
-        "home": "Principal",
         "about": "Sobre mi",
-        "contact": "Contacto",
-        "blog": "Blog",
-        "projects": "Proyectos"
+        "projects": "Proyectos",
+        "contact": "Contacto"
 }

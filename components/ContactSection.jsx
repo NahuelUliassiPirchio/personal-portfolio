@@ -2,14 +2,15 @@ import React from 'react'
 import Link from 'next/link'
 import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image'
+import PropTypes from 'prop-types'
 
 import styles from '../styles/ContactSection.module.css'
 
-export default function ContactSection () {
+export default function ContactSection ({ id, key }) {
   const { t } = useTranslation('contact')
 
   return (
-        <div className={styles.contactContainer}> {/* TODO: Change this to section */}
+        <section key={key} id={id} className={styles.contactContainer}>
             <h1 className={styles.title}>{t('title')}</h1>
             <p>{t('subtitle')}</p>
             <ul className={styles.linksList}>
@@ -35,6 +36,11 @@ export default function ContactSection () {
                     </Link>
                 </li>
             </ul>
-        </div>
+        </section>
   )
+}
+
+ContactSection.propTypes = {
+  id: PropTypes.string.isRequired,
+  key: PropTypes.string.isRequired
 }
