@@ -1,0 +1,34 @@
+{
+    "projects":[
+        {
+            "name":"project 1",
+            "description":"project 1 description",
+            "technologies":[
+                "project 1 technology 1",
+                "project 1 technology 2"
+            ],
+            "url":"project1",
+            "process": "project 1 process",
+            "image":"https://www.shutterstock.com/image-vector/tree-vector-icon-nature-trees-600w-1691582557.jpg",
+            "conclusion": "project 1 conclusion"
+        },
+        {
+            "name":"project 2",
+            "description":"project 2 description",
+            "technologies":[
+                "project 2 technology 1",
+                "project 2 technology 2"
+            ],
+            "url":"project2",
+            "image":"https://upload.wikimedia.org/wikipedia/commons/3/3c/IMG_logo_%282017%29.svg",
+            "process": "project 2 process",
+            "conclusion": "project 2 conclusion"
+        }
+    ],
+    "sections":{
+        "introduction":"Introdution",
+        "technologies":"Technologies",
+        "process":"Process",
+        "conclusion":"Conclusion"
+    }
+}

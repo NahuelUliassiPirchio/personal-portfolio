@@ -17,7 +17,7 @@ export default function DynamicIndex ({ sections }) {
         }
       })
     }, {
-      threshold: 0.5
+      threshold: 0.40
     })
     sectionsDiv.forEach(section => {
       observer.observe(section)

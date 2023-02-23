@@ -1,0 +1,14 @@
+.projectContainer {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--text-color);
+}

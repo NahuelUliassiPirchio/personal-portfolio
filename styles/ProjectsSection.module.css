@@ -138,6 +138,7 @@
   place-items: center;
   border-radius: inherit;
   position: absolute;
+  cursor: default;
   animation: orbit var(--speed) linear reverse infinite, throb 1s var(--throb-delay) ease-in-out infinite alternate;
   animation-play-state: var(--orbit-play-state, running), var(--throb-play-state, running);
 }

@@ -16,8 +16,8 @@ export default function AboutSection ({ id, key }) {
   return (
         <section id={id} key={key} className={styles.aboutSection}>
             <div className={styles.aboutSection__title}>
-              <h1 className={styles.greetings}>{t('greetings')}</h1>
-              <h1 className={styles.title}>{t('title')}</h1>
+              <h1 className={styles.greeting}>{t('greetings')}</h1>
+              <h2 className={styles.title}>{t('title')}</h2>
               <Link href="#introduction" className={styles.scrollDown}>
                 <Image src={theme === 'dark' ? darkArrow : arrow} alt="Scroll down" width={64} height={64} />
               </Link>
