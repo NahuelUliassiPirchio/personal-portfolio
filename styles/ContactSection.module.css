@@ -48,8 +48,9 @@
   height: 3rem;
   margin-bottom: 1rem;
   padding: 2rem;
-  background-color: var(--text-color);
   border-radius: 40%;
+  border: 1px solid var(--text-color);
+  background-color: white;
 }
 
 @media (max-width: 768px) {

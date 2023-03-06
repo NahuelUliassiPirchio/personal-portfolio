@@ -1,0 +1,112 @@
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 1000px;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin: 2rem;
+  padding: 0;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.skillButtons {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.skillButton {
+  width: 100px;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--text-color);
+  text-align: center;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.skillButton h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.skillDivs {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skillDivs div {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  border-left: none;
+}
+
+.activeSkill {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.inactiveSkill:hover {
+  background-color: gray;
+  color: var(--background-color);
+}
+
+.skillCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  align-items:  baseline;
+  justify-content: baseline;
+  width: 300px;
+  height: 300px;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.securityLogo, .nextjsLogo {
+  background-color: whitesmoke;
+  padding: .5rem;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .skillDivs {
+    width: 100%;
+  }
+  .main {
+    flex-direction: column;
+  }
+
+  .skillCards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}

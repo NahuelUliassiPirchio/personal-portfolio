@@ -35,7 +35,6 @@
 }
 
 .scrollDown {
-  cursor: pointer;
   height: 60px;
   width: 80px;
   margin: 0px 0 0 -40px;
@@ -48,8 +47,9 @@
   font-size: 70px;
   text-decoration: none;
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   
   -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
   -moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;

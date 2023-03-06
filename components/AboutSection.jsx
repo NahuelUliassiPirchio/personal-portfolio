@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import Link from 'next/link'
 import useTranslation from 'next-translate/useTranslation'
 import ThemeContext from '../context/ThemeContext'
 import Image from 'next/image'
@@ -13,14 +12,19 @@ export default function AboutSection ({ id, key }) {
   const { t } = useTranslation('about')
   const { theme } = useContext(ThemeContext)
 
+  const handleScroll = () => {
+    const introduction = document.getElementById('introduction')
+    introduction.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
         <section id={id} key={key} className={styles.aboutSection}>
             <div className={styles.aboutSection__title}>
               <h1 className={styles.greeting}>{t('greetings')}</h1>
               <h2 className={styles.title}>{t('title')}</h2>
-              <Link href="#introduction" className={styles.scrollDown}>
+              <button className={styles.scrollDown} onClick={handleScroll}>
                 <Image src={theme === 'dark' ? darkArrow : arrow} alt="Scroll down" width={64} height={64} />
-              </Link>
+              </button>
             </div>
             <h2 id='introduction' className={styles.introduction}>{t('introduction')}</h2>
         </section>

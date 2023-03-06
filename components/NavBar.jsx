@@ -23,14 +23,15 @@ export default function NavBar ({ providedSections }) {
 
   const sections = providedSections || [
     { title: t('about'), url: 'about' },
+    { title: t('skills'), url: 'skills' },
     { title: t('projects'), url: 'projects' },
     { title: t('contact'), url: 'contact' }
   ]
 
   return (
         <header className={styles.navBar}>
-          <Link href='/'>
-            <Image className={styles.desktopLogo} src={isDark ? darkLogo : logo} alt='Logo' width={100} height={100} />
+          <Link href='/' className={styles.desktopLogo}>
+            <Image src={isDark ? darkLogo : logo} alt='Logo' width={100} height={100} />
           </Link>
           <DynamicIndex sections={sections} />
           <div className={styles.styleContainer}>

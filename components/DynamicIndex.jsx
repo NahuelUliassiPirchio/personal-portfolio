@@ -10,7 +10,6 @@ export default function DynamicIndex ({ sections }) {
 
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        console.log(entry.target.id, entry.isIntersecting)
         if (entry.isIntersecting) {
           const section = sections.find(section => section.url === entry.target.id)
           setActiveSection(section)

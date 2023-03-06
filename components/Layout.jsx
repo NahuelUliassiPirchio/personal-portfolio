@@ -12,9 +12,9 @@ export default function Layout ({ children }) {
         <title>Uliassi Pirchio Nahuel</title>
       </Head>
       <div className={styles.layout}>
-      <NavBar />
-      {children}
-    </div>
+        <NavBar />
+        {children}
+      </div>
     </>
   )
 }
