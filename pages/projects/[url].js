@@ -26,7 +26,7 @@ export default function ProjectPage () {
     <Head>
       <title>{project ? project.name : '[404]'}</title>
     </Head>
-    <NavBar providedSections={projectSections}/>
+    {(project && <NavBar providedSections={projectSections}/>)}
     {
       project
         ? <Project project={project} />

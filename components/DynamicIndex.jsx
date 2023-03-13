@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import styles from '../styles/DynamicIndex.module.css'
 
 export default function DynamicIndex ({ sections }) {
-  const [activeSection, setActiveSection] = React.useState(sections[0].url)
+  const [activeSection, setActiveSection] = useState(sections[0].url)
 
-  React.useEffect(() => {
+  useEffect(() => {
     const sectionsDiv = document.querySelectorAll('section')
 
     const observer = new IntersectionObserver(entries => {
@@ -16,10 +16,25 @@ export default function DynamicIndex ({ sections }) {
         }
       })
     }, {
-      threshold: 0.40
+      threshold: 0.25
     })
+
+    const animationObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(styles.sectionAnimation)
+          entry.target.classList.remove(styles.notAnimated)
+        }
+      })
+    }, {
+      threshold: 0.20
+    })
+
     sectionsDiv.forEach(section => {
       observer.observe(section)
+
+      section.classList.add(styles.notAnimated)
+      animationObserver.observe(section)
     })
   }, [])
 

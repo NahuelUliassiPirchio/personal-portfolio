@@ -1,26 +1,77 @@
 {
     "projects":[
         {
-            "name":"project 1",
-            "description":"project 1 description",
+            "name":"Basic Store",
+            "description":"Basic Store is my first public web application, it consists of a restful API developed in NestJS and a web page using NextJS as the main framework. It simulates a typical e-commerce page but with the addition of being able to bid on a product. His purpose was always to apply acquired knowledge and translate it into something material.",
             "technologies":[
-                "project 1 technology 1",
-                "project 1 technology 2"
+                {"name":"NESTJS","icon":"nestjs.svg"},
+                {"name":"TYPESCRIPT","icon":"typescript.svg"},
+                {"name":"TYPEORM","icon":"typeorm.png"},
+                {"name":"POSTGRESQL","icon":"postgresql.svg"},
+                {"name":"SWAGGER","icon":"swagger-ui.png"},
+                {"name":"NEXTJS","icon":"nextjs.svg"},
+                {"name":"REACT","icon":"react.svg"},
+                {"name":"JAVASCRIPT","icon":"javascript.svg"}
             ],
-            "url":"project1",
+            "url":"basic-store",
+            "link":"https://basic-store.vercel.app/",
             "process": "project 1 process",
-            "image":"https://www.shutterstock.com/image-vector/tree-vector-icon-nature-trees-600w-1691582557.jpg",
+            "image":"BSCStoreLogo.png",
+            "github":[
+                {"name":"Basic Store Frontend", "url":"nextjs-basic-store-frontend"},
+                {"name":"Basic Store Backend", "url":"nestjs-basic-store-api"}
+            ],
             "conclusion": "project 1 conclusion"
         },
         {
-            "name":"project 2",
-            "description":"project 2 description",
+            "name":"Stop Rows",
+            "description":"I had this idea when in high school a teacher asked me to do a project and, at that time, I spent large amounts of time sitting in line at the bank. The possible solution that came to me was to make a remote queue system.",
             "technologies":[
-                "project 2 technology 1",
-                "project 2 technology 2"
+                {"name":"EXPRESS"},
+                {"name":"JAVASCRIPT","icon":"javascript.svg"},
+                {"name":"MONGODB","icon":"mongodb.svg"},
+                {"name":"MONGOOSE"},
+                {"name":"SWAGGER","icon":"swagger-ui.png"},
+                {"name":"NEXTJS","icon":"nextjs.svg"},
+                {"name":"REACT","icon":"react.svg"},
+                {"name":"TYPESCRIPT","icon":"typescript.svg"}
             ],
-            "url":"project2",
-            "image":"https://upload.wikimedia.org/wikipedia/commons/3/3c/IMG_logo_%282017%29.svg",
+            "url":"stop-rows",
+            "image":"StopRowsLogo.svg",
+            "github":[
+                {"name":"Stop Rows Frontend", "url":"nextjs-stop-rows-frontend"},
+                {"name":"Stop Rows Backend", "url":"stop-rows-api"}
+            ],
+            "process": "project 2 process",
+            "conclusion": "project 2 conclusion"
+        },
+        {
+            "name":"Personal Portfolio",
+            "description":"It's the last project developed to date. Its purpose is to group my previous projects and present myself on the same page that manages to represent me and, in turn, demonstrate my qualities.",
+            "technologies":[
+                {"name":"NEXTJS","icon":"nextjs.svg"},
+                {"name":"REACT","icon":"react.svg"},
+                {"name":"JAVASCRIPT","icon":"javascript.svg"}
+            ],
+            "url":"personal-portfolio",
+            "image":"UPAthemeLogo.svg",
+            "github":[
+                {"name":"Personal Portfolio", "url":"personal-portfolio"}
+            ],
+            "process": "project 2 process",
+            "conclusion": "project 2 conclusion"
+        },
+        {
+            "name":"Huffman Tree Compressor",
+            "description":"This was a university project on algorithms and data structure. The idea is to develop a c program that can successfully compress and decompress a file without loss of information. My intention in presenting this project is to demonstrate my abilities in algorithmics.",
+            "technologies":[
+                {"name":"C"}
+            ],
+            "url":"huffman-tree-compressor",
+            "image":"HuffmanTreeCompressor.png",
+            "github":[
+                {"name":"Huffman Tree Compressor", "url":"huffman-tree-compressor"}
+            ],
             "process": "project 2 process",
             "conclusion": "project 2 conclusion"
         }

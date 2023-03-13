@@ -38,7 +38,9 @@ export default function NavBar ({ providedSections }) {
             <LanguageManager />
             <ThemeToggler />
           </div>
-          <Image className={styles.mobileLogo} src={isDark ? darkMobileLogo : mobileLogo} alt='Logo' width={100} height={100} />
+          <Link href='/' className={styles.mobileLogo}>
+            <Image src={isDark ? darkMobileLogo : mobileLogo} alt='Logo' width={100} height={100} />
+          </Link>
           <Menu sections={sections} />
         </header>
   )

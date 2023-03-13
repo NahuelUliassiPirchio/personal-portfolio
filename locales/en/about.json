@@ -1,5 +1,7 @@
 {
         "greetings":"Hello and welcome to my portfolio!",
         "title": "My name is Nahuel Uliassi and I am a full stack developer.",
-        "introduction": "I have a passion for creating dynamic and interactive web applications and have been honing my skills in both front-end and back-end development. I have completed two years of college studying computer science and have gained a solid understanding of various programming languages, frameworks and technologies. Although I am currently seeking my first job in the industry, I am confident that my eagerness to learn and strong academic background will make me a valuable asset to any team. In this portfolio, you will find a selection of my projects that showcase my skills and give you an idea of what I can bring to the table as a developer. I look forward to sharing my work with you!"
+        "introduction1": "I have a passion for creating dynamic and interactive web applications and have been honing my skills in both front-end and back-end development.",
+        "introduction2":"I have completed two years of college studying computer science and have gained a solid understanding of various programming languages, frameworks and technologies. Although I am currently seeking my first job in the industry, I am confident that my eagerness to learn and strong academic background will make me a valuable asset to any team.",
+        "introduction3":"In this portfolio, you will find a selection of my projects that showcase my skills and give you an idea of what I can bring to the table as a developer. I look forward to sharing my work with you!"
 }

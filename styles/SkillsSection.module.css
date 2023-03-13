@@ -1,40 +1,45 @@
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 .main {
-  max-width: 1200px;
   margin: 0 auto;
   border: 1px solid var(--text-color);
   border-radius: 10px;
-  padding: 1rem;
   max-width: 1000px;
 }
 
-.container h1 {
+.skillsContainer h1 {
   font-size: 2rem;
-  margin: 2rem;
   padding: 0;
+  margin-top: 4rem;
   text-align: center;
+  text-decoration: underline;
   color: var(--text-color);
 }
 
-.skillButtons {
+.skillsSelector {
   display: flex;
-  width: fit-content;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   gap: 1rem;
-  padding: 0 1rem;
-  border: 1px solid var(--text-color);
-  border-radius: 10px;
-  margin: 0 auto;
+  overflow-x: auto;
 }
 
 .skillButton {
-  width: 100px;
   display: inline-block;
   cursor: pointer;
   color: var(--text-color);
   text-align: center;
-  padding: 0;
   border-radius: 10px;
+  padding: .5rem;
 }
 
 .skillButton h2 {
@@ -51,7 +56,7 @@
   margin: 0 auto;
 }
 
-.skillDivs div {
+.skillDivs > div {
   background-color: var(--background-color);
   color: var(--text-color);
   border: 1px solid var(--text-color);
@@ -73,6 +78,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 .skillCard {
@@ -80,14 +88,61 @@
   flex-direction: column;
   align-items:  baseline;
   justify-content: baseline;
-  width: 300px;
   height: 300px;
-  margin: 1rem;
-  padding: 1rem;
+  max-width: 350px;
+  margin: .5rem 0;
+  padding: .5rem;
   border: 1px solid var(--text-color);
   border-radius: 10px;
   background-color: var(--background-color);
   color: var(--text-color);
+  transition: all 0.5s ease-in-out;
+}
+
+/* if there is no overflow, hide the scrollbar */
+/* .skillCard ul::-webkit-scrollbar {
+  display: none;
+} */
+
+.skillTitle {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.skillTitle h2 {
+  margin: 0;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.skillCard ul {
+  margin: 0;
+  padding: 1rem 0 0 1.5rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.skillCard ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+.skillCard ul::-webkit-scrollbar-track {
+  background: var(--background-color);
+  border: var(--text-color) 1px solid; 
+}
+ 
+.skillCard ul::-webkit-scrollbar-thumb {
+  background: var(--text-color); 
+}
+
+.skillCard ul::-webkit-scrollbar-thumb:hover {
+  background: #888; 
 }
 
 .securityLogo, .nextjsLogo {
@@ -103,7 +158,10 @@
   .main {
     flex-direction: column;
   }
-
+  .skillsSelector {
+    width: 100vw;
+    justify-content: flex-start;
+  }
   .skillCards {
     flex-direction: column;
     align-items: center;

@@ -16,7 +16,7 @@ export default function ProjectsSection ({ id, key }) {
 
         <div className={styles.orbit}>
           <div className={styles.center}>
-            <p>My Projects</p>
+            <p><b>MY PROJECTS</b></p>
           </div>
           <ul>
             <li>
@@ -55,18 +55,18 @@ export default function ProjectsSection ({ id, key }) {
         </div>
 
       </div>
-      <div className={styles.projects}>
+      <ul className={styles.projects}>
         {
-          projects.map((project, index) => (
-              <div className={styles.projectContainer} key={index} >
-                  <Image src={project.image} alt={project.title} width={300} height={200} />
+          projects.map(project => (
+              <li className={styles.projectContainer} key={project.url} >
+                  <Image className={styles.projectImage} src={`/images/${project.image}`} alt={project.name} width={200} height={200} />
                   <h2>{project.name}</h2>
                   <p>{project.description}</p>
                   <Link href={`/projects/${project.url}`}>View Project</Link>
-              </div>
+              </li>
           ))
         }
-      </div>
+      </ul>
     </section>
   )
 }

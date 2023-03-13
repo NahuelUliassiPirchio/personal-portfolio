@@ -19,14 +19,18 @@ export default function AboutSection ({ id, key }) {
 
   return (
         <section id={id} key={key} className={styles.aboutSection}>
-            <div className={styles.aboutSection__title}>
+            <div className={styles.aboutSectionTitle}>
               <h1 className={styles.greeting}>{t('greetings')}</h1>
               <h2 className={styles.title}>{t('title')}</h2>
               <button className={styles.scrollDown} onClick={handleScroll}>
                 <Image src={theme === 'dark' ? darkArrow : arrow} alt="Scroll down" width={64} height={64} />
               </button>
             </div>
-            <h2 id='introduction' className={styles.introduction}>{t('introduction')}</h2>
+            <div id='introduction' className={styles.introductionContainer}>
+              <h2 className={styles.introduction}>{t('introduction1')}</h2>
+              <h2 className={styles.introduction}>{t('introduction2')}</h2>
+              <h2 className={styles.introduction}>{t('introduction3')}</h2>
+            </div>
         </section>
   )
 }

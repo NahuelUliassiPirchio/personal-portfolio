@@ -12,7 +12,7 @@ export default function ContactSection ({ id, key }) {
   return (
         <section key={key} id={id} className={styles.contactContainer}>
             <h1 className={styles.title}>{t('title')}</h1>
-            <p>{t('subtitle')}</p>
+            <p className={styles.subtitle}>{t('subtitle')}</p>
             <ul className={styles.linksList}>
                 <li>
                     <Link href="mailto:uliassipirchio@gmail.com" className={styles.linkItem}>

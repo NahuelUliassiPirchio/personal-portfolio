@@ -7,8 +7,69 @@
   background-color: var(--background-color);
 }
 
+.floatContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+}
+
+.floatingButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 0;
+  margin-left: 1rem;
+}
+
+.floatingButton img {
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.floatingButton img {
+  object-fit: contain;
+}
+
+.floatingButton span {
+  height: 100%;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  color: var(--background-color);
+  text-decoration: none;
+  background-color: var(--text-color);
+}
+
+.introductionSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectImage {
+  max-width: 300px;
+  margin-top: 3rem;
+  object-fit: contain;
+}
+
 .subtitle {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .projectImage {
+    align-self: center;
+  }
 }

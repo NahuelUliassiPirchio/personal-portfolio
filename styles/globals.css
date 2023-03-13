@@ -2,17 +2,6 @@
     --background-color: #f5f5f5;
     --text-color: #333;
     --link-color: #0070f3;
-
-    --atom-size: 180px;
-    --atom-color-hex: #00d8ff;
-    --atom-color-rgb: 0, 216, 255;
-    --nucleus-size: calc(var(--atom-size) / 5);
-    --electron-color-hex: #99f8ff;
-    --electron-size : calc(var(--atom-size) / 25);
-    --electron-orbit-size : calc(var(--atom-size) / 2.5);
-    --electron-speed : 1.2s;
-    --electron-speed-alpha : 1s;
-    --electron-speed-omega : .8s;
 }
 
 body {
@@ -21,4 +10,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
+}
+
+html {
+    scroll-behavior: smooth;
 }

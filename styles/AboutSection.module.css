@@ -1,27 +1,31 @@
-.aboutSection__title {
+.aboutSectionTitle {
   height: calc(100vh - 5rem);
   display: flex;
   align-items: flex-start;
-  margin-left: 2rem;
   justify-content: center;
+  margin-left: 2rem;
   flex-direction: column;
   background-color: var(--background-color);
   color: var(--text-color);
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
 .greeting {
   font-size: 1.5rem;
   font-weight: 300;
-  text-align: center;
+  text-align: start;
   margin-bottom: 1rem;
 }
 
 .title {
   font-size: 3rem;
   font-weight: 500;
-  text-align: center;
   text-align: start;
+}
+
+.introductionContainer {
+  scroll-margin: 5rem;
+  margin-top: 3.5rem;
 }
 
 .introduction {
@@ -30,8 +34,7 @@
   text-align: center;
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
   color: var(--text-color);
-  scroll-margin: 5rem;
-  margin-top: 3.5rem;
+  padding: 0 .5rem;
 }
 
 .scrollDown {
@@ -74,7 +77,16 @@
 }
 
 @media (max-width: 768px) {
-  .introduction {
+  .aboutSectionTitle {
+    height: 100vh;
+    padding-top: 5rem;
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .introductionContainer {
     margin-top: 5rem;
   }
 }

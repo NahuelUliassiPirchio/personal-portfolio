@@ -1,5 +1,7 @@
 {
         "greetings":"¡Hola y bienvenido a mi portafolio!",
         "title": "Mi nombre es Nahuel Uliassi y soy desarrollador full stack.",
-        "introduction": "Me apasiona crear aplicaciones web dinámicas e interactivas y he estado perfeccionando mis habilidades en el desarrollo de front-end y back-end. Completé dos años de universidad estudiando informática y obtuve una sólida comprensión de varios lenguajes de programación, marcos y tecnologías. Aunque actualmente estoy buscando mi primer trabajo en la industria, confío en que mi entusiasmo por aprender y mi sólida formación académica me convertirán en un activo valioso para cualquier equipo. En este portafolio, encontrará una selección de mis proyectos que muestran mis habilidades y le dan una idea de lo que puedo aportar como desarrollador. ¡Espero poder compartir mi trabajo contigo!"
+        "introduction1": "Me apasiona crear aplicaciones web dinámicas e interactivas y he estado perfeccionando mis habilidades en el desarrollo de front-end y back-end.",
+        "introduction2":"Completé dos años de universidad estudiando informática y obtuve una sólida comprensión de varios lenguajes de programación, marcos y tecnologías. Aunque actualmente estoy buscando mi primer trabajo en la industria, confío en que mi entusiasmo por aprender y mi sólida formación académica me convertirán en un activo valioso para cualquier equipo.",
+        "introduction3":"En este portafolio, encontrará una selección de mis proyectos que muestran mis habilidades y le dan una idea de lo que puedo aportar como desarrollador. ¡Espero poder compartir mi trabajo contigo!"
 }
