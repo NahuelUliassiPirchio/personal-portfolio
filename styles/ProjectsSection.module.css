@@ -8,6 +8,16 @@
   padding: 0;
 }
 
+.projectsIntroduction {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  padding: 20px;
+  margin: 20px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  transition: all 0.3s ease-in-out;
+}
+
 .projectContainer {
   color: var(--text-color);
   background-color: var(--background-color);

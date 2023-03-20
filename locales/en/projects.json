@@ -14,37 +14,30 @@
                 {"name":"JAVASCRIPT","icon":"javascript.svg"}
             ],
             "url":"basic-store",
-            "link":"https://basic-store.vercel.app/",
             "image":"BSCStoreLogo.png",
-            "github":[
-                {"name":"Basic Store Frontend", "url":"nextjs-basic-store-frontend"},
-                {"name":"Basic Store Backend", "url":"nestjs-basic-store-api"}
+            "links":[
+                {"name":"Frontend Repo", "url":"https://github.com/NahuelUliassiPirchio/nextjs-basic-store-frontend", "icon":"/icons/github.svg"},
+                {"name":"Backend Repo", "url":"https://github.com/NahuelUliassiPirchio/nestjs-basic-store-api", "icon":"/icons/github.svg"},
+                {"name":"Docs", "url":"http://20.124.111.61:3000/docs", "icon":"/icons/swagger-ui.png"},
+                {"name":"Demo", "url":"https://nextjs-basic-store-frontend.vercel.app/", "icon":"/images/BSCStoreLogo.png"}
             ],
             "process": [
                 {
                     "backend": [
-                        {"quote":"Firstly a basic structure was established separating controllers, middlewares, services and routers. I decided to do it this way since scalability is not important in this case."},
-                        {"quote":"In order to create the schemas in mongoose, I first had to establish a connection and configure Mongodb. Although it wasn't my first time using mongoose, this time I wanted to better document myself so I could get the most out of it. the tools that Mongo offers. For example, the use of indexes or geospatial attributes. I had some problems when doing queries with certain filters because as of today I don't have such a deep understanding of this library."},
-                        {"quote":"In this step most of the business logic was developed. I had (and still have) some doubts regarding certain aspects of the architecture. To solve this problem I read a couple of books that explain how to structure a restful API (RESR API Development with Node.js by Fernando Doglio and The REST API Design Handbook by George Reese)."},
-                        {"quote":"Here I focused on establishing routing as intuitive as I thought."},
-                        {"quote":"I applied the data validation with JOI knowing that mongoose has a similar functionality. The decision had no logical basis other than that I had left pending to use this library. In addition, I structured a middleware for error handling focusing on the codes of the errors that the database returned and a 500 for the others. Thus, in this way there is no place to leak possible sensitive information."},
-                        {"quote":"Auth with particular passport middlewares. An important functionality for this project is authentication and authorization. Authentication was resolved with passportJS, using the JWT and local libraries. Authorization, instead, was determined by a system of roles and matching the user's id with the business owner's id."},
-                        {"quote":"Something very important that I learned developing this project is about Jest and the usefulness of testing: although it is not the first time I have run testing (at the university, I taught programming paradigms, it was a requirement to deliver practical work), it is the first time that it is very useful for me to detect certain specific errors that I would not find when interacting with Postman. In the future, I should implement the tests at an earlier stage."},
-                        {"quote":"For last I left the documentation, it wasn't very complex but it wasn't as practical as in the previous project. I used Swagger again but in this case I had to write the specifications manually. Anyway the result was optimal ."}
+                        {"quote":"First of all, I had to develop the basic structure. As it was not a very complex project, it was a relatively simple task, especially considering the facilities of NestCli. Designing the database was not a great challenge, thanks to typeorm was a very intuitive and fast task compared to writing native SQL."},
+                        {"quote":"Later I concentrated on the business logic (services), the processing and validation of information (controllers). In the process of completing this task, I was simultaneously implementing an authentication and authorization system provided by PassportJS implementing JWT tokens."},
+                        {"quote":"Finally, I focused on the API documentation. For this I used Swagger, a tool that allowed me to document the API very easily and quickly thanks to the combination with nestjs. Also, it allowed me to generate a client test for the API which allowed me to test it faster and more efficiently."},
+                        {"quote":"API Deployment: As I did in StopRows, my intention was to use DigitalOcean to unfold the API. However, due to some limitations and complications, I decided to use Azure again. In this case I set up a linux (RedHat) server where I installed the necessary dependencies and got the app running with PM2. Again, it took me a while due to mostly newbie mistakes. For example, the firewall didn't allow inbound ports and it took me a while to figure it out."}
                     ],
-                    "frontend":[
-                        {"quote":"First I developed the skeleton of the application: a page for new users or customers and another component for owners to manage their stores."},
-                        {"quote":"Maps api, I remember that for high school I had to use the Google Maps API but applied in html and js. Now in React I can say that it is very similar and intuitive (besides that it is well documented)."},
-                        {"quote":"I later developed a custom hook that consumes the API to do an infinite scroll using the interception observer. It was interesting and useful to learn."},
-                        {"quote":"I made a particular page for each store. It receives the id as a parameter of the url and looks for the information from the server side (SSP)."},
-                        {"quote":"I also made a component that shows the list in 'real time' of customers in the queue. It can be recycled for the owners, where it gives the possibility of deleting users."},
-                        {"quote":"In the authentication aspect, I already had the experience of previous projects: hosting JWTs in cookies with an expiration date, making a custom hook for login, signup and logout. The main difference is that in this project I implemented refresh tokens and had to learn how to handle them."},
-                        {"quote":"I developed a recyclable form to be able to add and modify a store, what changes between them is the data it has from before and the fetch options."},
-                        {"quote":"Functional improvements (delete the list, the list appears on the main screen, if the fetch failed it did not give a warning)"}
+                    "frontend": [
+                        {"quote":"Basic nextjs structure (pages folder, eslint, next.config.js, etc). Next was the development of the main page (NavBar, Footer, product list) and particular product page using dynamic routing and using ServerSideProps."},
+                        {"quote":"Later I set about developing custom hooks (one for authentication and one for fetching) and developing the login and profile creation components. "},
+                        {"quote":"Finally, I concentrated on polishing user interface and experience details and improving practices (not repeating logic, endpoints in the same file, etc)."},
+                        {"quote":"Vercel was used again in the deploy, extremely fast and functional."}
                     ]
                 }
             ],
-            "conclusion": "I can think of several improvements that were pending:- Cache- Web Sockets to see the rows in real time- UX/UI improvements"
+            "conclusion": "There are always issues that can be improved, especially considering that it is my first 'big project'. But in particular, there were a couple of issues that remained pending: testing, web sockets to see the bids in real time, caching for both the frontend and the backend, and a better responsive design."
         },
         {
             "name":"Stop Rows",
@@ -61,25 +54,39 @@
             ],
             "url":"stop-rows",
             "image":"StopRowsLogo.svg",
-            "github":[
-                {"name":"Stop Rows Frontend", "url":"nextjs-stop-rows-frontend"},
-                {"name":"Stop Rows Backend", "url":"stop-rows-api"}
+            "links":[
+                {"name":"Frontend Repo", "url":"https://github.com/NahuelUliassiPirchio/nextjs-stop-rows-frontend", "icon":"/icons/github.svg"},
+                {"name":"Backend Repo", "url":"https://github.com/NahuelUliassiPirchio/stop-rows-api", "icon":"/icons/github.svg"},
+                {"name":"Docs", "url":"https://seal-app-yljuj.ondigitalocean.app/docs", "icon":"/icons/swagger-ui.png"},
+                {"name":"Demo", "url":"https://nextjs-stop-rows-frontend.vercel.app/", "icon":"/images/StopRowsLogo.svg"}
             ],
             "process": [
                 {
                     "backend": [
-                        {"quote":"First of all, I had to develop the basic structure. As it was not a very complex project, it was a relatively simple task, especially considering the facilities of NestCli. Designing the database was not a great challenge, thanks to typeorm was a very intuitive and fast task compared to writing native SQL."},
-                        {"quote":"Later I concentrated on the business logic (services), the processing and validation of information (controllers). In the process of completing this task, I was simultaneously implementing an authentication and authorization system provided by PassportJS implementing JWT tokens."},
-                        {"quote":"Finally, I focused on the API documentation. For this I used Swagger, a tool that allowed me to document the API very easily and quickly thanks to the combination with nestjs. Also, it allowed me to generate a client test for the API which allowed me to test it faster and more efficiently."}
+                        {"quote":"Firstly a basic structure was established separating controllers, middlewares, services and routers. I decided to do it this way since scalability is not important in this case."},
+                        {"quote":"In order to create the schemas in mongoose, I first had to establish a connection and configure Mongodb. Although it wasn't my first time using mongoose, this time I wanted to better document myself so I could get the most out of it. the tools that Mongo offers. For example, the use of indexes or geospatial attributes. I had some problems when doing queries with certain filters because as of today I don't have such a deep understanding of this library."},
+                        {"quote":"In this step most of the business logic was developed. I had (and still have) some doubts regarding certain aspects of the architecture. To solve this problem I read a couple of books that explain how to structure a restful API (RESR API Development with Node.js by Fernando Doglio and The REST API Design Handbook by George Reese)."},
+                        {"quote":"Here I focused on establishing routing as intuitive as I thought."},
+                        {"quote":"I applied the data validation with JOI knowing that mongoose has a similar functionality. The decision had no logical basis other than that I had left pending to use this library. In addition, I structured a middleware for error handling focusing on the codes of the errors that the database returned and a 500 for the others. Thus, in this way there is no place to leak possible sensitive information."},
+                        {"quote":"Auth with particular passport middlewares. An important functionality for this project is authentication and authorization. Authentication was resolved with passportJS, using the JWT and local libraries. Authorization, instead, was determined by a system of roles and matching the user's id with the business owner's id."},
+                        {"quote":"Something very important that I learned developing this project is about Jest and the usefulness of testing: although it is not the first time I have run testing (at the university, I taught programming paradigms, it was a requirement to deliver practical work), it is the first time that it is very useful for me to detect certain specific errors that I would not find when interacting with Postman. In the future, I should implement the tests at an earlier stage."},
+                        {"quote":"For last I left the documentation, it wasn't very complex but it wasn't as practical as in the previous project. I used Swagger again but in this case I had to write the specifications manually. Anyway the result was optimal ."},
+                        {"quote":"Deployment: In this case I took advantage of a voucher to use on DigitalOcean. So I decided to host my application on this PaaS. It was simple: I referenced the GitHub repository, entered the variables of environment and npm commands to build and deploy to production."}
                     ],
-                    "frontend": [
-                        {"quote":"Basic nextjs structure (pages folder, eslint, next.config.js, etc). Next was the development of the main page (NavBar, Footer, product list) and particular product page using dynamic routing and using ServerSideProps."},
-                        {"quote":"Later I set about developing custom hooks (one for authentication and one for fetching) and developing the login and profile creation components. "},
-                        {"quote":"Finally, I concentrated on polishing user interface and experience details and improving practices (not repeating logic, endpoints in the same file, etc)."}
+                    "frontend":[
+                        {"quote":"First I developed the skeleton of the application: a page for new users or customers and another component for owners to manage their stores."},
+                        {"quote":"Maps api, I remember that for high school I had to use the Google Maps API but applied in html and js. Now in React I can say that it is very similar and intuitive (besides that it is well documented)."},
+                        {"quote":"I later developed a custom hook that consumes the API to do an infinite scroll using the interception observer. It was interesting and useful to learn."},
+                        {"quote":"I made a particular page for each store. It receives the id as a parameter of the url and looks for the information from the server side (SSP)."},
+                        {"quote":"I also made a component that shows the list in 'real time' of customers in the queue. It can be recycled for the owners, where it gives the possibility of deleting users."},
+                        {"quote":"In the authentication aspect, I already had the experience of previous projects: hosting JWTs in cookies with an expiration date, making a custom hook for login, signup and logout. The main difference is that in this project I implemented refresh tokens and had to learn how to handle them."},
+                        {"quote":"I developed a recyclable form to be able to add and modify a store, what changes between them is the data it has from before and the fetch options."},
+                        {"quote":"Functional improvements (delete the list, the list appears on the main screen, if the fetch failed it did not give a warning)."},
+                        {"quote":"This was my first deployment of an application made in NextJs. I had seen that in a Platzi course, they used a site called Vercel where it was very fast and intuitive (also free). I entered my credentials and the deploy was as promised."}
                     ]
                 }
             ],
-            "conclusion": "There are always issues that could be improved, especially considering that it is my first 'big project'. But in particular there were a couple of issues that remained pending:- Testing- Web Sockets to see the bids in real time- Cache both for the frontend and the backend"
+            "conclusion": "I can think of several improvements that were pending: cache, web Sockets to see the rows in real time, improvements in UX/UI such as responsive design."
         },
         {
             "name":"Personal Portfolio",
@@ -91,8 +98,8 @@
             ],
             "url":"personal-portfolio",
             "image":"UPAthemeLogo.svg",
-            "github":[
-                {"name":"Personal Portfolio", "url":"personal-portfolio"}
+            "links":[
+                {"name":"Repository", "url":"https://github.com/NahuelUliassiPirchio/personal-portfolio", "icon":"/icons/github.svg"}
             ],
             "process": [
                 {"quote":"As a first step I set out to make a header that stays on top all the time and, in turn, shows the different sections dynamically (using the interception observer)"},
@@ -100,7 +107,8 @@
                 {"quote":"Sections (where everything goes). I started to design the different sections, I mainly focused on deciding the content to style it in the future. This is where I faltered the most, I don't think I have provided the best user experience for intuitive navigation."},
                 {"quote":"I had thought of making a page for each project detailing the process, technologies and conclusions. Again I focused on functionality to style it later."},
                 {"quote":"In this step I styled the things I had left to do. Along the way, I learned quite a bit about animations and transitions,"},
-                {"quote":"And last but not least, I sat down to write the projects and my main skills to later translate and format them."}
+                {"quote":"And last but not least, I sat down to write the projects and my main skills to later translate and format them."},
+                {"quote":"The final deployment was that of the portfolio, like the previous front-ends, it was extremely simple thanks to Vercel's capabilities for it."}
             ],
             "conclusion": "I think that the style of some sections can be improved and a better dynamic can be created."
         },
@@ -108,12 +116,12 @@
             "name":"Huffman Tree Compressor",
             "description":"This was a university project on algorithms and data structure. The idea is to develop a c program that can successfully compress and decompress a file without loss of information. My intention in presenting this project is to demonstrate my abilities in algorithmics.",
             "technologies":[
-                {"name":"C"}
+                {"name":"C++"}
             ],
             "url":"huffman-tree-compressor",
             "image":"HuffmanTreeCompressor.png",
-            "github":[
-                {"name":"Huffman Tree Compressor", "url":"huffman-tree-compressor"}
+            "links":[
+                {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/HuffmanTreeCompressor", "icon":"/icons/github.svg"}
             ],
             "process": [
                 {"quote":"Library to read/write bits: for this I had to unset each character using the operators whose utility is to move. To write bits, I made an array where 1s and 0s were written, and when it reached the number of 8 converted it to ASCII using the typical decimal-to-binary algorithm (sum of 2 raised to that n position)."},
@@ -126,13 +134,19 @@
                 {"quote":"Reading the content, figure out what character it is by looking in the huffman tree."},
                 {"quote":"Write decrypted file."}
             ],
-            "conclusion": "Honestly in the future I don't plan to improve anything."
+            "conclusion": "I would like in the future to deploy this project to a lambda function and make a small site to make use of this algorithm."
         }
     ],
+    "introduction": "In this section I will present the projects that I have developed to date. I show their technologies, processes and improvements that I see. In addition, I include a link to the active demo and the repository of each one.",
     "sections":{
         "introduction":"Introdution",
         "technologies":"Technologies",
         "process":"Process",
         "conclusion":"Conclusion"
+    },
+    "sectionTitles":{
+        "technologies":"Implmented technologies",
+        "process":"Process and challenges",
+        "conclusion":"Conclusion and next steps"
     }
 }

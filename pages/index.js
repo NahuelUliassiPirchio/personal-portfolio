@@ -19,6 +19,8 @@ export default function Home () {
     { title: t('contact'), url: 'contact', component: ContactSection }
   ]
 
+  const resumeLink = process.env.CV_URL || 'resume.pdf'
+
   return (
         <Layout>
           {
@@ -26,9 +28,9 @@ export default function Home () {
                 section.component({ key: index, id: section.url })
               ))
           }
-          <div className={styles.floatContainer}>
-            <LinkButton href={'/resume.pdf'} logo={'/icons/resume.svg'} text={t('downloadResume')} />
-          </div>
+          <nav className={styles.floatContainer}>
+            <LinkButton href={resumeLink} logo={'/icons/resume.svg'} text={t('downloadResume')} />
+          </nav>
         </Layout>
   )
 }

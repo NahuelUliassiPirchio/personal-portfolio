@@ -4,27 +4,20 @@ import Image from 'next/image'
 import LinkButton from './LinkButton'
 
 import styles from '../styles/Project.module.css'
+import useTranslation from 'next-translate/useTranslation'
 
 export default function Project ({ project }) {
-  console.log(project.process)
+  const { t } = useTranslation('projects')
+
   return (
         <main className={styles.projectContainer}>
-          <div className={styles.floatContainer}>
+          <nav className={styles.floatContainer}>
             {
-              project.github &&
-                project.github.map(({ name, url }, index) => (
-                  <LinkButton key={index} href={'https://github.com/NahuelUliassiPirchio/' + url} logo={'/icons/github.svg'} text={
-                    name.split(' ').pop()
-                  } />
-                ))
+              project.links.map((link, index) => (
+                <LinkButton href={link.url} key={index} logo={link.icon} text={link.name} />
+              ))
             }
-            {
-              project.link &&
-                (
-                  <LinkButton href={project.link} logo={`/images/${project.image}`} text={'Demo'} />
-                )
-            }
-          </div>
+          </nav>
 
           <section className={styles.introductionSection} id='introduction'>
             <Image className={styles.projectImage} src={`/images/${project.image}`} alt={project.name} width={300} height={300} />
@@ -33,7 +26,7 @@ export default function Project ({ project }) {
           </section>
 
           <section id='technologies'>
-            <h3 className={styles.subtitle}>Technologies used</h3>
+            <h3 className={styles.subtitle}>{t('sectionTitles.technologies')}</h3>
             <ul>
               {project.technologies.map((technology) => (
                 <li key={technology.name}>
@@ -45,7 +38,7 @@ export default function Project ({ project }) {
           </section>
 
           <section id='process'>
-            <h3 className={styles.subtitle}>Process and challenges</h3>
+            <h3 className={styles.subtitle}>{t('sectionTitles.process')}</h3>
             {
               project.process.length !== 1
                 ? getProcessQuotes(project.process)
@@ -65,7 +58,7 @@ export default function Project ({ project }) {
           </section>
 
           <section id='conclusion'>
-            <h3 className={styles.subtitle}>Conclusion and next steps</h3>
+            <h3 className={styles.subtitle}>{t('sectionTitles.conclusion')}</h3>
             <p>{project.conclusion}</p>
           </section>
         </main>

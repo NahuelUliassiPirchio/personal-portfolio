@@ -21,6 +21,13 @@
   font-size: 3rem;
   font-weight: 500;
   text-align: start;
+  max-width: 50rem;
+}
+
+.title span {
+  animation: highlight 2s ease-in-out;
+  background-color: var(--text-color);
+  color: var(--background-color);
 }
 
 .introductionContainer {
@@ -59,6 +66,16 @@
   animation:         ca3_fade_move_down 2s ease-in-out infinite;
 }
 
+@keyframes highlight {
+  0% {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  100% {
+    color: var(--background-color);
+    background-color: var(--text-color);
+  }
+}
 
 @-webkit-keyframes ca3_fade_move_down {
   0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }

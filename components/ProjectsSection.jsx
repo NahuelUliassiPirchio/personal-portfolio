@@ -13,7 +13,6 @@ export default function ProjectsSection ({ id, key }) {
   return (
     <section id={id} key={key} className={styles.projectsSection}>
       <div className={styles.projectsTitle}>
-
         <div className={styles.orbit}>
           <div className={styles.center}>
             <p><b>MY PROJECTS</b></p>
@@ -53,8 +52,8 @@ export default function ProjectsSection ({ id, key }) {
             </li>
           </ul>
         </div>
-
       </div>
+      <p className={styles.projectsIntroduction}>{t('introduction')}</p>
       <ul className={styles.projects}>
         {
           projects.map(project => (
