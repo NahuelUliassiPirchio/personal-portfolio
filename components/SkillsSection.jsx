@@ -6,7 +6,7 @@ import Image from 'next/image'
 import cssLogo from '../public/icons/css.svg'
 import gitLogo from '../public/icons/git.svg'
 import htmlLogo from '../public/icons/html.svg'
-import linuxLogo from '../public/icons/linux-tux.svg'
+import linuxLogo from '../public/icons/linux.svg'
 import jsLogo from '../public/icons/javascript.svg'
 import mongoLogo from '../public/icons/mongodb.svg'
 import nestjsLogo from '../public/icons/nestjs.svg'
@@ -37,16 +37,16 @@ export default function SkillsSection ({ id, key }) {
             <main className={styles.main}>
               <ul className={styles.skillsSelector}>
                 <li className={`${styles.skillButton} ${activeSkill === 0 ? styles.activeSkill : styles.inactiveSkill}`} onClick={() => setActiveSkill(0)}>
-                    <h2>{t('Backend')}</h2>
+                    <h2>Backend</h2>
                 </li>
                 <li className={`${styles.skillButton} ${activeSkill === 1 ? styles.activeSkill : styles.inactiveSkill}`} onClick={() => setActiveSkill(1)}>
-                    <h2>{t('Frontend')}</h2>
+                    <h2>Frontend</h2>
                 </li>
                 <li className={`${styles.skillButton} ${activeSkill === 2 ? styles.activeSkill : styles.inactiveSkill}`} onClick={() => setActiveSkill(2)}>
-                    <h2>{t('Database')}</h2>
+                    <h2>Database</h2>
                 </li>
                 <li className={`${styles.skillButton} ${activeSkill === 3 ? styles.activeSkill : styles.inactiveSkill}`} onClick={() => setActiveSkill(3)}>
-                    <h2>{t('Tools')}</h2>
+                    <h2>Tools</h2>
                 </li>
               </ul>
               <div className={styles.skillDivs}>

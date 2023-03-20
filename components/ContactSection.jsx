@@ -28,13 +28,6 @@ export default function ContactSection ({ id, key }) {
                         <h3>uliassipirchio</h3>
                     </Link>
                 </li>
-                <li>
-                    <Link href="https://www.linkedin.com/in/nahuel-uliassi-pirchio-5b1b3b1b3/" className={styles.linkItem}>
-                        <Image src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="Linkedin Logo" width={20} height={20} />
-                        <p>Linkedin</p>
-                        <h3>uliassipirchionahuel</h3>
-                    </Link>
-                </li>
             </ul>
         </section>
   )

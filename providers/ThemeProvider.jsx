@@ -10,6 +10,9 @@ export default function ThemeProvider ({ children }) {
   }
 
   React.useEffect(() => {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches && !window.localStorage.getItem('theme')) {
+      setTheme('dark')
+    }
     const localTheme = window.localStorage.getItem('theme')
     localTheme && setTheme(localTheme)
   }, [])

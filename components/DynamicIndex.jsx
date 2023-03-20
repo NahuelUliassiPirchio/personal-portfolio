@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
+
+import ProjectSectionStyles from '../styles/ProjectsSection.module.css'
 import styles from '../styles/DynamicIndex.module.css'
 
 export default function DynamicIndex ({ sections }) {
@@ -16,7 +18,7 @@ export default function DynamicIndex ({ sections }) {
         }
       })
     }, {
-      threshold: 0.25
+      threshold: 0.20
     })
 
     const animationObserver = new IntersectionObserver(entries => {
@@ -24,10 +26,13 @@ export default function DynamicIndex ({ sections }) {
         if (entry.isIntersecting) {
           entry.target.classList.add(styles.sectionAnimation)
           entry.target.classList.remove(styles.notAnimated)
+          if (entry.target.id === 'projects') {
+            entry.target.classList.add(ProjectSectionStyles.projectsAnimation)
+          }
         }
       })
     }, {
-      threshold: 0.20
+      threshold: 0.10
     })
 
     sectionsDiv.forEach(section => {

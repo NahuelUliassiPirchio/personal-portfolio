@@ -1,30 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Image from 'next/image'
-import Link from 'next/link'
+import LinkButton from './LinkButton'
 
 import styles from '../styles/Project.module.css'
 
 export default function Project ({ project }) {
+  console.log(project.process)
   return (
         <main className={styles.projectContainer}>
           <div className={styles.floatContainer}>
             {
               project.github &&
-                project.github.map((link, index) => (
-                  <Link className={styles.floatingButton} href={'https://github.com/NahuelUliassiPirchio/' + link.url} passHref key={index} target={'_blank'}>
-                    <Image src='/icons/github.svg' alt='Github' width={40} height={40} />
-                    <span>{link.name}</span>
-                  </Link>
+                project.github.map(({ name, url }, index) => (
+                  <LinkButton key={index} href={'https://github.com/NahuelUliassiPirchio/' + url} logo={'/icons/github.svg'} text={
+                    name.split(' ').pop()
+                  } />
                 ))
             }
             {
               project.link &&
                 (
-                  <Link className={styles.floatingButton} href={project.link} passHref target={'_blank'}>
-                    <Image src={`/images/${project.image}`} alt='Project link' width={40} height={40} />
-                    <span>{project.name + ' link project'}</span>
-                  </Link>
+                  <LinkButton href={project.link} logo={`/images/${project.image}`} text={'Demo'} />
                 )
             }
           </div>
@@ -38,7 +35,7 @@ export default function Project ({ project }) {
           <section id='technologies'>
             <h3 className={styles.subtitle}>Technologies used</h3>
             <ul>
-              {project.technologies.map((technology, index) => (
+              {project.technologies.map((technology) => (
                 <li key={technology.name}>
                   {technology.name}
                   {technology.icon && <Image src={`/icons/${technology.icon}`} alt={technology.name} width={20} height={20} />}
@@ -49,7 +46,22 @@ export default function Project ({ project }) {
 
           <section id='process'>
             <h3 className={styles.subtitle}>Process and challenges</h3>
-            <p>{project.process}</p>
+            {
+              project.process.length !== 1
+                ? getProcessQuotes(project.process)
+                : (
+                <ul className={styles.processContainer}>
+                  <il>
+                    <h4>Backend</h4>
+                    {getProcessQuotes(project.process[0].backend)}
+                  </il>
+                  <il>
+                    <h4>Frontend</h4>
+                    {getProcessQuotes(project.process[0].frontend)}
+                  </il>
+                </ul>
+                  )
+            }
           </section>
 
           <section id='conclusion'>
@@ -57,6 +69,19 @@ export default function Project ({ project }) {
             <p>{project.conclusion}</p>
           </section>
         </main>
+  )
+}
+
+function getProcessQuotes (processArray) {
+  if (!processArray) return (<p>There is no process to show</p>)
+  return (
+    <ol className={styles.processContainer}>{
+      processArray.map((process, index) => (
+        <li key={index}>
+          <p>{process.quote}</p>
+        </li>
+      ))
+    }</ol>
   )
 }
 

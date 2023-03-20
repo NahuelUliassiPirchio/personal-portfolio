@@ -5,6 +5,9 @@ import ProjectsSection from '../components/ProjectsSection'
 import ContactSection from '../components/ContactSection'
 import AboutSection from '../components/AboutSection'
 import SkillsSection from '../components/SkillsSection'
+import LinkButton from '../components/LinkButton'
+
+import styles from '../styles/Home.module.css'
 
 export default function Home () {
   const { t } = useTranslation('home')
@@ -18,11 +21,14 @@ export default function Home () {
 
   return (
         <Layout>
-            {
-                sections.map((section, index) => (
-                  section.component({ key: index, id: section.url })
-                ))
-            }
+          {
+              sections.map((section, index) => (
+                section.component({ key: index, id: section.url })
+              ))
+          }
+          <div className={styles.floatContainer}>
+            <LinkButton href={'/resume.pdf'} logo={'/icons/resume.svg'} text={t('downloadResume')} />
+          </div>
         </Layout>
   )
 }

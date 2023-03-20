@@ -14,14 +14,37 @@
                 {"name":"JAVASCRIPT","icon":"javascript.svg"}
             ],
             "url":"basic-store",
-            "process": "project 1 process",
             "link":"https://basic-store.vercel.app/",
             "image":"BSCStoreLogo.png",
             "github":[
                 {"name":"Basic Store Frontend", "url":"nextjs-basic-store-frontend"},
                 {"name":"Basic Store Backend", "url":"nestjs-basic-store-api"}
             ],
-            "conclusion": "project 1 conclusion"
+            "process": [
+                {
+                    "backend": [
+                        {"quote":"En primer lugar se estableció una estructura básica separando controllers, middlewares, services y routers. Decidí hacerlo de esta forma ya que la escalabilidad no es importante en este caso."},
+                        {"quote":"Para poder crear los esquemas en mongoose, primero tuve que establecer una conexión y efectuar la configuración de Mongodb. Si bien no era la primera vez que usaba mongoose, esta vez quería  documentarme mejor para poder aprovechar de una forma óptima las herramientas que Mongo ofrece. Por ejemplo, el uso de índices o atributos geoespaciales. Tuve ciertos problemas a la hora de hacer queries con ciertos filtros porque a día de hoy no tengo un entendimiento tan profundo de esta librería."},
+                        {"quote":"En este paso se desarrolló la mayoría de la lógica de negocios. Tuve (y tengo) algunas dudas con respecto a ciertos aspectos de la arquitectura. Para solucionar este inconveniente leí un par de libros que explican cómo vertebrar una restful API (RESR API Development with Node.js de Fernando Doglio y The REST API Design Handbook de George Reese)."},
+                        {"quote":"Aquí me centré en establecer un routing lo más intuitivo que pensé."},
+                        {"quote":"Apliqué la validación de datos con JOI sabiendo que mongoose tiene una funcionalidad semejante. La decisión no tuvo ningún fundamento lógico más que me había quedado pendiente utilizar esta librería. Además, estructuré un middleware para el manejo de errores centrándome en los códigos de los errores que devolvía la base de datos y un 500 para los demás. Así, de esta forma no hay lugar a filtrar  posible información sensible."},
+                        {"quote":"Auth con passport middlewares particulares. Una funcionalidad importante para este proyecto es la autenticación y autorización. La autenticación fue resuelta con passportJS, utilizando las librerías de JWT y local. La autorización, en cambio, fue determinada por un sistema de roles y contrastando el id del usuario con el id del dueño del negocio."},
+                        {"quote":"Algo muy importante que aprendí desarrollando este proyecto es sobre el Jest y la ultilidad del testing: si bien no es la primera vez que ejecuto testing (en la universidad, cátedra paradigmas de la programación, era un requisito para entregar un trabajo práctico), es la primera vez que me es muy útil para detectar ciertos errores específicos que yo interactuando con Postman no encontraría. A futuro debería implementar los testeos en una etapa más temprana."},
+                        {"quote":"Para el final dejé la documentación, no fue algo muy complejo pero no fue tan práctico como en el proyecto anterior. Utilicé Swagger nuevamente pero en este caso tuve que redactar las especificaciones manualmente. De todas formas el resultado fue óptimo."}
+                    ],
+                    "frontend":[
+                        {"quote":"Primeramente desarrollé el esqueleto de la aplicación: una página para los usuarios nuevos o clientes y otro componente para que los dueños administren sus tiendas."},
+                        {"quote":"Maps api, Recuerdo que para la secundaria tuve que usar la Google Maps API pero aplicado en html y js. Ahora en React puedo decir que es muy similar e intuitivo (además que está bien documentado)."},
+                        {"quote":"Posteriormente desarrollé un custom hook que consuma la API para hacer un infinite scroll utilizando interception observer. Fue interesante y útil de aprender."},
+                        {"quote":"Hice una página particular para cada tienda. Esta recibe el id como parámetro de la url y busca la información desde el lado del servidor (SSP)."},
+                        {"quote":"Además elaboré un componente que mostrace la lista en “tiempo real” de clientes en la cola. Pudiendose reciclar para los dueños, donde da la posibilidad de eliminar usuarios."},
+                        {"quote":"En el aspecto de la autenticación, ya contaba con la experiencia de proyectos previos: alojando JWTs en cookies con una fecha de expiración, haciendo un custom hook para login, signup y logout. La principal diferencia es que en este proyecto implementé refresh tokens y tuve que aprender a manejarlos."},
+                        {"quote":"Desarrollé un formulario reciclable para poder agregar y modificar tienda, lo que cambia entre ellos es la data que tiene de antes y las opciones del  fetch."},
+                        {"quote":"Mejoras de funcionalidades (borrar de lista, te aparece la lista en la pantalla principal, si fallaba el fetch no daba aviso)"}
+                    ]
+                }
+            ],
+            "conclusion": "Se me ocurren varias mejoras que me quedaron pendientes:- Caché- Web Sockets para ver las filas en tiempo real- Mejoras en UX/UI"
         },
         {
             "name":"Stop Rows",
@@ -42,8 +65,21 @@
                 {"name":"Stop Rows Frontend", "url":"nextjs-stop-rows-frontend"},
                 {"name":"Stop Rows Backend", "url":"stop-rows-api"}
             ],
-            "process": "project 2 process",
-            "conclusion": "project 2 conclusion"
+            "process": [
+                {
+                    "backend": [
+                        {"quote":"En primer lugar tocaba desarrollar la estructura básica. Al no ser un proyecto muy complejo fue una tarea relativamente simple, más teniendo en cuenta las facilidades de la NestCli. Diseñar la base de datos no fue un gran reto, gracias a typeorm fue una tarea muy intuitiva y rápida comparado con escribir SQL nativo."},
+                        {"quote":"Posteriormente me concentré en la lógica de negocio (services), el tratado y validación de información (controllers). En el trayecto de finalizar esta tarea, fui paralelamente implementando un sistema de autenticación y autorización dispuesto por PassportJS implementando JWT tokens."},
+                        {"quote":"Finalmente, me centré en la documentación de la API. Para esto utilicé Swagger, una herramienta que me permitió documentar la API de forma muy sencilla y rápida gracias a la combinación con nestjs. Además, me permitió generar un cliente de prueba para la API que me permitió probarla de forma más rápida y eficiente."}
+                    ],
+                    "frontend": [
+                        {"quote":"Estructura básica nextjs (carpeta pages, eslint, next.config.js, etc). Lo siguiente fue el desarrollo de la página principal (NavBar, Footer, lista de productos) y página particular de producto utilizando routing dinámico y usando ServerSideProps."},
+                        {"quote":"Posteriormente me dispuse a desarrollar custom hooks (uno para autenticación y otro para fetching) y desarrollar los componentes de inicio de sesión y creación de un perfil. "},
+                        {"quote":"Para terminar, me concentré en pulir detalles de experiencia e interfaz de usuario  y mejorar prácticas (no repetir lógica, endpoints en un mismo archivo, etc)."}
+                    ]
+                }
+            ],
+            "conclusion": "Siempre hay cuestiones mejorables, más teniendo en cuenta que es mi primer “gran proyecto”. Pero en particular hubo un par de cuestiones que me quedaron pendientes:- Testing- Web Sockets para ver las pujas en tiempo real- Caché tanto para el frontend como el backend"
         },
         {
             "name":"Personal Portfolio",
@@ -58,8 +94,15 @@
             "github":[
                 {"name":"Personal Portfolio", "url":"personal-portfolio"}
             ],
-            "process": "project 2 process",
-            "conclusion": "project 2 conclusion"
+            "process": [
+                {"quote":"Como primer paso me puse hacer un header que se mantenga en el tope todo el tiempo y, a su vez, muestre las distintas secciones dinámicamente (usando el interception observer)"},
+                {"quote":"Me quedó pendiente implementar un par de cosas en otros proyectos, y esta era la oportunidad perfecta: tema oscuro y soporte de lenguajes. Para el primero, utilicé una metodología conocida como es el React Context, donde cambiaría las variables principales según preferencias (color de fondo y de texto). Nunca había aplicado (ni conocía) i18n, hice una pequeña investigación y encontré una librería que lo manejaba de forma efectiva y dando la posibilidad de guardar la información en archivos json."},
+                {"quote":"Sections (donde va cada cosa). Comencé a diseñar las distintas secciones, me centré principalmente en decidir el contenido para estilarlo en un futuro. Aquí es donde más flaqueo, no creo haber proveído la mejor experiencia de usuario para una navegación intuitiva."},
+                {"quote":"Había pensando hacer una página por cada proyecto donde detallara el proceso, las tecnologías y conclusiones. Nuevamente me centré en la funcionalidad para estilarlo posteriormente."},
+                {"quote":"En este paso estilé las cosas que me quedaron pendientes. En el trayecto, aprendí bastante sobre animaciones y transiciones,"},
+                {"quote":"Y por último pero no menos importante, me senté a redactar los proyectos y mis principales habilidades para posteriormente traducirlas y darle formato."}
+            ],
+            "conclusion": "Creo que lo que el estilo de algunas secciones son mejorables y se puede crear una mejor dinámica."
         },
         {
             "name":"Huffman Tree Compressor",
@@ -72,8 +115,18 @@
             "github":[
                 {"name":"Huffman Tree Compressor", "url":"huffman-tree-compressor"}
             ],
-            "process": "project 2 process",
-            "conclusion": "project 2 conclusion"
+            "process": [
+                {"quote":"Libreria para leer/escribir bits: para ello tuve que desarmar cada caracter utilizando los operadores cuya utilidad es moverse. Para escribir bits, hice un array donde se escribia 1s y 0s, y cuando llegaba a la cantidad de 8 lo convertía a un ASCII usando el típico algoritmo de decimal a binario (sumatoria de 2 elevado a esa n posición)."},
+                {"quote":"Recorrer el archivo: durante la cursada desarrollamos una librería que leía/escribía archivos utilizando fread y fwrite de c++ nativo (stdio.h).."},
+                {"quote":"Guardar los bits en un array con su cantidad de ocurrencias, luego ordenar según cantidad."},
+                {"quote":"Crear arbol."},
+                {"quote":"Escribir encabezado para poder reconstruir el árbol."},
+                {"quote":"A medida que se lee el archivo nuevamente, hay que ir generando cada clave de cadacaracter con el árbol y en escribirlo en otro archivo.."},
+                {"quote":"Para descomprimir: reconstruir arbol leyendo el encabezado."},
+                {"quote":"Leyendo el contenido, descifrar de qué caracter se trata buscando en el árbol huffman."},
+                {"quote":"Escribir archivo descifrado."}
+            ],
+            "conclusion": "Honestamente a futuro no tengo planeado mejorar nada."
         }
     ],
     "sections":{

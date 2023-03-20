@@ -68,6 +68,10 @@
   color: var(--background-color);
 }
 
+.inactiveSkill {
+  color: #888;
+}
+
 .inactiveSkill:hover {
   background-color: gray;
   color: var(--background-color);

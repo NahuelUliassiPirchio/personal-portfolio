@@ -12,6 +12,15 @@ body {
     background-color: var(--background-color);
 }
 
+section {
+    scroll-margin: 5rem;
+}
+
+::selection {
+    background-color: var(--link-color);
+    color: var(--background-color);
+}
+
 html {
     scroll-behavior: smooth;
 }

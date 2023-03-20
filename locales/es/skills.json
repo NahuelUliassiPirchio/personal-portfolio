@@ -1,5 +1,5 @@
 {
-    "title": "Mis mayores habilidades",
+    "title": "Mis mejores habilidades",
     "security":"Seguridad",
     "javascript-typescriptDescription": [
             {"quote":"Código limpio, legible y estructurado usando buenas prácticas."},
@@ -46,7 +46,7 @@
     "cssDescription": [
             {"quote":"Estilizar el código html usando variables."},
 			{"quote":"Implementación de diseño responsive (ya sea mediante css-grid/flex o @screen)"},
-			{"quote":"Buenas prácticas para accesibilidad. Por ejemplo el uso de rem en lugar de px."},
+			{"quote":"Buenas prácticas para accesibilidad. Por ejemplo, el uso de rem en lugar de px."},
 			{"quote":"Creación de animaciones y transiciones básicas."},
 			{"quote":"Formato, órden y dimensiones flexibles a contenedores según se requiera."},
 			{"quote":"Código legible y organizado desde afuera hacia adentro."},
@@ -72,7 +72,7 @@
     "typeormDescription": [
             {"quote":"Código limpio, legible y estructurado usando buenas prácticas."},
 			{"quote":"Nomenclatura de variables y funciones corto, entendible."},
-			{"quote":"Modularización de código. Una función reutilizable por tarea."},
+			{"quote":"Modulación de código. Una función reutilizable por tarea."},
 			{"quote":"Poco anidamiento innecesario."},
 			{"quote":"Tratamiento y validación de datos para evitar errores."},
 			{"quote":"Aplicación de buenas prácticas en estructura de código y uso de palabras reservadas."}
@@ -81,7 +81,7 @@
             {"quote":"Manejo de distintos tipos de conexiones"},
 			{"quote":"Modelado de esquemas especificando tipos."},
 			{"quote":"Uso de ObjectIds para referenciar otros objetos."},
-			{"quote":"Asignación de índices para una peticiones más rápidas."},
+			{"quote":"Asignación de índices para peticiones más rápidas."},
 			{"quote":"Uso de datos geoespaciales para almacenar y tratar localización"},
 			{"quote":"Ejecución de distintos tipos de queries utilizando filtros, incluyendo de localización."},
 			{"quote":"Aplicación de middlewares para el tratamiento de la información."}

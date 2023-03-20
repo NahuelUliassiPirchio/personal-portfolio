@@ -1,0 +1,10 @@
+.floatContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+}
