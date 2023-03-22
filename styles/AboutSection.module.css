@@ -21,13 +21,14 @@
   font-size: 3rem;
   font-weight: 500;
   text-align: start;
-  max-width: 50rem;
+  max-width: 70%;
 }
 
 .title span {
   animation: highlight 2s ease-in-out;
   background-color: var(--text-color);
   color: var(--background-color);
+  text-decoration: underline;
 }
 
 .introductionContainer {
@@ -74,6 +75,7 @@
   100% {
     color: var(--background-color);
     background-color: var(--text-color);
+    text-decoration: underline;
   }
 }
 

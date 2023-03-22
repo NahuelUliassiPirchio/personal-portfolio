@@ -18,7 +18,7 @@
             "links":[
                 {"name":"Frontend Repo", "url":"https://github.com/NahuelUliassiPirchio/nextjs-basic-store-frontend", "icon":"/icons/github.svg"},
                 {"name":"Backend Repo", "url":"https://github.com/NahuelUliassiPirchio/nestjs-basic-store-api", "icon":"/icons/github.svg"},
-                {"name":"Docs", "url":"http://20.124.111.61:3000/docs", "icon":"/icons/swagger-ui.png"},
+                {"name":"Docs", "url":"https://basic-store-api.eastus.cloudapp.azure.com/docs", "icon":"/icons/swagger-ui.png"},
                 {"name":"Demo", "url":"https://nextjs-basic-store-frontend.vercel.app/", "icon":"/images/BSCStoreLogo.png"}
             ],
             "process": [
