@@ -137,7 +137,7 @@
             "conclusion": "I would like in the future to deploy this project to a lambda function and make a small site to make use of this algorithm."
         }
     ],
-    "introduction": "In this section I will present the projects that I have developed to date. I show their technologies, processes and improvements that I see. In addition, I include a link to the active demo and the repository of each one.",
+    "introduction": "In this section I present the projects that I have developed to date. I show their technologies, processes and improvements that I see. In addition, I include a link to the active demo and the repository of each one.",
     "sections":{
         "introduction":"Introdution",
         "technologies":"Technologies",

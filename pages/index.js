@@ -8,9 +8,11 @@ import SkillsSection from '../components/SkillsSection'
 import LinkButton from '../components/LinkButton'
 
 import styles from '../styles/Home.module.css'
+import { useRouter } from 'next/router'
 
 export default function Home () {
   const { t } = useTranslation('home')
+  const { locale } = useRouter()
 
   const sections = [
     { title: t('about'), url: 'about', component: AboutSection },
@@ -19,7 +21,7 @@ export default function Home () {
     { title: t('contact'), url: 'contact', component: ContactSection }
   ]
 
-  const resumeLink = process.env.CV_URL || 'resume.pdf'
+  const resumeLink = locale.startsWith('es') ? process.env.CV_URL_ES : process.env.CV_URL_EN
 
   return (
         <Layout>

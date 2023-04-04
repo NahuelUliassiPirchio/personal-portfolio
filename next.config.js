@@ -2,6 +2,7 @@ const nextTranslate = require('next-translate')
 
 module.exports = nextTranslate({
   env: {
-    API_URL: process.env.CV_URL
+    CV_URL_ES: process.env.CV_URL_ES,
+    CV_URL_EN: process.env.CV_URL_EN
   }
 })

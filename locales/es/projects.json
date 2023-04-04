@@ -138,7 +138,7 @@
             "conclusion": "Me gustaría en un futuro subir este proyecto a una lambda function y hacer un pequeño sitio para hacer uso de este algoritmo."
         }
     ],
-    "introduction": "En esta sección presentaré los proyectos que he desarrollado hasta la fecha. Muestro sus tecnologías, procesos y mejoras que veo. Además, incluyo un link a la demo activa y al repositorio de cada uno.",
+    "introduction": "En esta sección presento los proyectos que he desarrollado hasta la fecha. Muestro sus tecnologías, procesos y mejoras que veo a futuro. Además, incluyo un link a la demo activa,  y a su repositorio.",
     "sections":{
         "introduction":"Introducción",
         "technologies":"Tecnologías",

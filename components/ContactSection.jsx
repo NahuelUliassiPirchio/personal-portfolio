@@ -22,10 +22,17 @@ export default function ContactSection ({ id, key }) {
                     </Link>
                 </li>
                 <li>
-                    <Link href="https://github.com/NahuelUliassiPirchio" className={styles.linkItem}>
+                    <Link href="https://github.com/NahuelUliassiPirchio" target={'_blank'} className={styles.linkItem}>
                         <Image src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="Github Logo" width={20} height={20} />
                         <p>Github</p>
                         <h3>uliassipirchio</h3>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="https://www.linkedin.com/in/uliassipirchio/" target={'_blank'} className={styles.linkItem}>
+                        <Image src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn Logo" width={20} height={20} />
+                        <p>LinkedIn</p>
+                        <h3>Nahuel Uliassi Pirchio</h3>
                     </Link>
                 </li>
             </ul>
