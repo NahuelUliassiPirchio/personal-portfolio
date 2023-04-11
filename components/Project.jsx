@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Image from 'next/image'
+import useTranslation from 'next-translate/useTranslation'
 import LinkButton from './LinkButton'
 
 import styles from '../styles/Project.module.css'
-import useTranslation from 'next-translate/useTranslation'
 
 export default function Project ({ project }) {
   const { t } = useTranslation('projects')
@@ -44,14 +44,14 @@ export default function Project ({ project }) {
                 ? getProcessQuotes(project.process)
                 : (
                 <ul className={styles.processContainer}>
-                  <il>
+                  <li>
                     <h4>Backend</h4>
                     {getProcessQuotes(project.process[0].backend)}
-                  </il>
-                  <il>
+                  </li>
+                  <li>
                     <h4>Frontend</h4>
                     {getProcessQuotes(project.process[0].frontend)}
-                  </il>
+                  </li>
                 </ul>
                   )
             }

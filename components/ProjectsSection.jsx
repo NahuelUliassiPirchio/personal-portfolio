@@ -15,7 +15,7 @@ export default function ProjectsSection ({ id, key }) {
       <div className={styles.projectsTitle}>
         <div className={styles.orbit}>
           <div className={styles.center}>
-            <p><b>MY PROJECTS</b></p>
+            <p><b>{t('title')}</b></p>
           </div>
           <ul>
             <li>

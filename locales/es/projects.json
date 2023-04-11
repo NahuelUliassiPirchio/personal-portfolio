@@ -139,6 +139,7 @@
         }
     ],
     "introduction": "En esta sección presento los proyectos que he desarrollado hasta la fecha. Muestro sus tecnologías, procesos y mejoras que veo a futuro. Además, incluyo un link a la demo activa,  y a su repositorio.",
+    "title":"Mis Proyectos",
     "sections":{
         "introduction":"Introducción",
         "technologies":"Tecnologías",
