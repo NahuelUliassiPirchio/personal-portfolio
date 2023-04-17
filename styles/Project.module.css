@@ -36,6 +36,10 @@
   border-bottom: 1px solid var(--text-color);
 }
 
+.processContainer {
+  list-style: none;
+}
+
 .processContainer, .processContainer li {
   padding-left: 1rem;
 }
@@ -43,6 +47,9 @@
 @media (max-width: 768px) {
   .projectContainer {
     align-content: flex-end;
+  }
+  .processContainer {
+    padding-left: 0;
   }
   .projectImage {
     align-self: center;

@@ -43,7 +43,7 @@ export default function SkillsSection ({ id, key }) {
                     <h2>Frontend</h2>
                 </li>
                 <li className={`${styles.skillButton} ${activeSkill === 2 ? styles.activeSkill : styles.inactiveSkill}`} onClick={() => setActiveSkill(2)}>
-                    <h2>Database</h2>
+                    <h2>DB</h2>
                 </li>
                 <li className={`${styles.skillButton} ${activeSkill === 3 ? styles.activeSkill : styles.inactiveSkill}`} onClick={() => setActiveSkill(3)}>
                     <h2>Tools</h2>
