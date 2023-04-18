@@ -5,13 +5,14 @@ import useTranslation from 'next-translate/useTranslation'
 import LinkButton from './LinkButton'
 
 import styles from '../styles/Project.module.css'
+import ImageSlider from './ImageSlider'
 
 export default function Project ({ project }) {
   const { t } = useTranslation('projects')
 
   return (
         <main className={styles.projectContainer}>
-          <nav className={styles.floatContainer}>
+          <nav className={styles.floatingContainer}>
             {
               project.links.map((link, index) => (
                 <LinkButton href={link.url} key={index} logo={link.icon} text={link.name} />
@@ -23,6 +24,9 @@ export default function Project ({ project }) {
             <Image className={styles.projectImage} src={`/images/${project.image}`} alt={project.name} width={300} height={300} />
             <h2>{project.name}</h2>
             <p>{project.description}</p>
+            {
+              project.gallery && <ImageSlider images={project.gallery} />
+            }
           </section>
 
           <section id='technologies'>

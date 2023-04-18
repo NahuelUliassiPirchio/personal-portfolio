@@ -26,7 +26,8 @@
     vertical-align: middle;
     color: var(--background-color);
     background-color: var(--text-color);
-    text-decoration: underline;
+    font-weight: 450;
+    text-decoration: none;
     display: none;
 }
 

@@ -1,0 +1,103 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+.navigationButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: black .5px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: white;
+    z-index: 1;
+}
+.prevButton {
+    left: 0;
+}
+.nextButton {
+    right: 0;
+}
+
+.previewsContainer {
+    display: flex;
+    width: min-content;
+    max-width: 100%;
+    align-self: center;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+}
+.preview {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.65;
+}
+.preview.active {
+    opacity: 1;
+    border: 1px solid black;
+}
+
+.imageContainer {
+    margin-top: .5rem;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+}
+
+.modal {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+.modal img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: 80%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: -1rem;
+    }
+    .navigationButton {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: transparent;
+    }
+    .previewsContainer {
+        overflow-x: auto;
+    }
+    .preview {
+        width: 40px;
+        height: 40px;
+    }
+}

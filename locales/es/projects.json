@@ -15,6 +15,16 @@
             ],
             "url":"basic-store",
             "image":"BSCStoreLogo.png",
+            "gallery":[
+                "https://i.ibb.co/bJGdhWr/Screenshot-from-2023-04-17-16-19-09.png",
+                "https://i.ibb.co/J257mty/Screenshot-from-2023-04-17-16-18-54.png",
+                "https://i.ibb.co/gzmy9Pk/Screenshot-from-2023-04-17-14-55-02.png",
+                "https://i.ibb.co/7YHh9Mq/Screenshot-from-2023-04-13-16-48-27.png",
+                "https://i.ibb.co/kD5N6ZF/Screenshot-from-2023-04-13-16-41-25.png",
+                "https://i.ibb.co/QX2358N/Screenshot-from-2023-04-13-16-41-11.png",
+                "https://i.ibb.co/hW4JjqY/Screenshot-from-2023-04-13-16-39-46.png",
+                "https://i.ibb.co/QkqsTpJ/Screenshot-from-2023-04-13-16-39-34.png"
+            ],
             "links":[
                 {"name":"Frontend Repo", "url":"https://github.com/NahuelUliassiPirchio/nextjs-basic-store-frontend", "icon":"/icons/github.svg"},
                 {"name":"Backend Repo", "url":"https://github.com/NahuelUliassiPirchio/nestjs-basic-store-api", "icon":"/icons/github.svg"},
@@ -55,6 +65,15 @@
             ],
             "url":"stop-rows",
             "image":"StopRowsLogo.svg",
+            "gallery":[
+                "https://i.ibb.co/z7yyT4V/Screenshot-from-2023-04-13-16-48-04.png",
+                "https://i.ibb.co/HNY8vQy/Screenshot-from-2023-04-17-17-59-59.png",
+                "https://i.ibb.co/9m5DhyK/Screenshot-from-2023-04-17-17-27-47.png",
+                "https://i.ibb.co/gJ7kpyC/Screenshot-from-2023-04-13-16-46-02.png",
+                "https://i.ibb.co/QPJCsHX/Screenshot-from-2023-04-13-16-45-42.png",
+                "https://i.ibb.co/Kz2fTSS/Screenshot-from-2023-04-13-16-44-41.png",
+                "https://i.ibb.co/8bRGqxG/Screenshot-from-2023-04-13-16-44-54.png"
+            ],
             "links":[
                 {"name":"Frontend Repo", "url":"https://github.com/NahuelUliassiPirchio/nextjs-stop-rows-frontend", "icon":"/icons/github.svg"},
                 {"name":"Backend Repo", "url":"https://github.com/NahuelUliassiPirchio/stop-rows-api", "icon":"/icons/github.svg"},
