@@ -5,6 +5,10 @@ module.exports = nextTranslate({
     CV_URL_ES: process.env.CV_URL_ES,
     CV_URL_EN: process.env.CV_URL_EN
   },
+  publicRuntimeConfig: {
+    BASIC_STORE_API: process.env.BASIC_STORE_API,
+    STOP_ROWS_API: process.env.STOP_ROWS_API
+  },
   images: {
     remotePatterns: [
       {

@@ -6,6 +6,7 @@ import LinkButton from './LinkButton'
 
 import styles from '../styles/Project.module.css'
 import ImageSlider from './ImageSlider'
+import getConfig from 'next/config'
 
 export default function Project ({ project }) {
   const { t } = useTranslation('projects')
@@ -14,9 +15,11 @@ export default function Project ({ project }) {
         <main className={styles.projectContainer}>
           <nav className={styles.floatingContainer}>
             {
-              project.links.map((link, index) => (
-                <LinkButton href={link.url} key={index} logo={link.icon} text={link.name} />
-              ))
+              project.links.map((link, index) => {
+                const { publicRuntimeConfig } = getConfig()
+                return (<LinkButton href={publicRuntimeConfig[link.url] || link.url} key={index} logo={link.icon} text={link.name} />)
+              }
+              )
             }
           </nav>
 
