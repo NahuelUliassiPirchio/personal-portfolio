@@ -1,21 +1,29 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import PropTypes from 'prop-types'
+import getConfig from 'next/config'
 import Image from 'next/image'
 import useTranslation from 'next-translate/useTranslation'
+import ThemeContext from '../context/ThemeContext'
 import LinkButton from './LinkButton'
 
-import styles from '../styles/Project.module.css'
 import ImageSlider from './ImageSlider'
-import getConfig from 'next/config'
+import styles from '../styles/Project.module.css'
 
 export default function Project ({ project }) {
   const { t } = useTranslation('projects')
+  const { theme } = useContext(ThemeContext)
+  const [showFloatingContainer, setShowFloatingContainer] = useState(true)
 
   return (
         <main className={styles.projectContainer}>
           <nav className={styles.floatingContainer}>
+            <button className={`${styles.floatingButton} ${!showFloatingContainer && styles.collapsed}`}
+              onClick={() => setShowFloatingContainer(!showFloatingContainer)}>
+                <Image src={`/icons/${theme === 'dark' ? 'dark-expand-arrow.svg' : 'expand-arrow.svg'}`}
+                  alt={`${showFloatingContainer ? 'Hide' : 'Show'} floating menu`} width={30} height={30} />
+            </button>
             {
-              project.links.map((link, index) => {
+              showFloatingContainer && project.links.map((link, index) => {
                 const { publicRuntimeConfig } = getConfig()
                 return (<LinkButton href={publicRuntimeConfig[link.url] || link.url} key={index} logo={link.icon} text={link.name} />)
               }

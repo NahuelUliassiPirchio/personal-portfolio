@@ -18,6 +18,33 @@
   right: 0;
   margin: 1rem;
   z-index: 10;
+  animation: showFloatingContainer 1s ease-in-out forwards;
+}
+
+@keyframes showFloatingContainer {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floatingButton {
+  width: 40px;
+  margin-right: .5rem;
+  vertical-align: middle;
+  border: none;
+  background-color: var(--background-color);
+  cursor: pointer;
+}
+
+.floatingButton:hover {
+  transform: scale(1.1);
+}
+
+.floatingButton.collapsed {
+  transform: rotate(180deg);
 }
 
 .introductionSection {

@@ -13,7 +13,23 @@ module.exports = nextTranslate({
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**'
+        hostname: 'i.ibb.co'
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.npmjs.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.clipartmax.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org'
+      },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com'
       }
     ]
   }

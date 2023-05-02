@@ -1,5 +1,6 @@
-.active {
-    font-weight: bold;
+.managerContainer .active {
+    font-weight: 800;
+    text-decoration: underline;
 }
 
 .managerContainer a {
