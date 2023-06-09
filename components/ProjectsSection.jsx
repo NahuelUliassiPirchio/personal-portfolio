@@ -65,6 +65,15 @@ export default function ProjectsSection ({ id, key }) {
               <li className={styles.projectContainer} key={project.url} >
                   <Image className={styles.projectImage} src={`/images/${project.image}`} alt={project.name} width={200} height={200} />
                   <h2>{project.name}</h2>
+
+                  <ul className={styles.technologies}>
+                    {project.technologies.map((technology) => (
+                      <li key={technology.name} title={technology.name}>
+                        {technology.icon && <Image src={`/icons/${technology.icon}`} alt={technology.name} width={30} height={30} />}
+                      </li>
+                    ))}
+                  </ul>
+
                   <p>{project.description}</p>
                   <Link href={`/projects/${project.url}`}>View Project</Link>
               </li>

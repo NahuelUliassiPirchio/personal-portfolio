@@ -60,7 +60,7 @@
 }
 
 .projectContainer:hover {
-  transform: scale(1.05);
+  transform: scale(1.008);
 }
 
 .projectImage {
@@ -79,6 +79,21 @@
   color: var(--text-color);
   cursor: help;
 }
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: .5rem 0;
+  list-style: none;
+  gap: .5rem;
+}
+
+
+
 .orbit {
   --size: 12rem;
   --speed: 120s;
