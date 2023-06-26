@@ -1,6 +1,41 @@
 {
     "projects":[
         {
+            "name":"Simple Pomodoro and To-do App",
+            "description":"Decidí desarrollar esta aplicación porque soy un ferviente seguidor de la metodología de trabajo Pomodoro. Esta metodología se basa en dividir el tiempo en bloques de trabajo intensos y breves descansos para aumentar la productividad y mantener la concentración. Me encanta mantener mis tareas organizadas y siempre presentes. La idea detrás de esta aplicación era poder medir los pomodoros que dedicaba a cada tarea y así aprovechar mejor mi tiempo. Quería tener una forma fácil y eficiente de realizar un seguimiento de mis esfuerzos y optimizar mi rutina de trabajo.",
+            "technologies":[
+                {"name":"FIREBASE","icon":"firebase.svg"},
+                {"name":"NEXTJS","icon":"nextjs.svg"},
+                {"name":"REACT","icon":"react.svg"},
+                {"name":"JAVASCRIPT","icon":"javascript.svg"}
+            ],
+            "url":"simple-pomodoro-todo",
+            "image":"BSCStoreLogo.png",
+            "gallery":[
+                "https://i.ibb.co/bJGdhWr/Screenshot-from-2023-04-17-16-19-09.png",
+                "https://i.ibb.co/J257mty/Screenshot-from-2023-04-17-16-18-54.png",
+                "https://i.ibb.co/gzmy9Pk/Screenshot-from-2023-04-17-14-55-02.png",
+                "https://i.ibb.co/7YHh9Mq/Screenshot-from-2023-04-13-16-48-27.png",
+                "https://i.ibb.co/kD5N6ZF/Screenshot-from-2023-04-13-16-41-25.png",
+                "https://i.ibb.co/QX2358N/Screenshot-from-2023-04-13-16-41-11.png",
+                "https://i.ibb.co/hW4JjqY/Screenshot-from-2023-04-13-16-39-46.png",
+                "https://i.ibb.co/QkqsTpJ/Screenshot-from-2023-04-13-16-39-34.png"
+            ],
+            "links":[
+                {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/simple-pomodoro-todo", "icon":"/icons/github.svg"},
+                {"name":"Demo", "url":"", "icon":"/images/SimplePomodoroTodoLogo.png"}
+            ],
+            "process": [
+                {"quote":"En primer lugar, forjé una estructura sólida que serían los cimientos de la aplicación. Tuve que adaptarme a las innovaciones de Next.js 13. Para este proyecto, decidí utilizar React Bootstrap, de esta manera pude centrarme más en la lógica y, como otro aspecto positivo, agilizar el desarrollo."},
+                {"quote":"Dado que ya había utilizado Firebase en proyectos anteriores, no me llevó mucho tiempo inicializar la biblioteca. Organicé las consultas básicas (de Firestore) en servicios para poder aplicarlas más adelante."},
+                {"quote":"Para gestionar cada quehacer, creé un hook personalizado que realizaba las famosas operaciones CRUD, aplicando los servicios mencionados anteriormente."},
+                {"quote":"En cuanto a la autenticación, aproveché la integración que proporciona Firebase Authentication con otras plataformas a través de OAuth. Gracias a la documentación y guías disponibles, esta tarea fue relativamente rápida."},
+                {"quote":"En la mejora de la experiencia de usuario, desarrollé un sistema de filtros para ordenar las tareas según las preferencias personales. Utilicé Zustand para crear un estado global que luego me resultaría útil para otras funcionalidades. Opté por esta biblioteca debido a su simplicidad y ligereza."},
+                {"quote":"Para el temporizador, creé un hook personalizado y un componente que se encargaban de reducir el tiempo recibido en las propiedades. El componente encargado de gestionarlo se llama PomodoroTimer, el cual se encarga de estructurar los bloques de tiempo y activar las actualizaciones correspondientes según sea necesario."}
+            ],
+            "conclusion": "Como mejoras y funciones adicionales, se podría implementar la posibilidad de agrupar los quehaceres, ya sea mediante categorías, etiquetas o proyectos, permitiendo a los usuarios organizar y gestionar sus tareas de manera más eficiente. También se podría agregar un esqueleto de carga para brindar mayor dinamismo y una experiencia de usuario más fluida, mostrando componentes de carga mientras se obtienen datos o se navega entre secciones de la aplicación, proporcionando retroalimentación visual y una sensación de progreso."
+        },
+        {
             "name":"Basic Store",
             "description":"Basic Store es mi primer aplicación web pública, esta misma consta de una restful API desarrollada en NestJS y una página web usando NextJS como framework principal. Simula una típica página de e-commerce pero con el añadido de poder pujar por un producto. Su propósito siempre fue aplicar conocimientos adquiridos y plasmarlo en algo material.",
             "technologies":[
