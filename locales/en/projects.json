@@ -10,20 +10,18 @@
                 {"name":"JAVASCRIPT","icon":"javascript.svg"}
             ],
             "url":"simple-pomodoro-todo",
-            "image":"BSCStoreLogo.png",
+            "image":"SimplePomodoroTodoLogo.png",
             "gallery":[
-                "https://i.ibb.co/bJGdhWr/Screenshot-from-2023-04-17-16-19-09.png",
-                "https://i.ibb.co/J257mty/Screenshot-from-2023-04-17-16-18-54.png",
-                "https://i.ibb.co/gzmy9Pk/Screenshot-from-2023-04-17-14-55-02.png",
-                "https://i.ibb.co/7YHh9Mq/Screenshot-from-2023-04-13-16-48-27.png",
-                "https://i.ibb.co/kD5N6ZF/Screenshot-from-2023-04-13-16-41-25.png",
-                "https://i.ibb.co/QX2358N/Screenshot-from-2023-04-13-16-41-11.png",
-                "https://i.ibb.co/hW4JjqY/Screenshot-from-2023-04-13-16-39-46.png",
-                "https://i.ibb.co/QkqsTpJ/Screenshot-from-2023-04-13-16-39-34.png"
+                "https://i.ibb.co/W28BDwz/Screenshot-20230626-222351.jpg",
+                "https://i.ibb.co/XpgW73J/Screenshot-20230626-221608.png",
+                "https://i.ibb.co/3MF0TWJ/Screenshot-20230626-221609.png",
+                "https://i.ibb.co/J2wQwXw/Screenshot-20230626-222152.png",
+                "https://i.ibb.co/njYHCw8/Screenshot-20230626-222257.png",
+                "https://i.ibb.co/TtnZhPr/Screenshot-20230626-222305.png"
             ],
             "links":[
                 {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/simple-pomodoro-todo", "icon":"/icons/github.svg"},
-                {"name":"Demo", "url":"", "icon":"/images/SimplePomodoroTodoLogo.png"}
+                {"name":"Demo", "url":"https://simple-pomodoro-todo-up.vercel.app/", "icon":"/images/SimplePomodoroTodoLogo.png"}
             ],
             "process": [
                 {"quote":"Firstly, I laid the foundation by creating a solid structure for the application. I had to adapt to the innovations in Next.js 13. For this project, I decided to use React Bootstrap, which allowed me to focus more on the logic and, as a positive aspect, streamline the development process."},
@@ -192,6 +190,9 @@
         }
     ],
     "title":"My Projects",
+    "viewProject":"View Project",
+    "showLess":"show less",
+    "showMore":"show more",
     "introduction": "In this section I present the projects that I have developed to date. I show their technologies, processes and improvements that I see. In addition, I include a link to the active demo and the repository of each one.",
     "sections":{
         "introduction":"Introdution",

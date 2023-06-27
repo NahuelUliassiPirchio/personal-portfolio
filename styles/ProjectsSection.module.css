@@ -39,11 +39,6 @@
   text-decoration: underline;
 }
 
-.projectContainer p {
-  font-weight: 300;
-  margin-bottom: 1.5rem;
-}
-
 .projectContainer a {
   text-decoration: none;
   color: var(--background-color);

@@ -4,6 +4,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import useTranslation from 'next-translate/useTranslation'
 
+import DescriptionParagraph from './DescriptionParagraph'
 import styles from '../styles/ProjectsSection.module.css'
 
 export default function ProjectsSection ({ id, key }) {
@@ -74,8 +75,10 @@ export default function ProjectsSection ({ id, key }) {
                     ))}
                   </ul>
 
-                  <p>{project.description}</p>
-                  <Link href={`/projects/${project.url}`}>View Project</Link>
+                  <DescriptionParagraph limit={350} translator={t}>
+                    {project.description}
+                  </DescriptionParagraph>
+                  <Link href={`/projects/${project.url}`}>{t('viewProject')}</Link>
               </li>
           ))
         }
