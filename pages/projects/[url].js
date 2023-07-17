@@ -1,12 +1,10 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import useTranslation from 'next-translate/useTranslation'
-import Head from 'next/head'
-
-import Image from 'next/image'
 
 import Project from '../../components/Project'
 import NavBar from '../../components/NavBar'
+import MetaDecorator from '../../components/MetaDecorator'
 
 export default function ProjectPage () {
   const router = useRouter()
@@ -27,19 +25,7 @@ export default function ProjectPage () {
   const pageTitle = project ? `${project.name} App - ${t('title')}` : '[404]'
 
   return (<>
-    <Head>
-      <title>{pageTitle}</title>
-      <meta name="description" content={project.description} key="desc" />
-      <meta property="og:title" content={pageTitle} />
-      <meta
-        property="og:description"
-        content={project.description}
-      />
-      <meta
-        property="og:image"
-        content={`/images/${project.image}`}
-      />
-    </Head>
+    <MetaDecorator title={pageTitle} description={project.description} image={`/images/${project.image}`}/>
     {(project && <NavBar providedSections={projectSections}/>)}
     {
       project

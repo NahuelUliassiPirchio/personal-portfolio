@@ -1,14 +1,17 @@
 import React from 'react'
 import useTranslation from 'next-translate/useTranslation'
+import { useRouter } from 'next/router'
+
 import Layout from '../components/Layout'
 import ProjectsSection from '../components/ProjectsSection'
 import ContactSection from '../components/ContactSection'
 import AboutSection from '../components/AboutSection'
 import SkillsSection from '../components/SkillsSection'
 import LinkButton from '../components/LinkButton'
+import MetaDecorator from '../components/MetaDecorator'
 
+import logo from '../public/images/UPLogo.svg'
 import styles from '../styles/Home.module.css'
-import { useRouter } from 'next/router'
 
 export default function Home () {
   const { t } = useTranslation('home')
@@ -24,15 +27,22 @@ export default function Home () {
   const resumeLink = locale.startsWith('es') ? process.env.CV_URL_ES : process.env.CV_URL_EN
 
   return (
-        <Layout>
-          {
-              sections.map((section, index) => (
-                section.component({ key: index, id: section.url })
-              ))
-          }
-          <nav className={styles.floatContainer}>
-            <LinkButton href={resumeLink} logo={'/icons/resume.svg'} text={t('downloadResume')} />
-          </nav>
-        </Layout>
+    <>
+      <MetaDecorator
+        description="Portfolio website for full-stack developer, Nahuel Uliassi Pirchio."
+        title='Uliassi Pirchio Nahuel - Portfolio'
+        image={logo}
+        />
+      <Layout>
+        {
+            sections.map((section, index) => (
+              section.component({ key: index, id: section.url })
+            ))
+        }
+        <nav className={styles.floatContainer}>
+          <LinkButton href={resumeLink} logo={'/icons/resume.svg'} text={t('downloadResume')} />
+        </nav>
+      </Layout>
+    </>
   )
 }
