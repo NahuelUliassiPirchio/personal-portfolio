@@ -25,7 +25,7 @@ export default function ProjectPage () {
   const pageTitle = project ? `${project.name} App - ${t('title')}` : '[404]'
 
   return (<>
-    <MetaDecorator title={pageTitle} description={project.description} image={`/images/${project.image}`}/>
+    {project && <MetaDecorator title={pageTitle} description={project.description} image={project.image}/>}
     {(project && <NavBar providedSections={projectSections}/>)}
     {
       project

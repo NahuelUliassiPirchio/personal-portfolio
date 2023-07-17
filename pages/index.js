@@ -10,7 +10,6 @@ import SkillsSection from '../components/SkillsSection'
 import LinkButton from '../components/LinkButton'
 import MetaDecorator from '../components/MetaDecorator'
 
-import logo from '../public/images/UPLogo.svg'
 import styles from '../styles/Home.module.css'
 
 export default function Home () {
@@ -31,7 +30,7 @@ export default function Home () {
       <MetaDecorator
         description="Portfolio website for full-stack developer, Nahuel Uliassi Pirchio."
         title='Uliassi Pirchio Nahuel - Portfolio'
-        image={logo}
+        image={'UPLogo.svg'}
         />
       <Layout>
         {
