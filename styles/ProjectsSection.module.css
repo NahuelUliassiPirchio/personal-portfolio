@@ -21,11 +21,10 @@
 
 .projectContainer {
   color: var(--text-color);
-  background-color: var(--background-color);
+  background-color: #16181C;
   border-radius: 10px;
   min-width: 200px;
   max-width: 400px;
-  box-shadow: 0 0 10px var(--text-color);
   padding: 20px;
   margin: 20px;
   display: flex;
@@ -50,12 +49,6 @@
 .projectContainer a:hover {
   background-color: var(--background-color);
   color: var(--text-color);
-  border: 1px solid var(--text-color);
-  text-decoration: underline;
-}
-
-.projectContainer:hover {
-  transform: scale(1.008);
 }
 
 .projectImage {

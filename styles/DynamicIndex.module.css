@@ -1,6 +1,6 @@
 .index {
     display: flex;
-    background-color: var(--background-color);
+    background-color: none;
     margin: 0;
     padding: 0;
     justify-content: space-around;
