@@ -29,6 +29,7 @@ export default function AboutSection ({ id, key }) {
             </button>
           </div>
           <div id='introduction' className={styles.introductionContainer}>
+            <h1 className={styles.introductionTitle}>{t('aboutMeTitle')}</h1>
             <h2 className={styles.introduction}>{t('introduction1')}</h2>
             <h2 className={styles.introduction}>{t('introduction2')}</h2>
             <h2 className={styles.introduction}>{t('introduction3')}</h2>
