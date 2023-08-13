@@ -8,25 +8,33 @@
   flex-direction: column;
   color: var(--text-color);
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.aboutSectionTitle .greeting, .aboutSectionTitle .title {
+  backdrop-filter: saturate(120%) blur(10px);
+  text-align: start;
 }
 
 .greeting {
   font-size: 1.5rem;
   font-weight: 300;
-  text-align: start;
   margin-bottom: 1rem;
 }
 
 .title {
   font-size: 3rem;
   font-weight: 500;
-  text-align: start;
   max-width: 70%;
 }
 
 .title span {
   animation: highlight 2s ease-in-out;
-  background-color: var(--text-color);
+  background: rgb(0,52,89);
+  background: linear-gradient(225deg,
+    var(--bubble-color) 0%,
+    var(--secondary-color) 50%,
+    var(--primary-color) 100%);
   color: var(--background-color);
   text-decoration: underline;
 }

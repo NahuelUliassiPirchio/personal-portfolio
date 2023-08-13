@@ -1,6 +1,7 @@
 .managerContainer .active {
     font-weight: 800;
     text-decoration: underline;
+    color: var(--secondary-color);
 }
 
 .managerContainer a {

@@ -6,6 +6,7 @@ import useTranslation from 'next-translate/useTranslation'
 
 import DescriptionParagraph from './DescriptionParagraph'
 import styles from '../styles/ProjectsSection.module.css'
+import BubblesBackground from './BubblesBackground'
 
 export default function ProjectsSection ({ id, key }) {
   const { t } = useTranslation('projects')
@@ -13,6 +14,7 @@ export default function ProjectsSection ({ id, key }) {
 
   return (
     <section id={id} key={key} className={styles.projectsSection}>
+      <BubblesBackground/>
       <div className={styles.projectsTitle}>
         <div className={styles.orbit}>
           <div className={styles.center} onClick={
