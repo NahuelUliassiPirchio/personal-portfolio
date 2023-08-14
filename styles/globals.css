@@ -14,6 +14,10 @@ section {
     max-width: 1400px;
 }
 
+ul {
+    padding: 0;
+}
+
 ::selection {
     background-color: var(--link-color);
     color: var(--background-color);

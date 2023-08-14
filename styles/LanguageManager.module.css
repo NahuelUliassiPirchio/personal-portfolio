@@ -7,5 +7,5 @@
 .managerContainer a {
     padding: 5px;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--shadow-color);
 }
