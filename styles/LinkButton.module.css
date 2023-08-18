@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
+    font-size: 1rem;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border: none;
@@ -28,6 +29,10 @@
     font-weight: 450;
     text-decoration: none;
     display: none;
+}
+
+.linkButton.fixed .link{
+    display: inline;
 }
 
 @media (min-width: 768px) {

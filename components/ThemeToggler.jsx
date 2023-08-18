@@ -22,7 +22,7 @@ const ThemeToggler = () => {
                     --primary-color: ${isDark ? '#003459' : '#FFA559'};
                     --secondary-color: ${isDark ? '#007ea7' : '#cc4d00'};
                     --bubble-color: ${isDark ? '#0e6868' : '#FFA559'};
-                    --bubble-bright: ${isDark ? 'cyan' : 'var(--primary-color)'};
+                    --bubble-bright: ${isDark ? 'cyan' : 'var(--secondary-color)'};
                     --thin-line-color: ${isDark ? '#12243d' : '#cac6af'};
                 }
             `}</style>

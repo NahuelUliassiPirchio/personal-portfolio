@@ -1,0 +1,16 @@
+.linkContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.linkContainer:hover {
+    background-color: var(--primary-color);
+}
+
+.linkContainer p {
+    margin: 0;
+    height: fit-content;
+}

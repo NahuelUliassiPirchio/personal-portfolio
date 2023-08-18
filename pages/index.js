@@ -39,7 +39,9 @@ export default function Home () {
             ))
         }
         <nav className={styles.floatContainer}>
-          <LinkButton href={resumeLink} logo={'/icons/resume.svg'} text={t('downloadResume')} />
+          <LinkButton href={resumeLink} logo={'/icons/resume.svg'} alt={t('downloadResume')} >
+            {t('downloadResume')}
+          </LinkButton>
         </nav>
       </Layout>
     </>
