@@ -12,7 +12,7 @@
             ],
             "url":"simple-pomodoro-todo",
             "logo":"SimplePomodoroTodoLogo.png",
-            "image":"pomodoro.GIF",
+            "image":"pomodoro.webm",
             "gallery":[
                 "https://i.ibb.co/W28BDwz/Screenshot-20230626-222351.jpg",
                 "https://i.ibb.co/XpgW73J/Screenshot-20230626-221608.png",
@@ -51,7 +51,7 @@
             ],
             "url":"basic-store",
             "logo":"BSCStoreLogo.png",
-            "image":"store.GIF",
+            "image":"store.webm",
             "gallery":[
                 "https://i.ibb.co/bJGdhWr/Screenshot-from-2023-04-17-16-19-09.png",
                 "https://i.ibb.co/J257mty/Screenshot-from-2023-04-17-16-18-54.png",
@@ -102,7 +102,7 @@
             ],
             "url":"stop-rows",
             "logo":"StopRowsLogo.svg",
-            "image":"stop.GIF",
+            "image":"stop.webm",
             "gallery":[
                 "https://i.ibb.co/z7yyT4V/Screenshot-from-2023-04-13-16-48-04.png",
                 "https://i.ibb.co/HNY8vQy/Screenshot-from-2023-04-17-17-59-59.png",
@@ -156,7 +156,7 @@
                 {"name":"JAVASCRIPT","icon":"javascript.svg"}
             ],
             "url":"personal-portfolio",
-            "image":"portfolio.GIF",
+            "image":"portfolio.webm",
             "logo":"UPAthemeLogo.svg",
             "links":[
                 {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/personal-portfolio", "icon":"/icons/github.svg"}

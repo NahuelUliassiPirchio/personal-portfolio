@@ -25,3 +25,8 @@
     border: 1px solid var(--secondary-color);
 }
 
+.buttonDropDown a:hover {
+    color: var(--shadow-color);
+    text-decoration: underline;
+}
+

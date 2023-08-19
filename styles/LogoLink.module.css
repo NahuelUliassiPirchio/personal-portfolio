@@ -8,6 +8,8 @@
 
 .linkContainer:hover {
     background-color: var(--primary-color);
+    color: var(--shadow-color);
+    text-decoration: underline;
 }
 
 .linkContainer p {

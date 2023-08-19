@@ -19,10 +19,21 @@ export default function ProjectCard ({ project, t }) {
   return (
               <li className={`${styles.projectContainer} ${project.image ?? styles.noGif}`} key={project.url} >
                   <figure className={styles.imageContainer}>
-                    <Image className={styles.projectImage} src={project.image ? `/images/GIFS/${project.image}` : `/images/${project.logo}`} alt={project.name} width={200} height={200} priority/>
-                    <article>
-                      {project.shortDescription}
-                    </article>
+                  <article>
+                    {project.shortDescription}
+                  </article>
+                  {
+                    project.image
+                      ? (
+                        <video className={styles.projectImage} autoPlay muted loop>
+                          <source src={`/images/videos/${project.image}`}/>
+                        </video>
+                        )
+                      : (
+                        <Image className={styles.projectImage} src={`/images/${project.logo}`} alt={project.name} width={200} height={200} priority/>
+                        )
+                  }
+
                   </figure>
 
                   <h2>{project.name}</h2>
@@ -39,8 +50,8 @@ export default function ProjectCard ({ project, t }) {
                         projectRepoLinks.length > 1
                           ? (
                             <LinksDropDown links={projectRepoLinks}>
-                                <LogoLink text='Repos' logo={githubLogo} href={projectRepoLinks[0].url}/>
-                               </LinksDropDown>
+                              <LogoLink text='Repos' logo={githubLogo} href={projectRepoLinks[0].url}/>
+                            </LinksDropDown>
                             )
                           : (
                             <LogoLink text='Repo' logo={githubLogo} href={projectRepoLinks[0].url}/>
