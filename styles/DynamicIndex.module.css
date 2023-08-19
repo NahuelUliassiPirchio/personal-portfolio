@@ -1,6 +1,6 @@
 .index {
     display: flex;
-    background-color: var(--background-color);
+    background-color: none;
     margin: 0;
     padding: 0;
     justify-content: space-around;
@@ -28,11 +28,12 @@
     padding: 0;
     cursor: pointer;
     outline: inherit;
-    color: var(--text-color);
+    color: var(--shadow-color);
     transition: all 0.5s ease-in-out;
 }
 
 .activeSection {
+    color: var(--secondary-color) !important;
     font-weight: bolder;
     text-decoration: underline;
 }

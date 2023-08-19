@@ -1,7 +1,8 @@
 {
     "projects":[
         {
-            "name":"Simple Pomodoro and To-do App",
+            "name":"Simple Pomodoro and To-do",
+            "shortDescription":"I developed this app due to my affinity for the Pomodoro methodology: intense work blocks followed by breaks to boost productivity. I wanted to track my pomodoros per task, optimizing my routine.",
             "description":"I decided to develop this application because I am a fervent follower of the Pomodoro work methodology. This methodology is based on dividing time into intense work blocks and short breaks to increase productivity and maintain focus. I enjoy keeping my tasks organized and always at hand. The idea behind this application was to measure the number of Pomodoros dedicated to each task and thus make better use of my time. I wanted to have an easy and efficient way to track my efforts and optimize my work routine.",
             "technologies":[
                 {"name":"FIREBASE","icon":"firebase.svg"},
@@ -10,7 +11,8 @@
                 {"name":"JAVASCRIPT","icon":"javascript.svg"}
             ],
             "url":"simple-pomodoro-todo",
-            "image":"SimplePomodoroTodoLogo.png",
+            "logo":"SimplePomodoroTodoLogo.png",
+            "image":"pomodoro.webm",
             "gallery":[
                 "https://i.ibb.co/W28BDwz/Screenshot-20230626-222351.jpg",
                 "https://i.ibb.co/XpgW73J/Screenshot-20230626-221608.png",
@@ -35,6 +37,7 @@
         },
         {
             "name":"Basic Store",
+            "shortDescription":"Basic Store is my debut in web development. It includes an API built with NestJS and a website using NextJS. It simulates an e-commerce platform with auctions, applying the knowledge I've acquired.",
             "description":"Basic Store is my first public web application, it consists of a restful API developed in NestJS and a web page using NextJS as the main framework. It simulates a typical e-commerce page but with the addition of being able to bid on a product. His purpose was always to apply acquired knowledge and translate it into something material.",
             "technologies":[
                 {"name":"NESTJS","icon":"nestjs.svg"},
@@ -47,7 +50,8 @@
                 {"name":"JAVASCRIPT","icon":"javascript.svg"}
             ],
             "url":"basic-store",
-            "image":"BSCStoreLogo.png",
+            "logo":"BSCStoreLogo.png",
+            "image":"store.webm",
             "gallery":[
                 "https://i.ibb.co/bJGdhWr/Screenshot-from-2023-04-17-16-19-09.png",
                 "https://i.ibb.co/J257mty/Screenshot-from-2023-04-17-16-18-54.png",
@@ -84,6 +88,7 @@
         },
         {
             "name":"Stop Rows",
+            "shortDescription":"It originated during high school when I noticed time being wasted in bank queues. The idea was to create a remote queue system for school projects.",
             "description":"I had this idea when in high school a teacher asked me to do a project and, at that time, I spent large amounts of time sitting in line at the bank. The possible solution that came to me was to make a remote queue system.",
             "technologies":[
                 {"name":"EXPRESS"},
@@ -96,7 +101,8 @@
                 {"name":"TYPESCRIPT","icon":"typescript.svg"}
             ],
             "url":"stop-rows",
-            "image":"StopRowsLogo.svg",
+            "logo":"StopRowsLogo.svg",
+            "image":"stop.webm",
             "gallery":[
                 "https://i.ibb.co/z7yyT4V/Screenshot-from-2023-04-13-16-48-04.png",
                 "https://i.ibb.co/HNY8vQy/Screenshot-from-2023-04-17-17-59-59.png",
@@ -142,16 +148,18 @@
         },
         {
             "name":"Personal Portfolio",
-            "description":"It's the last project developed to date. Its purpose is to group my previous projects and present myself on the same page that manages to represent me and, in turn, demonstrate my qualities.",
+            "shortDescription":"Its purpose is to bring together my previous projects and present them on a single page that effectively represents me while also showcasing my abilities.",
+            "description":"Its purpose is to group my previous projects and present myself on the same page that manages to represent me and, in turn, demonstrate my qualities.",
             "technologies":[
                 {"name":"NEXTJS","icon":"nextjs.svg"},
                 {"name":"REACT","icon":"react.svg"},
                 {"name":"JAVASCRIPT","icon":"javascript.svg"}
             ],
             "url":"personal-portfolio",
-            "image":"UPAthemeLogo.svg",
+            "image":"portfolio.webm",
+            "logo":"UPAthemeLogo.svg",
             "links":[
-                {"name":"Repository", "url":"https://github.com/NahuelUliassiPirchio/personal-portfolio", "icon":"/icons/github.svg"}
+                {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/personal-portfolio", "icon":"/icons/github.svg"}
             ],
             "process": [
                 {"quote":"As a first step I set out to make a header that stays on top all the time and, in turn, shows the different sections dynamically (using the interception observer)"},
@@ -166,12 +174,13 @@
         },
         {
             "name":"Huffman Tree Compressor",
-            "description":"This was a university project on algorithms and data structure. The idea is to develop a c program that can successfully compress and decompress a file without loss of information. My intention in presenting this project is to demonstrate my abilities in algorithmics.",
+            "shortDescription":"During university, in the algorithms and data structures course, I developed a C++ program for lossless file compression and decompression. This project showcased my algorithmic skills.",
+            "description":"This was a university project on algorithms and data structure. The idea is to develop a cpp program that can successfully compress and decompress a file without loss of information. My intention in presenting this project is to demonstrate my abilities in algorithmics.",
             "technologies":[
                 {"name":"C++"}
             ],
             "url":"huffman-tree-compressor",
-            "image":"HuffmanTreeCompressor.png",
+            "logo":"HuffmanTreeCompressor.png",
             "links":[
                 {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/HuffmanTreeCompressor", "icon":"/icons/github.svg"}
             ],
@@ -190,7 +199,7 @@
         }
     ],
     "title":"My Projects",
-    "viewProject":"View Project",
+    "viewProject":"Explore the process",
     "showLess":"show less",
     "showMore":"show more",
     "introduction": "In this section I present the projects that I have developed to date. I show their technologies, processes and improvements that I see. In addition, I include a link to the active demo and the repository of each one.",

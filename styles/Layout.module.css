@@ -1,4 +1,13 @@
 .layout {
-    margin-top: 4%;
     background-color: var(--background-color);
+}
+.layout::before {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    color: var(--background-color);
+    position: fixed;
+    z-index: -1;
+    background: linear-gradient(currentcolor 1px, transparent 1px) 0% 0% / 94px 90px, linear-gradient(to right, currentcolor 1px, transparent 1px) transparent;
+    transition: all 0.5s linear 0s;
 }

@@ -15,9 +15,15 @@ const ThemeToggler = () => {
             <Image className={styles.toggler} onClick={toggleTheme} alt={`Toggle to ${theme} theme`} src={isDark ? darkThemeToggle : lightThemeToggle } width={30} height={30} />
             <style jsx global>{`
                 :root{
-                    --background-color: ${isDark ? '#000' : '#fff'};
-                    --text-color: ${isDark ? '#fff' : '#000'};
-                    --link-color: ${isDark ? '#fff' : '#000'};
+                    --background-color: ${isDark ? '#00171f' : '#FFE6C7'};
+                    --text-color: ${isDark ? '#fff' : '#454545'};
+                    --shadow-color: ${isDark ? '#7e7f83' : '#7e7f83'};
+                    --link-color: ${isDark ? '#003459' : '#cc4d00'};
+                    --primary-color: ${isDark ? '#003459' : '#FFA559'};
+                    --secondary-color: ${isDark ? '#007ea7' : '#cc4d00'};
+                    --bubble-color: ${isDark ? '#0e6868' : '#FFA559'};
+                    --bubble-bright: ${isDark ? 'cyan' : 'var(--secondary-color)'};
+                    --thin-line-color: ${isDark ? '#12243d' : '#cac6af'};
                 }
             `}</style>
         </>

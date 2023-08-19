@@ -1,32 +1,40 @@
 .aboutSectionTitle {
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 4rem);
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin-left: 2rem;
+  padding-left: 2rem;
+  margin-top: 4rem;
   flex-direction: column;
-  background-color: var(--background-color);
   color: var(--text-color);
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.aboutSectionTitle .greeting, .aboutSectionTitle .title {
+  backdrop-filter: saturate(120%) blur(10px);
+  text-align: start;
 }
 
 .greeting {
   font-size: 1.5rem;
   font-weight: 300;
-  text-align: start;
   margin-bottom: 1rem;
 }
 
 .title {
   font-size: 3rem;
   font-weight: 500;
-  text-align: start;
   max-width: 70%;
 }
 
 .title span {
   animation: highlight 2s ease-in-out;
-  background-color: var(--text-color);
+  background: rgb(0,52,89);
+  background: linear-gradient(225deg,
+    var(--bubble-color) 0%,
+    var(--secondary-color) 50%,
+    var(--primary-color) 100%);
   color: var(--background-color);
   text-decoration: underline;
 }
@@ -34,8 +42,16 @@
 .introductionContainer {
   scroll-margin: 5rem;
   margin-top: 3.5rem;
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+.introductionTitle {
+  font-size: 2rem;
+  color: var(--text-color);
+  text-decoration: underline;
+}
 .introduction {
   font-size: 1.5rem;
   font-weight: 300;
@@ -43,6 +59,7 @@
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
   color: var(--text-color);
   padding: 0 .5rem;
+  max-width: 80%;
 }
 
 .scrollDown {

@@ -1,114 +1,59 @@
 {
-    "title": "Mis mejores habilidades",
-    "security":"Seguridad",
-    "javascript-typescriptDescription": [
-            {"quote":"Código limpio, legible y estructurado usando buenas prácticas."},
-			{"quote":"Tipado adecuado según el contexto."},
-			{"quote":"Nombramiento de variables y funciones corto, entendible."},
-			{"quote":"Modularización de código. Una función reutilizable por tarea."},
-			{"quote":"Poco anidamiento innecesario."},
-			{"quote":"Tratamiento y validación de datos para evitar errores."}
-    ],
-    "swaggerDescription": [
-            {"quote":"Endpoints con sus query params y opciones de seguridad."},
-            {"quote":"Agrupación de endpoints según su clasificación."},
-            {"quote":"Uso adecuado de decoradores en NestJS."},
-            {"quote":"Ejemplos para mayor claridad."},
-            {"quote":"Respuestas HTML con sus códigos de estado."}
-    ],
-    "node-expressDescription": [
-            {"quote":"Restful api usando the clean architecture."},
-			{"quote":"Estructurado de sistema de archivos."},
-			{"quote":"Validación de tipos dentro de las peticiones (body/params)."},
-			{"quote":"Manejo de errores utilizando middlewares."}
-    ],
-    "securityDescription": [
-        {"quote":"Helmet: asegura que los encabezados no contengan ciertos contenidos maliciosos conocidos."},
-        {"quote":"RateLimiter: desincentiva ataques de denegación de servicios dando una cantidad limitada de peticiones cada cierto tiempo."},
-        {"quote":"Variables de entorno: evita exponer variables de configuración u otros datos sensibles."},
-        {"quote":"JWT con passport: forma de limitar acceso (autenticación y autorización) mediante el uso de tokens."},
-        {"quote":"CORS: filtra orígenes para evitar ciertos ataques."}
-    ],
-    "nestjsDescription": [
-        {"quote":"Creación de restful apis utilizando buenas prácticas NESTJS."},
-        {"quote":"Uso de la NestCli para creación de distintos componentes."},
-        {"quote":"Aplicación de pipelines para validación y sanitización de datos."},
-        {"quote":"Guardas para autenticación y autorización."},
-        {"quote":"Módulos para más organización."},
-        {"quote":"Empleo de DTO para la transferencia de datos."},
-        {"quote":"Manejo de errores y excepciones."}
-    ],
-    "htmlDescription": [
-        {"quote":"Buenas prácticas para mayor accesibilidad. Por ejemplo, atributo alt en imágenes."},
-        {"quote":"Uso de HTML semántico para la creación de elementos. No abusar de div."},
-        {"quote":"Buenas prácticas en formularios."}
-    ],
-    "cssDescription": [
-            {"quote":"Estilizar el código html usando variables."},
-			{"quote":"Implementación de diseño responsive (ya sea mediante css-grid/flex o @screen)"},
-			{"quote":"Buenas prácticas para accesibilidad. Por ejemplo, el uso de rem en lugar de px."},
-			{"quote":"Creación de animaciones y transiciones básicas."},
-			{"quote":"Formato, órden y dimensiones flexibles a contenedores según se requiera."},
-			{"quote":"Código legible y organizado desde afuera hacia adentro."},
-			{"quote":"Estilos dinámicos y responsivo a la interacción del usuario."},
-			{"quote":"Uso y aplicación de distintas fuentes."}
-    ],
-    "reactDescription": [
-            {"quote":"Uso de hooks y crear propios para el tratado de la información. "},
-			{"quote":"Manejo distintos temas. En especial el modo oscuro."},
-			{"quote":"Componentes compatibles con gran mercado de navegadores."},
-			{"quote":"Renderizado dinámico utilizando código JS/TS."},
-			{"quote":"Manejo de errores. Prevención usando tipado."},
-			{"quote":"Almacenaje de datos y tokens usando cookies."}
-    ],
-    "nextjsDescription": [
-            {"quote":"Routing dinámico mediante el sistema de archivos."},
-			{"quote":"Peticiones desde el lado del servidor, desde el cliente o estáticas según convenga."},
-			{"quote":"Manejo de idiomas y múltiples traducciones utilizando i18n."},
-			{"quote":"Sistema de archivos claro y conciso."},
-			{"quote":"Implementación de estilos usando .module.css."},
-			{"quote":"Componentes propios de nextjs para un rendimiento óptimo (Link, Image)."}
-    ],
-    "typeormDescription": [
-            {"quote":"Código limpio, legible y estructurado usando buenas prácticas."},
-			{"quote":"Nomenclatura de variables y funciones corto, entendible."},
-			{"quote":"Modulación de código. Una función reutilizable por tarea."},
-			{"quote":"Poco anidamiento innecesario."},
-			{"quote":"Tratamiento y validación de datos para evitar errores."},
-			{"quote":"Aplicación de buenas prácticas en estructura de código y uso de palabras reservadas."}
-    ],
-    "mongoDescription": [
-            {"quote":"Manejo de distintos tipos de conexiones"},
-			{"quote":"Modelado de esquemas especificando tipos."},
-			{"quote":"Uso de ObjectIds para referenciar otros objetos."},
-			{"quote":"Asignación de índices para peticiones más rápidas."},
-			{"quote":"Uso de datos geoespaciales para almacenar y tratar localización"},
-			{"quote":"Ejecución de distintos tipos de queries utilizando filtros, incluyendo de localización."},
-			{"quote":"Aplicación de middlewares para el tratamiento de la información."}
-    ],
-    "linuxDescription": [
-            {"quote":"Configuración y manejo de versionado."},
-			{"quote":"Administración de software con varios package managers."},
-			{"quote":"Comandos generales, de manejo de data y permisos de archivos."}
-    ],
-    "gitDescription": [
-            {"quote":"Versionado detallado de las distintas instancias del proyecto."},
-			{"quote":"Aplicación, manejo y unión de ramas para el desarrollo en conjunto."},
-			{"quote":"Manejo cuidadoso y atento de las distintas fases del repositorio y sus cambios."}
-    ],
-    "vscodeDescription": [
-            {"quote":"Depurar con las opciones disponibles."},
-			{"quote":"Instalación y configuración de extensiones."},
-			{"quote":"Uso de extensiones para facilitar trabajo: por ejemplo para ver errores, para ver el historial de git, para resaltar malas prácticas."}
-    ],
-    "jestDescription": [
-            {"quote":"Tests unitarios para poner a prueba las distintas porciones de código."},
-			{"quote":"Buena organización."},
-			{"quote":"Aplicación de criterios efectivos a la hora de qué probar."},
-			{"quote":"Uso de hooks para configuraciones."}
-    ],
-    "eslintDescription": [
-            {"quote":"Aplicación automática para una sintaxis en particular."},
-			{"quote":"Análisis de semántica para detectar malas prácticas."}
+    "toolsTitle":"Herramientas",
+    "fields": [
+        {
+            "icon":"front-icon.svg",
+            "title": "Desarrollo Frontend",
+            "description":"Mi enfoque se centra en escribir código desde cero y convertir ideas en experiencias navegables. Aunque no soy un experto en diseño, me preocupo mucho por el rendimiento y la optimización del tamaño de los elementos.",
+            "tools":[
+                "Javascript/Typescript",
+                "Html",
+                "Css",
+                "Reactjs",
+                "Nextjs",
+                "Bootstrap",
+                "i18n",
+                "Selenium"
+            ]
+        },
+        {
+            "icon":"back-icon.svg",
+            "title": "Desarrollo Backend",
+            "description":"Con habilidades en desarrollo de arquitecturas escalables, puedo construir la funcionalidad esencial de aplicaciones web, asegurando una transferencia de datos eficiente y un rendimiento sólido.",
+            "tools":[
+                "Javascript/Typescript",
+                "Nestjs",
+                "Expressjs",
+                "Swagger",
+                "JWT",
+                "REST",
+                "GraphQL",
+                "Clean Architectures"
+            ]
+        },
+        {
+            "icon":"database-icon.svg",
+            "title": "Databases",
+            "description":"Experiencia en la gestión de bases de datos, diseñando y optimizando sistemas de almacenamiento de datos seguros y eficientes.",
+            "tools":[
+                "Mongodb/Mongoose",
+                "PostgreSQL",
+                "Firestore",
+                "Sequalize",
+                "TypeOrm"
+            ]
+        },
+        {
+            "icon":"tools-icon.svg",
+            "title": "Herramientas extra",
+            "description":"Además de lo fundamental, utilizo una variedad de herramientas para agilizar flujos de trabajo, desde control de versiones hasta una implementación eficiente.",
+            "tools":[
+                "Git",
+                "VSCode",
+                "Jest",
+                "Linux",
+                "Eslint"
+            ]
+        }
     ]
 }

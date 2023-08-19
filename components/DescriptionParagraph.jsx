@@ -13,24 +13,24 @@ export default function DescriptionParagraph ({ limit, children, translator }) {
   const text = children.trim()
 
   if (text.length <= limit) {
-    return <div className={styles.mainParagraph}>{text}</div>
+    return <article className={styles.mainParagraph}>{text}</article>
   }
 
   if (expanded) {
     return (
-        <div className={styles.mainParagraph}>
+        <article className={styles.mainParagraph}>
           {text}
           <button className={styles.toggleExpanded} onClick={toggleExpanded}>{translator('showLess')}</button>
-        </div>
+        </article>
     )
   }
 
   return (
-      <div className={styles.mainParagraph}>
+      <article className={styles.mainParagraph}>
         {text.slice(0, limit)}
         <span>...</span>
         <button className={styles.toggleExpanded} onClick={toggleExpanded}>{translator('showMore')}</button>
-      </div>
+      </article>
   )
 }
 

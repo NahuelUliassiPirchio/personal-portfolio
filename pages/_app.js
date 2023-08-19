@@ -11,6 +11,8 @@ function MyApp ({ Component, pageProps }) {
         <meta name="author" content="Nahuel Uliassi Pirchio" />
         <meta name="keywords" content="portfolio, full-stack, developer, web developer, software developer, Nahuel Uliassi Pirchio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true'/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

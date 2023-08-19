@@ -26,14 +26,14 @@ export default function Project ({ project }) {
             {
               showFloatingContainer && project.links.map((link, index) => {
                 const { publicRuntimeConfig } = getConfig()
-                return (<LinkButton href={publicRuntimeConfig[link.url] || link.url} key={index} logo={link.icon} text={link.name} />)
+                return (<LinkButton href={publicRuntimeConfig[link.url] || link.url} key={index} logo={link.icon} alt={link.name} >{link.name}</LinkButton>)
               }
               )
             }
           </nav>
 
           <section className={styles.introductionSection} id='introduction'>
-            <Image className={styles.projectImage} src={`/images/${project.image}`} alt={project.name} width={300} height={300} />
+            <Image className={styles.projectImage} src={`/images/${project.logo}`} alt={project.name} width={300} height={300} />
             <h2>{project.name}</h2>
             <p>{project.description}</p>
             {

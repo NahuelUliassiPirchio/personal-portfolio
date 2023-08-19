@@ -2,167 +2,102 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100%;
+  color: var(--text-color);
+  position: relative;
+}
+
+.halfBackground {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background-color: var(--primary-color);
+  z-index: 0; 
 }
 
 .main {
   margin: 0 auto;
-  border: 1px solid var(--text-color);
-  border-radius: 10px;
-  max-width: 1000px;
+  z-index: 1;
 }
 
-.skillsContainer h1 {
-  font-size: 2rem;
-  padding: 0;
-  margin-top: 4rem;
-  text-align: center;
-  text-decoration: underline;
-  color: var(--text-color);
-}
-
-.skillsSelector {
+.skillFields{
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  gap: 1rem;
-  overflow-x: auto;
-}
-
-.skillButton {
-  display: inline-block;
-  cursor: pointer;
-  color: var(--text-color);
-  text-align: center;
-  border-radius: 10px;
-  padding: .5rem;
-}
-
-.skillButton h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin: 0;
   padding: 0;
 }
 
-.skillDivs {
+.skillFields .skillFieldCard:last-child{
+  border-radius: 0 15px 0 0;
+}
+
+.skillFields .skillFieldCard:first-child{
+  border-radius: 15px 0 0 0;
+}
+
+.skillFieldCard {
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+  list-style: none;
+  background-color: var(--background-color);
+  padding: 1rem;
+  width: 20%;
+  border: 1px var(--thin-line-color) solid;
+  text-align: center;
+}
+
+.iconContainer {
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  width: fit-content;
+  align-self: center;
   margin: 0 auto;
 }
 
-.skillDivs > div {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  border: 1px solid var(--text-color);
-  border-left: none;
+.skillFieldCard img{
+  padding: 1rem;
+  object-fit: scale-down;
 }
 
-.activeSkill {
-  background-color: var(--text-color);
-  color: var(--background-color);
+.toolsList li{
+  list-style: none;
 }
 
-.inactiveSkill {
-  color: #888;
-}
-
-.inactiveSkill:hover {
-  background-color: gray;
-  color: var(--background-color);
-}
-
-.skillCards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-.skillCard {
-  display: flex;
-  flex-direction: column;
-  align-items:  baseline;
-  justify-content: baseline;
-  height: 300px;
-  max-width: 350px;
-  margin: .5rem 0;
-  padding: .5rem;
-  border: 1px solid var(--text-color);
-  border-radius: 10px;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  transition: all 0.5s ease-in-out;
-}
-
-.skillTitle {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
-.skillTitle h2 {
-  margin: 0;
-  margin-left: 1rem;
-  display: flex;
-  align-items: center;
-}
-
-.skillCard ul {
-  margin: 0;
-  padding: 1rem 0 0 1.5rem;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 1rem;
-}
-
-.skillCard ul::-webkit-scrollbar {
-  width: 10px;
-}
-
-.skillCard ul::-webkit-scrollbar-track {
-  background: var(--background-color);
-  border: var(--text-color) 1px solid; 
-}
- 
-.skillCard ul::-webkit-scrollbar-thumb {
-  background: var(--text-color); 
-}
-
-.skillCard ul::-webkit-scrollbar-thumb:hover {
-  background: #888; 
-}
-
-.securityLogo, .nextjsLogo {
-  background-color: whitesmoke;
-  padding: .5rem;
-  border-radius: 15px;
-}
 
 @media (max-width: 768px) {
-  .skillDivs {
-    width: 100%;
-  }
   .main {
     flex-direction: column;
   }
-  .skillsSelector {
-    width: 100vw;
-    justify-content: flex-start;
+
+  .halfBackground {
+    display: none;
   }
-  .skillCards {
+
+  .skillFields {
     flex-direction: column;
-    align-items: center;
-  } 
+  }
+
+  .skillFieldCard {
+    width: 90%;
+    align-self: center;
+  }
+
+  .skillFields .skillFieldCard{
+    border-radius: 0;
+  }
+
+  .toolsList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .toolsList li {
+    background-color: var(--primary-color);
+    margin: 1px;
+    padding: .3rem;
+    border-radius: 15px;
+  }
 }

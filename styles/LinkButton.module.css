@@ -3,15 +3,16 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
-    background-color: var(--text-color);
-    color: var(--background-color);
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     border: none;
     border-radius: 10px;
     padding: 0.5rem;
+    z-index: 10;
 }
 
 .linkButton img {
-    background-color: white;
     border-radius: 45%;
     width: 40px;
     height: 40px;
@@ -23,11 +24,15 @@
     height: 100%;
     margin-left: 0.5rem;
     vertical-align: middle;
-    color: var(--background-color);
-    background-color: var(--text-color);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
     font-weight: 450;
     text-decoration: none;
     display: none;
+}
+
+.linkButton.fixed .link{
+    display: inline;
 }
 
 @media (min-width: 768px) {

@@ -1,10 +1,11 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import PropTypes from 'prop-types'
 import useTranslation from 'next-translate/useTranslation'
 
-import DescriptionParagraph from './DescriptionParagraph'
+import BubblesBackground from './BubblesBackground'
+import ProjectCard from './ProjectCard'
+
 import styles from '../styles/ProjectsSection.module.css'
 
 export default function ProjectsSection ({ id, key }) {
@@ -13,6 +14,7 @@ export default function ProjectsSection ({ id, key }) {
 
   return (
     <section id={id} key={key} className={styles.projectsSection}>
+      <BubblesBackground/>
       <div className={styles.projectsTitle}>
         <div className={styles.orbit}>
           <div className={styles.center} onClick={
@@ -62,25 +64,9 @@ export default function ProjectsSection ({ id, key }) {
       <p className={styles.projectsIntroduction} id='projectsIntroduction'>{t('introduction')}</p>
       <ul className={styles.projects}>
         {
-          projects.map(project => (
-              <li className={styles.projectContainer} key={project.url} >
-                  <Image className={styles.projectImage} src={`/images/${project.image}`} alt={project.name} width={200} height={200} />
-                  <h2>{project.name}</h2>
-
-                  <ul className={styles.technologies}>
-                    {project.technologies.map((technology) => (
-                      <li key={technology.name} title={technology.name}>
-                        {technology.icon && <Image src={`/icons/${technology.icon}`} alt={technology.name} width={30} height={30} />}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <DescriptionParagraph limit={350} translator={t}>
-                    {project.description}
-                  </DescriptionParagraph>
-                  <Link href={`/projects/${project.url}`}>{t('viewProject')}</Link>
-              </li>
-          ))
+          projects.map(project =>
+            <ProjectCard key={project.url} project={project} t={t} />
+          )
         }
       </ul>
     </section>

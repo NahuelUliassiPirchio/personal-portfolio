@@ -1,10 +1,11 @@
 .managerContainer .active {
     font-weight: 800;
     text-decoration: underline;
+    color: var(--secondary-color);
 }
 
 .managerContainer a {
     padding: 5px;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--shadow-color);
 }
