@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 import LogoLink from './LogoLink'
 import LinksDropDown from './LinksDropDown'
-import { getLinkByName } from '../utils/maps'
+import { getLinkByName } from '../utils/projectFilters'
 import githubLogo from '../public/icons/github.svg'
 
 import rightArrowIcon from '../public/icons/right-arrow.svg'

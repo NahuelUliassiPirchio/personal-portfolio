@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ThemeProvider from '../providers/ThemeProvider'
 import Head from 'next/head'
+
+import ThemeProvider from '../providers/ThemeProvider'
 import('../styles/globals.css')
 
 function MyApp ({ Component, pageProps }) {

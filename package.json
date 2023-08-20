@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vercel/analytics": "^1.0.2",
     "next": "^13.1.6",
     "next-translate": "^1.6.0",
     "prop-types": "^15.8.1",
