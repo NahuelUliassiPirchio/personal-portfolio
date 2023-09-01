@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image'
 import PropTypes from 'prop-types'

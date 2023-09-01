@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image'

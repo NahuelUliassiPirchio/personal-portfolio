@@ -11,12 +11,11 @@
   height: 50%;
   width: 100%;
   background-color: var(--primary-color);
-  z-index: 0; 
 }
 
 .main {
-  margin: 0 auto;
   z-index: 1;
+  margin: 0 auto;
 }
 
 .skillFields{

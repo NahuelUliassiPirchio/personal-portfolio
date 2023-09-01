@@ -20,7 +20,6 @@
   z-index: 10;
   animation: showFloatingContainer 1s ease-in-out forwards;
 }
-
 @keyframes showFloatingContainer {
   0% {
     transform: translateY(100%);
@@ -29,7 +28,6 @@
     transform: translateY(0);
   }
 }
-
 .floatingButton {
   width: 40px;
   margin-right: .5rem;
@@ -38,11 +36,9 @@
   background-color: var(--background-color);
   cursor: pointer;
 }
-
 .floatingButton:hover {
   transform: scale(1.1);
 }
-
 .floatingButton.collapsed {
   transform: rotate(180deg);
 }
@@ -56,6 +52,36 @@
   max-width: 300px;
   margin-top: 3rem;
   object-fit: contain;
+}
+
+.projectTitle{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.projectTitle .demoButton {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-size: 1.4rem;
+  padding: 1rem .4rem;
+  gap: .5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  background: var(--primary-color);
+  background: linear-gradient(130deg, var(--primary-color) 40%, var(--secondary-color) 100%);
+}
+.projectTitle .demoButton:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+  scale: 1.01;
+}
+.projectTitle .demoButton svg{
+  fill: var(--text-color);
+}
+.projectTitle .demoButton:hover svg{
+  fill: var(--secondary-color);
 }
 
 .subtitle {
@@ -88,6 +114,9 @@
   }
   .processContainer {
     padding-left: 0;
+  }
+  .projectTitle{
+    width: 100%;
   }
   .projectImage {
     align-self: center;

@@ -1,4 +1,3 @@
-import React from 'react'
 import PropType from 'prop-types'
 import Link from 'next/link'
 import Image from 'next/image'

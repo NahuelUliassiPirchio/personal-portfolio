@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 import PropTypes from 'prop-types'
 import useTranslation from 'next-translate/useTranslation'
 

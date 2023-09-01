@@ -123,7 +123,7 @@
                     "backend": [
                         {"quote":"Firstly a basic structure was established separating controllers, middlewares, services and routers. I decided to do it this way since scalability is not important in this case."},
                         {"quote":"In order to create the schemas in mongoose, I first had to establish a connection and configure Mongodb. Although it wasn't my first time using mongoose, this time I wanted to better document myself so I could get the most out of it. the tools that Mongo offers. For example, the use of indexes or geospatial attributes. I had some problems when doing queries with certain filters because as of today I don't have such a deep understanding of this library."},
-                        {"quote":"In this step most of the business logic was developed. I had (and still have) some doubts regarding certain aspects of the architecture. To solve this problem I read a couple of books that explain how to structure a restful API (RESR API Development with Node.js by Fernando Doglio and The REST API Design Handbook by George Reese)."},
+                        {"quote":"In this step most of the business logic was developed. I had (and still have) some doubts regarding certain aspects of the architecture. To solve this problem I read a couple of books that explain how to structure a restful API (REST API Development with Node.js by Fernando Doglio and The REST API Design Handbook by George Reese)."},
                         {"quote":"Here I focused on establishing routing as intuitive as I thought."},
                         {"quote":"I applied the data validation with JOI knowing that mongoose has a similar functionality. The decision had no logical basis other than that I had left pending to use this library. In addition, I structured a middleware for error handling focusing on the codes of the errors that the database returned and a 500 for the others. Thus, in this way there is no place to leak possible sensitive information."},
                         {"quote":"Auth with particular passport middlewares. An important functionality for this project is authentication and authorization. Authentication was resolved with passportJS, using the JWT and local libraries. Authorization, instead, was determined by a system of roles and matching the user's id with the business owner's id."},
@@ -204,13 +204,13 @@
     "showMore":"show more",
     "introduction": "In this section I present the projects that I have developed to date. I show their technologies, processes and improvements that I see. In addition, I include a link to the active demo and the repository of each one.",
     "sections":{
-        "introduction":"Introdution",
+        "introduction":"Introduction",
         "technologies":"Technologies",
         "process":"Process",
         "conclusion":"Conclusion"
     },
     "sectionTitles":{
-        "technologies":"Implmented technologies",
+        "technologies":"Implemented technologies",
         "process":"Process and challenges",
         "conclusion":"Conclusion and next steps"
     }

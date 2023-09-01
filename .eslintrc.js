@@ -17,6 +17,8 @@ module.exports = {
     'react'
   ],
   rules: {
-    'react/no-unknown-property': ['error', { ignore: ['jsx', 'global'] }]
+    'react/no-unknown-property': ['error', { ignore: ['jsx', 'global'] }],
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-uses-react': 'off'
   }
 }

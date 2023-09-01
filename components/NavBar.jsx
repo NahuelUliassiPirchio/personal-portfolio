@@ -1,8 +1,9 @@
+import { useContext } from 'react'
 import Image from 'next/image'
-import React, { useContext } from 'react'
 import useTranslation from 'next-translate/useTranslation'
 import Link from 'next/link'
 import PropTypes from 'prop-types'
+import { useRouter } from 'next/router'
 
 import logo from '../public/images/UPLogo.svg'
 import darkLogo from '../public/images/UPDarkLogo.svg'
@@ -21,6 +22,9 @@ export default function NavBar ({ providedSections }) {
   const { theme } = useContext(ThemeContext)
   const isDark = theme === 'dark'
 
+  const { locale } = useRouter()
+  const resumeLink = locale.startsWith('es') ? process.env.CV_URL_ES : process.env.CV_URL_EN
+
   const sections = providedSections || [
     { title: t('about'), url: 'about' },
     { title: t('skills'), url: 'skills' },
@@ -34,6 +38,9 @@ export default function NavBar ({ providedSections }) {
             <Image src={isDark ? darkLogo : logo} alt='Logo' width={100} height={100} />
           </Link>
           <DynamicIndex sections={sections} />
+          <Link className={styles.resumeLink} href={resumeLink} passHref target={'_blank'}>
+            {t('resumeText')}
+          </Link>
           <div className={styles.styleContainer}>
             <LanguageManager />
             <ThemeToggler />

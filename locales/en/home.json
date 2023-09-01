@@ -3,5 +3,6 @@
         "skills": "Skills",
         "projects": "Projects",
         "contact": "Contact",
-        "downloadResume": "See my resume"
+        "downloadResume": "See my resume",
+        "resumeText":"My Resume"
 }
