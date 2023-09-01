@@ -213,5 +213,6 @@
         "technologies":"Implemented technologies",
         "process":"Process and challenges",
         "conclusion":"Conclusion and next steps"
-    }
+    },
+    "visitDemo": "Explore Demo"
 }

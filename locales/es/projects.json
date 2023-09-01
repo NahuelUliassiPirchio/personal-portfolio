@@ -214,5 +214,6 @@
         "technologies":"Tecnologías implementadas",
         "process":"Proceso y desafíos",
         "conclusion":"Conclusión y mejoras a futuro"
-    }
+    },
+    "visitDemo": "Visita la Demo"
 }
