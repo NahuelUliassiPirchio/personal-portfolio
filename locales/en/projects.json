@@ -53,14 +53,14 @@
             "logo":"BSCStoreLogo.png",
             "image":"store.webm",
             "gallery":[
-                "https://i.ibb.co/bJGdhWr/Screenshot-from-2023-04-17-16-19-09.png",
-                "https://i.ibb.co/J257mty/Screenshot-from-2023-04-17-16-18-54.png",
-                "https://i.ibb.co/gzmy9Pk/Screenshot-from-2023-04-17-14-55-02.png",
-                "https://i.ibb.co/7YHh9Mq/Screenshot-from-2023-04-13-16-48-27.png",
-                "https://i.ibb.co/kD5N6ZF/Screenshot-from-2023-04-13-16-41-25.png",
-                "https://i.ibb.co/QX2358N/Screenshot-from-2023-04-13-16-41-11.png",
-                "https://i.ibb.co/hW4JjqY/Screenshot-from-2023-04-13-16-39-46.png",
-                "https://i.ibb.co/QkqsTpJ/Screenshot-from-2023-04-13-16-39-34.png"
+                "https://i.ibb.co/H2nqjVP/Screenshot-20230901-180640-min.png",
+                "https://i.ibb.co/ww1Lg7J/Screenshot-20230901-180702-min.png",
+                "https://i.ibb.co/hsZff15/Screenshot-20230901-180724-min.png",
+                "https://i.ibb.co/2YGQxLM/Screenshot-20230901-180751-min.png",
+                "https://i.ibb.co/rprKwc5/Screenshot-20230901-180826-min.png",
+                "https://i.ibb.co/3BQWq1r/Screenshot-20230901-180807-min.png",
+                "https://i.ibb.co/RvvH85r/Screenshot-20230901-180902-min.png",
+                "https://i.ibb.co/TP6mScK/Screenshot-20230901-181040-min.png"
             ],
             "links":[
                 {"name":"Frontend Repo", "url":"https://github.com/NahuelUliassiPirchio/nextjs-basic-store-frontend", "icon":"/icons/github.svg"},
@@ -104,13 +104,13 @@
             "logo":"StopRowsLogo.svg",
             "image":"stop.webm",
             "gallery":[
-                "https://i.ibb.co/z7yyT4V/Screenshot-from-2023-04-13-16-48-04.png",
-                "https://i.ibb.co/HNY8vQy/Screenshot-from-2023-04-17-17-59-59.png",
-                "https://i.ibb.co/9m5DhyK/Screenshot-from-2023-04-17-17-27-47.png",
-                "https://i.ibb.co/gJ7kpyC/Screenshot-from-2023-04-13-16-46-02.png",
-                "https://i.ibb.co/QPJCsHX/Screenshot-from-2023-04-13-16-45-42.png",
-                "https://i.ibb.co/Kz2fTSS/Screenshot-from-2023-04-13-16-44-41.png",
-                "https://i.ibb.co/8bRGqxG/Screenshot-from-2023-04-13-16-44-54.png"
+                "https://i.ibb.co/Lgq5Mty/Screenshot-20230901-180030-min.png",
+                "https://i.ibb.co/9pPDzPz/Screenshot-from-2023-04-13-16-48-04-min.png",
+                "https://i.ibb.co/SBRXwSg/Screenshot-from-2023-04-17-17-59-59-min.png",
+                "https://i.ibb.co/KGBZXPp/Screenshot-from-2023-04-13-16-44-54-min.png",
+                "https://i.ibb.co/k0z46mF/Screenshot-from-2023-04-13-16-45-42-min.png",
+                "https://i.ibb.co/mvg0qmc/Screenshot-from-2023-04-13-16-46-02-min.png",
+                "https://i.ibb.co/172tnrG/Screenshot-from-2023-04-17-17-27-47-min.png"
             ],
             "links":[
                 {"name":"Frontend Repo", "url":"https://github.com/NahuelUliassiPirchio/nextjs-stop-rows-frontend", "icon":"/icons/github.svg"},

@@ -23,6 +23,12 @@
     background-color: white;
     z-index: 1;
 }
+.navigationButton:hover {
+    background-color: var(--shadow-color);
+}
+.navigationButton:active {
+    background-color: black;
+}
 .prevButton {
     left: 0;
 }
@@ -51,6 +57,9 @@
 .preview.active {
     opacity: 1;
     border: 1px solid black;
+}
+.preview:hover {
+    opacity: .85;
 }
 
 .imageContainer {

@@ -35,9 +35,11 @@ export default function Project ({ project }) {
           </nav>
 
           <section className={styles.introductionSection} id='introduction'>
-            <Image className={styles.projectImage} src={`/images/${project.logo}`} alt={project.name} width={300} height={300} />
             <div className={styles.projectTitle}>
-              <h2>{project.name}</h2>
+              <div className={styles.title}>
+                <Image className={styles.projectImage} src={`/images/${project.logo}`} alt={project.name} width={300} height={300} />
+                <h1>{project.name}</h1>
+              </div>
               {
                 getLinkByName(project.links, 'Demo')[0] &&
                   <Link className={styles.demoButton} href={getLinkByName(project.links, 'Demo')[0].url} passHref target={'_blank'}>
@@ -54,7 +56,7 @@ export default function Project ({ project }) {
 
           <section id='technologies'>
             <h3 className={styles.subtitle}>{t('sectionTitles.technologies')}</h3>
-            <ul>
+            <ul className={styles.technologiesContainer}>
               {project.technologies.map((technology) => (
                 <li key={technology.name}>
                   {technology.name}

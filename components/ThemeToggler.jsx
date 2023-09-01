@@ -24,6 +24,7 @@ const ThemeToggler = () => {
                     --bubble-color: ${isDark ? '#0e6868' : '#FFA559'};
                     --bubble-bright: ${isDark ? 'cyan' : 'var(--secondary-color)'};
                     --thin-line-color: ${isDark ? '#12243d' : '#cac6af'};
+                    --navbar-height: 4rem;
                 }
             `}</style>
         </>
