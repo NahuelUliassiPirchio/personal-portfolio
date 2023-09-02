@@ -36,9 +36,6 @@ export default function ImageSlider ({ images }) {
 
   return (
       <div className={styles.container}>
-        <button className={`${styles.navigationButton} ${styles.prevButton}`} onClick={handlePrevImage}>
-          <Image src={sortLeftIcon} alt="prev" width={20} height={20} />
-        </button>
         <ul className={styles.previewsContainer}>
           {images.map((imageUrl, index) => (
             <li key={imageUrl} className={styles.preview}>
@@ -53,10 +50,29 @@ export default function ImageSlider ({ images }) {
             </li>
           ))}
         </ul>
-        <Image className={styles.imageContainer} src={images[currentImageIndex]} onClick={() => setShowModal(true)} alt="slider" width={800} height={800} />
-        <button className={`${styles.navigationButton} ${styles.nextButton}`} onClick={handleNextImage}>
-          <Image src={sortRightIcon} alt="next" width={20} height={20} />
-        </button>
+
+        <figure>
+          <button className={`${styles.navigationButton} ${styles.prevButton}`} onClick={handlePrevImage}>
+            <Image src={sortLeftIcon} alt="prev" width={20} height={20} />
+          </button>
+          {
+            images.map((imageUrl, index) => {
+              return (
+                <Image className={`${styles.image} ${index === currentImageIndex && styles.display}`}
+                  key={index}
+                  src={imageUrl}
+                  onClick={() => setShowModal(true)}
+                  alt="slider"
+                  width={800}
+                  height={400} />
+              )
+            })
+          }
+          <button className={`${styles.navigationButton} ${styles.nextButton}`} onClick={handleNextImage}>
+            <Image src={sortRightIcon} alt="next" width={20} height={20} />
+          </button>
+        </figure>
+
         {showModal && (
           <div className={styles.modal} onClick={handleModalClick}>
             <Image src={images[currentImageIndex]} alt="modal" width={800} height={800} />
