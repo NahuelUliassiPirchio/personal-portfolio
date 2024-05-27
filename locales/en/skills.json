@@ -1,29 +1,31 @@
 {
-    "toolsTitle":"Tools",
+    "toolsTitle": "Tools",
     "fields": [
         {
-            "icon":"front-icon.svg",
-            "title": "Frontend development",
-            "description":"My focus lies in developing code from scratch and translating ideas into navigable experiences. While I don't specialize in design, I deeply care about performance and optimizing element sizes.",
-            "tools":[
+            "icon": "front-icon.svg",
+            "title": "Frontend Development",
+            "description": "My focus is on writing code from scratch and turning ideas into navigable experiences. While I am not an expert in design, I am very concerned with performance and optimizing element sizes.",
+            "tools": [
                 "Javascript/Typescript",
                 "Html",
                 "Css",
                 "Reactjs",
                 "Nextjs",
                 "Bootstrap",
+                "Tailwind CSS",
                 "i18n",
                 "Selenium"
             ]
         },
         {
-            "icon":"back-icon.svg",
-            "title": "Backend development",
-            "description":"With skills in scalable architecture development, I can build the core functionality of web applications, ensuring efficient data transfer and robust performance.",
-            "tools":[
+            "icon": "back-icon.svg",
+            "title": "Backend Development",
+            "description": "With skills in developing scalable architectures, I can build the essential functionality of web applications, ensuring efficient data transfer and solid performance.",
+            "tools": [
                 "Javascript/Typescript",
                 "Nestjs",
                 "Expressjs",
+                "Flask",
                 "Swagger",
                 "JWT",
                 "REST",
@@ -32,22 +34,36 @@
             ]
         },
         {
-            "icon":"database-icon.svg",
+            "icon": "database-icon.svg",
             "title": "Databases",
-            "description":"I bring experience in database management, designing and optimizing secure and efficient data storage systems.",
-            "tools":[
+            "description": "Experience in managing databases, designing, and optimizing secure and efficient data storage systems.",
+            "tools": [
                 "Mongodb/Mongoose",
                 "PostgreSQL",
                 "Firestore",
-                "Sequalize",
-                "TypeOrm"
+                "Sequelize",
+                "TypeOrm",
+                "SQL"
             ]
         },
         {
-            "icon":"tools-icon.svg",
-            "title": "Herramientas extra",
-            "description":"Beyond the basics, I employ a range of tools to streamline workflows, from version control to efficient deployment.",
-            "tools":[
+            "icon": "data-icon.svg",
+            "title": "Data Analysis",
+            "description": "Skills in cleaning, manipulating, and visualizing data to support informed decision-making. Experience in creating detailed reports and visualizations using advanced tools, as well as automating data analysis processes to improve efficiency and accuracy.",
+            "tools": [
+                "Python",
+                "Pandas",
+                "Matplotlib",
+                "Power BI",
+                "DAX",
+                "SQL"
+            ]
+        },
+        {
+            "icon": "tools-icon.svg",
+            "title": "Additional Tools",
+            "description": "Besides the fundamentals, I use a variety of tools to streamline workflows, from version control to efficient deployment.",
+            "tools": [
                 "Git",
                 "VSCode",
                 "Jest",
