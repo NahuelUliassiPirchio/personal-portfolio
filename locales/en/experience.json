@@ -1,0 +1,24 @@
+{
+    "title": "Experience",
+    "experiences": [
+        {
+            "position": "Developer and Data Analyst",
+            "company": "Transporte Ideal San Justo",
+            "duration": "Aug. 2023 - Present",
+            "description": "In my current role as a Developer and Data Analyst, I have worked on developing and maintaining various internal web applications using technologies such as Next.js, Tailwind, and Flask. I have also integrated APIs to efficiently process and present data, significantly improving data access and presentation within the company.\n\nAdditionally, I have created detailed reports and visualizations with Power BI, applying DAX functions, and have handled data using pandas and Matplotlib for cleaning and visualization. By automating various internal processes with Python and Tkinter, I have reduced manual workload and increased operational efficiency. I collaborate closely with different teams, fostering effective communication and contributing to a positive and productive work environment."
+          },
+          {
+            "position": "Full-stack Developer",
+            "company": "Personal Projects",
+            "duration": "Nov. 2022 - Present",
+            "description": "To gain web development experience, I have created and improved personal projects, learning various technologies and frameworks. I have applied best coding practices, effective architectures, and worked on deployment, optimization, and testing to ensure the quality and performance of my applications."
+          },
+          {
+            "position": "CCTV Technical Support (Internship)",
+            "company": "Argomys",
+            "duration": "Jun. 2019 - Nov. 2019",
+            "description": "I worked in a team to solve problems and provide phone support to clients. I assembled and repaired equipment, ensuring the service worked correctly. Additionally, I resolved issues remotely using tools like TeamViewer, guaranteeing a quick and effective response to user needs."
+        }
+        
+    ]
+}

@@ -10,6 +10,7 @@ import LinkButton from '../components/LinkButton'
 import MetaDecorator from '../components/MetaDecorator'
 
 import styles from '../styles/Home.module.css'
+import ExperienceSection from '../components/ExperienceSection'
 
 export default function Home () {
   const { t } = useTranslation('home')
@@ -17,6 +18,7 @@ export default function Home () {
 
   const sections = [
     { title: t('about'), url: 'about', component: AboutSection },
+    { title: t('about'), url: 'experience', component: ExperienceSection },
     { title: t('skills'), url: 'skills', component: SkillsSection },
     { title: t('projects'), url: 'projects', component: ProjectsSection },
     { title: t('contact'), url: 'contact', component: ContactSection }

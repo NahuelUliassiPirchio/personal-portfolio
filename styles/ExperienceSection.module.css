@@ -1,0 +1,62 @@
+.experienceSection {
+  color: var(--text-color);
+  padding: 3rem 0;
+}
+
+.experienceSection h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.experienceList {
+  position: relative;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.experienceList::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--bubble-color);
+}
+
+.experienceItem {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.experienceItem::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--bubble-color);
+  border-radius: 50%;
+}
+
+.position {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.company {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.duration {
+  color: gray;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.description {
+  line-height: 1.5;
+}

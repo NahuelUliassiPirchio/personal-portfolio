@@ -29,7 +29,7 @@ module.exports = nextTranslate({
       },
       {
         protocol: 'https',
-        hostname: 'res.cloudinary.com'
+        hostname: 'scontent.faep8-1.fna.fbcdn.net'
       }
     ]
   }

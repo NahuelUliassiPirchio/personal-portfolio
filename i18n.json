@@ -4,6 +4,6 @@
     "localeDetection": false,
     "pages": {
       "*": ["home","common", "projects"],
-      "/": ["home","contact","about","skills"]
+      "/": ["home","contact","about","skills", "experience"]
     }
   }

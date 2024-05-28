@@ -27,6 +27,7 @@ export default function NavBar ({ providedSections }) {
 
   const sections = providedSections || [
     { title: t('about'), url: 'about' },
+    { title: t('experience'), url: 'experience' },
     { title: t('skills'), url: 'skills' },
     { title: t('projects'), url: 'projects' },
     { title: t('contact'), url: 'contact' }

@@ -26,16 +26,16 @@ export default function ProjectsSection ({ id, key }) {
           </div>
           <ul>
             <li>
-              <div><Image src="https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9lZDI1OTU4NzA0MWM1YWI3OWYyNGNiMWUzNDFmMGEzNz9zaXplPTQ5NiZkZWZhdWx0PXJldHJvIn0.hLdG6hXQE4Dfil6090lrDEuGdsHbfQUijpy5RvzXjSg" alt="NestJS logo" width={100} height={1000}/></div>
-              <p>NestJS</p>
+              <div><Image src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python logo" width={100} height={1000}/></div>
+              <p>Python</p>
             </li>
             <li>
               <div><Image src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="NextJS logo" width={100} height={1000}/></div>
               <p>NextJS</p>
             </li>
             <li>
-              <div><Image src="https://www.clipartmax.com/png/full/291-2918933_html-and-css-logo.png" alt="HTML and CSS logos" width={100} height={1000}/></div>
-              <p>HTML/CSS</p>
+              <div><Image src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI logo" width={100} height={1000}/></div>
+              <p>POWER BI</p>
             </li>
             <li>
               <div><Image src="https://cdn.worldvectorlogo.com/logos/react-1.svg" alt="React logo" width={100} height={1000}/></div>
@@ -54,7 +54,7 @@ export default function ProjectsSection ({ id, key }) {
               <p>PostgreSQL</p>
             </li>
             <li>
-              <div><Image src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/erkxwhl1gd48xfhe2yld" alt="MongoDB logo" width={100} height={1000}/></div>
+              <div><Image src="https://scontent.faep8-1.fna.fbcdn.net/v/t39.30808-6/246656344_10165689418720557_4225476852778908330_n.png?_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=EusOO3YEyHAQ7kNvgEeeNts&_nc_ht=scontent.faep8-1.fna&oh=00_AYDZlIx9OGAJyLt0dYqoDl457UGmzshMmr8EqS_qN0G44w&oe=665AFFDD" alt="MongoDB logo" width={100} height={1000}/></div>
               <p>MongoDB</p>
             </li>
           </ul>
