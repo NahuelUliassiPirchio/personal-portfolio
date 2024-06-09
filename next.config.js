@@ -29,7 +29,7 @@ module.exports = nextTranslate({
       },
       {
         protocol: 'https',
-        hostname: 'scontent.faep8-1.fna.fbcdn.net'
+        hostname: '1000logos.net'
       }
     ]
   }

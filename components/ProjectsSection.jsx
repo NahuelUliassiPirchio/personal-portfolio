@@ -54,7 +54,7 @@ export default function ProjectsSection ({ id, key }) {
               <p>PostgreSQL</p>
             </li>
             <li>
-              <div><Image src="https://scontent.faep8-1.fna.fbcdn.net/v/t39.30808-6/246656344_10165689418720557_4225476852778908330_n.png?_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=EusOO3YEyHAQ7kNvgEeeNts&_nc_ht=scontent.faep8-1.fna&oh=00_AYDZlIx9OGAJyLt0dYqoDl457UGmzshMmr8EqS_qN0G44w&oe=665AFFDD" alt="MongoDB logo" width={100} height={1000}/></div>
+              <div><Image src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Emblem.jpg" alt="MongoDB logo" width={100} height={1000}/></div>
               <p>MongoDB</p>
             </li>
           </ul>

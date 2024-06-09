@@ -153,7 +153,7 @@
 }
 
 .activeSection {
-  background-color: red;
+  background-color: #4280B2;
   color: var(--text-color);
 }
 
@@ -162,7 +162,7 @@
   opacity: 0;
 }
 .orbit li:nth-child(1) p{
-  background-color: red;
+  background-color: #4280B2;
   color: white;
 }
 .projectsAnimation .orbit li:nth-child(1) {
@@ -187,8 +187,7 @@
   opacity: 0;
 }
 .orbit li:nth-child(3) p{
-  background: rgb(4,115,184);
-  background: linear-gradient(317deg, rgba(4,115,184,1) 0%, rgba(1,171,221,1) 49%, rgba(250,103,29,1) 51%, rgba(236,78,27,1) 100%);
+  background: #F2D568;
   color: black;
 }
 .projectsAnimation .orbit li:nth-child(3) {

@@ -130,13 +130,17 @@
   padding: 1rem;
   height: stretch;
   color: white;
+  border-radius: 10px;
 }
 
 .projectContainer:hover article{
   display: block;
-  background: rgb(1,1,1);
-  background: linear-gradient(0deg, rgba(1,1,1,0.3337710084033614) 0%, rgba(0,0,0,1) 100%);
+  background: var(--primary-color);
+  height: 100%;
+}
 
+.projectContainer:hover article h2{
+  margin-bottom: 4px;
 }
 
 .projectsTitle {

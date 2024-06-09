@@ -30,9 +30,9 @@
 
 .title span {
   /* animation: highlight 2s ease-in-out; */
-  background: rgb(194, 186, 175);
+  /* background: rgb(194, 186, 175); */
   border-radius: 12px;
-  color: var(--background-color);
+  /* color: var(--background-color); */
   text-decoration: underline;
 }
 
