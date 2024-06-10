@@ -26,7 +26,7 @@ export default function ProjectCard ({ project, t }) {
         project.image
           ? (
             <video className={styles.projectImage} autoPlay muted loop>
-              <source src={`/images/videos/${project.image}`}/>
+              <source src={`/images/videos/${project.image}`} type="video/mp4"/>
             </video>
             )
           : (

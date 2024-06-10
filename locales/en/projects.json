@@ -1,6 +1,72 @@
 {
     "projects":[
         {
+            "name":"Map Zone Delimiter",
+            "shortDescription":"I created Map Zone Delimiter to efficiently assign locations to data in multiple ways. Existing tools fell short, so I built this application for flexible zone management using Leaflet and Voronoi diagrams.",
+            "description":"I developed Map Zone Delimiter because I needed a versatile tool to assign geospatial data in different ways, as the existing solutions didn't fully meet my requirements. This project enabled me to create an intuitive application that offers flexible management of geospatial zones through adjustable radius, polyline areas, and abstract areas with Voronoi diagrams. Map Zone Delimiter supports data import and export in CSV format, simplifying data handling and analysis. The application provides a smooth user experience with easy point and group management, making geospatial data assignment straightforward and efficient.",
+            "technologies":[
+                {"name":"JAVASCRIPT","icon":"javascript.svg"}
+            ],
+            "url":"map-zone-delimiter",
+            "logo":"MapIcon.png",
+            "image":"map.mp4",
+            "gallery":[
+                "https://i.ibb.co/c61kX0D/map-zone-delimiter-f000106.png",
+                "https://i.ibb.co/80vt6ss/map-zone-delimiter-f000541.png",
+                "https://i.ibb.co/2ygcbVk/map-zone-delimiter-f000846.png",
+                "https://i.ibb.co/mzmsjJg/map-zone-delimiter-f001319.png",
+                "https://i.ibb.co/bJdr50P/map-zone-delimiter-f001112.png"
+            ],
+            "links":[
+                {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/map-zone-delimiter", "icon":"/icons/github.svg"},
+                {"name":"Demo", "url":"https://nahueluliassipirchio.github.io/map-zone-delimiter/", "icon":"/images/MapIcon.png"}
+            ],
+            "process": [
+                {"quote":"Firstly, I laid the foundation by adding a map using the Leaflet library. I implemented basic functions to add points on the map through clicks, ensuring an initial visualization of the locations."},
+                {"quote":"Next, I added the functionality to group points. This allowed organizing points into different groups, facilitating the management and classification of locations on the map."},
+                {"quote":"Then, I incorporated additional features for points, such as the ability to delete or identify them. This enhanced the interaction with points, allowing for more detailed and precise management."},
+                {"quote":"I introduced the functionality to create polyline areas, enabling the delimitation of zones by connecting points with lines. This provided a more versatile way to define geospatial areas on the map."},
+                {"quote":"Subsequently, I added the capability to create radius zones, where points are surrounded by an adjustable circle. I implemented range controls to dynamically modify the radius of these circles, enhancing flexibility in area delimitation."},
+                {"quote":"Finally, I integrated dynamic zones using Voronoi diagrams. This allowed segmenting the map into abstract areas based on point distribution, facilitating more precise data assignment to the nearest zones."}
+            ],
+            "conclusion": "Future improvements could include more dynamic point administration features, such as enhanced visual grouping and reordering of points in the list. Additionally, optimizing the application for mobile support would significantly broaden its usability."
+        },
+        {
+            "name":"Light Control Pro",
+            "shortDescription":"I created Light Control Pro because I needed a simple, efficient app with shortcuts for smart lights. Market options didn't meet my needs, so I built a tool for intuitive control of Wiz bulbs, featuring real-time adjustments and scene management.",
+            "description":"I developed Light Control Pro because I wanted a straightforward application with shortcuts to manage my smart lights, as existing solutions didn't satisfy my preferences. This project allowed me to design an intuitive, efficient tool for controlling my Wiz smart bulbs directly from my PC. Light Control Pro provides real-time adjustments, scene management, and custom keyboard shortcuts, offering a seamless user experience for smart lighting control.",
+            "technologies":[
+                {"name":"JAVASCRIPT","icon":"javascript.svg"},
+                {"name":"ELECTRON","icon":"electron.svg"}
+
+            ],
+            "url":"light-control-pro",
+            "logo":"LightsLogo.png",
+            "image":"light.mp4",
+            "gallery":[
+                "https://i.ibb.co/MhGG77D/light-control-f000234.png",
+                "https://i.ibb.co/pfMp3Xq/light-control-f000017.png",
+                "https://i.ibb.co/HTTGCNs/light-control-f000346.png",
+                "https://i.ibb.co/Kb2TbVC/light-control-f000422.png",
+                "https://i.ibb.co/d2Tj2gr/light-control-f000487.png",
+                "https://i.ibb.co/6DhHPKC/light-control-f001056.png",
+                "https://i.ibb.co/0jZSGpV/light-control-f001131.png",
+                "https://i.ibb.co/7r9X0z2/light-control-f001233.png"
+            ],
+            "links":[
+                {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/light-control-pro", "icon":"/icons/github.svg"},
+                {"name":"Demo", "url":"https://github.com/NahuelUliassiPirchio/light-control-pro/releases", "icon":"/images/LightsLogo.png"}
+            ],
+            "process": [
+                {"quote":"I began by establishing communication with the smart bulbs, ensuring I could send commands and receive responses. This foundational step was crucial to understand the capabilities and limitations of the bulbs."},
+                {"quote":"Next, I designed and implemented an intuitive user interface. The goal was to make it easy for users to control their lighting setup. I focused on providing a clean, user-friendly experience that would allow for seamless interaction with the bulbs."},
+                {"quote":"To enhance usability, I integrated custom keyboard shortcuts. This feature allows users to quickly adjust lighting settings without navigating through the interface, streamlining their interaction with the application."},
+                {"quote":"I then introduced the concept of rooms, allowing users to group multiple bulbs together. This functionality makes it easier to control multiple bulbs simultaneously and organize the lighting setup more efficiently."},
+                {"quote":"Finally, I added the option for the application to run on system startup. This ensures that the lighting control is always readily available without requiring manual startup, enhancing convenience for the users."}
+            ],
+            "conclusion": "Light Control Pro provides an intuitive tool for controlling Wiz smart bulbs. Future enhancements include advanced grouping options, improved synchronization between events, personalization features, and optimized messaging algorithms for better performance."
+        },
+        {
             "name":"Simple Pomodoro and To-do",
             "shortDescription":"I developed this app due to my affinity for the Pomodoro methodology: intense work blocks followed by breaks to boost productivity. I wanted to track my pomodoros per task, optimizing my routine.",
             "description":"I decided to develop this application because I am a fervent follower of the Pomodoro work methodology. This methodology is based on dividing time into intense work blocks and short breaks to increase productivity and maintain focus. I enjoy keeping my tasks organized and always at hand. The idea behind this application was to measure the number of Pomodoros dedicated to each task and thus make better use of my time. I wanted to have an easy and efficient way to track my efforts and optimize my work routine.",

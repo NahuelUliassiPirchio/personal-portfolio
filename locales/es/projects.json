@@ -1,6 +1,72 @@
 {
     "projects":[
         {
+            "name":"Map Zone Delimiter",
+            "shortDescription": "Necesitaba asignar ubicaciones a datos de múltiples maneras de manera eficiente. Las herramientas existentes no cumplían con las expectativas, así que construí esta aplicación para una gestión flexible de zonas usando Leaflet y diagramas de Voronoi.",
+            "description": "Desarrollé Map Zone Delimiter porque necesitaba una herramienta versátil para asignar datos geoespaciales de diferentes maneras, ya que las soluciones existentes no cumplían completamente con mis requisitos. Este proyecto me permitió crear una aplicación intuitiva que ofrece una gestión flexible de zonas geoespaciales mediante radios ajustables, áreas de polilínea y áreas abstractas con diagramas de Voronoi. Map Zone Delimiter soporta la importación y exportación de datos en formato CSV, simplificando la manipulación y el análisis de datos. La aplicación proporciona una experiencia de usuario fluida con una fácil gestión de puntos y grupos, haciendo que la asignación de datos geoespaciales sea sencilla y eficiente.",
+            "technologies":[
+                {"name":"JAVASCRIPT","icon":"javascript.svg"}
+            ],
+            "url":"map-zone-delimiter",
+            "logo":"MapIcon.png",
+            "image":"map.mp4",
+            "gallery":[
+                "https://i.ibb.co/c61kX0D/map-zone-delimiter-f000106.png",
+                "https://i.ibb.co/80vt6ss/map-zone-delimiter-f000541.png",
+                "https://i.ibb.co/2ygcbVk/map-zone-delimiter-f000846.png",
+                "https://i.ibb.co/mzmsjJg/map-zone-delimiter-f001319.png",
+                "https://i.ibb.co/bJdr50P/map-zone-delimiter-f001112.png"
+            ],
+            "links":[
+                {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/map-zone-delimiter", "icon":"/icons/github.svg"},
+                {"name":"Demo", "url":"https://nahueluliassipirchio.github.io/map-zone-delimiter/", "icon":"/images/MapIcon.png"}
+            ],
+            "process": [
+                {"quote": "Primero, establecí la base añadiendo un mapa usando la biblioteca Leaflet. Implementé funciones básicas para añadir puntos en el mapa mediante clics, asegurando una visualización inicial de las ubicaciones."},
+                {"quote": "Luego, añadí la funcionalidad para agrupar puntos. Esto permitió organizar los puntos en diferentes grupos, facilitando la gestión y clasificación de ubicaciones en el mapa."},
+                {"quote": "Después, incorporé características adicionales para los puntos, como la capacidad de eliminarlos o identificarlos. Esto mejoró la interacción con los puntos, permitiendo una gestión más detallada y precisa."},
+                {"quote": "Introduje la funcionalidad para crear áreas de polilínea, permitiendo la delimitación de zonas conectando puntos con líneas. Esto proporcionó una manera más versátil de definir áreas geoespaciales en el mapa."},
+                {"quote": "Subsecuentemente, añadí la capacidad para crear zonas de radio, donde los puntos están rodeados por un círculo ajustable. Implementé controles de rango para modificar dinámicamente el radio de estos círculos, mejorando la flexibilidad en la delimitación de áreas."},
+                {"quote": "Finalmente, integré zonas dinámicas usando diagramas de Voronoi. Esto permitió segmentar el mapa en áreas abstractas basadas en la distribución de puntos, facilitando una asignación de datos más precisa a las zonas más cercanas."}
+            ],
+            "conclusion": "Las mejoras futuras podrían incluir características más dinámicas para la administración de puntos, como un mejor agrupamiento visual y la reordenación de puntos en la lista. Además, optimizar la aplicación para soporte móvil ampliaría significativamente su usabilidad."
+        },
+        {
+            "name":"Light Control Pro",
+            "shortDescription": "Creé Light Control Pro porque necesitaba una aplicación simple y eficiente con atajos para luces inteligentes. Las opciones del mercado no cumplían con mis necesidades, así que construí una herramienta para el control intuitivo de las bombillas Wiz, con ajustes en tiempo real y gestión de escenas.",
+            "description": "Desarrollé Light Control Pro porque quería una aplicación sencilla con atajos para gestionar mis luces inteligentes, ya que las soluciones existentes no satisfacían mis preferencias. Este proyecto me permitió diseñar una herramienta intuitiva y eficiente para controlar mis bombillas inteligentes Wiz directamente desde mi PC. Light Control Pro ofrece ajustes en tiempo real, gestión de escenas y atajos de teclado personalizados, proporcionando una experiencia de usuario fluida para el control de iluminación inteligente.",
+            "technologies":[
+                {"name":"JAVASCRIPT","icon":"javascript.svg"},
+                {"name":"ELECTRON","icon":"electron.svg"}
+
+            ],
+            "url":"light-control-pro",
+            "logo":"LightsLogo.png",
+            "image":"light.mp4",
+            "gallery":[
+                "https://i.ibb.co/MhGG77D/light-control-f000234.png",
+                "https://i.ibb.co/pfMp3Xq/light-control-f000017.png",
+                "https://i.ibb.co/HTTGCNs/light-control-f000346.png",
+                "https://i.ibb.co/Kb2TbVC/light-control-f000422.png",
+                "https://i.ibb.co/d2Tj2gr/light-control-f000487.png",
+                "https://i.ibb.co/6DhHPKC/light-control-f001056.png",
+                "https://i.ibb.co/0jZSGpV/light-control-f001131.png",
+                "https://i.ibb.co/7r9X0z2/light-control-f001233.png"
+            ],
+            "links":[
+                {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/light-control-pro", "icon":"/icons/github.svg"},
+                {"name":"Demo", "url":"https://github.com/NahuelUliassiPirchio/light-control-pro/releases", "icon":"/images/LightsLogo.png"}
+            ],
+            "process": [
+                {"quote": "Comencé estableciendo la comunicación con las bombillas inteligentes, asegurándome de poder enviar comandos y recibir respuestas. Este paso fundamental fue crucial para entender las capacidades y limitaciones de las bombillas."},
+                {"quote": "Luego, diseñé e implementé una interfaz de usuario intuitiva. El objetivo era facilitar el control de la configuración de iluminación. Me enfoqué en proporcionar una experiencia limpia y amigable que permitiera una interacción fluida con las bombillas."},
+                {"quote": "Para mejorar la usabilidad, integré atajos de teclado personalizados. Esta característica permite a los usuarios ajustar rápidamente la configuración de la iluminación sin navegar por la interfaz, agilizando su interacción con la aplicación."},
+                {"quote": "Luego, introduje el concepto de habitaciones, permitiendo a los usuarios agrupar varias bombillas. Esta funcionalidad facilita el control simultáneo de múltiples bombillas y la organización más eficiente de la configuración de iluminación."},
+                {"quote": "Finalmente, añadí la opción para que la aplicación se ejecute al iniciar el sistema. Esto asegura que el control de la iluminación esté siempre disponible sin necesidad de iniciarlo manualmente, mejorando la conveniencia para los usuarios."}
+            ],
+            "conclusion": "Light Control Pro proporciona una herramienta intuitiva para controlar las bombillas inteligentes Wiz. Las mejoras futuras incluyen opciones avanzadas de agrupación, mejor sincronización entre eventos, características de personalización y algoritmos de mensajería optimizados para un mejor rendimiento."
+        },
+        {
             "name":"Simple Pomodoro and To-do",
             "shortDescription":"Desarrollé esta app por mi afinidad con la metodología Pomodoro: bloques intensos de trabajo seguidos de pausas para aumentar la productividad. Quería medir mis pomodoros por tarea, optimizando mi rutina.",
             "description":"Desarrollé esta app por mi afinidad con la metodología Pomodoro: bloques intensos de trabajo seguidos de pausas para aumentar la productividad. Quería medir mis pomodoros por tarea, optimizando mi rutina.",
