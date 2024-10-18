@@ -1,10 +1,6 @@
 .projectContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 200px;
-  max-width: 400px;
-
+  flex-direction: row;
   color: var(--text-color);
   background-color: var(--primary-color);
   border-radius: 10px;
@@ -16,6 +12,14 @@
   text-decoration: underline;
   font-family: 'Bricolage Grotesque', sans-serif;
   margin: 0;
+}
+
+.projectBodyContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2%;
 }
 
 .projectButtons {
@@ -42,27 +46,13 @@
 .demoButton {
   color: var(--background-color);
   background:var(--secondary-color);
-  padding: .3rem;
-  animation: glowing 1300ms infinite;
+  padding: .5rem;
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
 }
 
 .demoButton:hover {
   text-decoration: underline;
-}
-
-@keyframes glowing {
-  0% {
-    background-color: var(--secondary-color);
-    box-shadow: 0 0 5px var(--secondary-color);
-  }
-  50% {
-    background-color: var(--bubble-color);
-    box-shadow: 0 0 1rem var(--bubble-color);
-  }
-  100% {
-    background-color: var(--secondary-color);
-    box-shadow: 0 0 5px var(--secondary-color);
-  }
+  background:var(--bubble-color);
 }
 
 .readMoreLink {
@@ -110,7 +100,8 @@
 
 .imageContainer{
   position: relative;
-  width: 100%;
+  width: 30%;
+  min-width: 500px;
   display: inline-block;
   margin: 0;
 }
@@ -127,18 +118,18 @@
   top: 0;
   display: none;
   margin: 0;
-  padding: 1rem;
   height: stretch;
   color: white;
   border-radius: 10px;
 }
-
 .projectContainer:hover article{
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--primary-color);
   height: 100%;
+  padding-left: 2%;
 }
-
 .projectContainer:hover article h2{
   margin-bottom: 4px;
 }
@@ -157,10 +148,40 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
   padding: .5rem 0;
-  list-style: none;
   gap: .5rem;
+  margin-top: 1rem;
+  list-style: none;
+}
+
+@media (max-width: 950px) {
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    max-width: 400px;
+  
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    margin: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .imageContainer{
+    width: 100%;
+    min-width: 0;
+  }
+
+  .technologies {
+    justify-content: center;
+
+  }
+  .projectContainer h2 {
+    text-align: center;
+  }
 }

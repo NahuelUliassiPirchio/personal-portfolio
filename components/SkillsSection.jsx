@@ -12,6 +12,7 @@ export default function SkillsSection ({ id, key }) {
         <section id={id} key={key} className={styles.skillsContainer}>
             <div className={styles.halfBackground}></div>
             <main className={styles.main}>
+              <h2>Skills</h2>
               <ul className={styles.skillFields}>
                 {
                   fields.map(field => {

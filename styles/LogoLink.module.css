@@ -1,7 +1,7 @@
 .linkContainer {
     display: flex;
     flex-direction: row;
-    padding: 0;
+    padding: .5rem;
     align-items: center;
     color: var(--text-color);
 }

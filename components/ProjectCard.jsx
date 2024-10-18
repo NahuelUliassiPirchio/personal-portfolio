@@ -18,32 +18,34 @@ export default function ProjectCard ({ project, t }) {
   return (
     <li className={`${styles.projectContainer} ${project.image ?? styles.noGif}`} key={project.url} >
       <figure className={styles.imageContainer}>
-      <article>
-        <h2>{project.name}</h2>
-        {project.shortDescription}
-      </article>
-      {
-        project.image
-          ? (
-            <video className={styles.projectImage} autoPlay muted loop>
-              <source src={`/images/videos/${project.image}`} type="video/mp4"/>
-            </video>
-            )
-          : (
-            <Image className={styles.projectImage} src={`/images/${project.logo}`} alt={project.name} width={200} height={200} priority/>
-            )
-      }
-
+        <article>
+          <span>
+            {project.shortDescription}
+          </span>
+        </article>
+        {
+          project.image
+            ? (
+              <video className={styles.projectImage} autoPlay muted loop>
+                <source src={`/images/videos/${project.image}`} type="video/mp4"/>
+              </video>
+              )
+            : (
+              <Image className={styles.projectImage} src={`/images/${project.logo}`} alt={project.name} width={200} height={200} priority/>
+              )
+        }
       </figure>
-
-      <h2>{project.name}</h2>
-      <ul className={styles.technologies}>
-        {project.technologies.map((technology) => (
-          <li key={technology.name} title={technology.name}>
-            {technology.icon && <Image src={`/icons/${technology.icon}`} alt={technology.name} width={30} height={30} />}
-          </li>
-        ))}
-      </ul>
+      <div className={styles.projectBodyContainer}>
+        <div className={styles.projectDescription} >
+          <h2>{project.name}</h2>
+          <ul className={styles.technologies}>
+            {project.technologies.map((technology) => (
+              <li key={technology.name} title={technology.name}>
+                {technology.icon && <Image src={`/icons/${technology.icon}`} alt={technology.name} width={30} height={30} />}
+              </li>
+            ))}
+          </ul>
+        </div>
 
         <div className={styles.projectButtons}>
           {
@@ -63,6 +65,7 @@ export default function ProjectCard ({ project, t }) {
             <Image className={styles.arrow} src={rightArrowIcon} alt='Right arrow' width={30} height={30} />
             </Link>
         </div>
+      </div>
     </li>
   )
 }

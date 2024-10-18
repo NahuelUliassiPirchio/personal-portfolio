@@ -18,6 +18,14 @@ ul {
     padding: 0;
 }
 
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    margin-left: .6rem;
+}
+
 ::selection {
     background-color: var(--link-color);
     color: var(--background-color);

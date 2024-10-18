@@ -1,3 +1,29 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gradient {
+  width: 750px;
+  height: 750px;
+  filter: blur(150px);
+  background-image: linear-gradient(hsl(222, 84%, 60%), hsl(164, 79%, 71%));
+  animation: rotate 50s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+@media (min-width: 720px) {
+  .gradient {
+    width: 500px;
+    height: 500px;
+    filter: blur(100px);
+  }
+}
+
 .aboutSectionTitle {
   height: calc(100vh - 4rem);
   display: flex;
@@ -9,6 +35,10 @@
   color: var(--text-color);
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
   z-index: 10;
+}
+
+.mainContainer{
+  display: flex;
 }
 
 .aboutSectionTitle .greeting, .aboutSectionTitle .title {
@@ -45,8 +75,6 @@
   align-items: center;
 }
 .introductionTitle {
-  font-size: 2rem;
-  color: var(--text-color);
   text-decoration: underline;
 }
 .introduction {
@@ -121,5 +149,11 @@
   }
   .introductionContainer {
     margin-top: 5rem;
+  }
+}
+
+@media (max-width:810px) {
+  .mainBackground {
+    display: none;
   }
 }
