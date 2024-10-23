@@ -6,7 +6,7 @@ import styles from '../styles/LogoLink.module.css'
 
 export default function LogoLink ({ text, logo, href }) {
   return (
-    <Link href={href} className={styles.linkContainer}>
+    <Link href={href} target='_blank' className={styles.linkContainer}>
         <Image src={logo} alt={text} width={40} height={40}/>
         <p>{text}</p>
     </Link>

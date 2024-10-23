@@ -8,18 +8,21 @@
 }
 
 .gradient {
-  width: 750px;
-  height: 750px;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
   filter: blur(150px);
-  background-image: linear-gradient(hsl(222, 84%, 60%), hsl(164, 79%, 71%));
+  background-image: linear-gradient(var(--bubble-color), var(--bubble-bright));
   animation: rotate 50s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
 @media (min-width: 720px) {
   .gradient {
-    width: 500px;
-    height: 500px;
+    /* width: 500px;
+    height: 500px; */
     filter: blur(100px);
   }
 }
@@ -42,7 +45,7 @@
 }
 
 .aboutSectionTitle .greeting, .aboutSectionTitle .title {
-  backdrop-filter: saturate(120%) blur(10px);
+  backdrop-filter: blur(25px);
   text-align: start;
 }
 

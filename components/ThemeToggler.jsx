@@ -21,10 +21,11 @@ const ThemeToggler = () => {
                     --link-color: ${isDark ? '#003459' : '#cc4d00'};
                     --primary-color: ${isDark ? '#003459' : '#FFA559'};
                     --secondary-color: ${isDark ? '#007ea7' : '#cc4d00'};
-                    --bubble-color: ${isDark ? '#0e6868' : '#FFA559'};
-                    --bubble-bright: ${isDark ? 'cyan' : 'var(--secondary-color)'};
+                    --bubble-color: ${isDark ? '#4377ef' : '#e1e1d3'};
+                    --bubble-bright: ${isDark ? '#7befd0' : '#ae8962'};
                     --thin-line-color: ${isDark ? '#12243d' : '#cac6af'};
                     --navbar-height: 4rem;
+
                 }
             `}</style>
         </>

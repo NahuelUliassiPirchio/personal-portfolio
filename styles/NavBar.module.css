@@ -54,7 +54,7 @@
     background-color: var(--primary-color);
 }
 
-@media (max-width: 933px) {
+@media (max-width: 1050px) {
     .resumeLink{
         position: absolute;
         top: var(--navbar-height);
@@ -63,7 +63,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 870px) {
     .logo {
         margin-top: 1rem;
     }
