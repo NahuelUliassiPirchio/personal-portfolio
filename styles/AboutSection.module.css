@@ -21,8 +21,6 @@
 
 @media (min-width: 720px) {
   .gradient {
-    /* width: 500px;
-    height: 500px; */
     filter: blur(100px);
   }
 }

@@ -3,6 +3,7 @@ import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image'
 import PropTypes from 'prop-types'
 
+// eslint-disable-next-line camelcase
 import { Space_Grotesk } from 'next/font/google'
 
 import ThemeContext from '../context/ThemeContext'
