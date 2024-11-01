@@ -24,6 +24,7 @@ const ThemeToggler = () => {
                     --bubble-color: ${isDark ? '#4377ef' : '#e1e1d3'};
                     --bubble-bright: ${isDark ? '#7befd0' : '#ae8962'};
                     --thin-line-color: ${isDark ? '#12243d' : '#cac6af'};
+                    --project-card-color: ${isDark ? '#12243d' : '#f4c59c'};
                     --navbar-height: 4rem;
 
                 }
