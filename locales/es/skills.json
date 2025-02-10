@@ -3,14 +3,15 @@
     "fields": [
         {
             "icon": "front-icon.svg",
-            "title": "Desarrollo Frontend",
-            "description": "Mi enfoque se centra en escribir código desde cero y convertir ideas en experiencias navegables. Aunque no soy un experto en diseño, me preocupo mucho por el rendimiento y la optimización del tamaño de los elementos.",
+            "title": "Desarrollo Frontend & Desktop",
+            "description": "Mi enfoque está en escribir código desde cero y convertir ideas en experiencias navegables. Aunque no soy un experto en diseño, me preocupo por el rendimiento, la optimización del tamaño de los elementos y el desarrollo de aplicaciones de escritorio multiplataforma.",
             "tools": [
                 "Javascript/Typescript",
                 "Html",
                 "Css",
                 "Reactjs",
                 "Nextjs",
+                "Electron",
                 "Bootstrap",
                 "Tailwind CSS",
                 "i18n",

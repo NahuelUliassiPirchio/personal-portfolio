@@ -3,14 +3,15 @@
     "fields": [
         {
             "icon": "front-icon.svg",
-            "title": "Frontend Development",
-            "description": "My focus is on writing code from scratch and turning ideas into navigable experiences. While I am not an expert in design, I am very concerned with performance and optimizing element sizes.",
+            "title": "Frontend & Desktop Development",
+            "description": "My focus is on writing code from scratch and turning ideas into navigable experiences. While I am not an expert in design, I am concerned with performance, optimizing element sizes, and developing cross-platform desktop applications.",
             "tools": [
                 "Javascript/Typescript",
                 "Html",
                 "Css",
                 "Reactjs",
                 "Nextjs",
+                "Electron",
                 "Bootstrap",
                 "Tailwind CSS",
                 "i18n",
