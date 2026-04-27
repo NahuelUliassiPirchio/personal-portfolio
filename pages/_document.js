@@ -5,7 +5,7 @@ export default function Document () {
   return (
     <Html>
       <Head>
-          <link href="https://fonts.googleapis.com/css2?family=Borel&family=Bricolage+Grotesque:opsz@10..48&family=Roboto+Slab&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300..800&display=swap" rel="stylesheet"/>
       </Head>
       <body>
         <Main />
