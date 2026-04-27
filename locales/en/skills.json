@@ -4,16 +4,17 @@
         {
             "icon": "front-icon.svg",
             "title": "Frontend & Desktop Development",
-            "description": "My focus is on writing code from scratch and turning ideas into navigable experiences. While I am not an expert in design, I am concerned with performance, optimizing element sizes, and developing cross-platform desktop applications.",
+            "description": "I build interactive web and desktop interfaces with a strong focus on product behavior, usability, performance, and maintainable code. I have experience working across browser-based apps and cross-platform desktop applications.",
             "tools": [
-                "Javascript/Typescript",
-                "Html",
-                "Css",
-                "Reactjs",
-                "Nextjs",
+                "JavaScript/TypeScript",
+                "HTML",
+                "CSS",
+                "React",
+                "Next.js",
                 "Electron",
                 "Bootstrap",
                 "Tailwind CSS",
+                "Zustand",
                 "i18n",
                 "Selenium"
             ]
@@ -21,55 +22,48 @@
         {
             "icon": "back-icon.svg",
             "title": "Backend Development",
-            "description": "With skills in developing scalable architectures, I can build the essential functionality of web applications, ensuring efficient data transfer and solid performance.",
+            "description": "I develop APIs, business logic, authentication flows, and backend services that support reliable web applications and internal tools. I care about clear architecture, maintainability, and efficient communication between frontend and backend layers.",
             "tools": [
-                "Javascript/Typescript",
-                "Nestjs",
-                "Expressjs",
+                "JavaScript/TypeScript",
+                "Node.js",
+                "NestJS",
+                "Express.js",
                 "Flask",
                 "Swagger",
                 "JWT",
-                "REST",
+                "REST APIs",
                 "GraphQL",
-                "Clean Architectures"
+                "Clean Architecture"
             ]
         },
         {
             "icon": "database-icon.svg",
             "title": "Databases",
-            "description": "Experience in managing databases, designing, and optimizing secure and efficient data storage systems.",
+            "description": "I work with relational and non-relational databases, designing data models, writing queries, and integrating persistence layers into web and backend applications.",
             "tools": [
-                "Mongodb/Mongoose",
+                "MongoDB/Mongoose",
                 "PostgreSQL",
+                "MySQL",
                 "Firestore",
                 "Sequelize",
-                "TypeOrm",
-                "SQL"
-            ]
-        },
-        {
-            "icon": "data-icon.svg",
-            "title": "Data Analysis",
-            "description": "Skills in cleaning, manipulating, and visualizing data to support informed decision-making. Experience in creating detailed reports and visualizations using advanced tools, as well as automating data analysis processes to improve efficiency and accuracy.",
-            "tools": [
-                "Python",
-                "Pandas",
-                "Matplotlib",
-                "Power BI",
-                "DAX",
+                "TypeORM",
                 "SQL"
             ]
         },
         {
             "icon": "tools-icon.svg",
             "title": "Additional Tools",
-            "description": "Besides the fundamentals, I use a variety of tools to streamline workflows, from version control to efficient deployment.",
+            "description": "I use development tools that support testing, version control, deployment, automation, and day-to-day productivity across software projects.",
             "tools": [
                 "Git",
                 "VSCode",
                 "Jest",
+                "Supertest",
+                "Docker",
                 "Linux",
-                "Eslint"
+                "ESLint",
+                "Azure",
+                "AWS"
             ]
         }
     ]

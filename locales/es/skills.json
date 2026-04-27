@@ -4,16 +4,17 @@
         {
             "icon": "front-icon.svg",
             "title": "Desarrollo Frontend & Desktop",
-            "description": "Mi enfoque está en escribir código desde cero y convertir ideas en experiencias navegables. Aunque no soy un experto en diseño, me preocupo por el rendimiento, la optimización del tamaño de los elementos y el desarrollo de aplicaciones de escritorio multiplataforma.",
+            "description": "Construyo interfaces web y de escritorio interactivas, con foco en comportamiento de producto, usabilidad, rendimiento y código mantenible. Tengo experiencia trabajando tanto en aplicaciones web como en aplicaciones de escritorio multiplataforma.",
             "tools": [
-                "Javascript/Typescript",
-                "Html",
-                "Css",
-                "Reactjs",
-                "Nextjs",
+                "JavaScript/TypeScript",
+                "HTML",
+                "CSS",
+                "React",
+                "Next.js",
                 "Electron",
                 "Bootstrap",
                 "Tailwind CSS",
+                "Zustand",
                 "i18n",
                 "Selenium"
             ]
@@ -21,55 +22,48 @@
         {
             "icon": "back-icon.svg",
             "title": "Desarrollo Backend",
-            "description": "Con habilidades en desarrollo de arquitecturas escalables, puedo construir la funcionalidad esencial de aplicaciones web, asegurando una transferencia de datos eficiente y un rendimiento sólido.",
+            "description": "Desarrollo APIs, lógica de negocio, flujos de autenticación y servicios backend que sostienen aplicaciones web y herramientas internas. Me enfoco en una arquitectura clara, mantenibilidad y comunicación eficiente entre frontend y backend.",
             "tools": [
-                "Javascript/Typescript",
-                "Nestjs",
-                "Expressjs",
+                "JavaScript/TypeScript",
+                "Node.js",
+                "NestJS",
+                "Express.js",
                 "Flask",
                 "Swagger",
                 "JWT",
-                "REST",
+                "REST APIs",
                 "GraphQL",
-                "Clean Architectures"
+                "Clean Architecture"
             ]
         },
         {
             "icon": "database-icon.svg",
             "title": "Bases de Datos",
-            "description": "Experiencia en la gestión de bases de datos, diseñando y optimizando sistemas de almacenamiento de datos seguros y eficientes.",
+            "description": "Trabajo con bases de datos relacionales y no relacionales, diseñando modelos de datos, escribiendo consultas e integrando capas de persistencia en aplicaciones web y servicios backend.",
             "tools": [
-                "Mongodb/Mongoose",
+                "MongoDB/Mongoose",
                 "PostgreSQL",
+                "MySQL",
                 "Firestore",
                 "Sequelize",
-                "TypeOrm",
+                "TypeORM",
                 "SQL"
             ]
-        },
-        {
-            "icon": "data-icon.svg",
-            "title": "Análisis de Datos",
-            "description": "Habilidades en limpieza, manipulación y visualización de datos para apoyar la toma de decisiones informadas. Experiencia en la creación de informes detallados y visualizaciones utilizando herramientas avanzadas, así como en la automatización de procesos de análisis de datos para mejorar la eficiencia y precisión.",
-            "tools": [
-                "Python",
-                "Pandas",
-                "Matplotlib",
-                "Power BI",
-                "DAX",
-                "SQL"
-            ]
-        },        
+        },      
         {
             "icon": "tools-icon.svg",
             "title": "Herramientas Extra",
-            "description": "Además de lo fundamental, utilizo una variedad de herramientas para agilizar flujos de trabajo, desde control de versiones hasta una implementación eficiente.",
+            "description": "Utilizo herramientas de desarrollo que acompañan testing, control de versiones, deployment, automatización y productividad diaria en proyectos de software.",
             "tools": [
                 "Git",
                 "VSCode",
                 "Jest",
+                "Supertest",
+                "Docker",
                 "Linux",
-                "Eslint"
+                "ESLint",
+                "Azure",
+                "AWS"
             ]
         }
     ]

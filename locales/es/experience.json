@@ -2,22 +2,28 @@
     "title": "Experiencia",
     "experiences": [
         {
-            "position": "Desarrollador y Analista de Datos",
+            "position": "Desarrollador de Software",
+            "company": "Xnapper",
+            "duration": "mar. 2025 - abr. 2026",
+            "description": "Desarrollé y mantuve funcionalidades de producto para una aplicación de escritorio multiplataforma utilizando TypeScript, React, Next.js y Node.js. Trabajé sobre funcionalidades visibles para el usuario, lógica interna, flujos centrales del producto, preferencias, actualizaciones y comunicación entre distintas partes de la aplicación.\n\nTambién participé en funcionalidades vinculadas a archivos multimedia, procesos de exportación e integraciones nativas para macOS y Windows. El rol incluyó colaboración diaria en inglés con un stakeholder internacional, trabajando sobre decisiones de producto, detalles de implementación y mejoras orientadas al release."
+        },
+        {
+            "position": "Desarrollador de Software",
             "company": "Transporte Ideal San Justo",
-            "duration": "ago. 2023 - actualidad",
-            "description": "En mi rol actual como Desarrollador y Analista de Datos, he trabajado en el desarrollo y mantenimiento de diversas aplicaciones web internas utilizando tecnologías como Next.js, Tailwind y Flask. También he integrado APIs para procesar y presentar datos de manera eficiente, mejorando significativamente la eficiencia en el acceso y la presentación de información dentro de la empresa.\n\nAdemás, he creado informes detallados y visualizaciones con Power BI, aplicando funciones DAX, y he manejado datos usando pandas y Matplotlib para limpiar y visualizar información. Automatizando varios procesos internos con Python y Tkinter, he reducido la carga de trabajo manual y aumentado la eficiencia operativa. Colaboro estrechamente con diferentes equipos, fomentando una comunicación efectiva y contribuyendo a un ambiente de trabajo positivo y productivo."
-          },
-          {
+            "duration": "ago. 2023 - mar. 2025",
+            "description": "Desarrollé aplicaciones web y de escritorio internas utilizando Next.js, Tailwind CSS, Flask, Python y Tkinter, ayudando a mejorar flujos operativos y reducir trabajo manual dentro de la empresa. Implementé APIs, construí herramientas internas y desarrollé interfaces enfocadas en hacer más simples y rápidos los procesos del día a día.\n\nTambién trabajé con SQL, pandas y Matplotlib cuando los proyectos requerían procesamiento de datos, reportes o mejor acceso a la información interna. El foco principal del rol fue construir soluciones de software prácticas, colaborar con distintos equipos, relevar necesidades y convertirlas en herramientas funcionales."
+        },
+        {
             "position": "Desarrollador Full-Stack",
             "company": "Proyectos Personales",
             "duration": "nov. 2022 - actualidad",
-            "description": "Para obtener experiencia en desarrollo web, he creado y mejorado proyectos personales, aprendiendo diversas tecnologías y frameworks. He aplicado buenas prácticas de código, arquitecturas efectivas, y trabajado en deployment, optimización y testing para asegurar la calidad y rendimiento de mis aplicaciones."
-          },
-          {
+            "description": "Construyo y mejoro proyectos personales para profundizar mi experiencia en desarrollo full-stack, pensamiento de producto, arquitectura, deployment, optimización y testing. Estos proyectos me permitieron practicar desarrollo web y desktop moderno con tecnologías como React, Next.js, Node.js, Express, NestJS, PostgreSQL, MongoDB y Electron.\n\nA través de ellos, me enfoco en escribir código mantenible, estructurar correctamente las aplicaciones, mejorar la experiencia de usuario y aprender construyendo funcionalidades reales de punta a punta."
+        },
+        {
             "position": "Soporte técnico CCTV (Pasantía)",
             "company": "Argomys",
             "duration": "jun. 2019 - nov. 2019",
-            "description": "Trabajé en equipo para solucionar problemas y brindar soporte telefónico a los clientes. He armado y reparado equipos, asegurando que el servicio funcione correctamente. Además, he solucionado problemas de manera remota utilizando herramientas como TeamViewer, garantizando una respuesta rápida y efectiva a las necesidades de los usuarios."
-          }
+            "description": "Brindé soporte técnico remoto para sistemas de CCTV, networking y control de acceso. Ayudé a diagnosticar problemas, asistir clientes por teléfono, trabajar con herramientas de acceso remoto como TeamViewer y colaborar en tareas de configuración y resolución de fallas junto al equipo técnico."
+        }
     ]
 }

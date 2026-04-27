@@ -1,9 +1,9 @@
 {
-        "greetings":"¡Hola y bienvenido a mi portafolio!",
-        "title": "Mi nombre es Nahuel Uliassi Pirchio, soy ",
-        "highlightedText":" desarrollador de software.",
-        "aboutMeTitle":"Sobre mí",
-        "introduction1": "Soy Nahuel, un entusiasta de la informática y el desarrollo de software de 23 años de Buenos Aires, Argentina. Apasionado por la tecnología, la calistenia y la micología.",
-        "introduction2": "Mi formación como Técnico en Informática, estudiante de Ingeniería en Sistemas y autodidacta me impulsa en la búsqueda de oportunidades para poner en acción mi creatividad y habilidades técnicas.",
-        "introduction3": "Listo para los desafíos y nuevas perspectivas. Siempre con ganas de aprender, mejorar y progresar!"
+    "greetings": "¡Hola y bienvenido a mi portafolio!",
+    "title": "Mi nombre es Nahuel Uliassi Pirchio, soy ",
+    "highlightedText": " desarrollador de software.",
+    "aboutMeTitle": "Sobre mí",
+    "introduction1": "Soy Nahuel, desarrollador de software de Buenos Aires, Argentina. Construyo aplicaciones web y de escritorio con TypeScript, React, Next.js, Node.js y Electron, con foco en productos útiles, buenas implementaciones y funcionalidades reales.",
+    "introduction2": "Mi formación como Técnico en Informática, estudiante de Ingeniería en Sistemas y autodidacta me impulsa a seguir creciendo en frontend, backend, desarrollo desktop, arquitectura y resolución de problemas orientada a producto.",
+    "introduction3": "Disfruto trabajar funcionalidades de punta a punta: entender el problema, pensar la solución, escribir el código, mejorar la experiencia y entregar algo que realmente sirva."
 }
