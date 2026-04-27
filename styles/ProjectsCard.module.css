@@ -125,6 +125,13 @@
   height: auto;
 }
 
+.youtubeVideo {
+  aspect-ratio: 16 / 9;
+  border: 0;
+  display: block;
+  pointer-events: none;
+}
+
 .imageContainer article {
   position: absolute;
   top: 0;

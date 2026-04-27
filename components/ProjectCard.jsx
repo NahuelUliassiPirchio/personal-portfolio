@@ -14,9 +14,10 @@ export default function ProjectCard ({ project, t }) {
   const projectLinks = project.links
   const projectDemoLink = getLinkByName(projectLinks, 'Demo')[0]
   const projectRepoLinks = getLinkByName(projectLinks, 'Repo')
+  const youtubeVideoId = getYouTubeVideoId(project.image)
 
   return (
-    <li className={`${styles.projectContainer} ${project.image ?? styles.noGif}`} key={project.url} >
+    <li className={`${styles.projectContainer} ${project.image ? '' : styles.noGif}`} key={project.url} >
       <figure className={styles.imageContainer}>
         <article>
           <span>
@@ -26,9 +27,21 @@ export default function ProjectCard ({ project, t }) {
         {
           project.image
             ? (
-              <video className={styles.projectImage} autoPlay muted loop>
-                <source src={`/images/videos/${project.image}`} type="video/mp4"/>
-              </video>
+                youtubeVideoId
+                  ? (
+                    <iframe
+                      className={`${styles.projectImage} ${styles.youtubeVideo}`}
+                      src={`https://www.youtube-nocookie.com/embed/${youtubeVideoId}?autoplay=1&mute=1&loop=1&playlist=${youtubeVideoId}&controls=0&modestbranding=1&playsinline=1`}
+                      title={`${project.name} video`}
+                      allow="autoplay; encrypted-media; picture-in-picture"
+                      allowFullScreen
+                    />
+                    )
+                  : (
+                    <video className={styles.projectImage} autoPlay muted loop>
+                      <source src={`/images/videos/${project.image}`} type="video/mp4"/>
+                    </video>
+                    )
               )
             : (
               <Image className={styles.projectImage} src={`/images/${project.logo}`} alt={project.name} width={200} height={200} priority/>
@@ -77,4 +90,28 @@ export default function ProjectCard ({ project, t }) {
 ProjectCard.propTypes = {
   project: PropType.object.isRequired,
   t: PropType.func.isRequired
+}
+
+function getYouTubeVideoId (url) {
+  if (typeof url !== 'string') return null
+
+  try {
+    const parsedUrl = new URL(url)
+    const hostname = parsedUrl.hostname.replace(/^www\./, '')
+
+    if (hostname === 'youtu.be') {
+      return parsedUrl.pathname.split('/').filter(Boolean)[0] ?? null
+    }
+
+    if (hostname === 'youtube.com' || hostname === 'm.youtube.com' || hostname === 'youtube-nocookie.com') {
+      if (parsedUrl.pathname === '/watch') return parsedUrl.searchParams.get('v')
+
+      const [, videoId] = parsedUrl.pathname.match(/^\/(?:embed|shorts)\/([^/?]+)/) ?? []
+      return videoId ?? null
+    }
+  } catch {
+    return null
+  }
+
+  return null
 }
