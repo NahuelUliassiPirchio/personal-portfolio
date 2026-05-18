@@ -133,6 +133,16 @@
     display: block;
 }
 
+.youtubeVideo {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    min-height: 300px;
+    max-width: 1000px;
+    border: none;
+}
+
 .modal {
     position: fixed;
     bottom: 0;

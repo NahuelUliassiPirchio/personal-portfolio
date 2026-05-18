@@ -42,8 +42,9 @@
             ],
             "url":"light-control-pro",
             "logo":"LightsLogo.png",
-            "image":"light.mp4",
+            "image":"https://youtu.be/EgdfaJL9iMk",
             "gallery":[
+                "https://youtu.be/EgdfaJL9iMk",
                 "https://i.ibb.co/MhGG77D/light-control-f000234.png",
                 "https://i.ibb.co/pfMp3Xq/light-control-f000017.png",
                 "https://i.ibb.co/HTTGCNs/light-control-f000346.png",
@@ -78,8 +79,9 @@
             ],
             "url":"simple-pomodoro-todo",
             "logo":"SimplePomodoroTodoLogo.png",
-            "image":"pomodoro.webm",
+            "image":"https://youtu.be/Qeld0ED_PRE",
             "gallery":[
+                "https://youtu.be/Qeld0ED_PRE",
                 "https://i.ibb.co/W28BDwz/Screenshot-20230626-222351.jpg",
                 "https://i.ibb.co/XpgW73J/Screenshot-20230626-221608.png",
                 "https://i.ibb.co/3MF0TWJ/Screenshot-20230626-221609.png",
@@ -117,8 +119,9 @@
             ],
             "url":"basic-store",
             "logo":"BSCStoreLogo.png",
-            "image":"store.webm",
+            "image":"https://youtu.be/D4dEdAZuTjE",
             "gallery":[
+                "https://youtu.be/D4dEdAZuTjE",
                 "https://i.ibb.co/H2nqjVP/Screenshot-20230901-180640-min.png",
                 "https://i.ibb.co/ww1Lg7J/Screenshot-20230901-180702-min.png",
                 "https://i.ibb.co/hsZff15/Screenshot-20230901-180724-min.png",
@@ -168,8 +171,9 @@
             ],
             "url":"stop-rows",
             "logo":"StopRowsLogo.svg",
-            "image":"stop.webm",
+            "image":"https://youtu.be/v2Dam-s8Cys",
             "gallery":[
+                "https://youtu.be/v2Dam-s8Cys",
                 "https://i.ibb.co/Lgq5Mty/Screenshot-20230901-180030-min.png",
                 "https://i.ibb.co/9pPDzPz/Screenshot-from-2023-04-13-16-48-04-min.png",
                 "https://i.ibb.co/SBRXwSg/Screenshot-from-2023-04-17-17-59-59-min.png",
@@ -247,6 +251,10 @@
             ],
             "url":"huffman-tree-compressor",
             "logo":"HuffmanTreeCompressor.png",
+            "image":"https://youtu.be/Eskc5dxaKF0",
+            "gallery":[
+                "https://youtu.be/Eskc5dxaKF0"
+            ],
             "links":[
                 {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/HuffmanTreeCompressor", "icon":"/icons/github.svg"}
             ],

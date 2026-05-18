@@ -35,6 +35,7 @@ export default function ProjectCard ({ project, t }) {
                       title={`${project.name} video`}
                       allow="autoplay; encrypted-media; picture-in-picture"
                       allowFullScreen
+                      style={{ pointerEvents: 'none' }}
                     />
                     )
                   : (
