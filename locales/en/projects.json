@@ -9,8 +9,9 @@
             ],
             "url":"map-zone-delimiter",
             "logo":"MapIcon.png",
-            "image":"map.mp4",
+            "image":"https://youtu.be/xIH5CBWlkQs",
             "gallery":[
+                "https://youtu.be/xIH5CBWlkQs",
                 "https://i.ibb.co/c61kX0D/map-zone-delimiter-f000106.png",
                 "https://i.ibb.co/80vt6ss/map-zone-delimiter-f000541.png",
                 "https://i.ibb.co/2ygcbVk/map-zone-delimiter-f000846.png",
@@ -226,7 +227,7 @@
                 {"name":"JAVASCRIPT","icon":"javascript.svg"}
             ],
             "url":"personal-portfolio",
-            "image":"portfolio.webm",
+            "image":"https://youtu.be/rMa1BhfhNcY",
             "logo":"UPAthemeLogo.svg",
             "links":[
                 {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/personal-portfolio", "icon":"/icons/github.svg"}
