@@ -1,12 +1,20 @@
 .linkContainer {
     display: flex;
     flex-direction: row;
-    padding: .5rem;
+    padding: 0.5rem 0.75rem;
     align-items: center;
+    gap: 0.4rem;
     color: var(--text-color);
+    border: 1px solid currentColor;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.7;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
 }
 
 .linkContainer:hover {
+    opacity: 1;
     background-color: var(--primary-color);
     color: var(--shadow-color);
     text-decoration: underline;
@@ -15,4 +23,5 @@
 .linkContainer p {
     margin: 0;
     height: fit-content;
+    line-height: 1;
 }
