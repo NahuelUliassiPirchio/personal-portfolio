@@ -35,9 +35,9 @@
         {
             "name":"Light Control Pro",
             "shortDescription": "Creé Light Control Pro porque necesitaba una aplicación simple y eficiente con atajos para luces inteligentes. Las opciones del mercado no cumplían con mis necesidades, así que construí una herramienta para el control intuitivo de las bombillas Wiz, con ajustes en tiempo real y gestión de escenas.",
-            "description": "Desarrollé Light Control Pro porque quería una aplicación sencilla con atajos para gestionar mis luces inteligentes, ya que las soluciones existentes no satisfacían mis preferencias. Este proyecto me permitió diseñar una herramienta intuitiva y eficiente para controlar mis bombillas inteligentes Wiz directamente desde mi PC. Light Control Pro ofrece ajustes en tiempo real, gestión de escenas y atajos de teclado personalizados, proporcionando una experiencia de usuario fluida para el control de iluminación inteligente.",
+            "description": "Desarrollé Light Control Pro porque quería una aplicación sencilla con atajos para gestionar mis luces inteligentes, ya que las soluciones existentes no satisfacían mis preferencias. Este proyecto me permitió diseñar una herramienta intuitiva y eficiente para controlar mis bombillas inteligentes Wiz directamente desde mi PC. Light Control Pro ofrece ajustes en tiempo real, gestión de escenas y atajos de teclado personalizados, proporcionando una experiencia de usuario fluida para el control de iluminación inteligente. El código está siendo migrado a TypeScript para mejorar la seguridad de tipos y la mantenibilidad a largo plazo.",
             "technologies":[
-                {"name":"JAVASCRIPT","icon":"javascript.svg"},
+                {"name":"TYPESCRIPT","icon":"typescript.svg"},
                 {"name":"ELECTRON","icon":"electron.svg"}
 
             ],
@@ -160,10 +160,9 @@
         {
             "name":"Stop Rows",
             "shortDescription":"Surge en la secundaria al ver tiempo perdido en colas bancarias. Idea: sistema de colas remotas para proyectos escolares.",
-            "description":"Esta idea la tuve cuando en la secundaria un profesor pidió hacer un proyecto y, en ese entonces, gastaba grandes cantidades de tiempo sentado en la cola del banco. La solución posible que me surgió era hacer un sistema de colas remotas.",
+            "description":"Esta idea la tuve cuando en la secundaria un profesor pidió hacer un proyecto y, en ese entonces, gastaba grandes cantidades de tiempo sentado en la cola del banco. La solución posible que me surgió era hacer un sistema de colas remotas. El backend fue migrado a TypeScript y cuenta con una capa de caché para mejorar los tiempos de respuesta en recursos de acceso frecuente como tiendas y categorías.",
             "technologies":[
                 {"name":"EXPRESS"},
-                {"name":"JAVASCRIPT","icon":"javascript.svg"},
                 {"name":"MONGODB","icon":"mongodb.svg"},
                 {"name":"MONGOOSE"},
                 {"name":"SWAGGER","icon":"swagger-ui.png"},
@@ -216,7 +215,7 @@
                     ]
                 }
             ],
-            "conclusion": "Se me ocurren varias mejoras que me quedaron pendientes: caché, web Sockets para ver las filas en tiempo real, mejoras en UX/UI como diseño responsive."
+            "conclusion": "El caché fue implementado en el backend para optimizar los endpoints de mayor acceso. Las mejoras pendientes incluyen web sockets para ver las filas en tiempo real y mejoras en UX/UI como diseño responsive."
         },
         {
             "name":"Personal Portfolio",
@@ -249,7 +248,7 @@
             "shortDescription":"En la universidad, en algoritmos y estructura de datos, desarrollé un programa en C++ para comprimir y descomprimir archivos sin pérdida, exhibiendo mis capacidades algorítmicas.",
             "description":"Este fue un proyecto de la universidad de la materia algoritmos y estructura de datos. La idea es desarrollar un programa en c++ que logre exitosamente comprimir y descomprimir un archivo sin pérdidas de información. Mi intención al presentar este proyecto es demostrar mis capacidades en la algoritmia.",
             "technologies":[
-                {"name":"C++"}
+                {"name":"C++","icon":"cpp.svg"}
             ],
             "url":"Huffman-tree-compressor",
             "logo":"HuffmanTreeCompressor.png",

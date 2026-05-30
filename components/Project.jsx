@@ -58,9 +58,10 @@ export default function Project ({ project }) {
             <h3 className={styles.subtitle}>{t('sectionTitles.technologies')}</h3>
             <ul className={styles.technologiesContainer}>
               {project.technologies.map((technology) => (
-                <li key={technology.name}>
-                  {technology.name}
-                  {technology.icon && <Image src={`/icons/${technology.icon}`} alt={technology.name} width={20} height={20} />}
+                <li key={technology.name} title={technology.name}>
+                  {technology.icon
+                    ? <Image src={`/icons/${technology.icon}`} alt={technology.name} width={20} height={20} />
+                    : technology.name}
                 </li>
               ))}
             </ul>

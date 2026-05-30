@@ -35,9 +35,9 @@
         {
             "name":"Light Control Pro",
             "shortDescription":"I created Light Control Pro because I needed a simple, efficient app with shortcuts for smart lights. Market options didn't meet my needs, so I built a tool for intuitive control of Wiz bulbs, featuring real-time adjustments and scene management.",
-            "description":"I developed Light Control Pro because I wanted a straightforward application with shortcuts to manage my smart lights, as existing solutions didn't satisfy my preferences. This project allowed me to design an intuitive, efficient tool for controlling my Wiz smart bulbs directly from my PC. Light Control Pro provides real-time adjustments, scene management, and custom keyboard shortcuts, offering a seamless user experience for smart lighting control.",
+            "description":"I developed Light Control Pro because I wanted a straightforward application with shortcuts to manage my smart lights, as existing solutions didn't satisfy my preferences. This project allowed me to design an intuitive, efficient tool for controlling my Wiz smart bulbs directly from my PC. Light Control Pro provides real-time adjustments, scene management, and custom keyboard shortcuts, offering a seamless user experience for smart lighting control. The codebase is currently being migrated to TypeScript for improved type safety and long-term maintainability.",
             "technologies":[
-                {"name":"JAVASCRIPT","icon":"javascript.svg"},
+                {"name":"TYPESCRIPT","icon":"typescript.svg"},
                 {"name":"ELECTRON","icon":"electron.svg"}
 
             ],
@@ -159,10 +159,9 @@
         {
             "name":"Stop Rows",
             "shortDescription":"It originated during high school when I noticed time being wasted in bank queues. The idea was to create a remote queue system for school projects.",
-            "description":"I had this idea when in high school a teacher asked me to do a project and, at that time, I spent large amounts of time sitting in line at the bank. The possible solution that came to me was to make a remote queue system.",
+            "description":"I had this idea when in high school a teacher asked me to do a project and, at that time, I spent large amounts of time sitting in line at the bank. The possible solution that came to me was to make a remote queue system. The backend has since been migrated to TypeScript and now includes a caching layer to improve response times for frequently accessed resources like shops and categories.",
             "technologies":[
                 {"name":"EXPRESS"},
-                {"name":"JAVASCRIPT","icon":"javascript.svg"},
                 {"name":"MONGODB","icon":"mongodb.svg"},
                 {"name":"MONGOOSE"},
                 {"name":"SWAGGER","icon":"swagger-ui.png"},
@@ -215,7 +214,7 @@
                     ]
                 }
             ],
-            "conclusion": "I can think of several improvements that were pending: cache, web Sockets to see the rows in real time, improvements in UX/UI such as responsive design."
+            "conclusion": "Caching has been implemented on the backend to optimize frequently accessed endpoints. Remaining improvements include web sockets to see the rows in real time and UX/UI enhancements such as responsive design."
         },
         {
             "name":"Personal Portfolio",
@@ -248,7 +247,7 @@
             "shortDescription":"During university, in the algorithms and data structures course, I developed a C++ program for lossless file compression and decompression. This project showcased my algorithmic skills.",
             "description":"This was a university project on algorithms and data structure. The idea is to develop a cpp program that can successfully compress and decompress a file without loss of information. My intention in presenting this project is to demonstrate my abilities in algorithmics.",
             "technologies":[
-                {"name":"C++"}
+                {"name":"C++","icon":"cpp.svg"}
             ],
             "url":"huffman-tree-compressor",
             "logo":"HuffmanTreeCompressor.png",

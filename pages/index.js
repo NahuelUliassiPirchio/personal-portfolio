@@ -30,7 +30,7 @@ export default function Home () {
     <>
       <MetaDecorator
         description="Portfolio website for full-stack developer, Nahuel Uliassi Pirchio."
-        title='Uliassi Pirchio Nahuel - Portfolio'
+        title='Uliassi Pirchio - Portfolio'
         image={'UPLogo.svg'}
         />
       <Layout>

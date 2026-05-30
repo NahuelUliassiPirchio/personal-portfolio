@@ -65,34 +65,40 @@ export default function ImageSlider ({ images }) {
 
   const currentYoutubeId = getYouTubeVideoId(images[currentImageIndex])
 
+  const hasMultiple = images.length > 1
+
   return (
     <div className={styles.container}>
-      <ul className={styles.previewsContainer}>
-        {images.map((imageUrl, index) => {
-          const youtubeId = getYouTubeVideoId(imageUrl)
-          const previewSrc = youtubeId
-            ? `https://img.youtube.com/vi/${youtubeId}/mqdefault.jpg`
-            : imageUrl
-          return (
-            <li key={imageUrl} className={styles.preview}>
-              <Image
-                className={`${styles.preview} ${currentImageIndex === index ? styles.active : ''}`}
-                src={previewSrc}
-                alt="preview"
-                width={50}
-                height={50}
-                onClick={() => setCurrentImageIndex(index)}
-                onLoad={() => handleImageLoad(index)}
-              />
-            </li>
-          )
-        })}
-      </ul>
+      {hasMultiple && (
+        <ul className={styles.previewsContainer}>
+          {images.map((imageUrl, index) => {
+            const youtubeId = getYouTubeVideoId(imageUrl)
+            const previewSrc = youtubeId
+              ? `https://img.youtube.com/vi/${youtubeId}/mqdefault.jpg`
+              : imageUrl
+            return (
+              <li key={imageUrl} className={styles.preview}>
+                <Image
+                  className={`${styles.preview} ${currentImageIndex === index ? styles.active : ''}`}
+                  src={previewSrc}
+                  alt="preview"
+                  width={50}
+                  height={50}
+                  onClick={() => setCurrentImageIndex(index)}
+                  onLoad={() => handleImageLoad(index)}
+                />
+              </li>
+            )
+          })}
+        </ul>
+      )}
 
       <figure>
-        <button className={`${styles.navigationButton} ${styles.prevButton}`} onClick={handlePrevImage}>
-          <Image src={sortLeftIcon} alt="prev" width={20} height={20} />
-        </button>
+        {hasMultiple && (
+          <button className={`${styles.navigationButton} ${styles.prevButton}`} onClick={handlePrevImage}>
+            <Image src={sortLeftIcon} alt="prev" width={20} height={20} />
+          </button>
+        )}
         <div className={styles.imageContainer}>
           {loading[currentImageIndex] && (
             <div className={styles.loader}>
@@ -121,9 +127,11 @@ export default function ImageSlider ({ images }) {
             />
               )}
         </div>
-        <button className={`${styles.navigationButton} ${styles.nextButton}`} onClick={handleNextImage}>
-          <Image src={sortRightIcon} alt="next" width={20} height={20} />
-        </button>
+        {hasMultiple && (
+          <button className={`${styles.navigationButton} ${styles.nextButton}`} onClick={handleNextImage}>
+            <Image src={sortRightIcon} alt="next" width={20} height={20} />
+          </button>
+        )}
       </figure>
 
       {showModal && !currentYoutubeId && (

@@ -20,7 +20,7 @@ export default function AboutSection ({ id, key }) {
   const { theme } = useContext(ThemeContext)
 
   const handleScroll = () => {
-    const introduction = document.getElementById('introduction')
+const introduction = document.getElementById('introduction')
     introduction.scrollIntoView({ behavior: 'smooth' })
   }
 
