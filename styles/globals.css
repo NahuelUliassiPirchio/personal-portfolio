@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: var(--font-space-grotesk), sans-serif;
 }
 
 section {
@@ -17,8 +17,8 @@ ul {
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 2.75rem;
+    font-weight: 400;
     letter-spacing: -0.02em;
     margin-bottom: 1.5rem;
     color: var(--text-color);

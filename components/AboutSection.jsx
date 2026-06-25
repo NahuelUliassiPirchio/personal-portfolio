@@ -15,6 +15,7 @@ const spaceGrotesk = Space_Grotesk({
   weight: '400',
   subsets: ['latin']
 })
+
 export default function AboutSection ({ id, key }) {
   const { t } = useTranslation('about')
   const { theme } = useContext(ThemeContext)
