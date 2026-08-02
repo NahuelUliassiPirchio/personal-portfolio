@@ -1,10 +1,14 @@
 import { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import ProjectSectionStyles from '../styles/ProjectsSection.module.css'
 import styles from '../styles/DynamicIndex.module.css'
 
 export default function DynamicIndex ({ sections }) {
+  const { pathname } = useRouter()
+  const isHome = pathname === '/'
   const [activeSection, setActiveSection] = useState(sections[0])
 
   useEffect(() => {
@@ -58,12 +62,26 @@ export default function DynamicIndex ({ sections }) {
         {
         sections.map((section, index) => (
             <li key={index}>
-                <button
-                onClick={handleIndexClick}
-                className={section.url === activeSection.url ? styles.activeSection : styles.inactiveSection}
-                >
-                    {section.title}
-                </button>
+                {section.type === 'route'
+                  ? (
+                    <Link href={section.href} className={styles.inactiveSection}>
+                      {section.title}
+                    </Link>
+                    )
+                  : isHome
+                    ? (
+                      <button
+                        onClick={handleIndexClick}
+                        className={section.url === activeSection?.url ? styles.activeSection : styles.inactiveSection}
+                      >
+                          {section.title}
+                      </button>
+                      )
+                    : (
+                      <Link href={`/#${section.url}`} className={styles.inactiveSection}>
+                        {section.title}
+                      </Link>
+                      )}
             </li>
         ))
         }

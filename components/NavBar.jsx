@@ -36,11 +36,12 @@ export default function NavBar ({ providedSections }) {
   const resumeLink = locale.startsWith('es') ? process.env.CV_URL_ES : process.env.CV_URL_EN
 
   const sections = providedSections || [
-    { title: t('about'), url: 'about' },
-    { title: t('experience'), url: 'experience' },
-    { title: t('skills'), url: 'skills' },
-    { title: t('projects'), url: 'projects' },
-    { title: t('contact'), url: 'contact' }
+    { title: t('about'), type: 'anchor', url: 'about' },
+    { title: t('experience'), type: 'anchor', url: 'experience' },
+    { title: t('skills'), type: 'anchor', url: 'skills' },
+    { title: t('work'), type: 'route', href: '/work/xnapper' },
+    { title: t('projects'), type: 'route', href: '/projects' },
+    { title: t('contact'), type: 'anchor', url: 'contact' }
   ]
 
   return (
@@ -68,5 +69,10 @@ export default function NavBar ({ providedSections }) {
 }
 
 NavBar.propTypes = {
-  providedSections: PropTypes.array
+  providedSections: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    type: PropTypes.oneOf(['anchor', 'route']).isRequired,
+    url: PropTypes.string,
+    href: PropTypes.string
+  }))
 }
