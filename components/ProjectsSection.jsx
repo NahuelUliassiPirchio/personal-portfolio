@@ -13,7 +13,8 @@ export default function ProjectsSection ({ id, key, featuredOnly = false }) {
   const featuredProjects = allProjects.filter(project => project.featured)
   const projects = featuredOnly
     ? (featuredProjects.length ? featuredProjects : allProjects.slice(0, 3))
-    : allProjects
+    // Full catalog: featured-first ordering, sourced from the `featured` flag rather than a hardcoded slug list.
+    : [...allProjects].sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)))
 
   return (
     <section id={id} key={key} className={styles.projectsSection}>
@@ -21,7 +22,7 @@ export default function ProjectsSection ({ id, key, featuredOnly = false }) {
       <ul className={styles.projects}>
         {
           projects.map(project =>
-            <ProjectCard key={project.url} project={project} t={t} variant='home' />
+            <ProjectCard key={project.url} project={project} t={t} variant={featuredOnly ? 'home' : 'catalog'} />
           )
         }
       </ul>

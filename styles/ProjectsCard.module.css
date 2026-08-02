@@ -41,6 +41,14 @@
   margin-top: 0.15rem;
 }
 
+.catalogSummary {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0 0 0.5rem 0;
+}
+
 .imageContainer {
   position: relative;
   width: 100%;

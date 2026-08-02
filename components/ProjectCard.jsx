@@ -13,6 +13,12 @@ export default function ProjectCard ({ project, t, variant = 'catalog' }) {
   const projectRepoLinks = getLinkByName(projectLinks, 'Repo')
   const youtubeVideoId = getYouTubeVideoId(project.image)
   const showStatusBadge = variant === 'catalog' && Boolean(project.status)
+  // Catalog cards need a one-line problem/solution summary; projects missing that copy
+  // (still blocked on user-supplied content) fall back to the existing shortDescription
+  // instead of rendering "undefined" or an empty gap.
+  const catalogSummary = project.problem && project.solution
+    ? `${project.problem} ${project.solution}`
+    : project.shortDescription
 
   return (
     <li className={`${styles.projectContainer} ${project.image ? '' : styles.noGif}`} key={project.url} >
@@ -53,6 +59,7 @@ export default function ProjectCard ({ project, t, variant = 'catalog' }) {
             <h2>{project.name}</h2>
             {showStatusBadge && <span className={styles.statusBadge}>{t(`status.${project.status}`)}</span>}
           </div>
+          {variant === 'catalog' && <p className={styles.catalogSummary}>{catalogSummary}</p>}
           <ul className={styles.technologies}>
             {project.technologies.map((technology) => (
               <li key={technology.name} title={technology.name}>

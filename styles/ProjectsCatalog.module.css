@@ -1,0 +1,17 @@
+.catalogHeader {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 0;
+}
+
+.catalogTitle {
+  margin-top: var(--navbar-height);
+}
+
+.catalogIntro {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text-color);
+  max-width: 60ch;
+}

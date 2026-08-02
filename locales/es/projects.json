@@ -683,5 +683,13 @@
         "experimental": "Experimental"
     },
     "visitDemo": "Visita la Demo",
-    "viewAllProjects": "Ver todos los proyectos"
+    "viewAllProjects": "Ver todos los proyectos",
+    "meta": {
+        "title": "Todos los Proyectos — Nahuel Uliassi Pirchio",
+        "description": "Explorá la lista completa de proyectos de Nahuel Uliassi Pirchio, Desarrollador de Software Full-Stack que trabaja con TypeScript, React, Next.js y Node.js."
+    },
+    "catalog": {
+        "title": "Todos los Proyectos",
+        "intro": "La lista completa de proyectos que construí, desde productos full-stack hasta servicios backend, herramientas de escritorio y experimentos más pequeños."
+    }
 }
