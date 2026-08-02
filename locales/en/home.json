@@ -1,4 +1,8 @@
 {
+        "meta": {
+                "title": "Nahuel Uliassi Pirchio — Full-Stack Software Developer",
+                "description": "Full-Stack Software Developer focused on product engineering. I build full-stack products and complex features end to end — from UI and application logic to data and production delivery."
+        },
         "about": "About",
         "skills": "Skills",
         "projects": "Projects",

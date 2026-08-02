@@ -35,8 +35,8 @@ export default function Home () {
   return (
     <>
       <MetaDecorator
-        description="Nahuel Uliassi Pirchio is a software developer building product-focused web and full-stack applications with TypeScript, React, Next.js, Node.js, APIs, and databases."
-        title='Nahuel Uliassi Pirchio - Software Developer'
+        description={t('meta.description')}
+        title={t('meta.title')}
         image={'UPLogo.svg'}
         />
       <Layout>

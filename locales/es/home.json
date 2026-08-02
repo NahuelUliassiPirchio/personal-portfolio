@@ -1,4 +1,8 @@
 {
+        "meta": {
+                "title": "Nahuel Uliassi Pirchio — Desarrollador Full-Stack",
+                "description": "Desarrollador Full-Stack de Software enfocado en ingeniería de producto. Construyo productos full-stack y features complejas de punta a punta: desde la interfaz y la lógica de aplicación hasta los datos y la entrega en producción."
+        },
         "about": "Sobre mi",
         "skills": "Habilidades",
         "projects": "Proyectos",
