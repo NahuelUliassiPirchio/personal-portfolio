@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-02T00:00:00.000Z",
+  "title": "Design System: Nahuel Uliassi Pirchio — Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "terracotta-ember": {
+        "role": "primary",
+        "displayName": "Terracotta Ember",
+        "canonical": "#E07B39",
+        "tonalRamp": [
+          "oklch(15% 0.06 55)",
+          "oklch(25% 0.09 55)",
+          "oklch(35% 0.12 55)",
+          "oklch(48% 0.15 55)",
+          "oklch(60% 0.17 55)",
+          "oklch(68% 0.17 55)",
+          "oklch(80% 0.12 55)",
+          "oklch(92% 0.05 55)"
+        ]
+      },
+      "sky-signal": {
+        "role": "primary",
+        "displayName": "Sky Signal",
+        "canonical": "#60A5FA",
+        "tonalRamp": [
+          "oklch(15% 0.05 250)",
+          "oklch(25% 0.08 250)",
+          "oklch(35% 0.11 250)",
+          "oklch(48% 0.13 250)",
+          "oklch(60% 0.14 250)",
+          "oklch(72% 0.14 250)",
+          "oklch(84% 0.09 250)",
+          "oklch(94% 0.04 250)"
+        ]
+      },
+      "warm-paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#F5F4F2",
+        "tonalRamp": [
+          "oklch(15% 0.010 80)",
+          "oklch(25% 0.010 80)",
+          "oklch(35% 0.010 80)",
+          "oklch(48% 0.010 80)",
+          "oklch(60% 0.008 80)",
+          "oklch(75% 0.006 80)",
+          "oklch(88% 0.004 80)",
+          "oklch(97% 0.002 80)"
+        ]
+      },
+      "ink-void": {
+        "role": "neutral",
+        "displayName": "Ink Void",
+        "canonical": "#111110",
+        "tonalRamp": [
+          "oklch(8% 0.006 80)",
+          "oklch(18% 0.006 80)",
+          "oklch(28% 0.005 80)",
+          "oklch(40% 0.005 80)",
+          "oklch(52% 0.004 80)",
+          "oklch(65% 0.003 80)",
+          "oklch(78% 0.002 80)",
+          "oklch(90% 0.001 80)"
+        ]
+      },
+      "neutral-surface": {
+        "role": "neutral",
+        "displayName": "Neutral Surface",
+        "canonical": "#EDECEA",
+        "tonalRamp": [
+          "oklch(15% 0.008 70)",
+          "oklch(25% 0.008 70)",
+          "oklch(35% 0.007 70)",
+          "oklch(48% 0.007 70)",
+          "oklch(60% 0.006 70)",
+          "oklch(75% 0.005 70)",
+          "oklch(88% 0.004 70)",
+          "oklch(96% 0.003 70)"
+        ]
+      },
+      "neutral-surface-dark": {
+        "role": "neutral",
+        "displayName": "Neutral Surface (Dark)",
+        "canonical": "#1E1D1B",
+        "tonalRamp": [
+          "oklch(8% 0.006 70)",
+          "oklch(18% 0.006 70)",
+          "oklch(28% 0.005 70)",
+          "oklch(40% 0.005 70)",
+          "oklch(52% 0.004 70)",
+          "oklch(65% 0.003 70)",
+          "oklch(78% 0.002 70)",
+          "oklch(90% 0.001 70)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero title only." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings (global h2)." },
+      "title": { "displayName": "Title", "purpose": "Project card titles and similar content titles." },
+      "body": { "displayName": "Body", "purpose": "Paragraph copy, kept at light weight (300) even at reading size." },
+      "label": { "displayName": "Label", "purpose": "Buttons, nav links, badge captions; active states escalate to 700-800." }
+    },
+    "shadows": [
+      { "name": "card-lift", "value": "0 8px 24px rgba(0, 0, 0, 0.12)", "purpose": "The system's one shadow: project card hover only, paired with translateY(-3px). Never used at rest." }
+    ],
+    "breakpoints": [
+      { "name": "hero-blur-min", "value": "720px" },
+      { "name": "mobile-primary", "value": "768px" },
+      { "name": "hero-bg-max", "value": "810px" },
+      { "name": "nav-reorder-max", "value": "870px" },
+      { "name": "resume-reposition-max", "value": "1050px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Button (Accent)",
+      "kind": "button",
+      "refersTo": "button-accent",
+      "description": "Primary CTA — nav resume link, floating resume button. Instant color, small scale-up on hover, no lingering easing.",
+      "html": "<a class=\"ds-btn-accent\" href=\"#\">View Case Study</a>",
+      "css": ".ds-btn-accent { display: inline-flex; align-items: center; justify-content: center; background-color: var(--secondary-color, #E07B39); color: var(--primary-color, #EDECEA); font-family: 'Bricolage Grotesque', sans-serif; font-weight: 500; font-size: 0.9rem; border-radius: 10px; padding: 0.5rem 1rem; text-decoration: none; transition: scale 0.15s ease; } .ds-btn-accent:hover { scale: 1.02; text-decoration: underline; } .ds-btn-accent:focus-visible { outline: 2px solid var(--secondary-color, #E07B39); outline-offset: 2px; } .ds-btn-accent:active { color: var(--shadow-color, #9A9896); background-color: var(--primary-color, #EDECEA); }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "project-card",
+      "description": "The system's only shadow lives here, hover-only. Flat at rest.",
+      "html": "<article class=\"ds-project-card\"><div class=\"ds-project-card-image\"></div><div class=\"ds-project-card-body\"><h3 class=\"ds-project-card-title\">Xnapper</h3><p class=\"ds-project-card-desc\">Product engineering across editing, processing and delivery.</p></div></article>",
+      "css": ".ds-project-card { background-color: var(--project-card-color, #EDECEA); border-radius: 12px; overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease; } .ds-project-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); } .ds-project-card-image { aspect-ratio: 16/9; background-color: var(--thin-line-color, #D5D3CF); } .ds-project-card-body { padding: 1rem 1.25rem; } .ds-project-card-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.15rem; font-weight: 600; letter-spacing: -0.01em; color: var(--text-color, #1A1A1A); margin: 0 0 0.5rem; } .ds-project-card-desc { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 300; color: var(--text-color, #1A1A1A); margin: 0; }"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Fixed nav, transparent+blurred at rest, solid once scrolled. Never both effects at once.",
+      "html": "<nav class=\"ds-navbar\"><span class=\"ds-navbar-logo\">NP</span><div class=\"ds-navbar-links\"><a class=\"ds-navbar-link ds-navbar-link--active\" href=\"#\">Work</a><a class=\"ds-navbar-link\" href=\"#\">Projects</a><a class=\"ds-navbar-link\" href=\"#\">About</a></div><a class=\"ds-btn-accent\" href=\"#\">My Resume</a></nav>",
+      "css": ".ds-navbar { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; height: 4rem; padding: 0 1.5rem; backdrop-filter: blur(10px); background-color: transparent; transition: background-color 0.3s ease, backdrop-filter 0.3s ease; } .ds-navbar--scrolled { background-color: var(--background-color, #F5F4F2); backdrop-filter: none; } .ds-navbar-logo { fill: var(--secondary-color, #E07B39); font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; } .ds-navbar-links { display: flex; gap: 1.25rem; } .ds-navbar-link { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 500; font-size: 0.9rem; color: var(--text-color, #1A1A1A); text-decoration: none; } .ds-navbar-link:focus-visible { outline: 2px solid var(--secondary-color, #E07B39); outline-offset: 2px; } .ds-navbar-link--active { font-weight: bolder; text-decoration: underline; color: var(--secondary-color, #E07B39); }"
+    },
+    {
+      "name": "Skill Field Card",
+      "kind": "custom",
+      "refersTo": "skill-field-card",
+      "description": "Signature asymmetric-corner card — first/last in a row break uniform radius to read as a connected sequence.",
+      "html": "<div class=\"ds-skill-card ds-skill-card--first\"><h4 class=\"ds-skill-card-title\">Frontend Development</h4><ul class=\"ds-skill-card-tools\"><li>React</li><li>Next.js</li></ul></div>",
+      "css": ".ds-skill-card { background-color: var(--project-card-color, #EDECEA); border-radius: 15px; padding: 1.5rem; } .ds-skill-card--first { border-radius: 15px 0 0 0; } .ds-skill-card--last { border-radius: 0 15px 0 0; } .ds-skill-card-title { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 400; color: var(--text-color, #1A1A1A); margin: 0 0 0.75rem; } .ds-skill-card-tools { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; } .ds-skill-card-tools li { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.9rem; font-weight: 500; color: var(--text-color, #1A1A1A); }"
+    },
+    {
+      "name": "Mobile Menu Panel",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Centered, bordered floating panel — deliberately not an edge-to-edge drawer.",
+      "html": "<div class=\"ds-mobile-menu\"><a class=\"ds-mobile-menu-link\" href=\"#\">Work</a><a class=\"ds-mobile-menu-link\" href=\"#\">Projects</a><a class=\"ds-mobile-menu-link\" href=\"#\">Contact</a></div>",
+      "css": ".ds-mobile-menu { position: absolute; left: 50%; transform: translateX(-50%); width: 85%; height: 95vh; background-color: var(--background-color, #F5F4F2); color: var(--text-color, #1A1A1A); border: 1px solid var(--text-color, #1A1A1A); border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; } .ds-mobile-menu-link { font-family: 'Bricolage Grotesque', sans-serif; color: inherit; text-decoration: none; padding: 1rem; } .ds-mobile-menu-link:focus-visible { outline: 2px solid var(--secondary-color, #E07B39); outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Workbench",
+    "overview": "This is a tool-maker's surface, not a showroom. It sits flat at rest — no ambient shadows, no gradients competing for attention, no glassmorphism — because the work being shown (full-stack, product-engineering craft) is the point, not the chrome around it. A single grotesque display typeface carries the whole system at large sizes and light weights (400), giving headlines an editorial, unhurried confidence instead of bold-and-loud SaaS-template energy. One warm accent color does all the emphasis work — terracotta in light mode, a cooler sky blue in dark mode — used sparingly enough that its rarity is the point. Depth is earned, not decorative: exactly one shadow exists in the entire system, and it only appears when a project card is actively hovered. Everything else communicates state through color, opacity, and small, decisive transforms (translateY, scale). One organic, hand-drawn blob shape lives behind the hero as the system's single moment of asymmetry inside an otherwise geometric world of pills, circles, and rounded rectangles — confirmed to stay a one-off hero accent, not a recurring motif, so it keeps its impact.",
+    "keyCharacteristics": [
+      "One warm accent color, everywhere else neutral.",
+      "Flat by default; shadow is a rare, deliberate hover response.",
+      "One display typeface, weight does the differentiation.",
+      "Geometric shapes with exactly one organic exception, kept rare.",
+      "Small, decisive interaction feedback (scale/translate), not lingering animation."
+    ],
+    "rules": [
+      { "name": "The One Accent Rule", "body": "Only one non-neutral color is ever on screen at a time (terracotta or sky, never both, never a second competing hue).", "section": "colors" },
+      { "name": "The Weight-Is-Meaning Rule", "body": "Color and size stay restrained; font-weight is the primary signal for emphasis and state (300 body -> 400 headings -> 500 labels -> 700-800 active/selected).", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Shadows appear only as a direct response to interaction (hover), never at rest, and never anywhere except the confirmed Card Lift role.", "section": "elevation" },
+      { "name": "The Geometric-Except-Once Rule", "body": "Every shape in the system is a rectangle, pill, or circle, with exactly one confirmed organic exception (the hero blob).", "section": "shapes" }
+    ],
+    "dos": [
+      "Do keep exactly one accent color on screen at a time; switch hue by theme (terracotta/sky), never add a second concurrent accent.",
+      "Do keep new shadows hover-only and identical to the confirmed Card Lift value; don't invent a second shadow vocabulary for new surfaces.",
+      "Do let font-weight (300/400/500/700-800) carry emphasis before reaching for size or color.",
+      "Do keep the hero blob exclusive to the homepage hero; use geometric shapes everywhere else, including the Xnapper case study and /projects."
+    ],
+    "donts": [
+      "Don't add ambient or resting shadows to signal a section's importance (e.g. making the Xnapper card \"float\" at rest) — use scale, position, and copy hierarchy instead, per the Flat-By-Default Rule.",
+      "Don't introduce a second display typeface or a bold (700+) headline weight — this system differentiates through size and the light/regular divide, not through introducing heavier display weights.",
+      "Don't ship new interactive elements (new buttons, nav items, card links) without a :focus-visible state — the incumbent codebase has none, and it's a real accessibility gap to close going forward, not a pattern to keep replicating."
+    ]
+  }
+}
