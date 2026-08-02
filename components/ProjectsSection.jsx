@@ -1,13 +1,19 @@
 import PropTypes from 'prop-types'
 import useTranslation from 'next-translate/useTranslation'
+import Link from 'next/link'
 
 import ProjectCard from './ProjectCard'
 
 import styles from '../styles/ProjectsSection.module.css'
 
-export default function ProjectsSection ({ id, key }) {
+export default function ProjectsSection ({ id, key, featuredOnly = false }) {
   const { t } = useTranslation('projects')
-  const projects = t('projects', { count: 1 }, { returnObjects: true })
+  const allProjects = t('projects', { count: 1 }, { returnObjects: true })
+
+  const featuredProjects = allProjects.filter(project => project.featured)
+  const projects = featuredOnly
+    ? (featuredProjects.length ? featuredProjects : allProjects.slice(0, 3))
+    : allProjects
 
   return (
     <section id={id} key={key} className={styles.projectsSection}>
@@ -15,15 +21,23 @@ export default function ProjectsSection ({ id, key }) {
       <ul className={styles.projects}>
         {
           projects.map(project =>
-            <ProjectCard key={project.url} project={project} t={t} />
+            <ProjectCard key={project.url} project={project} t={t} variant='home' />
           )
         }
       </ul>
+      {
+        featuredOnly && (
+          <Link href='/projects' className={styles.viewAllLink}>
+            {t('viewAllProjects')}
+          </Link>
+        )
+      }
     </section>
   )
 }
 
 ProjectsSection.propTypes = {
   id: PropTypes.string.isRequired,
-  key: PropTypes.string.isRequired
+  key: PropTypes.string.isRequired,
+  featuredOnly: PropTypes.bool
 }

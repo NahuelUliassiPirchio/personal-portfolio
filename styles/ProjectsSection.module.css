@@ -5,3 +5,23 @@
   padding: 1rem;
   list-style: none;
 }
+
+.viewAllLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0.5rem 0 0 1.25rem;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.viewAllLink:hover {
+  color: var(--shadow-color);
+}
+
+.viewAllLink:focus-visible {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 3px;
+}

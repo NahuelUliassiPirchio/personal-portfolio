@@ -7,11 +7,12 @@ import LinksDropDown from './LinksDropDown'
 import { getLinkByName } from '../utils/projectFilters'
 import styles from '../styles/ProjectsCard.module.css'
 
-export default function ProjectCard ({ project, t }) {
+export default function ProjectCard ({ project, t, variant = 'catalog' }) {
   const projectLinks = project.links
   const projectDemoLink = getLinkByName(projectLinks, 'Demo')[0]
   const projectRepoLinks = getLinkByName(projectLinks, 'Repo')
   const youtubeVideoId = getYouTubeVideoId(project.image)
+  const showStatusBadge = variant === 'catalog' && Boolean(project.status)
 
   return (
     <li className={`${styles.projectContainer} ${project.image ? '' : styles.noGif}`} key={project.url} >
@@ -48,7 +49,10 @@ export default function ProjectCard ({ project, t }) {
       </figure>
       <div className={styles.projectBodyContainer}>
         <div className={styles.projectDescription} >
-          <h2>{project.name}</h2>
+          <div className={styles.projectHeader}>
+            <h2>{project.name}</h2>
+            {showStatusBadge && <span className={styles.statusBadge}>{t(`status.${project.status}`)}</span>}
+          </div>
           <ul className={styles.technologies}>
             {project.technologies.map((technology) => (
               <li key={technology.name} title={technology.name}>
@@ -90,7 +94,8 @@ export default function ProjectCard ({ project, t }) {
 
 ProjectCard.propTypes = {
   project: PropType.object.isRequired,
-  t: PropType.func.isRequired
+  t: PropType.func.isRequired,
+  variant: PropType.oneOf(['home', 'catalog'])
 }
 
 function getYouTubeVideoId (url) {

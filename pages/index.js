@@ -2,6 +2,9 @@ import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
 
 import Layout from '../components/Layout'
+import HeroSection from '../components/HeroSection'
+import ProofStrip from '../components/ProofStrip'
+import FeaturedWork from '../components/FeaturedWork'
 import ProjectsSection from '../components/ProjectsSection'
 import ContactSection from '../components/ContactSection'
 import AboutSection from '../components/AboutSection'
@@ -16,15 +19,18 @@ export default function Home () {
   const { t } = useTranslation('home')
   const { locale } = useRouter()
 
+  const resumeLink = locale.startsWith('es') ? process.env.CV_URL_ES : process.env.CV_URL_EN
+
   const sections = [
+    { title: t('about'), url: 'hero', component: HeroSection, props: { resumeLink } },
+    { title: t('about'), url: 'proof-strip', component: ProofStrip },
+    { title: t('about'), url: 'featured-work', component: FeaturedWork },
     { title: t('about'), url: 'about', component: AboutSection },
     { title: t('about'), url: 'experience', component: ExperienceSection },
     { title: t('skills'), url: 'skills', component: SkillsSection },
-    { title: t('projects'), url: 'projects', component: ProjectsSection },
+    { title: t('projects'), url: 'projects', component: ProjectsSection, props: { featuredOnly: true } },
     { title: t('contact'), url: 'contact', component: ContactSection }
   ]
-
-  const resumeLink = locale.startsWith('es') ? process.env.CV_URL_ES : process.env.CV_URL_EN
 
   return (
     <>
@@ -36,7 +42,7 @@ export default function Home () {
       <Layout>
         {
             sections.map((section, index) => (
-              section.component({ key: index, id: section.url })
+              section.component({ key: index, id: section.url, ...section.props })
             ))
         }
         <nav className={styles.floatContainer}>

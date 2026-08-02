@@ -682,5 +682,6 @@
         "archived": "Archivado",
         "experimental": "Experimental"
     },
-    "visitDemo": "Visita la Demo"
+    "visitDemo": "Visita la Demo",
+    "viewAllProjects": "Ver todos los proyectos"
 }

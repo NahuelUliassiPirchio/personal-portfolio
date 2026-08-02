@@ -1,9 +1,5 @@
 {
-    "greetings": "¡Hola y bienvenido a mi portafolio!",
-    "title": "Soy Nahuel, ",
-    "highlightedText": "desarrollador de software.",
     "aboutMeTitle": "Sobre mí",
-    "introduction1": "Soy Nahuel Uliassi Pirchio, desarrollador de software de Buenos Aires, Argentina. Construyo aplicaciones web prácticas con TypeScript, React, Next.js, Node.js y herramientas modernas de backend.",
-    "introduction2": "Mi trabajo más fuerte está entre el comportamiento de producto y la implementación: flujos para usuarios, herramientas internas, APIs, autenticación, acceso a datos, deployment y estructura mantenible.",
-    "introduction3": "Mi última experiencia también incluyó trabajo desktop multiplataforma, pero mi foco principal es el desarrollo web orientado a producto: entender el contexto, pensar la solución, escribir el código, mejorar la experiencia y entregar software útil para flujos reales."
+    "introduction1": "Soy Nahuel Uliassi Pirchio, desarrollador de software de Buenos Aires, Argentina, con experiencia profesional construyendo productos comerciales y herramientas internas de negocio. Mi trabajo más fuerte implica ser responsable de features técnicamente demandantes en interfaz, lógica de aplicación, datos y entrega en producción.",
+    "introduction2": "Actualmente estoy enfocado en roles full-stack orientados a producto, donde puedo resolver problemas reales y entregar soluciones completas y mantenibles."
 }

@@ -679,5 +679,6 @@
         "archived": "Archived",
         "experimental": "Experimental"
     },
-    "visitDemo": "Explore Demo"
+    "visitDemo": "Explore Demo",
+    "viewAllProjects": "View all projects"
 }

@@ -6,5 +6,51 @@
         "experience": "Experience",
         "work": "Work",
         "downloadResume": "See my resume",
-        "resumeText":"My Resume"
+        "resumeText":"My Resume",
+        "hero": {
+                "headline": "I build full-stack products and complex features end to end.",
+                "supportingCopy": "Full-Stack Software Developer working with TypeScript, React, Next.js and Node.js. I turn product problems into maintainable features across UI, application logic, data and production workflows.",
+                "ctaFeaturedWork": "View featured work",
+                "ctaProjects": "View projects"
+        },
+        "proofStrip": {
+                "heading": "Track record",
+                "points": [
+                        "3+ years of professional software development",
+                        "Approximately 20,000 active users reached through a commercial product",
+                        "End-to-end feature ownership across frontend, backend and product architecture"
+                ]
+        },
+        "featuredWork": {
+                "sectionHeading": "Featured Work",
+                "title": "Xnapper — Product Engineering",
+                "description": "I helped evolve a commercial screenshot product into a broader image and video editing experience, owning complex features across interface, state, processing, persistence and production delivery.",
+                "roleLabel": "Role",
+                "role": "Software Developer",
+                "periodLabel": "Period",
+                "period": "February 2025 – May 2026",
+                "environmentLabel": "Environment",
+                "environment": "Remote, international",
+                "scaleLabel": "Product scale",
+                "scale": "Approximately 20,000 active users",
+                "cta": "View case study",
+                "contributions": [
+                        {
+                                "title": "Video editing pipeline",
+                                "body": "Built the video editing flow from scratch, including timeline, clips, frame-accurate playback and FFmpeg/WASM export."
+                        },
+                        {
+                                "title": "Architecture and state",
+                                "body": "Refactored central export and history flows, using clear abstractions for multiple strategies, undo/redo and cross-runtime persistence."
+                        },
+                        {
+                                "title": "Reliability and security",
+                                "body": "Hardened file, process and path handling, reduced attack surface and introduced automated tests for critical flows."
+                        },
+                        {
+                                "title": "End-to-end product delivery",
+                                "body": "Worked from UI behavior and application state through processing and release concerns, shipping features in a real review-driven product cycle."
+                        }
+                ]
+        }
 }

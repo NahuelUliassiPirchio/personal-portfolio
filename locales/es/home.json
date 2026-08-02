@@ -6,5 +6,51 @@
         "experience": "Experiencia",
         "work": "Trabajo",
         "downloadResume": "Ver CV",
-        "resumeText":"Mi Currículum"
+        "resumeText":"Mi Currículum",
+        "hero": {
+                "headline": "Construyo productos full-stack y features complejas de punta a punta.",
+                "supportingCopy": "Desarrollador Full-Stack de Software que trabaja con TypeScript, React, Next.js y Node.js. Transformo problemas de producto en features mantenibles a través de UI, lógica de aplicación, datos y flujos de producción.",
+                "ctaFeaturedWork": "Ver trabajo destacado",
+                "ctaProjects": "Ver proyectos"
+        },
+        "proofStrip": {
+                "heading": "Trayectoria",
+                "points": [
+                        "3+ years of professional software development",
+                        "Aproximadamente 20.000 usuarios activos alcanzados a través de un producto comercial",
+                        "Ownership de punta a punta de features en frontend, backend y arquitectura de producto"
+                ]
+        },
+        "featuredWork": {
+                "sectionHeading": "Trabajo Destacado",
+                "title": "Xnapper — Ingeniería de Producto",
+                "description": "Ayudé a evolucionar un producto comercial de capturas de pantalla hacia una experiencia más amplia de edición de imagen y video, siendo responsable de features complejas en interfaz, estado, procesamiento, persistencia y entrega en producción.",
+                "roleLabel": "Rol",
+                "role": "Desarrollador de Software",
+                "periodLabel": "Período",
+                "period": "Febrero 2025 – Mayo 2026",
+                "environmentLabel": "Entorno",
+                "environment": "Remoto, internacional",
+                "scaleLabel": "Escala del producto",
+                "scale": "Aproximadamente 20.000 usuarios activos",
+                "cta": "Ver caso de estudio",
+                "contributions": [
+                        {
+                                "title": "Pipeline de edición de video",
+                                "body": "Construí el flujo de edición de video desde cero, incluyendo timeline, clips, reproducción cuadro a cuadro y exportación con FFmpeg/WASM."
+                        },
+                        {
+                                "title": "Arquitectura y estado",
+                                "body": "Refactoricé los flujos centrales de exportación e historial usando abstracciones claras para múltiples estrategias, undo/redo y persistencia entre runtimes."
+                        },
+                        {
+                                "title": "Confiabilidad y seguridad",
+                                "body": "Reforcé el manejo de archivos, procesos y rutas, reduje la superficie de ataque e introduje tests automatizados para flujos críticos."
+                        },
+                        {
+                                "title": "Entrega de producto de punta a punta",
+                                "body": "Trabajé desde el comportamiento de la UI y el estado de la aplicación hasta el procesamiento y consideraciones de release, entregando features en un ciclo real de producto guiado por revisiones."
+                        }
+                ]
+        }
 }
