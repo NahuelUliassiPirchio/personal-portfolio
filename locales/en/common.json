@@ -1,5 +1,6 @@
 {
     "changeLanguage": "Change language",
+    "mediaComingSoon": "Media coming soon",
     "sections": [
         { "title": "home", "url": "home" },
         { "title": "about", "url": "about" },

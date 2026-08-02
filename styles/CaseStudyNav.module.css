@@ -1,0 +1,55 @@
+.caseStudyNav {
+  position: sticky;
+  top: var(--navbar-height);
+  z-index: 90;
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--thin-line-color);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.caseStudyNav.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.list a {
+  color: var(--shadow-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.active {
+  color: var(--secondary-color) !important;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.inactive {
+  text-decoration: none;
+}
+
+.list a:focus-visible {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 3px;
+}
+
+@media (max-width: 870px) {
+  .caseStudyNav {
+    display: none;
+  }
+}
