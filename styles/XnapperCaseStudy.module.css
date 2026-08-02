@@ -145,11 +145,19 @@
   margin-bottom: 0;
 }
 
-/* Design Decisions is the page's focal moment (largest, most prominent cards) */
+/* Design Decisions is the page's focal moment: a wide row of substantial
+   cards reads as prominent; forcing them into a single stacked column just
+   makes the section extremely tall without adding visual weight. */
 .decisionsGrid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .decisionsGrid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .decisionCard {
