@@ -1,0 +1,118 @@
+{
+    "meta": {
+        "title": "Xnapper Case Study — Nahuel Uliassi Pirchio",
+        "description": "How I took Xnapper from a screenshot tool to a full video editing product — video pipeline, architecture, reliability and licensing, end to end."
+    },
+    "nav": [
+        { "id": "context", "label": "Context" },
+        { "id": "challenge", "label": "Challenge" },
+        { "id": "built", "label": "What I Built" },
+        { "id": "decisions", "label": "Decisions" },
+        { "id": "outcome", "label": "Outcome" },
+        { "id": "stack", "label": "Stack" }
+    ],
+    "header": {
+        "product": "Xnapper",
+        "role": "Software Developer",
+        "dates": "February 2025 – May 2026",
+        "scale": "Approximately 20,000 active users",
+        "summary": "Over sixteen months, I worked across the product stack of Xnapper, taking ownership of complex editing, processing, persistence and reliability features for a commercial product used by approximately 20,000 active users."
+    },
+    "context": {
+        "paragraphs": [
+            "Xnapper is a commercial screenshot tool that expanded into image and video editing. As a Software Developer on the team, I owned features across the interface, application state, processing, persistence and service integrations — not a single layer of the stack.",
+            "The technical difficulty came from moving beyond static screenshot editing into frame-accurate video workflows that had to stay reliable and maintainable across different runtime environments, without sacrificing performance."
+        ]
+    },
+    "challenge": {
+        "statement": "The product needed to move beyond static screenshot editing and support reliable video workflows without sacrificing performance, maintainability or consistency across environments."
+    },
+    "built": [
+        {
+            "id": "video-editing",
+            "title": "Video editing",
+            "bullets": [
+                "Timeline and clip editing",
+                "Frame-accurate playback and seeking",
+                "FFmpeg/WASM export",
+                "Variable frame rate handling",
+                "WebGL video rendering"
+            ]
+        },
+        {
+            "id": "architecture",
+            "title": "Product state & architecture",
+            "bullets": [
+                "Export Strategy abstraction",
+                "Undo/redo history based on the Memento pattern",
+                "Session and preset persistence",
+                "Cross-runtime behavior consistency"
+            ]
+        },
+        {
+            "id": "reliability",
+            "title": "Reliability & security",
+            "bullets": [
+                "Safer file and path handling",
+                "Reduced local-server attack surface",
+                "Removal of unsafe process integrations",
+                "Automated tests for critical paths"
+            ]
+        },
+        {
+            "id": "licensing",
+            "title": "Licensing service",
+            "bullets": [
+                "Serverless Node.js/Express endpoint",
+                "Upstash Redis-backed request handling",
+                "Device-based seat rules",
+                "Idempotent activation",
+                "Soft-delete device handling"
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "title": "Demuxer-based frame extraction",
+            "problem": "Native video seeking wasn't reliable on variable-frame-rate footage — a seek could land on the wrong frame, breaking frame-accurate editing.",
+            "approach": "Extracted frames through a demuxer instead of relying on native seek, giving the editor a consistent, frame-accurate source regardless of a clip's original encoding."
+        },
+        {
+            "title": "Export strategies",
+            "problem": "Supporting multiple export targets was spreading conditional logic across the codebase, making every new export option riskier to add.",
+            "approach": "Introduced a shared export strategy interface so each target implements the same contract, keeping the branching logic in one place instead of scattered conditionals."
+        },
+        {
+            "title": "Persistent undo history",
+            "problem": "As the editor grew new capabilities, ad-hoc undo handling meant each feature had to reinvent its own way of tracking and reverting state.",
+            "approach": "Modeled undo/redo as state snapshots, a Memento-style approach, so any new editor capability could plug into the same history mechanism without custom undo logic."
+        }
+    ],
+    "outcome": {
+        "items": [
+            "Expanded the product from screenshot-focused workflows into video editing.",
+            "Shipped the work through multiple production releases.",
+            "Improved maintainability of export and persistence flows.",
+            "Reduced important security and reliability risks.",
+            "Supported a product used by approximately 20,000 active users."
+        ]
+    },
+    "stack": {
+        "items": [
+            "TypeScript",
+            "React",
+            "Next.js",
+            "Node.js",
+            "Electron",
+            "FFmpeg / WebAssembly",
+            "WebGL",
+            "Zustand / Jotai",
+            "Redis / Upstash",
+            "Jest / Vitest"
+        ]
+    },
+    "cta": {
+        "resume": "See my resume",
+        "contact": "Get in touch"
+    }
+}

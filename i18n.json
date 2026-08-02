@@ -4,6 +4,7 @@
     "localeDetection": false,
     "pages": {
       "*": ["home","common", "projects"],
-      "/": ["home","contact","about","skills", "experience"]
+      "/": ["home","contact","about","skills", "experience"],
+      "/work/xnapper": ["xnapper"]
     }
   }

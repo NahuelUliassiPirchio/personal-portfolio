@@ -1,0 +1,118 @@
+{
+    "meta": {
+        "title": "Caso de Estudio Xnapper — Nahuel Uliassi Pirchio",
+        "description": "Cómo llevé Xnapper de una herramienta de capturas a un producto completo de edición de video: pipeline de video, arquitectura, confiabilidad y licenciamiento, de punta a punta."
+    },
+    "nav": [
+        { "id": "context", "label": "Contexto" },
+        { "id": "challenge", "label": "Desafío" },
+        { "id": "built", "label": "Lo que construí" },
+        { "id": "decisions", "label": "Decisiones" },
+        { "id": "outcome", "label": "Resultado" },
+        { "id": "stack", "label": "Stack" }
+    ],
+    "header": {
+        "product": "Xnapper",
+        "role": "Desarrollador de Software",
+        "dates": "Febrero 2025 – Mayo 2026",
+        "scale": "Aproximadamente 20.000 usuarios activos",
+        "summary": "A lo largo de dieciséis meses, trabajé en todo el stack de producto de Xnapper, siendo responsable de features complejas de edición, procesamiento, persistencia y confiabilidad para un producto comercial usado por aproximadamente 20.000 usuarios activos."
+    },
+    "context": {
+        "paragraphs": [
+            "Xnapper es una herramienta comercial de capturas de pantalla que se expandió hacia la edición de imagen y video. Como Desarrollador de Software del equipo, fui responsable de features en la interfaz, el estado de la aplicación, el procesamiento, la persistencia y las integraciones con servicios — no de una sola capa del stack.",
+            "La dificultad técnica surgió al pasar de la edición estática de capturas a flujos de video cuadro a cuadro que debían mantenerse confiables y mantenibles en distintos entornos de ejecución, sin sacrificar performance."
+        ]
+    },
+    "challenge": {
+        "statement": "El producto necesitaba dejar atrás la edición estática de capturas y soportar flujos de video confiables sin sacrificar performance, mantenibilidad ni consistencia entre entornos."
+    },
+    "built": [
+        {
+            "id": "video-editing",
+            "title": "Edición de video",
+            "bullets": [
+                "Edición de timeline y clips",
+                "Reproducción y búsqueda cuadro a cuadro",
+                "Exportación con FFmpeg/WASM",
+                "Manejo de frame rate variable",
+                "Renderizado de video con WebGL"
+            ]
+        },
+        {
+            "id": "architecture",
+            "title": "Estado y arquitectura del producto",
+            "bullets": [
+                "Abstracción de Export Strategy",
+                "Historial de undo/redo basado en el patrón Memento",
+                "Persistencia de sesión y presets",
+                "Consistencia de comportamiento entre runtimes"
+            ]
+        },
+        {
+            "id": "reliability",
+            "title": "Confiabilidad y seguridad",
+            "bullets": [
+                "Manejo más seguro de archivos y rutas",
+                "Reducción de la superficie de ataque del servidor local",
+                "Eliminación de integraciones de procesos inseguras",
+                "Tests automatizados para flujos críticos"
+            ]
+        },
+        {
+            "id": "licensing",
+            "title": "Servicio de licenciamiento",
+            "bullets": [
+                "Endpoint serverless con Node.js/Express",
+                "Manejo de requests respaldado por Upstash Redis",
+                "Reglas de asientos por dispositivo",
+                "Activación idempotente",
+                "Manejo de baja lógica (soft-delete) de dispositivos"
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "title": "Extracción de frames basada en demuxer",
+            "problem": "La búsqueda nativa de video no era confiable en material con frame rate variable — podía terminar en el cuadro incorrecto, rompiendo la edición cuadro a cuadro.",
+            "approach": "Extraje los cuadros a través de un demuxer en lugar de depender de la búsqueda nativa, dándole al editor una fuente consistente y precisa sin importar la codificación original del clip."
+        },
+        {
+            "title": "Estrategias de exportación",
+            "problem": "Soportar múltiples destinos de exportación estaba esparciendo lógica condicional por todo el código, haciendo cada vez más riesgoso agregar una nueva opción de exportación.",
+            "approach": "Introduje una interfaz compartida de export strategy para que cada destino implemente el mismo contrato, concentrando la lógica de ramificación en un solo lugar en vez de condicionales dispersos."
+        },
+        {
+            "title": "Historial de undo persistente",
+            "problem": "A medida que el editor sumaba capacidades nuevas, el manejo de undo ad-hoc obligaba a cada feature a reinventar su propia forma de rastrear y revertir estado.",
+            "approach": "Modelé el undo/redo como snapshots de estado, un enfoque tipo Memento, para que cualquier capacidad nueva del editor pudiera integrarse al mismo mecanismo de historial sin lógica de undo a medida."
+        }
+    ],
+    "outcome": {
+        "items": [
+            "Expandí el producto desde flujos enfocados en capturas hacia la edición de video.",
+            "Entregué el trabajo a través de múltiples releases de producción.",
+            "Mejoré la mantenibilidad de los flujos de exportación y persistencia.",
+            "Reduje riesgos importantes de seguridad y confiabilidad.",
+            "Di soporte a un producto usado por aproximadamente 20.000 usuarios activos."
+        ]
+    },
+    "stack": {
+        "items": [
+            "TypeScript",
+            "React",
+            "Next.js",
+            "Node.js",
+            "Electron",
+            "FFmpeg / WebAssembly",
+            "WebGL",
+            "Zustand / Jotai",
+            "Redis / Upstash",
+            "Jest / Vitest"
+        ]
+    },
+    "cta": {
+        "resume": "Ver mi currículum",
+        "contact": "Hablemos"
+    }
+}
