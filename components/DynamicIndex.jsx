@@ -5,7 +5,7 @@ import ProjectSectionStyles from '../styles/ProjectsSection.module.css'
 import styles from '../styles/DynamicIndex.module.css'
 
 export default function DynamicIndex ({ sections }) {
-  const [activeSection, setActiveSection] = useState(sections[0].url)
+  const [activeSection, setActiveSection] = useState(sections[0])
 
   useEffect(() => {
     const sectionsDiv = document.querySelectorAll('section')
@@ -14,7 +14,9 @@ export default function DynamicIndex ({ sections }) {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const section = sections.find(section => section.url === entry.target.id)
-          setActiveSection(section)
+          if (section) {
+            setActiveSection(section)
+          }
         }
       })
     }, {
@@ -44,17 +46,20 @@ export default function DynamicIndex ({ sections }) {
   }, [])
 
   const handleIndexClick = (e) => {
-    const sectionId = sections.find(section => section.title === e.target.textContent).url
-    const section = document.getElementById(sectionId)
-    section.scrollIntoView({ behavior: 'smooth' })
+    const sectionId = sections.find(section => section.title === e.target.textContent)?.url
+    const section = sectionId ? document.getElementById(sectionId) : null
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' })
+    }
   }
 
   return (
     <ul className={styles.index}>
         {
         sections.map((section, index) => (
-            <li key={index} onClick={handleIndexClick}>
+            <li key={index}>
                 <button
+                onClick={handleIndexClick}
                 className={section.url === activeSection.url ? styles.activeSection : styles.inactiveSection}
                 >
                     {section.title}
