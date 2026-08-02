@@ -1,9 +1,9 @@
 {
     "greetings": "Hello and welcome to my portfolio!",
-    "title": "My name is Nahuel Uliassi Pirchio, I am a ",
+    "title": "I'm Nahuel, ",
     "highlightedText": "software developer.",
     "aboutMeTitle": "About me",
-    "introduction1": "I'm Nahuel, a software developer from Buenos Aires, Argentina. I build web and desktop applications with TypeScript, React, Next.js, Node.js, and Electron, focusing on useful products, clean implementation, and real-world functionality.",
-    "introduction2": "My background as an IT Technician, Systems Engineering student, and self-driven learner pushes me to keep improving across frontend, backend, desktop development, architecture, and product-oriented problem solving.",
-    "introduction3": "I enjoy working on features from end to end: understanding the problem, shaping the solution, writing the code, improving the experience, and shipping something that actually helps people."
+    "introduction1": "I'm Nahuel Uliassi Pirchio, a software developer from Buenos Aires, Argentina. I build practical web applications with TypeScript, React, Next.js, Node.js, and modern backend tools.",
+    "introduction2": "My strongest work sits between product behavior and implementation: user-facing flows, internal tools, APIs, authentication, data access, deployment, and maintainable application structure.",
+    "introduction3": "My latest experience also included cross-platform desktop work, but my main focus is web product development: understanding the context, shaping the solution, writing the code, improving the experience, and shipping software that is useful in real workflows."
 }

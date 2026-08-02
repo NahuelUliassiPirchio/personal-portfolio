@@ -1,127 +1,47 @@
 {
-    "projects":[
+    "projects": [
         {
-            "name":"Map Zone Delimiter",
-            "shortDescription": "Necesitaba asignar ubicaciones a datos de múltiples maneras de manera eficiente. Las herramientas existentes no cumplían con las expectativas, así que construí esta aplicación para una gestión flexible de zonas usando Leaflet y diagramas de Voronoi.",
-            "description": "Desarrollé Map Zone Delimiter porque necesitaba una herramienta versátil para asignar datos geoespaciales de diferentes maneras, ya que las soluciones existentes no cumplían completamente con mis requisitos. Este proyecto me permitió crear una aplicación intuitiva que ofrece una gestión flexible de zonas geoespaciales mediante radios ajustables, áreas de polilínea y áreas abstractas con diagramas de Voronoi. Map Zone Delimiter soporta la importación y exportación de datos en formato CSV, simplificando la manipulación y el análisis de datos. La aplicación proporciona una experiencia de usuario fluida con una fácil gestión de puntos y grupos, haciendo que la asignación de datos geoespaciales sea sencilla y eficiente.",
-            "technologies":[
-                {"name":"JAVASCRIPT","icon":"javascript.svg"}
+            "name": "Basic Store",
+            "shortDescription": "Aplicación full-stack de e-commerce con subastas, construida con Next.js, NestJS, PostgreSQL, TypeORM, JWT, Swagger, Azure y Vercel.",
+            "description": "Basic Store es una aplicación full-stack de e-commerce con sistema de subastas/pujas. Incluye una REST API construida con NestJS, PostgreSQL, TypeORM, autenticación JWT y documentación Swagger, además de un frontend en Next.js desplegado en Vercel. El proyecto me permitió practicar estructura backend, documentación de APIs, autenticación, integración con base de datos, deployment y flujos de producto en frontend.",
+            "technologies": [
+                {
+                    "name": "NESTJS",
+                    "icon": "nestjs.svg"
+                },
+                {
+                    "name": "TYPESCRIPT",
+                    "icon": "typescript.svg"
+                },
+                {
+                    "name": "TYPEORM",
+                    "icon": "typeorm.png"
+                },
+                {
+                    "name": "POSTGRESQL",
+                    "icon": "postgresql.svg"
+                },
+                {
+                    "name": "SWAGGER",
+                    "icon": "swagger-ui.png"
+                },
+                {
+                    "name": "NEXTJS",
+                    "icon": "nextjs.svg"
+                },
+                {
+                    "name": "REACT",
+                    "icon": "react.svg"
+                },
+                {
+                    "name": "JAVASCRIPT",
+                    "icon": "javascript.svg"
+                }
             ],
-            "url":"map-zone-delimiter",
-            "logo":"MapIcon.png",
-            "image":"https://youtu.be/xIH5CBWlkQs",
-            "gallery":[
-                "https://youtu.be/xIH5CBWlkQs",
-                "https://i.ibb.co/c61kX0D/map-zone-delimiter-f000106.png",
-                "https://i.ibb.co/80vt6ss/map-zone-delimiter-f000541.png",
-                "https://i.ibb.co/2ygcbVk/map-zone-delimiter-f000846.png",
-                "https://i.ibb.co/mzmsjJg/map-zone-delimiter-f001319.png",
-                "https://i.ibb.co/bJdr50P/map-zone-delimiter-f001112.png"
-            ],
-            "links":[
-                {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/map-zone-delimiter", "icon":"/icons/github.svg"},
-                {"name":"Demo", "url":"https://nahueluliassipirchio.github.io/map-zone-delimiter/", "icon":"/images/MapIcon.png"}
-            ],
-            "process": [
-                {"quote": "Primero, establecí la base añadiendo un mapa usando la biblioteca Leaflet. Implementé funciones básicas para añadir puntos en el mapa mediante clics, asegurando una visualización inicial de las ubicaciones."},
-                {"quote": "Luego, añadí la funcionalidad para agrupar puntos. Esto permitió organizar los puntos en diferentes grupos, facilitando la gestión y clasificación de ubicaciones en el mapa."},
-                {"quote": "Después, incorporé características adicionales para los puntos, como la capacidad de eliminarlos o identificarlos. Esto mejoró la interacción con los puntos, permitiendo una gestión más detallada y precisa."},
-                {"quote": "Introduje la funcionalidad para crear áreas de polilínea, permitiendo la delimitación de zonas conectando puntos con líneas. Esto proporcionó una manera más versátil de definir áreas geoespaciales en el mapa."},
-                {"quote": "Subsecuentemente, añadí la capacidad para crear zonas de radio, donde los puntos están rodeados por un círculo ajustable. Implementé controles de rango para modificar dinámicamente el radio de estos círculos, mejorando la flexibilidad en la delimitación de áreas."},
-                {"quote": "Finalmente, integré zonas dinámicas usando diagramas de Voronoi. Esto permitió segmentar el mapa en áreas abstractas basadas en la distribución de puntos, facilitando una asignación de datos más precisa a las zonas más cercanas."}
-            ],
-            "conclusion": "Las mejoras futuras podrían incluir características más dinámicas para la administración de puntos, como un mejor agrupamiento visual y la reordenación de puntos en la lista. Además, optimizar la aplicación para soporte móvil ampliaría significativamente su usabilidad."
-        },
-        {
-            "name":"Light Control Pro",
-            "shortDescription": "Creé Light Control Pro porque necesitaba una aplicación simple y eficiente con atajos para luces inteligentes. Las opciones del mercado no cumplían con mis necesidades, así que construí una herramienta para el control intuitivo de las bombillas Wiz, con ajustes en tiempo real y gestión de escenas.",
-            "description": "Desarrollé Light Control Pro porque quería una aplicación sencilla con atajos para gestionar mis luces inteligentes, ya que las soluciones existentes no satisfacían mis preferencias. Este proyecto me permitió diseñar una herramienta intuitiva y eficiente para controlar mis bombillas inteligentes Wiz directamente desde mi PC. Light Control Pro ofrece ajustes en tiempo real, gestión de escenas y atajos de teclado personalizados, proporcionando una experiencia de usuario fluida para el control de iluminación inteligente. El código está siendo migrado a TypeScript para mejorar la seguridad de tipos y la mantenibilidad a largo plazo.",
-            "technologies":[
-                {"name":"TYPESCRIPT","icon":"typescript.svg"},
-                {"name":"ELECTRON","icon":"electron.svg"}
-
-            ],
-            "url":"light-control-pro",
-            "logo":"LightsLogo.png",
-            "image":"https://youtu.be/EgdfaJL9iMk",
-            "gallery":[
-                "https://youtu.be/EgdfaJL9iMk",
-                "https://i.ibb.co/MhGG77D/light-control-f000234.png",
-                "https://i.ibb.co/pfMp3Xq/light-control-f000017.png",
-                "https://i.ibb.co/HTTGCNs/light-control-f000346.png",
-                "https://i.ibb.co/Kb2TbVC/light-control-f000422.png",
-                "https://i.ibb.co/d2Tj2gr/light-control-f000487.png",
-                "https://i.ibb.co/6DhHPKC/light-control-f001056.png",
-                "https://i.ibb.co/0jZSGpV/light-control-f001131.png",
-                "https://i.ibb.co/7r9X0z2/light-control-f001233.png"
-            ],
-            "links":[
-                {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/light-control-pro", "icon":"/icons/github.svg"},
-                {"name":"Demo", "url":"https://github.com/NahuelUliassiPirchio/light-control-pro/releases", "icon":"/images/LightsLogo.png"}
-            ],
-            "process": [
-                {"quote": "Comencé estableciendo la comunicación con las bombillas inteligentes, asegurándome de poder enviar comandos y recibir respuestas. Este paso fundamental fue crucial para entender las capacidades y limitaciones de las bombillas."},
-                {"quote": "Luego, diseñé e implementé una interfaz de usuario intuitiva. El objetivo era facilitar el control de la configuración de iluminación. Me enfoqué en proporcionar una experiencia limpia y amigable que permitiera una interacción fluida con las bombillas."},
-                {"quote": "Para mejorar la usabilidad, integré atajos de teclado personalizados. Esta característica permite a los usuarios ajustar rápidamente la configuración de la iluminación sin navegar por la interfaz, agilizando su interacción con la aplicación."},
-                {"quote": "Luego, introduje el concepto de habitaciones, permitiendo a los usuarios agrupar varias bombillas. Esta funcionalidad facilita el control simultáneo de múltiples bombillas y la organización más eficiente de la configuración de iluminación."},
-                {"quote": "Finalmente, añadí la opción para que la aplicación se ejecute al iniciar el sistema. Esto asegura que el control de la iluminación esté siempre disponible sin necesidad de iniciarlo manualmente, mejorando la conveniencia para los usuarios."}
-            ],
-            "conclusion": "Light Control Pro proporciona una herramienta intuitiva para controlar las bombillas inteligentes Wiz. Las mejoras futuras incluyen opciones avanzadas de agrupación, mejor sincronización entre eventos, características de personalización y algoritmos de mensajería optimizados para un mejor rendimiento."
-        },
-        {
-            "name":"Simple Pomodoro and To-do",
-            "shortDescription":"Desarrollé esta app por mi afinidad con la metodología Pomodoro: bloques intensos de trabajo seguidos de pausas para aumentar la productividad. Quería medir mis pomodoros por tarea, optimizando mi rutina.",
-            "description":"Desarrollé esta app por mi afinidad con la metodología Pomodoro: bloques intensos de trabajo seguidos de pausas para aumentar la productividad. Quería medir mis pomodoros por tarea, optimizando mi rutina.",
-            "technologies":[
-                {"name":"FIREBASE","icon":"firebase.svg"},
-                {"name":"NEXTJS","icon":"nextjs.svg"},
-                {"name":"REACT","icon":"react.svg"},
-                {"name":"JAVASCRIPT","icon":"javascript.svg"}
-            ],
-            "url":"simple-pomodoro-todo",
-            "logo":"SimplePomodoroTodoLogo.png",
-            "image":"https://youtu.be/Qeld0ED_PRE",
-            "gallery":[
-                "https://youtu.be/Qeld0ED_PRE",
-                "https://i.ibb.co/W28BDwz/Screenshot-20230626-222351.jpg",
-                "https://i.ibb.co/XpgW73J/Screenshot-20230626-221608.png",
-                "https://i.ibb.co/3MF0TWJ/Screenshot-20230626-221609.png",
-                "https://i.ibb.co/J2wQwXw/Screenshot-20230626-222152.png",
-                "https://i.ibb.co/njYHCw8/Screenshot-20230626-222257.png",
-                "https://i.ibb.co/TtnZhPr/Screenshot-20230626-222305.png"
-            ],
-            "links":[
-                {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/simple-pomodoro-todo", "icon":"/icons/github.svg"},
-                {"name":"Demo", "url":"https://simple-pomodoro-todo-up.vercel.app/", "icon":"/images/SimplePomodoroTodoLogo.png"}
-            ],
-            "process": [
-                {"quote":"En primer lugar, forjé una estructura sólida que serían los cimientos de la aplicación. Tuve que adaptarme a las innovaciones de Next.js 13. Para este proyecto, decidí utilizar React Bootstrap, de esta manera pude centrarme más en la lógica y, como otro aspecto positivo, agilizar el desarrollo."},
-                {"quote":"Dado que ya había utilizado Firebase en proyectos anteriores, no me llevó mucho tiempo inicializar la biblioteca. Organicé las consultas básicas (de Firestore) en servicios para poder aplicarlas más adelante."},
-                {"quote":"Para gestionar cada quehacer, creé un hook personalizado que realizaba las famosas operaciones CRUD, aplicando los servicios mencionados anteriormente."},
-                {"quote":"En cuanto a la autenticación, aproveché la integración que proporciona Firebase Authentication con otras plataformas a través de OAuth. Gracias a la documentación y guías disponibles, esta tarea fue relativamente rápida."},
-                {"quote":"En la mejora de la experiencia de usuario, desarrollé un sistema de filtros para ordenar las tareas según las preferencias personales. Utilicé Zustand para crear un estado global que luego me resultaría útil para otras funcionalidades. Opté por esta biblioteca debido a su simplicidad y ligereza."},
-                {"quote":"Para el temporizador, creé un hook personalizado y un componente que se encargaban de reducir el tiempo recibido en las propiedades. El componente encargado de gestionarlo se llama PomodoroTimer, el cual se encarga de estructurar los bloques de tiempo y activar las actualizaciones correspondientes según sea necesario."}
-            ],
-            "conclusion": "Como mejoras y funciones adicionales, se podría implementar la posibilidad de agrupar los quehaceres, ya sea mediante categorías, etiquetas o proyectos, permitiendo a los usuarios organizar y gestionar sus tareas de manera más eficiente. También se podría agregar un esqueleto de carga para brindar mayor dinamismo y una experiencia de usuario más fluida, mostrando componentes de carga mientras se obtienen datos o se navega entre secciones de la aplicación, proporcionando retroalimentación visual y una sensación de progreso."
-        },
-        {
-            "name":"Basic Store",
-            "shortDescription":"Basic Store es mi debut en desarrollo web. Incluye una API en NestJS y un sitio en NextJS. Simula e-commerce con subastas, aplicando mis conocimientos adquiridos.",
-            "description":"Basic Store es mi primer aplicación web pública, esta misma consta de una restful API desarrollada en NestJS y una página web usando NextJS como framework principal. Simula una típica página de e-commerce pero con el añadido de poder pujar por un producto. Su propósito siempre fue aplicar conocimientos adquiridos y plasmarlo en algo material.",
-            "technologies":[
-                {"name":"NESTJS","icon":"nestjs.svg"},
-                {"name":"TYPESCRIPT","icon":"typescript.svg"},
-                {"name":"TYPEORM","icon":"typeorm.png"},
-                {"name":"POSTGRESQL","icon":"postgresql.svg"},
-                {"name":"SWAGGER","icon":"swagger-ui.png"},
-                {"name":"NEXTJS","icon":"nextjs.svg"},
-                {"name":"REACT","icon":"react.svg"},
-                {"name":"JAVASCRIPT","icon":"javascript.svg"}
-            ],
-            "url":"basic-store",
-            "logo":"BSCStoreLogo.png",
-            "image":"https://youtu.be/D4dEdAZuTjE",
-            "gallery":[
+            "url": "basic-store",
+            "logo": "BSCStoreLogo.png",
+            "image": "https://youtu.be/D4dEdAZuTjE",
+            "gallery": [
                 "https://youtu.be/D4dEdAZuTjE",
                 "https://i.ibb.co/H2nqjVP/Screenshot-20230901-180640-min.png",
                 "https://i.ibb.co/ww1Lg7J/Screenshot-20230901-180702-min.png",
@@ -132,48 +52,101 @@
                 "https://i.ibb.co/RvvH85r/Screenshot-20230901-180902-min.png",
                 "https://i.ibb.co/TP6mScK/Screenshot-20230901-181040-min.png"
             ],
-            "links":[
-                {"name":"Frontend Repo", "url":"https://github.com/NahuelUliassiPirchio/nextjs-basic-store-frontend", "icon":"/icons/github.svg"},
-                {"name":"Backend Repo", "url":"https://github.com/NahuelUliassiPirchio/nestjs-basic-store-api", "icon":"/icons/github.svg"},
-                {"name":"Docs", "url":"BASIC_STORE_API", "icon":"/icons/swagger-ui.png"},
-                {"name":"Demo", "url":"https://nextjs-basic-store-frontend.vercel.app/", "icon":"/images/BSCStoreLogo.png"}
+            "links": [
+                {
+                    "name": "Frontend Repo",
+                    "url": "https://github.com/NahuelUliassiPirchio/nextjs-basic-store-frontend",
+                    "icon": "/icons/github.svg"
+                },
+                {
+                    "name": "Backend Repo",
+                    "url": "https://github.com/NahuelUliassiPirchio/nestjs-basic-store-api",
+                    "icon": "/icons/github.svg"
+                },
+                {
+                    "name": "Docs",
+                    "url": "BASIC_STORE_API",
+                    "icon": "/icons/swagger-ui.png"
+                },
+                {
+                    "name": "Demo",
+                    "url": "https://nextjs-basic-store-frontend.vercel.app/",
+                    "icon": "/images/BSCStoreLogo.png"
+                }
             ],
             "process": [
                 {
                     "backend": [
-                        {"quote":"En primer lugar tocaba desarrollar la estructura básica. Al no ser un proyecto muy complejo fue una tarea relativamente simple, más teniendo en cuenta las facilidades de la NestCli. Diseñar la base de datos no fue un gran reto, gracias a typeorm fue una tarea muy intuitiva y rápida comparado con escribir SQL nativo."},
-                        {"quote":"Posteriormente me concentré en la lógica de negocio (services), el tratado y validación de información (controllers). En el trayecto de finalizar esta tarea, fui paralelamente implementando un sistema de autenticación y autorización dispuesto por PassportJS implementando JWT tokens."},
-                        {"quote":"Finalmente, me centré en la documentación de la API. Para esto utilicé Swagger, una herramienta que me permitió documentar la API de forma muy sencilla y rápida gracias a la combinación con nestjs. Además, me permitió generar un cliente de prueba para la API que me permitió probarla de forma más rápida y eficiente."},
-                        {"quote":"DB Deployment: primero me tocó desplegar la Postgresql base de datos. Haciendo uso de un regalo de microsoft azure (por ser estudiante), lancé esta base de datos, posteriormente haciendo las migraciones desde el backend y usando pgadmin. Debo reconocer que me llevó más tiempo del que me gustaría aceptar, ya que fue la primera vez ocupando esta herramienta."},
-                        {"quote":"API Deployment: Como hice en StopRows, mi intención era usar DigitalOcean para desdoblar la API. Sin embargo, debido a algunas limitaciones y complicaciones, decidí utilizar Azure nuevamente. En este caso configuré un servidor linux (RedHat) donde instalé las dependencias necesarias y puse a correr la aplicación con PM2. Nuevamente, me llevó tiempo por errores de novato principalmente. Por ejemplo, el firewall no admitía puertos de entrada y me tomó un plazo darme cuenta."}
+                        {
+                            "quote": "En primer lugar tocaba desarrollar la estructura básica. Al no ser un proyecto muy complejo fue una tarea relativamente simple, más teniendo en cuenta las facilidades de la NestCli. Diseñar la base de datos no fue un gran reto, gracias a typeorm fue una tarea muy intuitiva y rápida comparado con escribir SQL nativo."
+                        },
+                        {
+                            "quote": "Posteriormente me concentré en la lógica de negocio (services), el tratado y validación de información (controllers). En el trayecto de finalizar esta tarea, fui paralelamente implementando un sistema de autenticación y autorización dispuesto por PassportJS implementando JWT tokens."
+                        },
+                        {
+                            "quote": "Finalmente, me centré en la documentación de la API. Para esto utilicé Swagger, una herramienta que me permitió documentar la API de forma muy sencilla y rápida gracias a la combinación con nestjs. Además, me permitió generar un cliente de prueba para la API que me permitió probarla de forma más rápida y eficiente."
+                        },
+                        {
+                            "quote": "DB Deployment: primero me tocó desplegar la Postgresql base de datos. Haciendo uso de un regalo de microsoft azure (por ser estudiante), lancé esta base de datos, posteriormente haciendo las migraciones desde el backend y usando pgadmin. Debo reconocer que me llevó más tiempo del que me gustaría aceptar, ya que fue la primera vez ocupando esta herramienta."
+                        },
+                        {
+                            "quote": "API Deployment: Como hice en StopRows, mi intención era usar DigitalOcean para desdoblar la API. Sin embargo, debido a algunas limitaciones y complicaciones, decidí utilizar Azure nuevamente. En este caso configuré un servidor linux (RedHat) donde instalé las dependencias necesarias y puse a correr la aplicación con PM2. Nuevamente, me llevó tiempo por errores de novato principalmente. Por ejemplo, el firewall no admitía puertos de entrada y me tomó un plazo darme cuenta."
+                        }
                     ],
                     "frontend": [
-                        {"quote":"Estructura básica nextjs (carpeta pages, eslint, next.config.js, etc). Lo siguiente fue el desarrollo de la página principal (NavBar, Footer, lista de productos) y página particular de producto utilizando routing dinámico y usando ServerSideProps."},
-                        {"quote":"Posteriormente me dispuse a desarrollar custom hooks (uno para autenticación y otro para fetching) y desarrollar los componentes de inicio de sesión y creación de un perfil."},
-                        {"quote":"Para terminar, me concentré en pulir detalles de experiencia e interfaz de usuario  y mejorar prácticas (no repetir lógica, endpoints en un mismo archivo, etc)."},
-                        {"quote":"En el deploy fue nuevamente utilizado vercel, sumamente rápido y funcional."}
+                        {
+                            "quote": "Estructura básica nextjs (carpeta pages, eslint, next.config.js, etc). Lo siguiente fue el desarrollo de la página principal (NavBar, Footer, lista de productos) y página particular de producto utilizando routing dinámico y usando ServerSideProps."
+                        },
+                        {
+                            "quote": "Posteriormente me dispuse a desarrollar custom hooks (uno para autenticación y otro para fetching) y desarrollar los componentes de inicio de sesión y creación de un perfil."
+                        },
+                        {
+                            "quote": "Para terminar, me concentré en pulir detalles de experiencia e interfaz de usuario  y mejorar prácticas (no repetir lógica, endpoints en un mismo archivo, etc)."
+                        },
+                        {
+                            "quote": "En el deploy fue nuevamente utilizado vercel, sumamente rápido y funcional."
+                        }
                     ]
                 }
             ],
             "conclusion": "Siempre hay cuestiones mejorables, más teniendo en cuenta que es mi primer “gran proyecto”. Pero en particular hubo un par de cuestiones que me quedaron pendientes: testing, web sockets para ver las pujas en tiempo real, caché tanto para el frontend como el backend y un mejor diseño responsive."
         },
         {
-            "name":"Stop Rows",
-            "shortDescription":"Surge en la secundaria al ver tiempo perdido en colas bancarias. Idea: sistema de colas remotas para proyectos escolares.",
-            "description":"Esta idea la tuve cuando en la secundaria un profesor pidió hacer un proyecto y, en ese entonces, gastaba grandes cantidades de tiempo sentado en la cola del banco. La solución posible que me surgió era hacer un sistema de colas remotas. El backend fue migrado a TypeScript y cuenta con una capa de caché para mejorar los tiempos de respuesta en recursos de acceso frecuente como tiendas y categorías.",
-            "technologies":[
-                {"name":"EXPRESS"},
-                {"name":"MONGODB","icon":"mongodb.svg"},
-                {"name":"MONGOOSE"},
-                {"name":"SWAGGER","icon":"swagger-ui.png"},
-                {"name":"NEXTJS","icon":"nextjs.svg"},
-                {"name":"REACT","icon":"react.svg"},
-                {"name":"TYPESCRIPT","icon":"typescript.svg"}
+            "name": "Stop Rows",
+            "shortDescription": "Sistema full-stack de colas remotas con mapas, JWT, roles usuario/dueño, páginas SSR, docs de API, tests, caché y datos geoespaciales.",
+            "description": "Stop Rows es un sistema full-stack de gestión de colas remotas. El frontend incluye mapa interactivo, flujos autenticados para usuarios y dueños de tiendas, páginas SSR, infinite scroll, custom hooks, capas de servicios y componentes reutilizables. El backend fue migrado a TypeScript e incluye autenticación JWT con refresh tokens, RBAC, validación, manejo centralizado de errores, documentación Swagger, tests de integración, caché e índices geoespaciales en MongoDB.",
+            "technologies": [
+                {
+                    "name": "EXPRESS"
+                },
+                {
+                    "name": "MONGODB",
+                    "icon": "mongodb.svg"
+                },
+                {
+                    "name": "MONGOOSE"
+                },
+                {
+                    "name": "SWAGGER",
+                    "icon": "swagger-ui.png"
+                },
+                {
+                    "name": "NEXTJS",
+                    "icon": "nextjs.svg"
+                },
+                {
+                    "name": "REACT",
+                    "icon": "react.svg"
+                },
+                {
+                    "name": "TYPESCRIPT",
+                    "icon": "typescript.svg"
+                }
             ],
-            "url":"stop-rows",
-            "logo":"StopRowsLogo.svg",
-            "image":"https://youtu.be/v2Dam-s8Cys",
-            "gallery":[
+            "url": "stop-rows",
+            "logo": "StopRowsLogo.svg",
+            "image": "https://youtu.be/v2Dam-s8Cys",
+            "gallery": [
                 "https://youtu.be/v2Dam-s8Cys",
                 "https://i.ibb.co/Lgq5Mty/Screenshot-20230901-180030-min.png",
                 "https://i.ibb.co/9pPDzPz/Screenshot-from-2023-04-13-16-48-04-min.png",
@@ -183,111 +156,397 @@
                 "https://i.ibb.co/mvg0qmc/Screenshot-from-2023-04-13-16-46-02-min.png",
                 "https://i.ibb.co/172tnrG/Screenshot-from-2023-04-17-17-27-47-min.png"
             ],
-            "links":[
-                {"name":"Frontend Repo", "url":"https://github.com/NahuelUliassiPirchio/nextjs-stop-rows-frontend", "icon":"/icons/github.svg"},
-                {"name":"Backend Repo", "url":"https://github.com/NahuelUliassiPirchio/stop-rows-api", "icon":"/icons/github.svg"},
-                {"name":"Docs", "url":"STOP_ROWS_API", "icon":"/icons/swagger-ui.png"},
-                {"name":"Demo", "url":"https://nextjs-stop-rows-frontend.vercel.app/", "icon":"/images/StopRowsLogo.svg"}
+            "links": [
+                {
+                    "name": "Frontend Repo",
+                    "url": "https://github.com/NahuelUliassiPirchio/nextjs-stop-rows-frontend",
+                    "icon": "/icons/github.svg"
+                },
+                {
+                    "name": "Backend Repo",
+                    "url": "https://github.com/NahuelUliassiPirchio/stop-rows-api",
+                    "icon": "/icons/github.svg"
+                },
+                {
+                    "name": "Docs",
+                    "url": "STOP_ROWS_API",
+                    "icon": "/icons/swagger-ui.png"
+                },
+                {
+                    "name": "Demo",
+                    "url": "https://nextjs-stop-rows-frontend.vercel.app/",
+                    "icon": "/images/StopRowsLogo.svg"
+                }
             ],
             "process": [
                 {
                     "backend": [
-                        {"quote":"En primer lugar se estableció una estructura básica separando controllers, middlewares, services y routers. Decidí hacerlo de esta forma ya que la escalabilidad no es importante en este caso."},
-                        {"quote":"Para poder crear los esquemas en mongoose, primero tuve que establecer una conexión y efectuar la configuración de Mongodb. Si bien no era la primera vez que usaba mongoose, esta vez quería  documentarme mejor para poder aprovechar de una forma óptima las herramientas que Mongo ofrece. Por ejemplo, el uso de índices o atributos geoespaciales. Tuve ciertos problemas a la hora de hacer queries con ciertos filtros porque a día de hoy no tengo un entendimiento tan profundo de esta librería."},
-                        {"quote":"En este paso se desarrolló la mayoría de la lógica de negocios. Tuve (y tengo) algunas dudas con respecto a ciertos aspectos de la arquitectura. Para solucionar este inconveniente leí un par de libros que explican cómo vertebrar una restful API (REST API Development with Node.js de Fernando Doglio y The REST API Design Handbook de George Reese)."},
-                        {"quote":"Aquí me centré en establecer un routing lo más intuitivo que pensé."},
-                        {"quote":"Apliqué la validación de datos con JOI sabiendo que mongoose tiene una funcionalidad semejante. La decisión no tuvo ningún fundamento lógico más que me había quedado pendiente utilizar esta librería. Además, estructuré un middleware para el manejo de errores centrándome en los códigos de los errores que devolvía la base de datos y un 500 para los demás. Así, de esta forma no hay lugar a filtrar  posible información sensible."},
-                        {"quote":"Auth con passport middlewares particulares. Una funcionalidad importante para este proyecto es la autenticación y autorización. La autenticación fue resuelta con passportJS, utilizando las librerías de JWT y local. La autorización, en cambio, fue determinada por un sistema de roles y contrastando el id del usuario con el id del dueño del negocio."},
-                        {"quote":"Algo muy importante que aprendí desarrollando este proyecto es sobre el Jest y la utilidad del testing: si bien no es la primera vez que ejecuto testing (en la universidad, cátedra paradigmas de la programación, era un requisito para entregar un trabajo práctico), es la primera vez que me es muy útil para detectar ciertos errores específicos que yo interactuando con Postman no encontraría. A futuro debería implementar los testeos en una etapa más temprana."},
-                        {"quote":"Para el final dejé la documentación, no fue algo muy complejo pero no fue tan práctico como en el proyecto anterior. Utilicé Swagger nuevamente pero en este caso tuve que redactar las especificaciones manualmente. De todas formas el resultado fue óptimo."},
-                        {"quote":"Deployment: en este caso me hice con la ventaja de un bono para utilizar en DigitalOcean. Por lo tanto, decidí albergar mi aplicación en esta PaaS. Fue algo simple: referencié el repositorio de GitHub, ingresé las variables de entorno y los comandos npm para efectuar el build y deploy a producción."}
+                        {
+                            "quote": "En primer lugar se estableció una estructura básica separando controllers, middlewares, services y routers. Decidí hacerlo de esta forma ya que la escalabilidad no es importante en este caso."
+                        },
+                        {
+                            "quote": "Para poder crear los esquemas en mongoose, primero tuve que establecer una conexión y efectuar la configuración de Mongodb. Si bien no era la primera vez que usaba mongoose, esta vez quería  documentarme mejor para poder aprovechar de una forma óptima las herramientas que Mongo ofrece. Por ejemplo, el uso de índices o atributos geoespaciales. Tuve ciertos problemas a la hora de hacer queries con ciertos filtros porque a día de hoy no tengo un entendimiento tan profundo de esta librería."
+                        },
+                        {
+                            "quote": "En este paso se desarrolló la mayoría de la lógica de negocios. Tuve (y tengo) algunas dudas con respecto a ciertos aspectos de la arquitectura. Para solucionar este inconveniente leí un par de libros que explican cómo vertebrar una restful API (REST API Development with Node.js de Fernando Doglio y The REST API Design Handbook de George Reese)."
+                        },
+                        {
+                            "quote": "Aquí me centré en establecer un routing lo más intuitivo que pensé."
+                        },
+                        {
+                            "quote": "Apliqué la validación de datos con JOI sabiendo que mongoose tiene una funcionalidad semejante. La decisión no tuvo ningún fundamento lógico más que me había quedado pendiente utilizar esta librería. Además, estructuré un middleware para el manejo de errores centrándome en los códigos de los errores que devolvía la base de datos y un 500 para los demás. Así, de esta forma no hay lugar a filtrar  posible información sensible."
+                        },
+                        {
+                            "quote": "Auth con passport middlewares particulares. Una funcionalidad importante para este proyecto es la autenticación y autorización. La autenticación fue resuelta con passportJS, utilizando las librerías de JWT y local. La autorización, en cambio, fue determinada por un sistema de roles y contrastando el id del usuario con el id del dueño del negocio."
+                        },
+                        {
+                            "quote": "Algo muy importante que aprendí desarrollando este proyecto es sobre el Jest y la utilidad del testing: si bien no es la primera vez que ejecuto testing (en la universidad, cátedra paradigmas de la programación, era un requisito para entregar un trabajo práctico), es la primera vez que me es muy útil para detectar ciertos errores específicos que yo interactuando con Postman no encontraría. A futuro debería implementar los testeos en una etapa más temprana."
+                        },
+                        {
+                            "quote": "Para el final dejé la documentación, no fue algo muy complejo pero no fue tan práctico como en el proyecto anterior. Utilicé Swagger nuevamente pero en este caso tuve que redactar las especificaciones manualmente. De todas formas el resultado fue óptimo."
+                        },
+                        {
+                            "quote": "Deployment: en este caso me hice con la ventaja de un bono para utilizar en DigitalOcean. Por lo tanto, decidí albergar mi aplicación en esta PaaS. Fue algo simple: referencié el repositorio de GitHub, ingresé las variables de entorno y los comandos npm para efectuar el build y deploy a producción."
+                        }
                     ],
-                    "frontend":[
-                        {"quote":"Primeramente desarrollé el esqueleto de la aplicación: una página para los usuarios nuevos o clientes y otro componente para que los dueños administren sus tiendas."},
-                        {"quote":"Maps api, Recuerdo que para la secundaria tuve que usar la Google Maps API pero aplicado en html y js. Ahora en React puedo decir que es muy similar e intuitivo (además que está bien documentado)."},
-                        {"quote":"Posteriormente desarrollé un custom hook que consuma la API para hacer un infinite scroll utilizando interception observer. Fue interesante y útil de aprender."},
-                        {"quote":"Hice una página particular para cada tienda. Esta recibe el id como parámetro de la url y busca la información desde el lado del servidor (SSP)."},
-                        {"quote":"Además elaboré un componente que mostrase la lista en “tiempo real” de clientes en la cola. Pudiéndose reciclar para los dueños, donde da la posibilidad de eliminar usuarios."},
-                        {"quote":"En el aspecto de la autenticación, ya contaba con la experiencia de proyectos previos: alojando JWTs en cookies con una fecha de expiración, haciendo un custom hook para login, signup y logout. La principal diferencia es que en este proyecto implementé refresh tokens y tuve que aprender a manejarlos."},
-                        {"quote":"Desarrollé un formulario reciclable para poder agregar y modificar tienda, lo que cambia entre ellos es la data que tiene de antes y las opciones del  fetch."},
-                        {"quote":"Mejoras de funcionalidades (borrar de lista, te aparece la lista en la pantalla principal, si fallaba el fetch no daba aviso)."},
-                        {"quote":"Este fue mi primer deploy de una aplicación hecha en NextJs. Había visto que en un curso de Platzi, hacían uso de un sitio llamado Vercel donde era muy rápido e intuitivo (además gratis). Ingresé mis credenciales y el deploy fue como lo prometieron."}
+                    "frontend": [
+                        {
+                            "quote": "Primeramente desarrollé el esqueleto de la aplicación: una página para los usuarios nuevos o clientes y otro componente para que los dueños administren sus tiendas."
+                        },
+                        {
+                            "quote": "Maps api, Recuerdo que para la secundaria tuve que usar la Google Maps API pero aplicado en html y js. Ahora en React puedo decir que es muy similar e intuitivo (además que está bien documentado)."
+                        },
+                        {
+                            "quote": "Posteriormente desarrollé un custom hook que consuma la API para hacer un infinite scroll utilizando interception observer. Fue interesante y útil de aprender."
+                        },
+                        {
+                            "quote": "Hice una página particular para cada tienda. Esta recibe el id como parámetro de la url y busca la información desde el lado del servidor (SSP)."
+                        },
+                        {
+                            "quote": "Además elaboré un componente que mostrase la lista en “tiempo real” de clientes en la cola. Pudiéndose reciclar para los dueños, donde da la posibilidad de eliminar usuarios."
+                        },
+                        {
+                            "quote": "En el aspecto de la autenticación, ya contaba con la experiencia de proyectos previos: alojando JWTs en cookies con una fecha de expiración, haciendo un custom hook para login, signup y logout. La principal diferencia es que en este proyecto implementé refresh tokens y tuve que aprender a manejarlos."
+                        },
+                        {
+                            "quote": "Desarrollé un formulario reciclable para poder agregar y modificar tienda, lo que cambia entre ellos es la data que tiene de antes y las opciones del  fetch."
+                        },
+                        {
+                            "quote": "Mejoras de funcionalidades (borrar de lista, te aparece la lista en la pantalla principal, si fallaba el fetch no daba aviso)."
+                        },
+                        {
+                            "quote": "Este fue mi primer deploy de una aplicación hecha en NextJs. Había visto que en un curso de Platzi, hacían uso de un sitio llamado Vercel donde era muy rápido e intuitivo (además gratis). Ingresé mis credenciales y el deploy fue como lo prometieron."
+                        }
                     ]
                 }
             ],
             "conclusion": "El caché fue implementado en el backend para optimizar los endpoints de mayor acceso. Las mejoras pendientes incluyen web sockets para ver las filas en tiempo real y mejoras en UX/UI como diseño responsive."
         },
         {
-            "name":"Personal Portfolio",
-            "description":"Su propósito es agrupar mis proyectos previos y presentarme en una misma página que logre representarme y, a su vez, demostrar mis cualidades.",
-            "shortDescription":"Su propósito es agrupar mis proyectos previos y presentarme en una misma página que logre representarme y, a su vez, demostrar mis cualidades.",
-            "technologies":[
-                {"name":"NEXTJS","icon":"nextjs.svg"},
-                {"name":"REACT","icon":"react.svg"},
-                {"name":"JAVASCRIPT","icon":"javascript.svg"}
+            "name": "Simple Pomodoro and To-do",
+            "shortDescription": "Aplicación de tareas y Pomodoro construida con Next.js y Firebase, con autenticación, gestión de tareas en Firestore, filtros y timer personalizado.",
+            "description": "Desarrollé esta app por mi afinidad con la metodología Pomodoro: bloques intensos de trabajo seguidos de pausas para aumentar la productividad. Quería medir mis pomodoros por tarea, optimizando mi rutina.",
+            "technologies": [
+                {
+                    "name": "FIREBASE",
+                    "icon": "firebase.svg"
+                },
+                {
+                    "name": "NEXTJS",
+                    "icon": "nextjs.svg"
+                },
+                {
+                    "name": "REACT",
+                    "icon": "react.svg"
+                },
+                {
+                    "name": "JAVASCRIPT",
+                    "icon": "javascript.svg"
+                }
             ],
-            "url":"personal-portfolio",
-            "image":"https://youtu.be/rMa1BhfhNcY",
-            "logo":"UPAthemeLogo.svg",
-            "links":[
-                {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/personal-portfolio", "icon":"/icons/github.svg"}
+            "url": "simple-pomodoro-todo",
+            "logo": "SimplePomodoroTodoLogo.png",
+            "image": "https://youtu.be/Qeld0ED_PRE",
+            "gallery": [
+                "https://youtu.be/Qeld0ED_PRE",
+                "https://i.ibb.co/W28BDwz/Screenshot-20230626-222351.jpg",
+                "https://i.ibb.co/XpgW73J/Screenshot-20230626-221608.png",
+                "https://i.ibb.co/3MF0TWJ/Screenshot-20230626-221609.png",
+                "https://i.ibb.co/J2wQwXw/Screenshot-20230626-222152.png",
+                "https://i.ibb.co/njYHCw8/Screenshot-20230626-222257.png",
+                "https://i.ibb.co/TtnZhPr/Screenshot-20230626-222305.png"
+            ],
+            "links": [
+                {
+                    "name": "Repo",
+                    "url": "https://github.com/NahuelUliassiPirchio/simple-pomodoro-todo",
+                    "icon": "/icons/github.svg"
+                },
+                {
+                    "name": "Demo",
+                    "url": "https://simple-pomodoro-todo-up.vercel.app/",
+                    "icon": "/images/SimplePomodoroTodoLogo.png"
+                }
             ],
             "process": [
-                {"quote":"Como primer paso me puse hacer un header que se mantenga en el tope todo el tiempo y, a su vez, muestre las distintas secciones dinámicamente (usando el interception observer)"},
-                {"quote":"Me quedó pendiente implementar un par de cosas en otros proyectos, y esta era la oportunidad perfecta: tema oscuro y soporte de lenguajes. Para el primero, utilicé una metodología conocida como es el React Context, donde cambiaría las variables principales según preferencias (color de fondo y de texto). Nunca había aplicado (ni conocía) i18n, hice una pequeña investigación y encontré una librería que lo manejaba de forma efectiva y dando la posibilidad de guardar la información en archivos json."},
-                {"quote":"Sections (donde va cada cosa). Comencé a diseñar las distintas secciones, me centré principalmente en decidir el contenido para estilarlo en un futuro. Aquí es donde más flaqueo, no creo haber proveído la mejor experiencia de usuario para una navegación intuitiva."},
-                {"quote":"Había pensando hacer una página por cada proyecto donde detallara el proceso, las tecnologías y conclusiones. Nuevamente me centré en la funcionalidad para estilarlo posteriormente."},
-                {"quote":"En este paso estilé las cosas que me quedaron pendientes. En el trayecto, aprendí bastante sobre animaciones y transiciones,"},
-                {"quote":"Y por último pero no menos importante, me senté a redactar los proyectos y mis principales habilidades para posteriormente traducirlas y darle formato."},
-                {"quote":"El deploy terminante fue el del portafolio, como los anteriores front-end, resultó sumamente sencillo gracias a las capacidades de Vercel para ello."}
+                {
+                    "quote": "En primer lugar, forjé una estructura sólida que serían los cimientos de la aplicación. Tuve que adaptarme a las innovaciones de Next.js 13. Para este proyecto, decidí utilizar React Bootstrap, de esta manera pude centrarme más en la lógica y, como otro aspecto positivo, agilizar el desarrollo."
+                },
+                {
+                    "quote": "Dado que ya había utilizado Firebase en proyectos anteriores, no me llevó mucho tiempo inicializar la biblioteca. Organicé las consultas básicas (de Firestore) en servicios para poder aplicarlas más adelante."
+                },
+                {
+                    "quote": "Para gestionar cada quehacer, creé un hook personalizado que realizaba las famosas operaciones CRUD, aplicando los servicios mencionados anteriormente."
+                },
+                {
+                    "quote": "En cuanto a la autenticación, aproveché la integración que proporciona Firebase Authentication con otras plataformas a través de OAuth. Gracias a la documentación y guías disponibles, esta tarea fue relativamente rápida."
+                },
+                {
+                    "quote": "En la mejora de la experiencia de usuario, desarrollé un sistema de filtros para ordenar las tareas según las preferencias personales. Utilicé Zustand para crear un estado global que luego me resultaría útil para otras funcionalidades. Opté por esta biblioteca debido a su simplicidad y ligereza."
+                },
+                {
+                    "quote": "Para el temporizador, creé un hook personalizado y un componente que se encargaban de reducir el tiempo recibido en las propiedades. El componente encargado de gestionarlo se llama PomodoroTimer, el cual se encarga de estructurar los bloques de tiempo y activar las actualizaciones correspondientes según sea necesario."
+                }
+            ],
+            "conclusion": "Como mejoras y funciones adicionales, se podría implementar la posibilidad de agrupar los quehaceres, ya sea mediante categorías, etiquetas o proyectos, permitiendo a los usuarios organizar y gestionar sus tareas de manera más eficiente. También se podría agregar un esqueleto de carga para brindar mayor dinamismo y una experiencia de usuario más fluida, mostrando componentes de carga mientras se obtienen datos o se navega entre secciones de la aplicación, proporcionando retroalimentación visual y una sensación de progreso."
+        },
+        {
+            "name": "Light Control Pro",
+            "shortDescription": "Aplicación desktop con Electron para controlar luces Wiz con ajustes en tiempo real, escenas, habitaciones, atajos de teclado y autoarranque.",
+            "description": "Desarrollé Light Control Pro porque quería una aplicación de escritorio sencilla con atajos para gestionar mis luces inteligentes. La app controla bombillas Wiz directamente desde la PC y soporta ajustes en tiempo real, gestión de escenas, habitaciones, atajos de teclado personalizados y autoarranque del sistema. El código está siendo migrado a TypeScript para mejorar la seguridad de tipos y la mantenibilidad a largo plazo.",
+            "technologies": [
+                {
+                    "name": "TYPESCRIPT",
+                    "icon": "typescript.svg"
+                },
+                {
+                    "name": "ELECTRON",
+                    "icon": "electron.svg"
+                }
+            ],
+            "url": "light-control-pro",
+            "logo": "LightsLogo.png",
+            "image": "https://youtu.be/EgdfaJL9iMk",
+            "gallery": [
+                "https://youtu.be/EgdfaJL9iMk",
+                "https://i.ibb.co/MhGG77D/light-control-f000234.png",
+                "https://i.ibb.co/pfMp3Xq/light-control-f000017.png",
+                "https://i.ibb.co/HTTGCNs/light-control-f000346.png",
+                "https://i.ibb.co/Kb2TbVC/light-control-f000422.png",
+                "https://i.ibb.co/d2Tj2gr/light-control-f000487.png",
+                "https://i.ibb.co/6DhHPKC/light-control-f001056.png",
+                "https://i.ibb.co/0jZSGpV/light-control-f001131.png",
+                "https://i.ibb.co/7r9X0z2/light-control-f001233.png"
+            ],
+            "links": [
+                {
+                    "name": "Repo",
+                    "url": "https://github.com/NahuelUliassiPirchio/light-control-pro",
+                    "icon": "/icons/github.svg"
+                },
+                {
+                    "name": "Demo",
+                    "url": "https://github.com/NahuelUliassiPirchio/light-control-pro/releases",
+                    "icon": "/images/LightsLogo.png"
+                }
+            ],
+            "process": [
+                {
+                    "quote": "Comencé estableciendo la comunicación con las bombillas inteligentes, asegurándome de poder enviar comandos y recibir respuestas. Este paso fundamental fue crucial para entender las capacidades y limitaciones de las bombillas."
+                },
+                {
+                    "quote": "Luego, diseñé e implementé una interfaz de usuario intuitiva. El objetivo era facilitar el control de la configuración de iluminación. Me enfoqué en proporcionar una experiencia limpia y amigable que permitiera una interacción fluida con las bombillas."
+                },
+                {
+                    "quote": "Para mejorar la usabilidad, integré atajos de teclado personalizados. Esta característica permite a los usuarios ajustar rápidamente la configuración de la iluminación sin navegar por la interfaz, agilizando su interacción con la aplicación."
+                },
+                {
+                    "quote": "Luego, introduje el concepto de habitaciones, permitiendo a los usuarios agrupar varias bombillas. Esta funcionalidad facilita el control simultáneo de múltiples bombillas y la organización más eficiente de la configuración de iluminación."
+                },
+                {
+                    "quote": "Finalmente, añadí la opción para que la aplicación se ejecute al iniciar el sistema. Esto asegura que el control de la iluminación esté siempre disponible sin necesidad de iniciarlo manualmente, mejorando la conveniencia para los usuarios."
+                }
+            ],
+            "conclusion": "Light Control Pro proporciona una herramienta intuitiva para controlar las bombillas inteligentes Wiz. Las mejoras futuras incluyen opciones avanzadas de agrupación, mejor sincronización entre eventos, características de personalización y algoritmos de mensajería optimizados para un mejor rendimiento."
+        },
+        {
+            "name": "Map Zone Delimiter",
+            "shortDescription": "Herramienta geoespacial interactiva para crear y asignar zonas con Leaflet, radios, áreas de polilínea, diagramas de Voronoi e importación/exportación CSV.",
+            "description": "Desarrollé Map Zone Delimiter porque necesitaba una herramienta versátil para asignar datos geoespaciales de diferentes maneras, ya que las soluciones existentes no cumplían completamente con mis requisitos. La aplicación permite gestionar zonas mediante radios ajustables, áreas de polilínea y áreas abstractas con diagramas de Voronoi. También incluye importación/exportación CSV, gestión de puntos y grupos, y una interfaz basada en mapa para trabajar con datos de ubicación estructurados.",
+            "technologies": [
+                {
+                    "name": "JAVASCRIPT",
+                    "icon": "javascript.svg"
+                }
+            ],
+            "url": "map-zone-delimiter",
+            "logo": "MapIcon.png",
+            "image": "https://youtu.be/xIH5CBWlkQs",
+            "gallery": [
+                "https://youtu.be/xIH5CBWlkQs",
+                "https://i.ibb.co/c61kX0D/map-zone-delimiter-f000106.png",
+                "https://i.ibb.co/80vt6ss/map-zone-delimiter-f000541.png",
+                "https://i.ibb.co/2ygcbVk/map-zone-delimiter-f000846.png",
+                "https://i.ibb.co/mzmsjJg/map-zone-delimiter-f001319.png",
+                "https://i.ibb.co/bJdr50P/map-zone-delimiter-f001112.png"
+            ],
+            "links": [
+                {
+                    "name": "Repo",
+                    "url": "https://github.com/NahuelUliassiPirchio/map-zone-delimiter",
+                    "icon": "/icons/github.svg"
+                },
+                {
+                    "name": "Demo",
+                    "url": "https://nahueluliassipirchio.github.io/map-zone-delimiter/",
+                    "icon": "/images/MapIcon.png"
+                }
+            ],
+            "process": [
+                {
+                    "quote": "Primero, establecí la base añadiendo un mapa usando la biblioteca Leaflet. Implementé funciones básicas para añadir puntos en el mapa mediante clics, asegurando una visualización inicial de las ubicaciones."
+                },
+                {
+                    "quote": "Luego, añadí la funcionalidad para agrupar puntos. Esto permitió organizar los puntos en diferentes grupos, facilitando la gestión y clasificación de ubicaciones en el mapa."
+                },
+                {
+                    "quote": "Después, incorporé características adicionales para los puntos, como la capacidad de eliminarlos o identificarlos. Esto mejoró la interacción con los puntos, permitiendo una gestión más detallada y precisa."
+                },
+                {
+                    "quote": "Introduje la funcionalidad para crear áreas de polilínea, permitiendo la delimitación de zonas conectando puntos con líneas. Esto proporcionó una manera más versátil de definir áreas geoespaciales en el mapa."
+                },
+                {
+                    "quote": "Subsecuentemente, añadí la capacidad para crear zonas de radio, donde los puntos están rodeados por un círculo ajustable. Implementé controles de rango para modificar dinámicamente el radio de estos círculos, mejorando la flexibilidad en la delimitación de áreas."
+                },
+                {
+                    "quote": "Finalmente, integré zonas dinámicas usando diagramas de Voronoi. Esto permitió segmentar el mapa en áreas abstractas basadas en la distribución de puntos, facilitando una asignación de datos más precisa a las zonas más cercanas."
+                }
+            ],
+            "conclusion": "Las mejoras futuras podrían incluir características más dinámicas para la administración de puntos, como un mejor agrupamiento visual y la reordenación de puntos en la lista. Además, optimizar la aplicación para soporte móvil ampliaría significativamente su usabilidad."
+        },
+        {
+            "name": "Personal Portfolio",
+            "description": "Este portfolio reúne mis proyectos y perfil en una aplicación bilingüe hecha con Next.js. Incluye internacionalización, dark mode, UI animada, navegación dinámica, páginas de proyectos, secciones responsive y contenido estructurado para presentar mi trabajo en frontend, backend, desktop y proyectos full-stack.",
+            "shortDescription": "Portfolio bilingüe construido con Next.js, React, i18n, dark mode, UI animada, navegación dinámica y páginas detalladas de proyectos.",
+            "technologies": [
+                {
+                    "name": "NEXTJS",
+                    "icon": "nextjs.svg"
+                },
+                {
+                    "name": "REACT",
+                    "icon": "react.svg"
+                },
+                {
+                    "name": "JAVASCRIPT",
+                    "icon": "javascript.svg"
+                }
+            ],
+            "url": "personal-portfolio",
+            "image": "https://youtu.be/rMa1BhfhNcY",
+            "logo": "UPAthemeLogo.svg",
+            "links": [
+                {
+                    "name": "Repo",
+                    "url": "https://github.com/NahuelUliassiPirchio/personal-portfolio",
+                    "icon": "/icons/github.svg"
+                }
+            ],
+            "process": [
+                {
+                    "quote": "Como primer paso me puse hacer un header que se mantenga en el tope todo el tiempo y, a su vez, muestre las distintas secciones dinámicamente (usando el interception observer)"
+                },
+                {
+                    "quote": "Me quedó pendiente implementar un par de cosas en otros proyectos, y esta era la oportunidad perfecta: tema oscuro y soporte de lenguajes. Para el primero, utilicé una metodología conocida como es el React Context, donde cambiaría las variables principales según preferencias (color de fondo y de texto). Nunca había aplicado (ni conocía) i18n, hice una pequeña investigación y encontré una librería que lo manejaba de forma efectiva y dando la posibilidad de guardar la información en archivos json."
+                },
+                {
+                    "quote": "Sections (donde va cada cosa). Comencé a diseñar las distintas secciones, me centré principalmente en decidir el contenido para estilarlo en un futuro. Aquí es donde más flaqueo, no creo haber proveído la mejor experiencia de usuario para una navegación intuitiva."
+                },
+                {
+                    "quote": "Había pensando hacer una página por cada proyecto donde detallara el proceso, las tecnologías y conclusiones. Nuevamente me centré en la funcionalidad para estilarlo posteriormente."
+                },
+                {
+                    "quote": "En este paso estilé las cosas que me quedaron pendientes. En el trayecto, aprendí bastante sobre animaciones y transiciones,"
+                },
+                {
+                    "quote": "Y por último pero no menos importante, me senté a redactar los proyectos y mis principales habilidades para posteriormente traducirlas y darle formato."
+                },
+                {
+                    "quote": "El deploy terminante fue el del portafolio, como los anteriores front-end, resultó sumamente sencillo gracias a las capacidades de Vercel para ello."
+                }
             ],
             "conclusion": "Creo que lo que el estilo de algunas secciones son mejorables y se puede crear una mejor dinámica."
         },
         {
-            "name":"Huffman Tree Compressor",
-            "shortDescription":"En la universidad, en algoritmos y estructura de datos, desarrollé un programa en C++ para comprimir y descomprimir archivos sin pérdida, exhibiendo mis capacidades algorítmicas.",
-            "description":"Este fue un proyecto de la universidad de la materia algoritmos y estructura de datos. La idea es desarrollar un programa en c++ que logre exitosamente comprimir y descomprimir un archivo sin pérdidas de información. Mi intención al presentar este proyecto es demostrar mis capacidades en la algoritmia.",
-            "technologies":[
-                {"name":"C++","icon":"cpp.svg"}
+            "name": "Huffman Tree Compressor",
+            "shortDescription": "Compresor/descompresor Huffman en C++ usando árboles binarios, operaciones de archivo a nivel de bits y reconstrucción sin pérdida.",
+            "description": "Este fue un proyecto universitario de algoritmos y estructuras de datos. Implementé un compresor/descompresor Huffman en C++ capaz de comprimir y descomprimir archivos sin pérdida de información, trabajando con árboles binarios, lectura/escritura de archivos a nivel de bits y reconstrucción del contenido codificado.",
+            "technologies": [
+                {
+                    "name": "C++",
+                    "icon": "cpp.svg"
+                }
             ],
-            "url":"Huffman-tree-compressor",
-            "logo":"HuffmanTreeCompressor.png",
-            "image":"https://youtu.be/Eskc5dxaKF0",
-            "gallery":[
+            "url": "Huffman-tree-compressor",
+            "logo": "HuffmanTreeCompressor.png",
+            "image": "https://youtu.be/Eskc5dxaKF0",
+            "gallery": [
                 "https://youtu.be/Eskc5dxaKF0"
             ],
-            "links":[
-                {"name":"Repo", "url":"https://github.com/NahuelUliassiPirchio/HuffmanTreeCompressor", "icon":"/icons/github.svg"}
+            "links": [
+                {
+                    "name": "Repo",
+                    "url": "https://github.com/NahuelUliassiPirchio/HuffmanTreeCompressor",
+                    "icon": "/icons/github.svg"
+                }
             ],
             "process": [
-                {"quote":"Librería para leer/escribir bits: para ello tuve que desarmar cada carácter utilizando los operadores cuya utilidad es moverse. Para escribir bits, hice un array donde se escribía 1s y 0s, y cuando llegaba a la cantidad de 8 lo convertía a un ASCII usando el típico algoritmo de decimal a binario (sumatoria de 2 elevado a esa n posición)."},
-                {"quote":"Recorrer el archivo: durante la cursada desarrollamos una librería que leía/escribía archivos utilizando fread y fwrite de c++ nativo (stdio.h).."},
-                {"quote":"Guardar los bits en un array con su cantidad de ocurrencias, luego ordenar según cantidad."},
-                {"quote":"Crear árbol."},
-                {"quote":"Escribir encabezado para poder reconstruir el árbol."},
-                {"quote":"A medida que se lee el archivo nuevamente, hay que ir generando cada clave de cada carácter con el árbol y en escribirlo en otro archivo.."},
-                {"quote":"Para descomprimir: reconstruir árbol leyendo el encabezado."},
-                {"quote":"Leyendo el contenido, descifrar de qué carácter se trata buscando en el árbol Huffman."},
-                {"quote":"Escribir archivo descifrado."}
+                {
+                    "quote": "Librería para leer/escribir bits: para ello tuve que desarmar cada carácter utilizando los operadores cuya utilidad es moverse. Para escribir bits, hice un array donde se escribía 1s y 0s, y cuando llegaba a la cantidad de 8 lo convertía a un ASCII usando el típico algoritmo de decimal a binario (sumatoria de 2 elevado a esa n posición)."
+                },
+                {
+                    "quote": "Recorrer el archivo: durante la cursada desarrollamos una librería que leía/escribía archivos utilizando fread y fwrite de c++ nativo (stdio.h).."
+                },
+                {
+                    "quote": "Guardar los bits en un array con su cantidad de ocurrencias, luego ordenar según cantidad."
+                },
+                {
+                    "quote": "Crear árbol."
+                },
+                {
+                    "quote": "Escribir encabezado para poder reconstruir el árbol."
+                },
+                {
+                    "quote": "A medida que se lee el archivo nuevamente, hay que ir generando cada clave de cada carácter con el árbol y en escribirlo en otro archivo.."
+                },
+                {
+                    "quote": "Para descomprimir: reconstruir árbol leyendo el encabezado."
+                },
+                {
+                    "quote": "Leyendo el contenido, descifrar de qué carácter se trata buscando en el árbol Huffman."
+                },
+                {
+                    "quote": "Escribir archivo descifrado."
+                }
             ],
             "conclusion": "Me gustaría en un futuro subir este proyecto a una lambda function y hacer un pequeño sitio para hacer uso de este algoritmo."
         }
     ],
     "introduction": "En esta sección presento los proyectos que he desarrollado hasta la fecha. Muestro sus tecnologías, procesos y mejoras que veo a futuro. Además, incluyo un link a la demo activa,  y a su repositorio.",
-    "title":"Mis Proyectos",
-    "viewProject":"Explorar el proceso",
-    "showLess":"mostrar menos",
-    "showMore":"mostrar más",
-    "sections":{
-        "introduction":"Introducción",
-        "technologies":"Tecnologías",
-        "process":"Proceso",
-        "conclusion":"Conclusión"
+    "title": "Mis Proyectos",
+    "viewProject": "Explorar el proceso",
+    "showLess": "mostrar menos",
+    "showMore": "mostrar más",
+    "sections": {
+        "introduction": "Introducción",
+        "technologies": "Tecnologías",
+        "process": "Proceso",
+        "conclusion": "Conclusión"
     },
-    "sectionTitles":{
-        "technologies":"Tecnologías implementadas",
-        "process":"Proceso y desafíos",
-        "conclusion":"Conclusión y mejoras a futuro"
+    "sectionTitles": {
+        "technologies": "Tecnologías implementadas",
+        "process": "Proceso y desafíos",
+        "conclusion": "Conclusión y mejoras a futuro"
     },
     "visitDemo": "Visita la Demo"
 }

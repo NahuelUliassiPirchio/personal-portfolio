@@ -3,8 +3,8 @@
     "fields": [
         {
             "icon": "front-icon.svg",
-            "title": "Frontend & Desktop Development",
-            "description": "I build interactive web and desktop interfaces with a strong focus on product behavior, usability, performance, and maintainable code. I have experience working across browser-based apps and cross-platform desktop applications.",
+            "title": "Frontend Development",
+            "description": "I build interactive web interfaces with a strong focus on product behavior, usability, performance, and maintainable code. I also bring experience from cross-platform product work where frontend decisions connect with deeper application behavior.",
             "tools": [
                 "JavaScript/TypeScript",
                 "HTML",

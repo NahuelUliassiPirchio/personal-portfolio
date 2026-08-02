@@ -3,8 +3,8 @@
     "fields": [
         {
             "icon": "front-icon.svg",
-            "title": "Desarrollo Frontend & Desktop",
-            "description": "Construyo interfaces web y de escritorio interactivas, con foco en comportamiento de producto, usabilidad, rendimiento y código mantenible. Tengo experiencia trabajando tanto en aplicaciones web como en aplicaciones de escritorio multiplataforma.",
+            "title": "Desarrollo Frontend",
+            "description": "Construyo interfaces web interactivas, con foco en comportamiento de producto, usabilidad, rendimiento y código mantenible. También aporto experiencia en producto multiplataforma, donde las decisiones de frontend se conectan con comportamiento más profundo de la aplicación.",
             "tools": [
                 "JavaScript/TypeScript",
                 "HTML",

@@ -29,8 +29,8 @@ export default function Home () {
   return (
     <>
       <MetaDecorator
-        description="Portfolio website for full-stack developer, Nahuel Uliassi Pirchio."
-        title='Uliassi Pirchio - Portfolio'
+        description="Nahuel Uliassi Pirchio is a software developer building product-focused web and full-stack applications with TypeScript, React, Next.js, Node.js, APIs, and databases."
+        title='Nahuel Uliassi Pirchio - Software Developer'
         image={'UPLogo.svg'}
         />
       <Layout>

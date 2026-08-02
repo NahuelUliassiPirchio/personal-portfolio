@@ -1,19 +1,12 @@
 import PropTypes from 'prop-types'
 import Head from 'next/head'
-// eslint-disable-next-line camelcase
-import { Space_Grotesk } from 'next/font/google'
 
 import ThemeProvider from '../providers/ThemeProvider'
 import('../styles/globals.css')
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-space-grotesk'
-})
-
 function MyApp ({ Component, pageProps }) {
   return (
-    <div className={spaceGrotesk.variable}>
+    <div>
       <Head>
         <meta name="author" content="Nahuel Uliassi Pirchio" />
         <meta name="keywords" content="portfolio, full-stack, developer, web developer, software developer, Nahuel Uliassi Pirchio" />
