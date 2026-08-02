@@ -109,7 +109,28 @@
                     ]
                 }
             ],
-            "conclusion": "Siempre hay cuestiones mejorables, más teniendo en cuenta que es mi primer “gran proyecto”. Pero en particular hubo un par de cuestiones que me quedaron pendientes: testing, web sockets para ver las pujas en tiempo real, caché tanto para el frontend como el backend y un mejor diseño responsive."
+            "conclusion": "Siempre hay cuestiones mejorables, más teniendo en cuenta que es mi primer “gran proyecto”. Pero en particular hubo un par de cuestiones que me quedaron pendientes: testing, web sockets para ver las pujas en tiempo real, caché tanto para el frontend como el backend y un mejor diseño responsive.",
+            "category": "full-stack",
+            "featured": true,
+            "status": "archived",
+            "problem": "Necesitaba un proyecto full-stack de e-commerce para practicar arquitectura backend, autenticación y deployment más allá de un CRUD simple.",
+            "solution": "Construí una REST API con NestJS/PostgreSQL, autenticación JWT y documentación Swagger, junto a un frontend en Next.js con un flujo de subastas.",
+            "technicalDecisions": [
+                {
+                    "title": "TypeORM en vez de SQL nativo",
+                    "body": "Elegí TypeORM para diseñar el esquema de PostgreSQL, sacrificando algo de control a cambio de un flujo de trabajo mucho más rápido e intuitivo que escribir SQL nativo."
+                },
+                {
+                    "title": "Autenticación JWT vía PassportJS",
+                    "body": "Implementé autenticación y autorización con PassportJS y tokens JWT mientras desarrollaba en paralelo la capa de lógica de negocio."
+                }
+            ],
+            "challenges": [
+                {
+                    "title": "Deployment en Azure Linux",
+                    "body": "Desplegar la API en un servidor Azure RedHat Linux con PM2 tomó más tiempo del esperado debido a reglas de firewall que inicialmente bloqueaban los puertos de entrada."
+                }
+            ]
         },
         {
             "name": "Stop Rows",
@@ -240,7 +261,32 @@
                     ]
                 }
             ],
-            "conclusion": "El caché fue implementado en el backend para optimizar los endpoints de mayor acceso. Las mejoras pendientes incluyen web sockets para ver las filas en tiempo real y mejoras en UX/UI como diseño responsive."
+            "conclusion": "El caché fue implementado en el backend para optimizar los endpoints de mayor acceso. Las mejoras pendientes incluyen web sockets para ver las filas en tiempo real y mejoras en UX/UI como diseño responsive.",
+            "category": "full-stack",
+            "featured": true,
+            "status": "maintained",
+            "problem": "Las colas físicas en comercios y servicios no tienen forma de gestionar la posición en la fila de forma remota, haciendo perder tiempo esperando en persona.",
+            "solution": "Construí un sistema de gestión de colas remotas con mapa interactivo, roles autenticados de usuario/dueño, y un backend en TypeScript con refresh tokens JWT, caché e indexación geoespacial.",
+            "technicalDecisions": [
+                {
+                    "title": "Índices geoespaciales en MongoDB",
+                    "body": "Usé MongoDB con Mongoose para modelar los datos de colas y tiendas, incluyendo índices y atributos geoespaciales para dar soporte al mapa interactivo."
+                },
+                {
+                    "title": "JWT con refresh tokens",
+                    "body": "La autenticación usa PassportJS con estrategias JWT y local; la autorización es por roles, contrastando el ID del usuario con el ID del dueño de la tienda."
+                }
+            ],
+            "challenges": [
+                {
+                    "title": "Incertidumbre de arquitectura",
+                    "body": "Tuve dudas continuas sobre partes de la arquitectura de la REST API y las resolví leyendo libros dedicados al diseño de APIs a mitad de proyecto."
+                },
+                {
+                    "title": "Aprendiendo filtros de queries en Mongoose",
+                    "body": "Tuve problemas escribiendo ciertas queries de Mongoose con filtros específicos debido a un entendimiento incompleto de la librería en ese momento."
+                }
+            ]
         },
         {
             "name": "Simple Pomodoro and To-do",
@@ -308,7 +354,22 @@
                     "quote": "Para el temporizador, creé un hook personalizado y un componente que se encargaban de reducir el tiempo recibido en las propiedades. El componente encargado de gestionarlo se llama PomodoroTimer, el cual se encarga de estructurar los bloques de tiempo y activar las actualizaciones correspondientes según sea necesario."
                 }
             ],
-            "conclusion": "Como mejoras y funciones adicionales, se podría implementar la posibilidad de agrupar los quehaceres, ya sea mediante categorías, etiquetas o proyectos, permitiendo a los usuarios organizar y gestionar sus tareas de manera más eficiente. También se podría agregar un esqueleto de carga para brindar mayor dinamismo y una experiencia de usuario más fluida, mostrando componentes de carga mientras se obtienen datos o se navega entre secciones de la aplicación, proporcionando retroalimentación visual y una sensación de progreso."
+            "conclusion": "Como mejoras y funciones adicionales, se podría implementar la posibilidad de agrupar los quehaceres, ya sea mediante categorías, etiquetas o proyectos, permitiendo a los usuarios organizar y gestionar sus tareas de manera más eficiente. También se podría agregar un esqueleto de carga para brindar mayor dinamismo y una experiencia de usuario más fluida, mostrando componentes de carga mientras se obtienen datos o se navega entre secciones de la aplicación, proporcionando retroalimentación visual y una sensación de progreso.",
+            "category": "frontend",
+            "featured": false,
+            "status": "archived",
+            "problem": "Necesitaba una forma de registrar cuántos ciclos Pomodoro dedicaba a cada tarea para medir y optimizar mejor mi propia rutina de trabajo.",
+            "solution": "Construí una app en Next.js/Firebase que combina gestión de tareas con un timer Pomodoro, usando Firestore para persistencia y Zustand para el estado de filtros.",
+            "technicalDecisions": [
+                {
+                    "title": "Zustand para estado global",
+                    "body": "Elegí Zustand por sobre librerías de estado más pesadas por su simplicidad y bajo peso al construir el sistema de filtrado de tareas."
+                },
+                {
+                    "title": "Firebase Authentication",
+                    "body": "Usé la integración de Firebase Authentication con OAuth para manejar el login, evitando una implementación de autenticación propia."
+                }
+            ]
         },
         {
             "name": "Light Control Pro",
@@ -367,7 +428,22 @@
                     "quote": "Finalmente, añadí la opción para que la aplicación se ejecute al iniciar el sistema. Esto asegura que el control de la iluminación esté siempre disponible sin necesidad de iniciarlo manualmente, mejorando la conveniencia para los usuarios."
                 }
             ],
-            "conclusion": "Light Control Pro proporciona una herramienta intuitiva para controlar las bombillas inteligentes Wiz. Las mejoras futuras incluyen opciones avanzadas de agrupación, mejor sincronización entre eventos, características de personalización y algoritmos de mensajería optimizados para un mejor rendimiento."
+            "conclusion": "Light Control Pro proporciona una herramienta intuitiva para controlar las bombillas inteligentes Wiz. Las mejoras futuras incluyen opciones avanzadas de agrupación, mejor sincronización entre eventos, características de personalización y algoritmos de mensajería optimizados para un mejor rendimiento.",
+            "category": "desktop",
+            "featured": true,
+            "status": "maintained",
+            "problem": "Quería una forma rápida y controlada por teclado de manejar las bombillas Wiz desde la PC en vez de depender de la app móvil para cada ajuste.",
+            "solution": "Construí una app de escritorio con Electron con control de bombillas en tiempo real, escenas, habitaciones, atajos de teclado personalizados y autoarranque, actualmente en migración a TypeScript.",
+            "technicalDecisions": [
+                {
+                    "title": "Comunicación directa con las bombillas Wiz",
+                    "body": "Comencé estableciendo comunicación directa con las bombillas Wiz para entender sus capacidades de comando/respuesta antes de construir cualquier interfaz sobre ellas."
+                },
+                {
+                    "title": "Migración a TypeScript",
+                    "body": "El código está siendo migrado de forma incremental a TypeScript para mejorar la seguridad de tipos y la mantenibilidad a largo plazo."
+                }
+            ]
         },
         {
             "name": "Map Zone Delimiter",
@@ -422,7 +498,18 @@
                     "quote": "Finalmente, integré zonas dinámicas usando diagramas de Voronoi. Esto permitió segmentar el mapa en áreas abstractas basadas en la distribución de puntos, facilitando una asignación de datos más precisa a las zonas más cercanas."
                 }
             ],
-            "conclusion": "Las mejoras futuras podrían incluir características más dinámicas para la administración de puntos, como un mejor agrupamiento visual y la reordenación de puntos en la lista. Además, optimizar la aplicación para soporte móvil ampliaría significativamente su usabilidad."
+            "conclusion": "Las mejoras futuras podrían incluir características más dinámicas para la administración de puntos, como un mejor agrupamiento visual y la reordenación de puntos en la lista. Además, optimizar la aplicación para soporte móvil ampliaría significativamente su usabilidad.",
+            "category": "frontend",
+            "featured": false,
+            "status": "archived",
+            "problem": "Las herramientas existentes no ofrecían una forma suficientemente flexible de asignar y visualizar zonas geoespaciales para datos de ubicación estructurados.",
+            "solution": "Construí una herramienta interactiva basada en Leaflet que soporta zonas por radio, polilínea y diagramas de Voronoi, con importación/exportación CSV para gestión de puntos y grupos.",
+            "technicalDecisions": [
+                {
+                    "title": "Diagramas de Voronoi para zonas abstractas",
+                    "body": "Agregué zonas basadas en diagramas de Voronoi para segmentar el mapa en áreas abstractas según la distribución de puntos, permitiendo una asignación de datos más precisa a la zona más cercana."
+                }
+            ]
         },
         {
             "name": "Personal Portfolio",
@@ -475,7 +562,26 @@
                     "quote": "El deploy terminante fue el del portafolio, como los anteriores front-end, resultó sumamente sencillo gracias a las capacidades de Vercel para ello."
                 }
             ],
-            "conclusion": "Creo que lo que el estilo de algunas secciones son mejorables y se puede crear una mejor dinámica."
+            "conclusion": "Creo que lo que el estilo de algunas secciones son mejorables y se puede crear una mejor dinámica.",
+            "category": "frontend",
+            "featured": false,
+            "status": "active",
+            "technicalDecisions": [
+                {
+                    "title": "Navegación basada en IntersectionObserver",
+                    "body": "Construí un header que se mantiene fijo y resalta dinámicamente la sección activa usando la API de Intersection Observer."
+                },
+                {
+                    "title": "React Context para theming, next-translate para i18n",
+                    "body": "Implementé tema claro/oscuro con React Context y agregué soporte bilingüe mediante una librería de i18n basada en JSON, ambas nuevas para mí en ese momento."
+                }
+            ],
+            "challenges": [
+                {
+                    "title": "Iteración de UX en las secciones",
+                    "body": "Fue donde más flaqueé, diseñando una experiencia de navegación intuitiva entre secciones; no considero el resultado original completamente logrado."
+                }
+            ]
         },
         {
             "name": "Huffman Tree Compressor",
@@ -529,7 +635,26 @@
                     "quote": "Escribir archivo descifrado."
                 }
             ],
-            "conclusion": "Me gustaría en un futuro subir este proyecto a una lambda function y hacer un pequeño sitio para hacer uso de este algoritmo."
+            "conclusion": "Me gustaría en un futuro subir este proyecto a una lambda function y hacer un pequeño sitio para hacer uso de este algoritmo.",
+            "category": "tooling",
+            "featured": false,
+            "status": "archived",
+            "technicalDecisions": [
+                {
+                    "title": "Entrada/salida de bits a medida",
+                    "body": "Escribí una librería propia de lectura/escritura de bits usando I/O nativo de C++ (fread/fwrite), empaquetando bits en bytes manualmente con un enfoque de acumulación decimal a binario."
+                },
+                {
+                    "title": "Reconstrucción del árbol vía encabezado",
+                    "body": "Codifiqué la estructura del árbol Huffman en un encabezado del archivo para que el descompresor pudiera reconstruir el mismo árbol exacto antes de decodificar."
+                }
+            ],
+            "challenges": [
+                {
+                    "title": "Reconstrucción a nivel de bits",
+                    "body": "Lograr una reconstrucción sin pérdida requirió reconstruir cuidadosamente el árbol desde el encabezado y hacer coincidir cada secuencia de bits decodificada con su carácter original."
+                }
+            ]
         }
     ],
     "introduction": "En esta sección presento los proyectos que he desarrollado hasta la fecha. Muestro sus tecnologías, procesos y mejoras que veo a futuro. Además, incluyo un link a la demo activa,  y a su repositorio.",
@@ -541,12 +666,21 @@
         "introduction": "Introducción",
         "technologies": "Tecnologías",
         "process": "Proceso",
-        "conclusion": "Conclusión"
+        "conclusion": "Conclusión",
+        "technicalDecisions": "Decisiones Técnicas",
+        "challenges": "Desafíos",
+        "status": "Estado Actual"
     },
     "sectionTitles": {
         "technologies": "Tecnologías implementadas",
         "process": "Proceso y desafíos",
         "conclusion": "Conclusión y mejoras a futuro"
+    },
+    "status": {
+        "active": "Activo",
+        "maintained": "Mantenido",
+        "archived": "Archivado",
+        "experimental": "Experimental"
     },
     "visitDemo": "Visita la Demo"
 }
