@@ -61,6 +61,25 @@
     }
 }
 
+/* The 6 nav items overflow the fixed 50%-width box on narrower desktop
+   viewports (just above the 870px hamburger breakpoint), visually colliding
+   with the language switcher/theme toggler. Tighten spacing and normalize the
+   anchor-button font-size (was 1.25rem vs the route links' 1rem) only in this
+   specific range, without touching layout below/above it. */
+@media (min-width: 871px) and (max-width: 1050px) {
+    .index {
+        width: 58%;
+    }
+
+    .index li {
+        padding: 1rem 0.5rem;
+    }
+
+    .index button {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 870px) {
     .index {
         display: none;
