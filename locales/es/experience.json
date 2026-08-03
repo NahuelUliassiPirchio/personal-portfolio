@@ -5,13 +5,25 @@
             "position": "Desarrollador de Software",
             "company": "Xnapper",
             "duration": "feb. 2025 - may. 2026",
-            "description": "Desarrollé y mantuve funcionalidades visibles para usuarios en una aplicación de escritorio multiplataforma utilizando TypeScript, React, Next.js y Node.js. Trabajé sobre flujos de producto, configuración, comportamiento de actualizaciones, comunicación interna y lógica central de la aplicación.\n\nTambién participé en funcionalidades vinculadas a multimedia/exportación e integraciones nativas para macOS y Windows. El rol incluyó colaboración diaria en inglés con un stakeholder internacional sobre comportamiento de producto, detalles de implementación y mejoras orientadas al release."
+            "description": "Desarrollé y mantuve funcionalidades visibles para usuarios en una aplicación de escritorio multiplataforma utilizando TypeScript, React, Next.js y Node.js. Trabajé sobre flujos de producto, configuración, comportamiento de actualizaciones, comunicación interna y lógica central de la aplicación.\n\nTambién participé en funcionalidades vinculadas a multimedia/exportación e integraciones nativas para macOS y Windows. El rol incluyó colaboración diaria en inglés con un stakeholder internacional sobre comportamiento de producto, detalles de implementación y mejoras orientadas al release.",
+            "bullets": [
+                "Fui responsable de la entrega end-to-end de funcionalidades — UI, lógica de aplicación e integraciones nativas — para un producto comercial usado por aproximadamente 20.000 usuarios activos.",
+                "Construí y mantuve flujos centrales de producto: configuración, comportamiento de actualizaciones, comunicación interna y lógica de aplicación, utilizando TypeScript, React, Next.js y Node.js.",
+                "Implementé funcionalidades de multimedia/exportación e integraciones nativas para macOS y Windows, extendiendo las capacidades centrales del producto.",
+                "Colaboré diariamente en inglés con un stakeholder internacional sobre comportamiento de producto, decisiones de implementación y mejoras orientadas al release."
+            ]
         },
         {
             "position": "Desarrollador de Software",
             "company": "Transporte Ideal San Justo",
             "duration": "ago. 2023 - feb. 2025",
-            "description": "Construí herramientas web y de escritorio internas utilizando Next.js, Tailwind CSS, Flask, Python y Tkinter para simplificar flujos operativos y reducir trabajo manual en procesos del día a día. Implementé APIs, interfaces internas y herramientas prácticas para un entorno operativo no técnico.\n\nTambién trabajé con SQL, pandas y Matplotlib para hacer más accesible la información operativa interna mediante procesamiento de datos, reportes y consultas. El rol incluyó relevar necesidades con distintos equipos y convertir problemas de negocio en software usable."
+            "description": "Construí herramientas web y de escritorio internas utilizando Next.js, Tailwind CSS, Flask, Python y Tkinter para simplificar flujos operativos y reducir trabajo manual en procesos del día a día. Implementé APIs, interfaces internas y herramientas prácticas para un entorno operativo no técnico.\n\nTambién trabajé con SQL, pandas y Matplotlib para hacer más accesible la información operativa interna mediante procesamiento de datos, reportes y consultas. El rol incluyó relevar necesidades con distintos equipos y convertir problemas de negocio en software usable.",
+            "bullets": [
+                "Construí herramientas web y de escritorio internas con Next.js, Tailwind CSS, Flask, Python y Tkinter para simplificar flujos operativos y reducir trabajo manual.",
+                "Implementé APIs e interfaces internas adaptadas a un entorno operativo no técnico.",
+                "Utilicé SQL, pandas y Matplotlib para convertir información operativa interna en reportes y consultas accesibles.",
+                "Relevé requerimientos entre distintos equipos y traduje necesidades de negocio en software usable."
+            ]
         },
         {
             "position": "Desarrollador Full-Stack",

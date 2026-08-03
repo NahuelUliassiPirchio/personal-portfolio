@@ -55,3 +55,16 @@
 .description {
   line-height: 1.5;
 }
+
+.bulletList {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.bulletItem {
+  margin-bottom: 0.4rem;
+}
+
+.bulletItem:last-child {
+  margin-bottom: 0;
+}

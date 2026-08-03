@@ -15,7 +15,18 @@ export default function ExperienceSection ({ id, key }) {
             <h3 className={styles.position}>{experience.position}</h3>
             <p className={styles.company}>{experience.company}</p>
             <time className={styles.duration}>{experience.duration}</time>
-            <p className={styles.description} dangerouslySetInnerHTML={{ __html: experience.description.replace(/\n/g, '<br />') }} />          </li>
+            {experience.bullets?.length
+              ? (
+                <ul className={`${styles.description} ${styles.bulletList}`}>
+                  {experience.bullets.map((bullet, bulletIndex) => (
+                    <li key={bulletIndex} className={styles.bulletItem}>{bullet}</li>
+                  ))}
+                </ul>
+                )
+              : (
+                <p className={styles.description} dangerouslySetInnerHTML={{ __html: experience.description.replace(/\n/g, '<br />') }} />
+                )}
+          </li>
         ))}
       </ul>
     </section>
