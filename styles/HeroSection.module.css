@@ -110,8 +110,8 @@
 @media (max-width: 768px) {
   .heroContent {
     height: 100vh;
-    padding-top: 5rem;
-    justify-content: flex-start;
+    padding-top: 1.5rem;
+    justify-content: center;
     margin-left: 0;
   }
 
