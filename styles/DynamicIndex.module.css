@@ -39,6 +39,7 @@
 }
 
 .inactiveSection {
+    color: var(--shadow-color);
     text-decoration: none;
 }
 

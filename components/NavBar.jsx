@@ -39,7 +39,6 @@ export default function NavBar ({ providedSections }) {
     { title: t('about'), type: 'anchor', url: 'about' },
     { title: t('experience'), type: 'anchor', url: 'experience' },
     { title: t('skills'), type: 'anchor', url: 'skills' },
-    { title: t('work'), type: 'anchor', url: 'featured-work' },
     { title: t('projects'), type: 'anchor', url: 'projects' },
     { title: t('contact'), type: 'anchor', url: 'contact' }
   ]
