@@ -6,9 +6,14 @@ import { useRouter } from 'next/router'
 import ProjectSectionStyles from '../styles/ProjectsSection.module.css'
 import styles from '../styles/DynamicIndex.module.css'
 
-export default function DynamicIndex ({ sections }) {
+export default function DynamicIndex ({ sections, isLocalPage = false }) {
   const { pathname } = useRouter()
   const isHome = pathname === '/'
+  // `isLocalPage` is true when the caller (e.g. pages/projects/[url].js) passed
+  // its own page's section ids via `providedSections` — those anchors exist on
+  // the current page regardless of whether it's `/`, so they must scroll in
+  // place rather than degrade to a `/#id` link to the homepage.
+  const canScrollInPage = isHome || isLocalPage
   const [activeSection, setActiveSection] = useState(sections[0])
 
   useEffect(() => {
@@ -68,7 +73,7 @@ export default function DynamicIndex ({ sections }) {
                       {section.title}
                     </Link>
                     )
-                  : isHome
+                  : canScrollInPage
                     ? (
                       <button
                         onClick={handleIndexClick}
@@ -90,5 +95,6 @@ export default function DynamicIndex ({ sections }) {
 }
 
 DynamicIndex.propTypes = {
-  sections: PropTypes.array.isRequired
+  sections: PropTypes.array.isRequired,
+  isLocalPage: PropTypes.bool
 }

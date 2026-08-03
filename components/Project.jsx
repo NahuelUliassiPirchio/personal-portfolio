@@ -10,6 +10,7 @@ import LinkButton from './LinkButton'
 
 import ImageSlider from './ImageSlider'
 import { getLinkByName } from '../utils/projectFilters'
+import { hasTechnicalDecisions, hasChallenges, hasStatus } from '../utils/projectSections'
 import styles from '../styles/Project.module.css'
 
 export default function Project ({ project }) {
@@ -86,6 +87,45 @@ export default function Project ({ project }) {
                   )
             }
           </section>
+
+          {
+            hasTechnicalDecisions(project) &&
+              <section id='technicalDecisions'>
+                <h3 className={styles.subtitle}>{t('sections.technicalDecisions')}</h3>
+                <ul className={styles.cardsContainer}>
+                  {project.technicalDecisions.map((decision, index) => (
+                    <li className={styles.card} key={index}>
+                      <h4>{decision.title}</h4>
+                      <p>{decision.body}</p>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+          }
+
+          {
+            hasChallenges(project) &&
+              <section id='challenges'>
+                <h3 className={styles.subtitle}>{t('sections.challenges')}</h3>
+                <ul className={styles.cardsContainer}>
+                  {project.challenges.map((challenge, index) => (
+                    <li className={styles.card} key={index}>
+                      <h4>{challenge.title}</h4>
+                      <p>{challenge.body}</p>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+          }
+
+          {
+            hasStatus(project) &&
+              <section id='status'>
+                <h3 className={styles.subtitle}>{t('sections.status')}</h3>
+                <span className={styles.statusBadge}>{t(`status.${project.status}`)}</span>
+                {project.statusNote && <p>{project.statusNote}</p>}
+              </section>
+          }
 
           <section id='conclusion'>
             <h3 className={styles.subtitle}>{t('sectionTitles.conclusion')}</h3>

@@ -119,6 +119,48 @@
   padding-left: 1rem;
 }
 
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.card {
+  background-color: var(--project-card-color);
+  border: 1px solid var(--thin-line-color);
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.card p {
+  margin: 0;
+}
+
+.statusBadge {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.15rem 0.6rem;
+  border-radius: 10px;
+  border: 1px solid var(--thin-line-color);
+  color: var(--shadow-color);
+  white-space: nowrap;
+}
+
 @media (max-width: 768px) {
   .projectContainer {
     align-content: flex-end;

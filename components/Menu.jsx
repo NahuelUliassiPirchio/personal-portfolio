@@ -5,10 +5,13 @@ import { useRouter } from 'next/router'
 
 import styles from '../styles/Menu.module.css'
 
-export default function Menu ({ sections }) {
+export default function Menu ({ sections, isLocalPage = false }) {
   const [menuOpen, setMenuOpen] = React.useState(false)
   const { pathname } = useRouter()
   const isHome = pathname === '/'
+  // Mirrors DynamicIndex's canScrollInPage: a page that passed its own
+  // sections (e.g. a project detail page) has those anchors locally too.
+  const canScrollInPage = isHome || isLocalPage
 
   return (
     <>
@@ -29,7 +32,7 @@ export default function Menu ({ sections }) {
                     </Link>
                     )
                   : (
-                    <Link href={isHome ? `#${section.url}` : `/#${section.url}`} className={styles.link} onClick={() => setMenuOpen(false)}>
+                    <Link href={canScrollInPage ? `#${section.url}` : `/#${section.url}`} className={styles.link} onClick={() => setMenuOpen(false)}>
                       {section.title}
                     </Link>
                     )}
@@ -48,5 +51,6 @@ Menu.propTypes = {
     type: PropTypes.oneOf(['anchor', 'route']).isRequired,
     url: PropTypes.string,
     href: PropTypes.string
-  })).isRequired
+  })).isRequired,
+  isLocalPage: PropTypes.bool
 }
