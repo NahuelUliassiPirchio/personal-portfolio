@@ -49,7 +49,7 @@
 .metadata dt {
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--shadow-color);
+  color: var(--text-color);
 }
 
 .metadata dd {
