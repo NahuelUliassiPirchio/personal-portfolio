@@ -1,6 +1,6 @@
 .introductionContainer {
   scroll-margin: 5rem;
-  padding: 3rem 1rem;
+  padding: 1.5rem 1rem 3rem;
   background: var(--primary-color);
   display: flex;
   flex-direction: column;
