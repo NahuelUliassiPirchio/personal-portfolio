@@ -33,3 +33,8 @@ h2 {
 html {
     scroll-behavior: smooth;
 }
+
+:where(a, button, [tabindex]):focus-visible {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 3px;
+}
