@@ -42,26 +42,42 @@
   list-style: none;
   background-color: var(--background-color);
   padding: 1rem;
-  width: 20%;
   border: 1px var(--thin-line-color) solid;
   text-align: center;
 }
 
-.iconContainer {
-  background-color: var(--secondary-color);
-  border-radius: 50%;
-  width: fit-content;
-  align-self: center;
-  margin: 0 auto;
+.coreCard {
+  flex: 1.4;
 }
 
-.skillFieldCard img{
-  padding: 1rem;
-  object-fit: scale-down;
+.additionalCard {
+  flex: 1;
+  opacity: 0.85;
 }
 
 .toolsList li{
   list-style: none;
+}
+
+/* Weight-is-meaning: Core reads primary via size/weight, Additional stays secondary. */
+.coreCard .fieldTitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.additionalCard .fieldTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.coreTool {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.additionalTool {
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 

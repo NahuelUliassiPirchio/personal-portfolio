@@ -1,60 +1,43 @@
 {
     "toolsTitle": "Tools",
-    "fields": [
-        {
-            "icon": "front-icon.svg",
-            "title": "Frontend Development",
-            "description": "I build interactive web interfaces with a strong focus on product behavior, usability, performance, and maintainable code. I also bring experience from cross-platform product work where frontend decisions connect with deeper application behavior.",
+    "tiers": {
+        "core": {
+            "title": "Core Stack",
+            "description": "The technologies I reach for daily to ship production features end to end — interface, application logic, APIs, and the database underneath.",
             "tools": [
                 "JavaScript/TypeScript",
-                "HTML",
-                "CSS",
                 "React",
                 "Next.js",
+                "Node.js",
+                "NestJS",
+                "PostgreSQL",
+                "MongoDB/Mongoose",
+                "HTML",
+                "CSS",
+                "REST APIs",
+                "JWT",
+                "SQL"
+            ]
+        },
+        "additional": {
+            "title": "Additional Experience",
+            "description": "Supporting frameworks, tools, and platforms I've used across projects for styling, testing, data access, and infrastructure.",
+            "tools": [
                 "Electron",
                 "Bootstrap",
                 "Tailwind CSS",
                 "Zustand",
                 "i18n",
-                "Selenium"
-            ]
-        },
-        {
-            "icon": "back-icon.svg",
-            "title": "Backend Development",
-            "description": "I develop APIs, business logic, authentication flows, and backend services that support reliable web applications and internal tools. I care about clear architecture, maintainability, and efficient communication between frontend and backend layers.",
-            "tools": [
-                "JavaScript/TypeScript",
-                "Node.js",
-                "NestJS",
+                "Selenium",
                 "Express.js",
                 "Flask",
                 "Swagger",
-                "JWT",
-                "REST APIs",
                 "GraphQL",
-                "Clean Architecture"
-            ]
-        },
-        {
-            "icon": "database-icon.svg",
-            "title": "Databases",
-            "description": "I work with relational and non-relational databases, designing data models, writing queries, and integrating persistence layers into web and backend applications.",
-            "tools": [
-                "MongoDB/Mongoose",
-                "PostgreSQL",
+                "Clean Architecture",
                 "MySQL",
                 "Firestore",
                 "Sequelize",
                 "TypeORM",
-                "SQL"
-            ]
-        },
-        {
-            "icon": "tools-icon.svg",
-            "title": "Additional Tools",
-            "description": "I use development tools that support testing, version control, deployment, automation, and day-to-day productivity across software projects.",
-            "tools": [
                 "Git",
                 "VSCode",
                 "Jest",
@@ -66,5 +49,5 @@
                 "AWS"
             ]
         }
-    ]
+    }
 }
