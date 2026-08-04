@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import Head from 'next/head'
+import { Analytics } from '@vercel/analytics/react'
 
 import ThemeProvider from '../providers/ThemeProvider'
 import('../styles/globals.css')
@@ -19,6 +20,7 @@ function MyApp ({ Component, pageProps }) {
       <ThemeProvider>
         <Component {...pageProps} />
       </ThemeProvider>
+      <Analytics/>
     </div>
   )
 }
