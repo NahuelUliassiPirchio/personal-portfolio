@@ -137,7 +137,7 @@
 
 @media (min-width: 810px) {
   .introCard {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
     align-items: center;
   }
 }

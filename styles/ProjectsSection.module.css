@@ -29,3 +29,11 @@
   outline: 2px solid var(--secondary-color);
   outline-offset: 3px;
 }
+
+.viewAllArrow {
+  transition: transform 0.2s ease;
+}
+
+.viewAllLink:hover .viewAllArrow {
+  transform: translateX(4px);
+}

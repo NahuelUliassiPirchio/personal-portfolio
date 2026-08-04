@@ -30,6 +30,9 @@ export default function ProjectsSection ({ id, key, featuredOnly = false }) {
         featuredOnly && (
           <Link href='/projects' className={styles.viewAllLink}>
             {t('viewAllProjects')}
+            <svg xmlns='http://www.w3.org/2000/svg' className={styles.viewAllArrow} viewBox='0 0 24 24' width='20' height='20' fill='currentColor' aria-hidden='true'>
+              <path d='M8.59 16.59L10 18l6-6-6-6-1.41 1.41L12.17 11H4v2h8.17l-1.58 1.59z' />
+            </svg>
           </Link>
         )
       }
