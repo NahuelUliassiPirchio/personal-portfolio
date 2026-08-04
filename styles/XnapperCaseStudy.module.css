@@ -1,10 +1,14 @@
 .header {
-  margin-top: var(--navbar-height);
-  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: var(--navbar-height) auto 0;
+  padding: 1rem 1.25rem 2rem;
 }
 
 .headerBody {
-  margin-top: 2rem;
+  max-width: 65ch;
 }
 
 .product {
@@ -44,8 +48,15 @@
 
 @media (min-width: 810px) {
   .header {
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(240px, 320px) minmax(0, 680px);
+    column-gap: clamp(3rem, 8vw, 9rem);
     align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .headerMedia {
+    max-width: 320px;
   }
 }
 
@@ -62,7 +73,23 @@
 }
 
 .context {
-  padding-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  border-top: 1px solid var(--thin-line-color);
+  padding-top: 2.5rem;
+  padding-bottom: 0;
+}
+
+.context h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.contextCopy {
+  max-width: 65ch;
 }
 
 .contextParagraph {
@@ -79,7 +106,16 @@
 }
 
 .scope {
-  padding-top: 0;
+  padding-top: 1.5rem;
+}
+
+@media (min-width: 810px) {
+  .context {
+    grid-template-columns: minmax(180px, 320px) minmax(0, 680px);
+    column-gap: clamp(3rem, 8vw, 9rem);
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
 }
 
 .scopeGrid {

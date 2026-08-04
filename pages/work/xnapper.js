@@ -52,9 +52,12 @@ export default function XnapperCaseStudyPage () {
         <CaseStudyNav sections={navSections} headerId='header' />
 
         <section id='context' className={styles.context}>
-          {contextParagraphs.map((paragraph, index) => (
-            <p key={index} className={styles.contextParagraph}>{paragraph}</p>
-          ))}
+          <h2>{sectionLabel('context')}</h2>
+          <div className={styles.contextCopy}>
+            {contextParagraphs.map((paragraph, index) => (
+              <p key={index} className={styles.contextParagraph}>{paragraph}</p>
+            ))}
+          </div>
         </section>
 
         <section id='scope' className={styles.scope}>
