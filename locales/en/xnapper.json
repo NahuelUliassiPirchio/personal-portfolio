@@ -6,10 +6,10 @@
     "nav": [
         { "id": "context", "label": "Context" },
         { "id": "challenge", "label": "Challenge" },
+        { "id": "stack", "label": "Stack" },
         { "id": "built", "label": "What I Built" },
         { "id": "decisions", "label": "Decisions" },
-        { "id": "outcome", "label": "Outcome" },
-        { "id": "stack", "label": "Stack" }
+        { "id": "outcome", "label": "Outcome" }
     ],
     "header": {
         "product": "Xnapper",
@@ -113,6 +113,7 @@
     },
     "cta": {
         "resume": "See my resume",
-        "contact": "Get in touch"
+        "contact": "Get in touch",
+        "backHome": "Back to portfolio"
     }
 }

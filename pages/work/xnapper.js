@@ -59,6 +59,15 @@ export default function XnapperCaseStudyPage () {
           <p className={styles.challengeStatement}>{t('challenge.statement')}</p>
         </section>
 
+        <section id='stack' className={styles.stack}>
+          <h2>{sectionLabel('stack')}</h2>
+          <ul className={styles.stackList}>
+            {stackItems.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </section>
+
         <section id='built' className={styles.built}>
           <h2>{sectionLabel('built')}</h2>
           <div className={styles.builtGrid}>
@@ -97,21 +106,15 @@ export default function XnapperCaseStudyPage () {
           </ul>
         </section>
 
-        <section id='stack' className={styles.stack}>
-          <h2>{sectionLabel('stack')}</h2>
-          <ul className={styles.stackList}>
-            {stackItems.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </section>
-
         <section className={styles.cta}>
           <Link href={resumeLink} target='_blank' className={styles.ctaLink}>
             {t('cta.resume')}
           </Link>
           <Link href='mailto:uliassipirchion@gmail.com' className={styles.ctaLink}>
             {t('cta.contact')}
+          </Link>
+          <Link href='/' className={styles.ctaSecondary}>
+            {t('cta.backHome')}
           </Link>
         </section>
       </Layout>

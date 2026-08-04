@@ -29,7 +29,7 @@
   padding: 0;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--shadow-color);
+  color: var(--text-color);
 }
 
 .summary {
@@ -43,6 +43,7 @@
 
 .headerMedia {
   width: 100%;
+  max-width: 220px;
 }
 
 @media (min-width: 810px) {
@@ -195,15 +196,6 @@
   max-width: 70ch;
 }
 
-@media (min-width: 1050px) {
-  .decisionCard {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
-    gap: 2rem;
-    align-items: start;
-  }
-}
-
 .outcomeList {
   margin: 0;
   padding-left: 1.25rem;
@@ -237,7 +229,7 @@
   padding: 0.35rem 0.85rem;
   border-radius: 10px;
   border: 1px solid var(--thin-line-color);
-  color: var(--shadow-color);
+  color: var(--text-color);
 }
 
 .cta {
@@ -268,6 +260,26 @@
 }
 
 .ctaLink:focus-visible {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 3px;
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.65rem 0;
+  color: var(--text-color);
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+}
+
+.ctaSecondary:hover {
+  opacity: 0.75;
+}
+
+.ctaSecondary:focus-visible {
   outline: 2px solid var(--secondary-color);
   outline-offset: 3px;
 }
