@@ -1,14 +1,10 @@
 .header {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 1rem 1.25rem 2rem;
+  margin-top: var(--navbar-height);
+  padding: 1rem 2rem;
 }
 
 .headerBody {
-  margin-top: var(--navbar-height);
+  margin-top: 2rem;
 }
 
 .product {
@@ -43,7 +39,7 @@
 
 .headerMedia {
   width: 100%;
-  max-width: 220px;
+  max-width: 300px;
 }
 
 @media (min-width: 810px) {

@@ -33,6 +33,9 @@ export default function XnapperCaseStudyPage () {
       />
       <Layout>
         <header id='header' className={styles.header}>
+          <div className={styles.headerMedia}>
+            <MediaPlaceholder ratio='16/9' src='/images/xnapper-logo.png' alt='Xnapper' />
+          </div>
           <div className={styles.headerBody}>
             <h1 className={styles.product}>{t('header.product')}</h1>
             <ul className={styles.metadata}>
@@ -41,9 +44,6 @@ export default function XnapperCaseStudyPage () {
               <li>{t('header.scale')}</li>
             </ul>
             <p className={styles.summary}>{t('header.summary')}</p>
-          </div>
-          <div className={styles.headerMedia}>
-            <MediaPlaceholder ratio='16/9' src='/images/xnapper-logo.png' alt='Xnapper' />
           </div>
         </header>
 
