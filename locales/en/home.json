@@ -21,14 +21,14 @@
                 "heading": "Track record",
                 "points": [
                         "3+ years of professional software development",
-                        "Approximately 20,000 active users reached through a commercial product",
-                        "End-to-end feature ownership across frontend, backend and product architecture"
+                        "Experience with a commercial product used by approximately 20,000 users",
+                        "End-to-end ownership of product work across frontend, backend and architecture"
                 ]
         },
         "featuredWork": {
                 "sectionHeading": "Featured Work",
                 "title": "Xnapper — Product Engineering",
-                "description": "I helped evolve a commercial screenshot product into a broader image and video editing experience, owning complex features across interface, state, processing, persistence and production delivery.",
+                "description": "I helped evolve a commercial screenshot product into a broader image and video editing experience, owning complex capabilities across interface, state, processing, persistence and production delivery.",
                 "roleLabel": "Role",
                 "role": "Software Developer",
                 "periodLabel": "Period",
@@ -36,24 +36,24 @@
                 "environmentLabel": "Environment",
                 "environment": "Remote, international",
                 "scaleLabel": "Product scale",
-                "scale": "Approximately 20,000 active users",
+                "scale": "Approximately 20,000 users",
                 "cta": "View case study",
                 "contributions": [
                         {
-                                "title": "Video editing pipeline",
-                                "body": "Built the video editing flow from scratch, including timeline, clips, frame-accurate playback and FFmpeg/WASM export."
-                        },
-                        {
-                                "title": "Architecture and state",
-                                "body": "Refactored central export and history flows, using clear abstractions for multiple strategies, undo/redo and cross-runtime persistence."
-                        },
-                        {
-                                "title": "Reliability and security",
-                                "body": "Hardened file, process and path handling, reduced attack surface and introduced automated tests for critical flows."
-                        },
-                        {
                                 "title": "End-to-end product delivery",
-                                "body": "Worked from UI behavior and application state through processing and release concerns, shipping features in a real review-driven product cycle."
+                                "body": "Owned end-to-end features for a commercial product with approximately 20,000 users, working across React/Next.js, application state, Node.js processing and backend services."
+                        },
+                        {
+                                "title": "Video editing pipeline",
+                                "body": "Designed and built the video editing pipeline from scratch: timeline, frame-accurate playback, processing and export with FFmpeg/WASM."
+                        },
+                        {
+                                "title": "Backend licensing service",
+                                "body": "Designed and shipped a serverless licensing service with Node.js, Express and Upstash Redis, enforcing per-device rules and idempotent activations."
+                        },
+                        {
+                                "title": "Architecture, reliability and collaboration",
+                                "body": "Improved the architecture, security and reliability of core flows, collaborating daily in English within a real review-driven release cycle."
                         }
                 ]
         }

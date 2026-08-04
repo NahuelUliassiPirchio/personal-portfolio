@@ -1,27 +1,59 @@
 {
     "meta": {
         "title": "Caso de Estudio Xnapper — Nahuel Uliassi Pirchio",
-        "description": "Cómo llevé Xnapper de una herramienta de capturas a un producto completo de edición de video: pipeline de video, arquitectura, confiabilidad y licenciamiento, de punta a punta."
+        "description": "Cómo llevé Xnapper de una herramienta de capturas a un producto completo de edición de video: pipeline de video, backend de licenciamiento, arquitectura y confiabilidad, de punta a punta."
     },
     "nav": [
         { "id": "context", "label": "Contexto" },
+        { "id": "scope", "label": "Mi alcance de punta a punta" },
         { "id": "challenge", "label": "Desafío" },
-        { "id": "stack", "label": "Stack" },
         { "id": "built", "label": "Lo que construí" },
         { "id": "decisions", "label": "Decisiones" },
-        { "id": "outcome", "label": "Resultado" }
+        { "id": "outcome", "label": "Resultado" },
+        { "id": "stack", "label": "Stack" }
     ],
     "header": {
         "product": "Xnapper",
         "role": "Desarrollador de Software",
         "dates": "Febrero 2025 – Mayo 2026",
-        "scale": "Aproximadamente 20.000 usuarios activos",
-        "summary": "A lo largo de dieciséis meses, trabajé en todo el stack de producto de Xnapper, siendo responsable de features complejas de edición, procesamiento, persistencia y confiabilidad para un producto comercial usado por aproximadamente 20.000 usuarios activos."
+        "scale": "Aproximadamente 20.000 usuarios",
+        "summary": "Durante dieciséis meses trabajé a través de las distintas capas de Xnapper: interfaces de edición, lógica y estado de aplicación, procesamiento multimedia, persistencia y servicios backend para un producto comercial con aproximadamente 20.000 usuarios."
     },
     "context": {
         "paragraphs": [
             "Xnapper es una herramienta comercial de capturas de pantalla que se expandió hacia la edición de imagen y video. Como Desarrollador de Software del equipo, fui responsable de features en la interfaz, el estado de la aplicación, el procesamiento, la persistencia y las integraciones con servicios — no de una sola capa del stack.",
             "La dificultad técnica surgió al pasar de la edición estática de capturas a flujos de video cuadro a cuadro que debían mantenerse confiables y mantenibles en distintos entornos de ejecución, sin sacrificar performance."
+        ]
+    },
+    "scope": {
+        "blocks": [
+            {
+                "id": "frontend",
+                "title": "Frontend y experiencia de producto",
+                "body": "Construí interfaces de edición con React y Next.js: timeline, manipulación de clips, reproducción y controles de exportación."
+            },
+            {
+                "id": "state-logic",
+                "title": "Estado y lógica de aplicación",
+                "body": "Modelé el estado del editor, el historial de undo/redo y la persistencia de sesiones y presets, conectando la interfaz con los distintos flujos del producto."
+            },
+            {
+                "id": "processing",
+                "title": "Procesamiento",
+                "body": "Implementé el procesamiento de video con Node.js, FFmpeg y WebAssembly, coordinando archivos, reproducción, progreso y generación de resultados."
+            },
+            {
+                "id": "backend-data",
+                "title": "Backend y datos",
+                "body": "Diseñé y publiqué un servicio serverless de licenciamiento que aplicaba reglas comerciales por dispositivo y persistía el estado de las activaciones en Redis."
+            }
+        ],
+        "diagram": [
+            "UI en React / Next.js",
+            "Estado y lógica del editor",
+            "Procesamiento en Node.js (FFmpeg / WASM)",
+            "Servicio backend serverless",
+            "Persistencia en Upstash Redis"
         ]
     },
     "challenge": {
@@ -30,13 +62,34 @@
     "built": [
         {
             "id": "video-editing",
-            "title": "Edición de video",
+            "title": "Pipeline de edición de video",
+            "intro": "Construí esta capacidad de punta a punta: desde las interacciones de timeline y el modelado del estado hasta la extracción de frames, el procesamiento y la exportación final.",
             "bullets": [
-                "Edición de timeline y clips",
-                "Reproducción y búsqueda cuadro a cuadro",
-                "Exportación con FFmpeg/WASM",
-                "Manejo de frame rate variable",
-                "Renderizado de video con WebGL"
+                "Diseñé la interfaz y las interacciones de timeline, clips y playhead.",
+                "Modelé el estado de edición, la normalización de clips y el historial de undo/redo.",
+                "Construí la reproducción y la búsqueda precisa cuadro a cuadro.",
+                "Implementé el procesamiento y la exportación con FFmpeg/WASM.",
+                "Integré progreso, cancelación, manejo de errores y generación del archivo final."
+            ]
+        },
+        {
+            "id": "auth",
+            "title": "Autenticación e integraciones",
+            "bullets": [
+                "Implementé el flujo de autenticación con Google OAuth para la web y la aplicación de escritorio.",
+                "Reforcé el manejo y la renovación de sesión para mantener autenticados los flujos del producto."
+            ]
+        },
+        {
+            "id": "licensing",
+            "title": "Servicio backend de licenciamiento",
+            "intro": "Diseñé y publiqué un backend serverless para validar licencias comerciales y controlar la cantidad de dispositivos asociados a cada usuario.",
+            "bullets": [
+                "Construí el endpoint de validación con Node.js y Express, desplegado como función serverless.",
+                "Modelé licencias y dispositivos activos sobre Upstash Redis.",
+                "Apliqué reglas de límite de asientos por dispositivo.",
+                "Implementé activación idempotente para evitar duplicar registros en validaciones repetidas.",
+                "Manejé la baja lógica (soft-delete) de dispositivos sin perder el historial de activaciones."
             ]
         },
         {
@@ -58,17 +111,6 @@
                 "Eliminación de integraciones de procesos inseguras",
                 "Tests automatizados para flujos críticos"
             ]
-        },
-        {
-            "id": "licensing",
-            "title": "Servicio de licenciamiento",
-            "bullets": [
-                "Endpoint serverless con Node.js/Express",
-                "Manejo de requests respaldado por Upstash Redis",
-                "Reglas de asientos por dispositivo",
-                "Activación idempotente",
-                "Manejo de baja lógica (soft-delete) de dispositivos"
-            ]
         }
     ],
     "decisions": [
@@ -83,9 +125,9 @@
             "approach": "Introduje una interfaz compartida de export strategy para que cada destino implemente el mismo contrato, concentrando la lógica de ramificación en un solo lugar en vez de condicionales dispersos."
         },
         {
-            "title": "Historial de undo persistente",
-            "problem": "A medida que el editor sumaba capacidades nuevas, el manejo de undo ad-hoc obligaba a cada feature a reinventar su propia forma de rastrear y revertir estado.",
-            "approach": "Modelé el undo/redo como snapshots de estado, un enfoque tipo Memento, para que cualquier capacidad nueva del editor pudiera integrarse al mismo mecanismo de historial sin lógica de undo a medida."
+            "title": "Modelo idempotente de activación",
+            "problem": "El cliente podía validar la misma licencia repetidamente, y un dispositivo ya activo no debía duplicar su registro ni ocupar más de un lugar disponible.",
+            "approach": "Diseñé la activación como una operación idempotente: si el dispositivo ya estaba activo, el servicio devolvía éxito sin duplicar el registro. Las bajas se modelaron con soft-delete para conservar el historial sin consumir un lugar disponible."
         }
     ],
     "outcome": {
@@ -94,7 +136,7 @@
             "Entregué el trabajo a través de múltiples releases de producción.",
             "Mejoré la mantenibilidad de los flujos de exportación y persistencia.",
             "Reduje riesgos importantes de seguridad y confiabilidad.",
-            "Di soporte a un producto usado por aproximadamente 20.000 usuarios activos."
+            "Di soporte a un producto usado por aproximadamente 20.000 usuarios."
         ]
     },
     "stack": {

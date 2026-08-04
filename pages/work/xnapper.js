@@ -19,6 +19,8 @@ export default function XnapperCaseStudyPage () {
   const built = t('built', {}, { returnObjects: true })
   const decisions = t('decisions', {}, { returnObjects: true })
   const contextParagraphs = t('context.paragraphs', {}, { returnObjects: true })
+  const scopeBlocks = t('scope.blocks', {}, { returnObjects: true })
+  const scopeDiagram = t('scope.diagram', {}, { returnObjects: true })
   const outcomeItems = t('outcome.items', {}, { returnObjects: true })
   const stackItems = t('stack.items', {}, { returnObjects: true })
 
@@ -55,17 +57,25 @@ export default function XnapperCaseStudyPage () {
           ))}
         </section>
 
-        <section id='challenge' className={styles.challenge}>
-          <p className={styles.challengeStatement}>{t('challenge.statement')}</p>
+        <section id='scope' className={styles.scope}>
+          <h2>{sectionLabel('scope')}</h2>
+          <div className={styles.scopeGrid}>
+            {scopeBlocks.map(block => (
+              <article key={block.id} className={styles.scopeCard}>
+                <h3>{block.title}</h3>
+                <p>{block.body}</p>
+              </article>
+            ))}
+          </div>
+          <div className={styles.diagram}>
+            {scopeDiagram.map((step, index) => (
+              <div key={index} className={styles.diagramStep}>{step}</div>
+            ))}
+          </div>
         </section>
 
-        <section id='stack' className={styles.stack}>
-          <h2>{sectionLabel('stack')}</h2>
-          <ul className={styles.stackList}>
-            {stackItems.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
+        <section id='challenge' className={styles.challenge}>
+          <p className={styles.challengeStatement}>{t('challenge.statement')}</p>
         </section>
 
         <section id='built' className={styles.built}>
@@ -74,6 +84,7 @@ export default function XnapperCaseStudyPage () {
             {built.map(subsection => (
               <article key={subsection.id} className={styles.builtCard}>
                 <h3>{subsection.title}</h3>
+                {subsection.intro && <p className={styles.builtIntro}>{subsection.intro}</p>}
                 <ul>
                   {subsection.bullets.map((bullet, index) => (
                     <li key={index}>{bullet}</li>
@@ -101,6 +112,15 @@ export default function XnapperCaseStudyPage () {
           <h2>{sectionLabel('outcome')}</h2>
           <ul className={styles.outcomeList}>
             {outcomeItems.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section id='stack' className={styles.stack}>
+          <h2>{sectionLabel('stack')}</h2>
+          <ul className={styles.stackList}>
+            {stackItems.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>

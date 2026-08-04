@@ -1,7 +1,7 @@
 {
         "meta": {
                 "title": "Nahuel Uliassi Pirchio — Desarrollador Full-Stack",
-                "description": "Desarrollador Full-Stack de Software enfocado en ingeniería de producto. Construyo productos full-stack y features complejas de punta a punta: desde la interfaz y la lógica de aplicación hasta los datos y la entrega en producción."
+                "description": "Desarrollador de Software Full-Stack enfocado en ingeniería de producto. Construyo productos full-stack y funcionalidades complejas de punta a punta: desde la interfaz y la lógica de aplicación hasta los datos y la entrega en producción."
         },
         "about": "Sobre mi",
         "skills": "Habilidades",
@@ -12,8 +12,8 @@
         "downloadResume": "Ver CV",
         "resumeText":"Mi Currículum",
         "hero": {
-                "headline": "Construyo productos full-stack y features complejas de punta a punta.",
-                "supportingCopy": "Desarrollador Full-Stack de Software que trabaja con TypeScript, React, Next.js y Node.js. Transformo problemas de producto en features mantenibles a través de UI, lógica de aplicación, datos y flujos de producción.",
+                "headline": "Construyo productos full-stack y funcionalidades complejas de punta a punta.",
+                "supportingCopy": "Desarrollador de Software Full-Stack que trabaja con TypeScript, React, Next.js y Node.js. Transformo problemas de producto en sistemas mantenibles a través de UI, lógica de aplicación, datos y flujos de producción.",
                 "ctaFeaturedWork": "Ver trabajo destacado",
                 "ctaProjects": "Ver proyectos"
         },
@@ -21,14 +21,14 @@
                 "heading": "Trayectoria",
                 "points": [
                         "Más de 3 años de desarrollo de software profesional",
-                        "Aproximadamente 20.000 usuarios activos alcanzados a través de un producto comercial",
-                        "Ownership de punta a punta de features en frontend, backend y arquitectura de producto"
+                        "Experiencia en un producto comercial con aproximadamente 20.000 usuarios",
+                        "Ownership de punta a punta de flujos en frontend, backend y arquitectura de producto"
                 ]
         },
         "featuredWork": {
                 "sectionHeading": "Trabajo Destacado",
                 "title": "Xnapper — Ingeniería de Producto",
-                "description": "Ayudé a evolucionar un producto comercial de capturas de pantalla hacia una experiencia más amplia de edición de imagen y video, siendo responsable de features complejas en interfaz, estado, procesamiento, persistencia y entrega en producción.",
+                "description": "Ayudé a evolucionar un producto comercial de capturas de pantalla hacia una experiencia más amplia de edición de imagen y video, siendo responsable de capacidades complejas en interfaz, estado, procesamiento, persistencia y entrega en producción.",
                 "roleLabel": "Rol",
                 "role": "Desarrollador de Software",
                 "periodLabel": "Período",
@@ -36,24 +36,24 @@
                 "environmentLabel": "Entorno",
                 "environment": "Remoto, internacional",
                 "scaleLabel": "Escala del producto",
-                "scale": "Aproximadamente 20.000 usuarios activos",
+                "scale": "Aproximadamente 20.000 usuarios",
                 "cta": "Ver caso de estudio",
                 "contributions": [
                         {
-                                "title": "Pipeline de edición de video",
-                                "body": "Construí el flujo de edición de video desde cero, incluyendo timeline, clips, reproducción cuadro a cuadro y exportación con FFmpeg/WASM."
-                        },
-                        {
-                                "title": "Arquitectura y estado",
-                                "body": "Refactoricé los flujos centrales de exportación e historial usando abstracciones claras para múltiples estrategias, undo/redo y persistencia entre runtimes."
-                        },
-                        {
-                                "title": "Confiabilidad y seguridad",
-                                "body": "Reforcé el manejo de archivos, procesos y rutas, reduje la superficie de ataque e introduje tests automatizados para flujos críticos."
-                        },
-                        {
                                 "title": "Entrega de producto de punta a punta",
-                                "body": "Trabajé desde el comportamiento de la UI y el estado de la aplicación hasta el procesamiento y consideraciones de release, entregando features en un ciclo real de producto guiado por revisiones."
+                                "body": "Fui responsable de funcionalidades de punta a punta para un producto comercial con aproximadamente 20.000 usuarios, trabajando entre React/Next.js, estado de aplicación, procesamiento con Node.js y servicios backend."
+                        },
+                        {
+                                "title": "Pipeline de edición de video",
+                                "body": "Diseñé y construí desde cero el pipeline de edición de video: timeline, reproducción cuadro a cuadro, procesamiento y exportación con FFmpeg/WASM."
+                        },
+                        {
+                                "title": "Servicio backend de licenciamiento",
+                                "body": "Diseñé y publiqué un servicio serverless de licenciamiento con Node.js, Express y Upstash Redis, aplicando reglas por dispositivo y activaciones idempotentes."
+                        },
+                        {
+                                "title": "Arquitectura, confiabilidad y colaboración",
+                                "body": "Mejoré la arquitectura, seguridad y confiabilidad de flujos centrales, colaborando diariamente en inglés dentro de un ciclo real de revisión y releases."
                         }
                 ]
         }

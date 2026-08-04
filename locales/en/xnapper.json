@@ -1,27 +1,59 @@
 {
     "meta": {
         "title": "Xnapper Case Study — Nahuel Uliassi Pirchio",
-        "description": "How I took Xnapper from a screenshot tool to a full video editing product — video pipeline, architecture, reliability and licensing, end to end."
+        "description": "How I took Xnapper from a screenshot tool to a full video editing product — video pipeline, licensing backend, architecture and reliability, end to end."
     },
     "nav": [
         { "id": "context", "label": "Context" },
+        { "id": "scope", "label": "My end-to-end scope" },
         { "id": "challenge", "label": "Challenge" },
-        { "id": "stack", "label": "Stack" },
         { "id": "built", "label": "What I Built" },
         { "id": "decisions", "label": "Decisions" },
-        { "id": "outcome", "label": "Outcome" }
+        { "id": "outcome", "label": "Outcome" },
+        { "id": "stack", "label": "Stack" }
     ],
     "header": {
         "product": "Xnapper",
         "role": "Software Developer",
         "dates": "February 2025 – May 2026",
-        "scale": "Approximately 20,000 active users",
-        "summary": "Over sixteen months, I worked across the product stack of Xnapper, taking ownership of complex editing, processing, persistence and reliability features for a commercial product used by approximately 20,000 active users."
+        "scale": "Approximately 20,000 users",
+        "summary": "Over sixteen months, I worked across the different layers of Xnapper: editing interfaces, application logic and state, multimedia processing, persistence and backend services for a commercial product with approximately 20,000 users."
     },
     "context": {
         "paragraphs": [
             "Xnapper is a commercial screenshot tool that expanded into image and video editing. As a Software Developer on the team, I owned features across the interface, application state, processing, persistence and service integrations — not a single layer of the stack.",
             "The technical difficulty came from moving beyond static screenshot editing into frame-accurate video workflows that had to stay reliable and maintainable across different runtime environments, without sacrificing performance."
+        ]
+    },
+    "scope": {
+        "blocks": [
+            {
+                "id": "frontend",
+                "title": "Frontend and product experience",
+                "body": "Built editing interfaces with React and Next.js: timeline, clip manipulation, playback and export controls."
+            },
+            {
+                "id": "state-logic",
+                "title": "Application state and logic",
+                "body": "Modeled editor state, undo/redo history and session/preset persistence, connecting interface behavior to the product's different workflows."
+            },
+            {
+                "id": "processing",
+                "title": "Processing",
+                "body": "Implemented video processing with Node.js, FFmpeg and WebAssembly, coordinating files, playback, progress and output generation."
+            },
+            {
+                "id": "backend-data",
+                "title": "Backend and data",
+                "body": "Designed and shipped a serverless licensing service that enforced per-device business rules and persisted activation state in Redis."
+            }
+        ],
+        "diagram": [
+            "React / Next.js UI",
+            "Editor state & logic",
+            "Node.js processing (FFmpeg / WASM)",
+            "Serverless backend service",
+            "Upstash Redis persistence"
         ]
     },
     "challenge": {
@@ -30,13 +62,34 @@
     "built": [
         {
             "id": "video-editing",
-            "title": "Video editing",
+            "title": "Video editing pipeline",
+            "intro": "Built this capability end to end: from timeline interactions and state modeling to frame extraction, processing and final export.",
             "bullets": [
-                "Timeline and clip editing",
-                "Frame-accurate playback and seeking",
-                "FFmpeg/WASM export",
-                "Variable frame rate handling",
-                "WebGL video rendering"
+                "Designed the interface and interactions for timeline, clips and playhead.",
+                "Modeled editing state, clip normalization and undo/redo history.",
+                "Built frame-accurate playback and seeking.",
+                "Implemented processing and export with FFmpeg/WASM.",
+                "Integrated progress, cancellation, error handling and final file generation."
+            ]
+        },
+        {
+            "id": "auth",
+            "title": "Authentication & integrations",
+            "bullets": [
+                "Implemented the Google OAuth authentication flow for both the web app and the desktop application.",
+                "Hardened session handling and renewal to keep product flows authenticated."
+            ]
+        },
+        {
+            "id": "licensing",
+            "title": "Backend licensing service",
+            "intro": "Designed and shipped a serverless backend to validate commercial licenses and control how many devices could be associated with each user.",
+            "bullets": [
+                "Built the validation endpoint with Node.js and Express, deployed as a serverless function.",
+                "Modeled licenses and active devices on top of Upstash Redis.",
+                "Enforced per-device seat limit rules.",
+                "Implemented idempotent activation to avoid duplicate records on repeated validation calls.",
+                "Handled soft-delete device removal without losing activation history."
             ]
         },
         {
@@ -58,17 +111,6 @@
                 "Removal of unsafe process integrations",
                 "Automated tests for critical paths"
             ]
-        },
-        {
-            "id": "licensing",
-            "title": "Licensing service",
-            "bullets": [
-                "Serverless Node.js/Express endpoint",
-                "Upstash Redis-backed request handling",
-                "Device-based seat rules",
-                "Idempotent activation",
-                "Soft-delete device handling"
-            ]
         }
     ],
     "decisions": [
@@ -83,9 +125,9 @@
             "approach": "Introduced a shared export strategy interface so each target implements the same contract, keeping the branching logic in one place instead of scattered conditionals."
         },
         {
-            "title": "Persistent undo history",
-            "problem": "As the editor grew new capabilities, ad-hoc undo handling meant each feature had to reinvent its own way of tracking and reverting state.",
-            "approach": "Modeled undo/redo as state snapshots, a Memento-style approach, so any new editor capability could plug into the same history mechanism without custom undo logic."
+            "title": "Idempotent activation model",
+            "problem": "The client could validate the same license repeatedly, and an already-active device shouldn't duplicate its record or consume more than one available seat.",
+            "approach": "Designed activation as an idempotent operation: if the device was already active, the service returned success without duplicating the record. Deactivations were modeled with soft-delete to preserve history without consuming an available seat."
         }
     ],
     "outcome": {
@@ -94,7 +136,7 @@
             "Shipped the work through multiple production releases.",
             "Improved maintainability of export and persistence flows.",
             "Reduced important security and reliability risks.",
-            "Supported a product used by approximately 20,000 active users."
+            "Supported a product used by approximately 20,000 users."
         ]
     },
     "stack": {

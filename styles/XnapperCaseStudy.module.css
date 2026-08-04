@@ -50,6 +50,7 @@
 }
 
 .context,
+.scope,
 .challenge,
 .built,
 .decisions,
@@ -75,6 +76,82 @@
 
 .contextParagraph:last-child {
   margin-bottom: 0;
+}
+
+.scope {
+  padding-top: 0;
+}
+
+.scopeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.scopeCard {
+  background-color: var(--project-card-color);
+  border: 1px solid var(--thin-line-color);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+}
+
+.scopeCard h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem;
+  color: var(--text-color);
+}
+
+.scopeCard p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.diagramStep {
+  background-color: var(--project-card-color);
+  border: 1px solid var(--thin-line-color);
+  border-radius: 10px;
+  padding: 0.65rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+  text-align: center;
+  position: relative;
+}
+
+.diagramStep:not(:last-child) {
+  margin-bottom: 2.25rem;
+}
+
+.diagramStep:not(:last-child)::after {
+  content: '↓';
+  position: absolute;
+  left: 50%;
+  bottom: -1.85rem;
+  transform: translateX(-50%);
+  font-size: 1.15rem;
+  color: var(--text-color);
+  opacity: 0.45;
+}
+
+.builtIntro {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text-color);
+  opacity: 0.85;
+  margin: 0 0 0.85rem;
 }
 
 .challenge {
