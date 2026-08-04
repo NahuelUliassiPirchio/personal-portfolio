@@ -116,10 +116,6 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-.builtMedia {
-  margin-bottom: 1rem;
-}
-
 .builtCard h3 {
   font-size: 1.15rem;
   font-weight: 600;
@@ -171,11 +167,6 @@
 .decisionCard:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-
-.decisionMedia {
-  margin-bottom: 1.25rem;
-  max-width: 480px;
 }
 
 .decisionCard h3 {

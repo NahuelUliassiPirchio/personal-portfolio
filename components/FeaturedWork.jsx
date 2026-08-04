@@ -14,7 +14,7 @@ export default function FeaturedWork ({ id, key }) {
           <h2>{t('featuredWork.sectionHeading')}</h2>
           <article className={styles.introCard}>
             <div className={styles.introMedia}>
-              <MediaPlaceholder ratio="16/9" />
+              <MediaPlaceholder ratio="16/9" src="/images/xnapper-logo.png" alt="Xnapper" />
             </div>
             <div className={styles.introBody}>
               <h3 className={styles.introTitle}>{t('featuredWork.title')}</h3>

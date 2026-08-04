@@ -43,7 +43,7 @@ export default function XnapperCaseStudyPage () {
             <p className={styles.summary}>{t('header.summary')}</p>
           </div>
           <div className={styles.headerMedia}>
-            <MediaPlaceholder ratio='16/9' />
+            <MediaPlaceholder ratio='16/9' src='/images/xnapper-logo.png' alt='Xnapper' />
           </div>
         </header>
 
@@ -64,9 +64,6 @@ export default function XnapperCaseStudyPage () {
           <div className={styles.builtGrid}>
             {built.map(subsection => (
               <article key={subsection.id} className={styles.builtCard}>
-                <div className={styles.builtMedia}>
-                  <MediaPlaceholder ratio='16/9' />
-                </div>
                 <h3>{subsection.title}</h3>
                 <ul>
                   {subsection.bullets.map((bullet, index) => (
@@ -83,9 +80,6 @@ export default function XnapperCaseStudyPage () {
           <div className={styles.decisionsGrid}>
             {decisions.map((decision, index) => (
               <article key={index} className={styles.decisionCard}>
-                <div className={styles.decisionMedia}>
-                  <MediaPlaceholder ratio='16/9' />
-                </div>
                 <h3>{decision.title}</h3>
                 <p className={styles.decisionProblem}>{decision.problem}</p>
                 <p className={styles.decisionApproach}>{decision.approach}</p>
