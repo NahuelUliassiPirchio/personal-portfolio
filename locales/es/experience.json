@@ -5,12 +5,13 @@
             "position": "Desarrollador de Software",
             "company": "Xnapper",
             "duration": "feb. 2025 - may. 2026",
-            "description": "Desarrollé y mantuve funcionalidades visibles para usuarios en una aplicación de escritorio multiplataforma utilizando TypeScript, React, Next.js y Node.js. Trabajé sobre flujos de producto, configuración, comportamiento de actualizaciones, comunicación interna y lógica central de la aplicación.\n\nTambién participé en funcionalidades vinculadas a multimedia/exportación e integraciones nativas para macOS y Windows. El rol incluyó colaboración diaria en inglés con un stakeholder internacional sobre comportamiento de producto, detalles de implementación y mejoras orientadas al release.",
+            "description": "Desarrollé y mantuve funcionalidades visibles para usuarios en Xnapper, un producto comercial de edición de imagen y video, utilizando TypeScript, React, Next.js y Node.js.",
             "bullets": [
-                "Fui responsable de la entrega end-to-end de funcionalidades — UI, lógica de aplicación e integraciones nativas — para un producto comercial usado por aproximadamente 20.000 usuarios.",
-                "Construí y mantuve flujos centrales de producto: configuración, comportamiento de actualizaciones, comunicación interna y lógica de aplicación, utilizando TypeScript, React, Next.js y Node.js.",
-                "Implementé funcionalidades de multimedia/exportación e integraciones nativas para macOS y Windows, extendiendo las capacidades centrales del producto.",
-                "Colaboré diariamente en inglés con un stakeholder internacional sobre comportamiento de producto, decisiones de implementación y mejoras orientadas al release."
+                "Entregué funcionalidades de punta a punta en interfaces con React/Next.js, estado de aplicación, procesamiento multimedia con Node.js y servicios backend para un producto comercial usado por aproximadamente 20.000 usuarios.",
+                "Construí un pipeline de edición de video desde las interacciones de timeline y el modelado de estado hasta la reproducción precisa cuadro a cuadro, el procesamiento con FFmpeg/WASM y la exportación.",
+                "Implementé Google OAuth para las aplicaciones web y Electron, incluido el manejo y la renovación de sesiones.",
+                "Construí un backend serverless de licenciamiento con Node.js, Express y Upstash Redis, aplicando reglas por dispositivo con activaciones idempotentes.",
+                "Colaboré diariamente en inglés con un stakeholder internacional sobre comportamiento de producto, detalles de implementación y mejoras orientadas al release."
             ]
         },
         {
@@ -21,7 +22,7 @@
             "bullets": [
                 "Construí herramientas web y de escritorio internas con Next.js, Tailwind CSS, Flask, Python y Tkinter para simplificar flujos operativos y reducir trabajo manual.",
                 "Implementé APIs e interfaces internas adaptadas a un entorno operativo no técnico.",
-                "Utilicé SQL, pandas y Matplotlib para convertir información operativa interna en reportes y consultas accesibles.",
+                "Procesé y concilié datos de dos sistemas independientes, reemplazando cálculos manuales en Excel por reportes y consultas con SQL y pandas.",
                 "Relevé requerimientos entre distintos equipos y traduje necesidades de negocio en software usable."
             ]
         },
@@ -29,7 +30,7 @@
             "position": "Desarrollador Full-Stack",
             "company": "Proyectos Personales",
             "duration": "nov. 2022 - actualidad",
-            "description": "Construyo y mejoro proyectos personales para profundizar mi experiencia en desarrollo full-stack, pensamiento de producto, arquitectura, deployment, optimización y testing. Estos proyectos incluyen aplicaciones full-stack, herramientas desktop, APIs, flujos autenticados, mapas, sistemas con bases de datos y deployments documentados.\n\nA través de ellos, practico escribir código mantenible, estructurar correctamente las aplicaciones, mejorar la experiencia de usuario y aprender construyendo funcionalidades reales de punta a punta."
+            "description": "Construyo y mejoro proyectos personales como productos de punta a punta, aplicando desarrollo full-stack, pensamiento de producto, arquitectura, despliegue, optimización y pruebas. Estos proyectos incluyen aplicaciones full-stack, herramientas desktop, APIs, flujos autenticados, mapas, sistemas con bases de datos y despliegues documentados.\n\nA través de ellos, me enfoco en escribir código mantenible, estructurar las aplicaciones de forma sólida, mejorar la experiencia de usuario y construir funcionalidades completas de punta a punta."
         },
         {
             "position": "Soporte técnico CCTV (Pasantía)",

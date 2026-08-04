@@ -17,7 +17,9 @@
         "role": "Desarrollador de Software",
         "dates": "Febrero 2025 – Mayo 2026",
         "scale": "Aproximadamente 20.000 usuarios",
-        "summary": "Durante dieciséis meses trabajé a través de las distintas capas de Xnapper: interfaces de edición, lógica y estado de aplicación, procesamiento multimedia, persistencia y servicios backend para un producto comercial con aproximadamente 20.000 usuarios."
+        "summary": "Durante dieciséis meses trabajé a través de las distintas capas de Xnapper: interfaces de edición, lógica y estado de aplicación, procesamiento multimedia, persistencia y servicios backend para un producto comercial con aproximadamente 20.000 usuarios.",
+        "productLink": "Visitar Xnapper",
+        "productLinkAria": "Visitar Xnapper (se abre en una pestaña nueva)"
     },
     "context": {
         "paragraphs": [
@@ -113,6 +115,11 @@
             ]
         }
     ],
+    "webAppReference": {
+        "prefix": "La aplicación creada con Electron utiliza la",
+        "link": "aplicación web de Xnapper",
+        "linkAria": "Abrir la aplicación web de Xnapper (se abre en una pestaña nueva)"
+    },
     "decisions": [
         {
             "title": "Extracción de frames basada en demuxer",

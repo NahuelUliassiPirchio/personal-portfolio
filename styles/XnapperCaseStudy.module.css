@@ -41,6 +41,26 @@
   color: var(--text-color);
 }
 
+.productLink,
+.builtReference a {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.productLink {
+  display: inline-flex;
+  margin-top: 1.25rem;
+}
+
+.productLink:focus-visible,
+.builtReference a:focus-visible {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 3px;
+}
+
 .headerMedia {
   width: 100%;
   max-width: 300px;
@@ -188,6 +208,15 @@
   color: var(--text-color);
   opacity: 0.85;
   margin: 0 0 0.85rem;
+}
+
+.builtReference {
+  max-width: 65ch;
+  margin: -0.5rem 0 1.5rem;
+  color: var(--text-color);
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
 .challenge {

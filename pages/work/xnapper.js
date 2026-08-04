@@ -46,6 +46,15 @@ export default function XnapperCaseStudyPage () {
               <li>{t('header.scale')}</li>
             </ul>
             <p className={styles.summary}>{t('header.summary')}</p>
+            <a
+              href='https://xnapper.com'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label={t('header.productLinkAria')}
+              className={styles.productLink}
+            >
+              {t('header.productLink')}
+            </a>
           </div>
         </header>
 
@@ -83,6 +92,17 @@ export default function XnapperCaseStudyPage () {
 
         <section id='built' className={styles.built}>
           <h2>{sectionLabel('built')}</h2>
+          <p className={styles.builtReference}>
+            {t('webAppReference.prefix')}{' '}
+            <a
+              href='https://xnapper.com/app'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label={t('webAppReference.linkAria')}
+            >
+              {t('webAppReference.link')}
+            </a>
+          </p>
           <div className={styles.builtGrid}>
             {built.map(subsection => (
               <article key={subsection.id} className={styles.builtCard}>
