@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "title": "Affirmity — Terms & Conditions",
+    "description": "Terms and Conditions governing the use of the Affirmity mobile application."
+  },
+  "header": {
+    "eyebrow": "Legal",
+    "title": "Terms & Conditions",
+    "updated": "Last updated: September 2, 2026"
+  },
+  "intro": "These Terms & Conditions (\"Terms\") govern your access to and use of the Affirmity mobile application (\"Affirmity\", \"the App\", \"the Service\"). Please read them carefully before using the App.",
+  "toc": {
+    "label": "On this page"
+  },
+  "sections": [
+    {
+      "id": "acceptance",
+      "title": "1. Acceptance of Terms",
+      "paragraphs": [
+        "By downloading, installing, or using Affirmity, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the App.",
+        "These Terms may be updated from time to time as described in Section 14. Continued use of the App after changes take effect constitutes acceptance of the updated Terms."
+      ]
+    },
+    {
+      "id": "description",
+      "title": "2. Description of Service",
+      "paragraphs": [
+        "Affirmity is a mobile wellness application offering daily affirmations, guided meditation sessions, personal journaling, and a streak/habit-tracking feature to support a daily self-improvement practice.",
+        "Affirmity is provided \"as is\" and features may be added, changed, or removed over time as the App evolves."
+      ]
+    },
+    {
+      "id": "eligibility",
+      "title": "3. Eligibility",
+      "paragraphs": [
+        "You must be at least 13 years old, or the minimum age of digital consent in your jurisdiction if higher, to use Affirmity. If you are under the age of majority in your jurisdiction, you may only use the App with the involvement and consent of a parent or legal guardian.",
+        "By using Affirmity, you represent that you meet these eligibility requirements."
+      ]
+    },
+    {
+      "id": "accounts",
+      "title": "4. Accounts & Your Responsibilities",
+      "paragraphs": [
+        "Some features of Affirmity require you to create an account. You are responsible for maintaining the confidentiality of your account credentials and for all activity that occurs under your account.",
+        "You agree to provide accurate information when creating an account and to notify us promptly of any unauthorized use of your account."
+      ]
+    },
+    {
+      "id": "user-content",
+      "title": "5. User Content — Ownership & License",
+      "paragraphs": [
+        "\"User Content\" means any content you create or submit through Affirmity, including journal entries, affirmation progress, streak and habit data, and any other content you provide.",
+        "You retain ownership of your User Content. By submitting User Content, you grant Affirmity a limited, non-exclusive, worldwide license to host, store, process, and display that content solely for the purpose of operating and providing the Service to you (for example, syncing your journal entries or displaying your streak history within the App).",
+        "Journal entries and other personal content you create are private to your account and are not shared publicly by the App unless you explicitly choose to share them (if such a feature is offered)."
+      ]
+    },
+    {
+      "id": "acceptable-use",
+      "title": "6. Acceptable Use",
+      "paragraphs": [
+        "You agree not to: (a) use Affirmity for any unlawful purpose; (b) attempt to gain unauthorized access to the App, its systems, or other users' accounts; (c) reverse-engineer, decompile, or disassemble the App except as permitted by law; (d) interfere with or disrupt the operation of the App; or (e) use the App to transmit harmful, abusive, or infringing content.",
+        "We reserve the right to suspend or terminate accounts that violate this section, as described in Section 13."
+      ]
+    },
+    {
+      "id": "subscriptions",
+      "title": "7. Subscriptions & In-App Purchases",
+      "paragraphs": [
+        "Affirmity may offer in-app purchases and auto-renewing subscriptions that unlock additional features or content. All purchases are processed through the Google Play Store, and are subject to Google Play's Billing terms and policies.",
+        "Where a subscription is offered, it automatically renews for the same term unless cancelled before the end of the current billing period. You can manage or cancel a subscription at any time through your Google Play account settings.",
+        "Pricing, billing cycles, refunds, and cancellation mechanics are governed by Google Play Billing, not by Affirmity directly. Please refer to Google Play's own terms and refund policy for details on how payments, renewals, and refunds are handled."
+      ]
+    },
+    {
+      "id": "advertising",
+      "title": "8. Advertising",
+      "paragraphs": [
+        "Affirmity may display advertising served by third-party advertising providers. These providers may use technologies such as cookies or advertising identifiers to serve and measure ads, subject to their own privacy and data practices.",
+        "We do not control the specific content of third-party advertisements shown within the App."
+      ]
+    },
+    {
+      "id": "third-party",
+      "title": "9. Third-Party Services & Analytics",
+      "paragraphs": [
+        "Affirmity uses third-party analytics and crash-reporting services to help us understand app usage, diagnose issues, and improve the Service. These services may collect usage data such as app interactions, device information, and crash diagnostics.",
+        "Use of these third-party services is subject to their own terms and privacy practices, in addition to this document."
+      ]
+    },
+    {
+      "id": "intellectual-property",
+      "title": "10. Intellectual Property",
+      "paragraphs": [
+        "The Affirmity name, branding, visual design, affirmation content, and underlying software are the property of the developer and are protected by applicable intellectual property laws. Except for the limited license to use the App as intended, these Terms do not grant you any rights to Affirmity's intellectual property.",
+        "You may not copy, modify, distribute, sell, or lease any part of the App or its content without prior written permission."
+      ]
+    },
+    {
+      "id": "disclaimers",
+      "title": "11. Disclaimers — Not Medical Advice",
+      "paragraphs": [
+        "Affirmity is a wellness and self-improvement tool. It is not a medical device, and its affirmation, meditation, and journaling features are not intended to diagnose, treat, cure, or prevent any medical or mental health condition.",
+        "Affirmity is not a substitute for professional medical, psychological, or psychiatric advice, diagnosis, or treatment. If you are experiencing a mental health crisis or have concerns about your physical or mental health, please consult a qualified healthcare professional or emergency services.",
+        "The App is provided \"as is\" and \"as available,\" without warranties of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement."
+      ]
+    },
+    {
+      "id": "liability",
+      "title": "12. Limitation of Liability",
+      "paragraphs": [
+        "To the fullest extent permitted by applicable law, the developer of Affirmity shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, arising out of or related to your use of, or inability to use, the App.",
+        "Nothing in these Terms excludes or limits liability that cannot be excluded or limited under applicable law."
+      ]
+    },
+    {
+      "id": "termination",
+      "title": "13. Termination",
+      "paragraphs": [
+        "You may stop using Affirmity and delete your account at any time. We may suspend or terminate your access to the App if you violate these Terms or engage in conduct that we determine, in good faith, is harmful to the App or other users.",
+        "Upon termination, the license granted to you to use the App ends, though provisions of these Terms that by their nature should survive (including Sections 5, 10, 11, and 12) will continue to apply."
+      ]
+    },
+    {
+      "id": "changes",
+      "title": "14. Changes to These Terms",
+      "paragraphs": [
+        "We may revise these Terms from time to time to reflect changes to the App, legal requirements, or our practices. Material changes will be reflected by an updated \"Last updated\" date at the top of this page. Continued use of the App after changes take effect constitutes acceptance of the revised Terms."
+      ]
+    },
+    {
+      "id": "governing-law",
+      "title": "15. Governing Law",
+      "paragraphs": [
+        "These Terms are governed by the laws of Argentina, without regard to its conflict-of-law principles."
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "16. Contact",
+      "paragraphs": [
+        "If you have any questions about these Terms, you can reach the developer at uliassipirchion@gmail.com."
+      ]
+    }
+  ]
+}

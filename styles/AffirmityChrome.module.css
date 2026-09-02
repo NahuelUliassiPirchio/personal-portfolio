@@ -1,0 +1,163 @@
+/*
+  Affirmity design tokens.
+  Deliberately independent from the portfolio's DESIGN.md system — Affirmity is
+  its own product identity, extracted from the app's key art (near-black
+  ground, sketched teal figure, glowing cyan/white eyes). Scoped to the
+  `.root` wrapper so it never leaks into or inherits from the portfolio shell.
+*/
+.root {
+  --af-void: #070b0d;
+  --af-surface: #0d1618;
+  --af-surface-2: #101b1e;
+  --af-hairline: #1c2b2e;
+  --af-teal: #0ca8bc;
+  --af-teal-deep: #04333a;
+  --af-glow: #4de0f0;
+  --af-glow-white: #ffffff;
+  --af-text: #eaf6f7;
+  --af-text-secondary: #8fb9be;
+  --af-text-tertiary: #6e9ca1;
+  --af-font-display: 'Unbounded', 'Segoe UI', sans-serif;
+  --af-font-body: 'Public Sans', 'Segoe UI', sans-serif;
+
+  background: var(--af-void);
+  color: var(--af-text);
+  font-family: var(--af-font-body);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.root :global(:where(a)) {
+  color: inherit;
+}
+
+.root :global(*) {
+  box-sizing: border-box;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem clamp(1.25rem, 5vw, 3.5rem);
+  background: rgba(7, 11, 13, 0.82);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--af-hairline);
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--af-font-display);
+  font-weight: 500;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: var(--af-text);
+}
+
+.wordmarkSigil {
+  color: var(--af-glow);
+}
+
+.headerCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--af-font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--af-void);
+  background: var(--af-glow);
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.headerCta:hover {
+  background: var(--af-text);
+}
+
+.headerCta:focus-visible {
+  outline: 2px solid var(--af-glow);
+  outline-offset: 3px;
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem clamp(1.25rem, 5vw, 3.5rem) 2.5rem;
+  border-top: 1px solid var(--af-hairline);
+  color: var(--af-text-tertiary);
+}
+
+.footerSigil {
+  color: var(--af-text-tertiary);
+  flex-shrink: 0;
+}
+
+.footerLink {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--af-text-secondary);
+  border-bottom: 1px solid transparent;
+}
+
+.footerLink:hover {
+  color: var(--af-text);
+  border-bottom-color: var(--af-teal);
+}
+
+.footerLink:focus-visible {
+  outline: 2px solid var(--af-glow);
+  outline-offset: 3px;
+}
+
+.footerBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--af-void);
+  background: var(--af-glow);
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+}
+
+.footerBadge:hover {
+  background: var(--af-text);
+}
+
+.footerBadge:focus-visible {
+  outline: 2px solid var(--af-glow);
+  outline-offset: 3px;
+}
+
+.footerCopy {
+  margin: 0 0 0 auto;
+  font-size: 0.78rem;
+  color: var(--af-text-tertiary);
+}
+
+@media (max-width: 560px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .footerCopy {
+    margin: 0.5rem 0 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "title": "Affirmity — Términos y Condiciones",
+    "description": "Términos y Condiciones que rigen el uso de la aplicación móvil Affirmity."
+  },
+  "header": {
+    "eyebrow": "Legal",
+    "title": "Términos y Condiciones",
+    "updated": "Última actualización: 2 de septiembre de 2026"
+  },
+  "intro": "Estos Términos y Condiciones (\"Términos\") rigen el acceso y el uso de la aplicación móvil Affirmity (\"Affirmity\", \"la App\", \"el Servicio\"). Por favor, leelos con atención antes de usar la App.",
+  "toc": {
+    "label": "En esta página"
+  },
+  "sections": [
+    {
+      "id": "acceptance",
+      "title": "1. Aceptación de los Términos",
+      "paragraphs": [
+        "Al descargar, instalar o usar Affirmity, aceptás quedar sujeto a estos Términos. Si no estás de acuerdo, no uses la App.",
+        "Estos Términos pueden actualizarse periódicamente, según se describe en la Sección 14. El uso continuado de la App después de que los cambios entren en vigencia implica la aceptación de los Términos actualizados."
+      ]
+    },
+    {
+      "id": "description",
+      "title": "2. Descripción del Servicio",
+      "paragraphs": [
+        "Affirmity es una aplicación móvil de bienestar que ofrece afirmaciones diarias, sesiones de meditación guiada, un diario personal y una función de seguimiento de rachas y hábitos, como apoyo a una práctica diaria de desarrollo personal.",
+        "Affirmity se ofrece \"tal cual\" y sus funciones pueden agregarse, modificarse o eliminarse con el tiempo a medida que la App evoluciona."
+      ]
+    },
+    {
+      "id": "eligibility",
+      "title": "3. Elegibilidad",
+      "paragraphs": [
+        "Debés tener al menos 13 años, o la edad mínima de consentimiento digital en tu jurisdicción si es mayor, para usar Affirmity. Si no alcanzaste la mayoría de edad en tu jurisdicción, solo podés usar la App con la participación y el consentimiento de un padre, madre o tutor legal.",
+        "Al usar Affirmity, declarás que cumplís con estos requisitos de elegibilidad."
+      ]
+    },
+    {
+      "id": "accounts",
+      "title": "4. Cuentas y tu Responsabilidad",
+      "paragraphs": [
+        "Algunas funciones de Affirmity requieren crear una cuenta. Sos responsable de mantener la confidencialidad de tus credenciales de acceso y de toda actividad que ocurra bajo tu cuenta.",
+        "Aceptás proporcionar información precisa al crear una cuenta y notificarnos rápidamente ante cualquier uso no autorizado de tu cuenta."
+      ]
+    },
+    {
+      "id": "user-content",
+      "title": "5. Contenido del Usuario — Propiedad y Licencia",
+      "paragraphs": [
+        "\"Contenido del Usuario\" significa cualquier contenido que crees o envíes a través de Affirmity, incluyendo entradas de diario, progreso de afirmaciones, datos de rachas y hábitos, y cualquier otro contenido que proporciones.",
+        "Conservás la propiedad de tu Contenido del Usuario. Al enviarlo, le otorgás a Affirmity una licencia limitada, no exclusiva y a nivel mundial para alojar, almacenar, procesar y mostrar ese contenido, únicamente con el fin de operar y brindarte el Servicio (por ejemplo, sincronizar tus entradas de diario o mostrar tu historial de rachas dentro de la App).",
+        "Las entradas de diario y demás contenido personal que crees son privadas de tu cuenta y la App no las comparte públicamente, salvo que elijas hacerlo de forma explícita (si esa función llegara a estar disponible)."
+      ]
+    },
+    {
+      "id": "acceptable-use",
+      "title": "6. Uso Aceptable",
+      "paragraphs": [
+        "Aceptás no: (a) usar Affirmity con fines ilegales; (b) intentar acceder sin autorización a la App, sus sistemas o las cuentas de otros usuarios; (c) realizar ingeniería inversa, descompilar o desensamblar la App, salvo cuando la ley lo permita; (d) interferir con el funcionamiento de la App o interrumpirlo; o (e) usar la App para transmitir contenido dañino, abusivo o que infrinja derechos de terceros.",
+        "Nos reservamos el derecho de suspender o dar de baja cuentas que violen esta sección, según lo descrito en la Sección 13."
+      ]
+    },
+    {
+      "id": "subscriptions",
+      "title": "7. Suscripciones y Compras dentro de la App",
+      "paragraphs": [
+        "Affirmity puede ofrecer compras dentro de la app y suscripciones de renovación automática que desbloquean funciones o contenido adicional. Todas las compras se procesan a través de Google Play Store y están sujetas a los términos y políticas de facturación de Google Play.",
+        "Cuando se ofrece una suscripción, esta se renueva automáticamente por el mismo período salvo que se cancele antes de que finalice el ciclo de facturación vigente. Podés gestionar o cancelar una suscripción en cualquier momento desde la configuración de tu cuenta de Google Play.",
+        "Los precios, ciclos de facturación, reembolsos y mecánicas de cancelación están regidos por Google Play Billing, no directamente por Affirmity. Consultá los propios términos y la política de reembolsos de Google Play para conocer el detalle de cómo se gestionan los pagos, las renovaciones y los reembolsos."
+      ]
+    },
+    {
+      "id": "advertising",
+      "title": "8. Publicidad",
+      "paragraphs": [
+        "Affirmity puede mostrar publicidad servida por proveedores de terceros. Estos proveedores pueden usar tecnologías como cookies o identificadores publicitarios para mostrar y medir anuncios, sujetos a sus propias prácticas de privacidad y de datos.",
+        "No controlamos el contenido específico de los anuncios de terceros que se muestran dentro de la App."
+      ]
+    },
+    {
+      "id": "third-party",
+      "title": "9. Servicios de Terceros y Analítica",
+      "paragraphs": [
+        "Affirmity utiliza servicios de terceros de analítica y reporte de errores para entender el uso de la app, diagnosticar problemas y mejorar el Servicio. Estos servicios pueden recolectar datos de uso como interacciones dentro de la app, información del dispositivo y diagnósticos de errores.",
+        "El uso de estos servicios de terceros está sujeto a sus propios términos y prácticas de privacidad, además de este documento."
+      ]
+    },
+    {
+      "id": "intellectual-property",
+      "title": "10. Propiedad Intelectual",
+      "paragraphs": [
+        "El nombre Affirmity, su identidad visual, el contenido de las afirmaciones y el software subyacente son propiedad del desarrollador y están protegidos por las leyes de propiedad intelectual aplicables. Salvo por la licencia limitada para usar la App según lo previsto, estos Términos no te otorgan ningún derecho sobre la propiedad intelectual de Affirmity.",
+        "No podés copiar, modificar, distribuir, vender ni alquilar ninguna parte de la App o su contenido sin permiso previo por escrito."
+      ]
+    },
+    {
+      "id": "disclaimers",
+      "title": "11. Aclaraciones — No es Asesoramiento Médico",
+      "paragraphs": [
+        "Affirmity es una herramienta de bienestar y desarrollo personal. No es un dispositivo médico, y sus funciones de afirmaciones, meditación y diario no están destinadas a diagnosticar, tratar, curar ni prevenir ninguna condición médica o de salud mental.",
+        "Affirmity no reemplaza el asesoramiento, diagnóstico o tratamiento médico, psicológico o psiquiátrico profesional. Si estás atravesando una crisis de salud mental o tenés inquietudes sobre tu salud física o mental, consultá a un profesional de la salud calificado o a los servicios de emergencia.",
+        "La App se ofrece \"tal cual\" y \"según disponibilidad\", sin garantías de ningún tipo, ya sean expresas o implícitas, incluyendo, entre otras, garantías de comerciabilidad, idoneidad para un propósito particular o no infracción."
+      ]
+    },
+    {
+      "id": "liability",
+      "title": "12. Limitación de Responsabilidad",
+      "paragraphs": [
+        "En la máxima medida permitida por la ley aplicable, el desarrollador de Affirmity no será responsable por daños indirectos, incidentales, especiales, consecuentes o punitivos, ni por pérdida de datos, derivados del uso o la imposibilidad de uso de la App.",
+        "Nada en estos Términos excluye o limita la responsabilidad que no pueda excluirse o limitarse según la ley aplicable."
+      ]
+    },
+    {
+      "id": "termination",
+      "title": "13. Terminación",
+      "paragraphs": [
+        "Podés dejar de usar Affirmity y eliminar tu cuenta en cualquier momento. Podemos suspender o dar de baja tu acceso a la App si violás estos Términos o incurrís en una conducta que, de buena fe, consideremos perjudicial para la App o para otros usuarios.",
+        "Tras la terminación, la licencia otorgada para usar la App finaliza, aunque las disposiciones de estos Términos que por su naturaleza deban subsistir (incluidas las Secciones 5, 10, 11 y 12) seguirán aplicando."
+      ]
+    },
+    {
+      "id": "changes",
+      "title": "14. Cambios a estos Términos",
+      "paragraphs": [
+        "Podemos revisar estos Términos periódicamente para reflejar cambios en la App, en requisitos legales o en nuestras prácticas. Los cambios significativos se reflejarán actualizando la fecha de \"Última actualización\" en la parte superior de esta página. El uso continuado de la App después de que los cambios entren en vigencia implica la aceptación de los Términos revisados."
+      ]
+    },
+    {
+      "id": "governing-law",
+      "title": "15. Ley Aplicable",
+      "paragraphs": [
+        "Estos Términos se rigen por las leyes de la República Argentina, sin dar efecto a sus principios de conflicto de leyes."
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "16. Contacto",
+      "paragraphs": [
+        "Si tenés preguntas sobre estos Términos, podés contactar al desarrollador en uliassipirchion@gmail.com."
+      ]
+    }
+  ]
+}

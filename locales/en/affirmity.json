@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Affirmity — A daily practice for the mind you're building",
+    "description": "Affirmity pairs daily affirmations with guided meditation, journaling, and a streak tracker — one quiet practice, said daily."
+  },
+  "nav": {
+    "wordmark": "Affirmity",
+    "cta": "Get it on Google Play"
+  },
+  "hero": {
+    "headline": "Say it daily. Become it.",
+    "body": "Affirmity pairs daily affirmations with guided meditation, journaling, and a streak that keeps you honest — a single quiet practice for the story you tell yourself.",
+    "cta": "Get it on Google Play",
+    "imageAlt": "Affirmity key art — a sketched face with glowing eyes and a circle-in-triangle mark at the forehead"
+  },
+  "flagship": {
+    "label": "The core practice",
+    "headline": "One affirmation. Every day.",
+    "body": "Affirmity's flagship feature is simple by design: a new affirmation surfaces each day, written to be said out loud, sat with, or carried through the hours after it. Repetition is the mechanism — the app exists to help you show up for it, daily."
+  },
+  "pillars": {
+    "headline": "Built around one daily practice",
+    "items": [
+      {
+        "id": "meditation",
+        "title": "Guided meditation, in more than one shape",
+        "body": "Choose from multiple guided meditation types and categories inside the app, matched to how much time — and quiet — you have."
+      },
+      {
+        "id": "journaling",
+        "title": "A place to write it down",
+        "body": "Journal alongside your affirmation practice — a private, running record of what you're working through, kept inside the app."
+      },
+      {
+        "id": "streak",
+        "title": "The practice, tracked",
+        "body": "A streak and habit tracker keeps the practice honest. Showing up daily is the point — Affirmity keeps count so you don't have to."
+      }
+    ]
+  },
+  "footer": {
+    "terms": "Terms & Conditions",
+    "copyright": "© {{year}} Affirmity — Nahuel Uliassi Pirchio. All rights reserved."
+  }
+}

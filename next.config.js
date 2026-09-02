@@ -3,7 +3,8 @@ const nextTranslate = require('next-translate')
 module.exports = nextTranslate({
   env: {
     CV_URL_ES: process.env.CV_URL_ES,
-    CV_URL_EN: process.env.CV_URL_EN
+    CV_URL_EN: process.env.CV_URL_EN,
+    AFFIRMITY_PLAY_STORE_URL: process.env.AFFIRMITY_PLAY_STORE_URL
   },
   publicRuntimeConfig: {
     BASIC_STORE_API: process.env.BASIC_STORE_API,

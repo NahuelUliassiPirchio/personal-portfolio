@@ -1,0 +1,160 @@
+.main {
+  flex: 1;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1.25rem, 5vw, 3.5rem) clamp(4rem, 8vw, 6rem);
+  display: grid;
+  grid-template-columns: 240px minmax(0, 72ch);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.docHeader {
+  grid-column: 1 / -1;
+  border-bottom: 1px solid var(--af-hairline);
+  padding-bottom: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--af-teal);
+  margin: 0 0 0.75rem;
+}
+
+.title {
+  font-family: var(--af-font-display);
+  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.1;
+  margin: 0 0 0.9rem;
+}
+
+.updated {
+  font-size: 0.85rem;
+  color: var(--af-text-tertiary);
+  margin: 0;
+}
+
+.intro {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--af-text-secondary);
+  max-width: 68ch;
+  margin: 1.5rem 0 0;
+}
+
+.tocNav {
+  position: sticky;
+  top: 6rem;
+}
+
+.tocLabel {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--af-text-tertiary);
+  margin: 0 0 0.9rem;
+}
+
+.tocList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.tocLink {
+  display: block;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: var(--af-text-secondary);
+  text-decoration: none;
+  border-left: 1px solid var(--af-hairline);
+  padding-left: 0.85rem;
+}
+
+.tocLink:hover {
+  color: var(--af-text);
+  border-left-color: var(--af-teal);
+}
+
+.tocLink:focus-visible {
+  outline: 2px solid var(--af-glow);
+  outline-offset: 3px;
+}
+
+.body {
+  min-width: 0;
+}
+
+.section {
+  padding: 2.25rem 0;
+  border-top: 1px solid var(--af-hairline);
+  scroll-margin-top: 6rem;
+}
+
+.section:first-child {
+  border-top: none;
+  padding-top: 0.5rem;
+}
+
+.sectionTitle {
+  font-family: var(--af-font-display);
+  font-weight: 500;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  margin: 0 0 1.1rem;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--af-text-secondary);
+  max-width: 68ch;
+  margin: 0 0 1rem;
+}
+
+.paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+.note {
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--af-glow);
+  border-left: 1px solid var(--af-teal-deep);
+  padding-left: 0.9rem;
+  max-width: 60ch;
+}
+
+@media (max-width: 860px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .tocNav {
+    position: static;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--af-hairline);
+  }
+
+  .tocList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
+
+  .tocLink {
+    border-left: none;
+    padding-left: 0;
+  }
+}

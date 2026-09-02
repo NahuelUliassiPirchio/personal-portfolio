@@ -1,0 +1,53 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "unbounded",
+        "createdAt": "2026-09-02T18:20:57.425Z",
+        "reason": "User explicitly asked for Affirmity to have a distinct design system from the portfolio's DESIGN.md (separate product, own typography)"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "inter",
+        "createdAt": "2026-09-02T18:20:57.459Z",
+        "reason": "User explicitly asked for Affirmity to have a distinct design system from the portfolio's DESIGN.md (separate product, own typography)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "*",
+        "files": [
+          "styles/Affirmity*.module.css"
+        ],
+        "createdAt": "2026-09-02T18:21:33.551Z",
+        "reason": "Affirmity is an intentionally separate product design system from the portfolio's DESIGN.md type scale"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "*",
+        "files": [
+          "styles/Affirmity*.module.css"
+        ],
+        "createdAt": "2026-09-02T18:21:41.623Z",
+        "reason": "Affirmity is an intentionally separate product design system from the portfolio's DESIGN.md radius scale"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "styles/Affirmity*.module.css"
+        ],
+        "createdAt": "2026-09-02T18:21:55.355Z",
+        "reason": "Affirmity is an intentionally separate product design system from the portfolio's DESIGN.md palette"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "public sans",
+        "createdAt": "2026-09-02T19:49:57.555Z",
+        "reason": "User confirmed Public Sans for Affirmity's distinct design system (replacing overused Inter)"
+      }
+    ]
+  }
+}

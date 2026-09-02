@@ -5,6 +5,8 @@
     "pages": {
       "*": ["home","common", "projects"],
       "/": ["home","contact","about","skills", "experience"],
-      "/work/xnapper": ["xnapper"]
+      "/work/xnapper": ["xnapper"],
+      "/apps/affirmity": ["affirmity"],
+      "/apps/affirmity/terms": ["affirmity", "affirmity-terms"]
     }
   }
