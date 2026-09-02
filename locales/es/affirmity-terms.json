@@ -66,9 +66,9 @@
       "id": "subscriptions",
       "title": "7. Suscripciones y Compras dentro de la App",
       "paragraphs": [
-        "Affirmity puede ofrecer compras dentro de la app y suscripciones de renovación automática que desbloquean funciones o contenido adicional. Todas las compras se procesan a través de Google Play Store y están sujetas a los términos y políticas de facturación de Google Play.",
-        "Cuando se ofrece una suscripción, esta se renueva automáticamente por el mismo período salvo que se cancele antes de que finalice el ciclo de facturación vigente. Podés gestionar o cancelar una suscripción en cualquier momento desde la configuración de tu cuenta de Google Play.",
-        "Los precios, ciclos de facturación, reembolsos y mecánicas de cancelación están regidos por Google Play Billing, no directamente por Affirmity. Consultá los propios términos y la política de reembolsos de Google Play para conocer el detalle de cómo se gestionan los pagos, las renovaciones y los reembolsos."
+        "Affirmity puede ofrecer compras dentro de la app y suscripciones de renovación automática que desbloquean funciones o contenido adicional. Todas las compras se procesan a través de la tienda desde la que descargaste Affirmity — Google Play Store en Android, o App Store de Apple en iOS — y están sujetas a los términos y políticas de facturación de esa tienda.",
+        "Cuando se ofrece una suscripción, esta se renueva automáticamente por el mismo período salvo que se cancele antes de que finalice el ciclo de facturación vigente. Podés gestionar o cancelar una suscripción en cualquier momento desde la configuración de tu cuenta de Google Play (Android) o desde la configuración de suscripciones de tu Apple ID (iOS).",
+        "Los precios, ciclos de facturación, reembolsos y mecánicas de cancelación están regidos por Google Play Billing o por los términos de compras dentro de la app de Apple, según tu plataforma, no directamente por Affirmity. Consultá los propios términos y la política de reembolsos de la tienda correspondiente para conocer el detalle de cómo se gestionan los pagos, las renovaciones y los reembolsos."
       ]
     },
     {

@@ -1,16 +1,18 @@
 {
   "meta": {
     "title": "Affirmity — Una práctica diaria para la mente que estás construyendo",
-    "description": "Affirmity combina afirmaciones diarias con meditación guiada, un diario personal y seguimiento de rachas — una sola práctica silenciosa, dicha cada día."
+    "description": "Affirmity combina afirmaciones diarias con meditación guiada, un diario personal y seguimiento de rachas — una sola práctica silenciosa, dicha cada día. Disponible en iOS y Android."
   },
   "nav": {
     "wordmark": "Affirmity",
-    "cta": "Conseguila en Google Play"
+    "playStoreCta": "Conseguila en Google Play",
+    "appStoreCta": "Descargala en la App Store"
   },
   "hero": {
     "headline": "Decilo cada día. Convertite en eso.",
     "body": "Affirmity combina afirmaciones diarias con meditación guiada, un diario personal y una racha que te mantiene honesto — una sola práctica silenciosa para la historia que te contás a vos mismo.",
-    "cta": "Conseguila en Google Play",
+    "playStoreCta": "Conseguila en Google Play",
+    "appStoreCta": "Descargala en la App Store",
     "imageAlt": "Ilustración de marca de Affirmity — un rostro dibujado con ojos brillantes y un símbolo de círculo dentro de un triángulo en la frente"
   },
   "flagship": {
@@ -40,6 +42,8 @@
   },
   "footer": {
     "terms": "Términos y Condiciones",
+    "playStoreLabel": "Conseguila en Google Play",
+    "appStoreLabel": "Descargala en la App Store",
     "copyright": "© {{year}} Affirmity — Nahuel Uliassi Pirchio. Todos los derechos reservados."
   }
 }

@@ -1,16 +1,18 @@
 {
   "meta": {
     "title": "Affirmity — A daily practice for the mind you're building",
-    "description": "Affirmity pairs daily affirmations with guided meditation, journaling, and a streak tracker — one quiet practice, said daily."
+    "description": "Affirmity pairs daily affirmations with guided meditation, journaling, and a streak tracker — one quiet practice, said daily. Available on iOS and Android."
   },
   "nav": {
     "wordmark": "Affirmity",
-    "cta": "Get it on Google Play"
+    "playStoreCta": "Get it on Google Play",
+    "appStoreCta": "Download on the App Store"
   },
   "hero": {
     "headline": "Say it daily. Become it.",
     "body": "Affirmity pairs daily affirmations with guided meditation, journaling, and a streak that keeps you honest — a single quiet practice for the story you tell yourself.",
-    "cta": "Get it on Google Play",
+    "playStoreCta": "Get it on Google Play",
+    "appStoreCta": "Download on the App Store",
     "imageAlt": "Affirmity key art — a sketched face with glowing eyes and a circle-in-triangle mark at the forehead"
   },
   "flagship": {
@@ -40,6 +42,8 @@
   },
   "footer": {
     "terms": "Terms & Conditions",
+    "playStoreLabel": "Get it on Google Play",
+    "appStoreLabel": "Download on the App Store",
     "copyright": "© {{year}} Affirmity — Nahuel Uliassi Pirchio. All rights reserved."
   }
 }

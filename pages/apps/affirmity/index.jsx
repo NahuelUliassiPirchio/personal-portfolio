@@ -7,6 +7,7 @@ import AffirmityFonts from '../../../components/AffirmityFonts'
 import AffirmityHeader from '../../../components/AffirmityHeader'
 import AffirmityFooter from '../../../components/AffirmityFooter'
 import AffirmityPlayIcon from '../../../components/AffirmityPlayIcon'
+import AffirmityAppStoreIcon from '../../../components/AffirmityAppStoreIcon'
 
 import styles from '../../../styles/AffirmityLanding.module.css'
 import chrome from '../../../styles/AffirmityChrome.module.css'
@@ -43,6 +44,7 @@ export default function AffirmityLandingPage () {
   const pillars = t('pillars.items', {}, { returnObjects: true })
   const year = new Date().getFullYear()
   const playStoreUrl = process.env.AFFIRMITY_PLAY_STORE_URL || '#'
+  const appStoreUrl = process.env.AFFIRMITY_APP_STORE_URL || '#'
 
   useEffect(() => {
     const targets = [flagshipRef.current, pillarsRef.current].filter(Boolean)
@@ -73,7 +75,13 @@ export default function AffirmityLandingPage () {
       />
       <AffirmityFonts />
       <div className={chrome.root}>
-        <AffirmityHeader wordmark={t('nav.wordmark')} cta={t('nav.cta')} ctaHref={playStoreUrl} />
+        <AffirmityHeader
+          wordmark={t('nav.wordmark')}
+          playStoreCta={t('nav.playStoreCta')}
+          playStoreHref={playStoreUrl}
+          appStoreCta={t('nav.appStoreCta')}
+          appStoreHref={appStoreUrl}
+        />
 
         <main className={styles.main}>
           <section className={styles.hero}>
@@ -83,7 +91,11 @@ export default function AffirmityLandingPage () {
               <div className={styles.heroActions}>
                 <a href={playStoreUrl} className={styles.heroCta}>
                   <AffirmityPlayIcon size={16} />
-                  {t('hero.cta')}
+                  {t('hero.playStoreCta')}
+                </a>
+                <a href={appStoreUrl} className={styles.heroCta}>
+                  <AffirmityAppStoreIcon size={16} />
+                  {t('hero.appStoreCta')}
                 </a>
               </div>
             </div>
@@ -123,8 +135,10 @@ export default function AffirmityLandingPage () {
         <AffirmityFooter
           termsLabel={t('footer.terms')}
           copyright={t('footer.copyright', { year })}
-          playStoreLabel={t('nav.cta')}
+          playStoreLabel={t('footer.playStoreLabel')}
           playStoreHref={playStoreUrl}
+          appStoreLabel={t('footer.appStoreLabel')}
+          appStoreHref={appStoreUrl}
         />
       </div>
     </>

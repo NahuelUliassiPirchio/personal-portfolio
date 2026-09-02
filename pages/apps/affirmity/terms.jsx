@@ -15,6 +15,7 @@ export default function AffirmityTermsPage () {
   const sections = t('sections', {}, { returnObjects: true })
   const year = new Date().getFullYear()
   const playStoreUrl = process.env.AFFIRMITY_PLAY_STORE_URL || '#'
+  const appStoreUrl = process.env.AFFIRMITY_APP_STORE_URL || '#'
 
   return (
     <>
@@ -25,7 +26,13 @@ export default function AffirmityTermsPage () {
       />
       <AffirmityFonts />
       <div className={chrome.root}>
-        <AffirmityHeader wordmark={tLanding('nav.wordmark')} />
+        <AffirmityHeader
+          wordmark={tLanding('nav.wordmark')}
+          playStoreCta={tLanding('nav.playStoreCta')}
+          playStoreHref={playStoreUrl}
+          appStoreCta={tLanding('nav.appStoreCta')}
+          appStoreHref={appStoreUrl}
+        />
 
         <main className={styles.main}>
           <div className={styles.docHeader}>
@@ -66,8 +73,10 @@ export default function AffirmityTermsPage () {
         <AffirmityFooter
           termsLabel={t('header.title')}
           copyright={tLanding('footer.copyright', { year })}
-          playStoreLabel={tLanding('nav.cta')}
+          playStoreLabel={tLanding('footer.playStoreLabel')}
           playStoreHref={playStoreUrl}
+          appStoreLabel={tLanding('footer.appStoreLabel')}
+          appStoreHref={appStoreUrl}
         />
       </div>
     </>

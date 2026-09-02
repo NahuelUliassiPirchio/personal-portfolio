@@ -66,17 +66,20 @@
   color: var(--af-glow);
 }
 
+.headerCtas {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .headerCta {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  font-family: var(--af-font-body);
-  font-weight: 600;
-  font-size: 0.85rem;
-  text-decoration: none;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
   color: var(--af-void);
   background: var(--af-glow);
-  padding: 0.55rem 1.1rem;
   border-radius: 999px;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
@@ -121,6 +124,13 @@
 .footerLink:focus-visible {
   outline: 2px solid var(--af-glow);
   outline-offset: 3px;
+}
+
+.footerBadges {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
 }
 
 .footerBadge {

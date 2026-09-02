@@ -66,9 +66,9 @@
       "id": "subscriptions",
       "title": "7. Subscriptions & In-App Purchases",
       "paragraphs": [
-        "Affirmity may offer in-app purchases and auto-renewing subscriptions that unlock additional features or content. All purchases are processed through the Google Play Store, and are subject to Google Play's Billing terms and policies.",
-        "Where a subscription is offered, it automatically renews for the same term unless cancelled before the end of the current billing period. You can manage or cancel a subscription at any time through your Google Play account settings.",
-        "Pricing, billing cycles, refunds, and cancellation mechanics are governed by Google Play Billing, not by Affirmity directly. Please refer to Google Play's own terms and refund policy for details on how payments, renewals, and refunds are handled."
+        "Affirmity may offer in-app purchases and auto-renewing subscriptions that unlock additional features or content. All purchases are processed through the app store you downloaded Affirmity from — the Google Play Store on Android, or the Apple App Store on iOS — and are subject to that store's billing terms and policies.",
+        "Where a subscription is offered, it automatically renews for the same term unless cancelled before the end of the current billing period. You can manage or cancel a subscription at any time through your Google Play account settings (Android) or your Apple ID subscription settings (iOS).",
+        "Pricing, billing cycles, refunds, and cancellation mechanics are governed by Google Play Billing or Apple's In-App Purchase terms, depending on your platform, not by Affirmity directly. Please refer to the relevant store's own terms and refund policy for details on how payments, renewals, and refunds are handled."
       ]
     },
     {
